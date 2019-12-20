@@ -1,7 +1,8 @@
 /// @description Insert description here
 
-gui_height = display_get_gui_height()
-gui_width = display_get_gui_width()
+#region GUI locations
+gui_height = view_get_hport(0)
+gui_width = view_get_wport(0)
 resolution_scale = view_get_wport(0)/camera_get_view_width(view_camera[0])
 
 //generate UI arrays
@@ -35,3 +36,8 @@ repair_bay_slot_y_offset = array_create(3, 0)
 for (var i =0; i < number_of_repair_bays; i++){
 	repair_bay_slot_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
 }
+#endregion
+
+
+
+
