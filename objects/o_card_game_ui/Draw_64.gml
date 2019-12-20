@@ -6,7 +6,12 @@ var _mouse_y = device_mouse_y_to_gui(0)
 
 //draw the shop
 for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
-	draw_sprite_ext(s_card_placeholder, 0, shop_slot_ui_x_offset[i], shop_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
+	if (shop_slots[i] = noone){
+		draw_sprite_ext(s_card_placeholder, 0, shop_slot_ui_x_offset[i], shop_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
+	}
+	if (shop_slots[i] != noone){
+		draw_sprite_ext()
+	}
 }
 
 //draw the parts box
