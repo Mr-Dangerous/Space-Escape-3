@@ -5,12 +5,20 @@ var _mouse_y = device_mouse_y_to_gui(0)
 
 
 //draw the shop
+
+
 for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
-	if (shop_slots[i] = noone){
+	if (shop_slots[i, 0] = noone){
 		draw_sprite_ext(s_card_placeholder, 0, shop_slot_ui_x_offset[i], shop_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
 	}
-	if (shop_slots[i] != noone){
-		draw_sprite_ext()
+	if (shop_slots[i, 0] != noone){
+		if (instance_exists(shop_slots[i, 1])){
+			var _sprite = shop_slots[i, 1].sprite_index
+			var image_scale = shop_slots[i, 1].image_scale*1.3
+			var card_border = shop_slots[i, 1].card_border
+			draw_sprite_ext(card_border, 0, shop_slot_ui_x_offset[i], shop_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1)
+			draw_sprite_ext(_sprite, 0, shop_slot_ui_x_offset[i]+card_offset_sprite_x, shop_slot_ui_y_offset+card_offset_sprite_y, image_scale*resolution_scale, image_scale*resolution_scale, 0, c_white, 1)
+		}
 	}
 }
 
