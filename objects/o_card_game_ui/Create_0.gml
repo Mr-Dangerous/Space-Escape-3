@@ -29,6 +29,8 @@ for (var i = 0; i < number_of_construction_bays; i++){
 }
 #endregion
 
+
+
 #region GUI locations
 gui_height = view_get_hport(0)
 gui_width = view_get_wport(0)
