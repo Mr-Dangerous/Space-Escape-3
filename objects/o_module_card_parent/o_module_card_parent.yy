@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "7568de39-63b1-47c9-97da-04b07576bf11"
+        },
+        {
+            "id": "113c470a-214d-4f30-b7cc-2016510b9eb3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 6,
+            "m_owner": "7568de39-63b1-47c9-97da-04b07576bf11"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -139,6 +149,20 @@
             "value": "shield",
             "varName": "module_type",
             "varType": 2
+        },
+        {
+            "id": "e55b9d81-7628-4b3d-b5c9-b45e29bee141",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "card_book",
+            "varType": 0
         }
     ],
     "solid": false,
