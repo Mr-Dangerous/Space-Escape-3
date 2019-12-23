@@ -1,9 +1,14 @@
 /// @description Insert description here
 #region Creation Variables
 player_level = 1
+//shop slots
 for (var i = 0; i < 5; i++){
 shop_slots[i, 0] = noone//the object resource
 shop_slots[i, 1] = noone//the actual object being referenced
+}
+//parts bin slots
+for (var i = 0; i < 15; i++){
+	parts_slot[i] = noone
 }
 #endregion
 
@@ -21,10 +26,15 @@ for (var i = 0; i < 5; i++){
 }
 //generate parts bin position array
 number_of_parts_slots = 15
-parts_slot_ui_x_offset = array_create(10, 0)//this array is the x position of the parts bin
+parts_slot_ui_x_offset = array_create(15, 0)//this array is the x position of the parts bin
+parts_slot_x_offset = array_create(15, 0)
 parts_slot_ui_y_offset = gui_height - (210*resolution_scale)
+parts_slot_y_offset = room_height - (210)
 for (var i = 0; i < number_of_parts_slots; i++){
 	parts_slot_ui_x_offset[i] = (385 + round((i* 81.6)))*resolution_scale
+}
+for (var i = 0; i < number_of_parts_slots; i++){
+	parts_slot_x_offset[i] = (385 + round((i* 81.6)))
 }
 //generate construction bay position array
 number_of_construction_bays = 3
@@ -45,30 +55,35 @@ for (var i =0; i < number_of_repair_bays; i++){
 }
 
 //generate the x and y offsets for elements on each card
-card_offset_sprite_x = 189*resolution_scale//the ships x_offset from the left top side of the card
+card_offset_sprite_x = 179*resolution_scale//the ships x_offset from the left top side of the card
 card_offset_sprite_y = 75*resolution_scale//the ships y offset from the left top
+card_text_offset_x = 16*resolution_scale // all card text will be the same x_offset
+card_name_offset_y = 20*resolution_scale
+card_class_offset_y = 65*resolution_scale
+card_origin_offset_y = 120*resolution_scale
+
 #endregion
 
 #region Card Books
 #region Level 1 Books
 
 level_1_weapon_system_1[0] = 30
-level_1_weapon_system_1[1] = o_module_card_parent// o_armada_5_module_card
+level_1_weapon_system_1[1] = o_armada_5_module_card
 
 level_1_shield_module_1[0] = 30
-level_1_shield_module_1[1] = o_module_card_parent// o_arrack_refractor_module_card
+level_1_shield_module_1[1] = o_arrack_refractor_module_card
 
 level_1_armor_upgrade_1[0] = 30
-level_1_armor_upgrade_1[1] = o_module_card_parent// o_anvil_class_plates_module_card
+level_1_armor_upgrade_1[1] = o_anvil_class_plates_module_card
 
 level_1_targeting_module_1[0] = 30
-level_1_targeting_module_1[1] = o_module_card_parent// o_enhar_targeting_module_module_card
+level_1_targeting_module_1[1] = o_enhar_targeting_module_module_card
 
 level_1_ability_module_1[0] = 30
-level_1_ability_module_1[1] = o_module_card_parent// o_elisar_emergency_shield_system_module_card
+level_1_ability_module_1[1] = o_elisar_emergency_shield_system_module_card
 
 level_1_power_module_1[0] = 30
-level_1_power_module_1[1] = o_module_card_parent// o_arrack_core_plant_module_card
+level_1_power_module_1[1] = o_arrack_core_plant_module_card
 
 
 //refrences to all level 1 books

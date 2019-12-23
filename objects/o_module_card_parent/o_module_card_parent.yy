@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "o_module_card_parent",
     "eventList": [
-        
+        {
+            "id": "c56b9584-634b-4f11-b464-b37f1a0ac298",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "7568de39-63b1-47c9-97da-04b07576bf11"
+        },
+        {
+            "id": "3ce86ecc-eeed-4530-b48f-928aae45e96e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "7568de39-63b1-47c9-97da-04b07576bf11"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -106,6 +125,20 @@
             "value": "s_card_border_1",
             "varName": "card_border",
             "varType": 5
+        },
+        {
+            "id": "c034e6e6-b2f7-497a-8ad6-71d229d16211",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "shield",
+            "varName": "module_type",
+            "varType": 2
         }
     ],
     "solid": false,
