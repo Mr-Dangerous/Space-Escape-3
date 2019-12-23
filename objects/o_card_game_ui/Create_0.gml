@@ -7,8 +7,25 @@ shop_slots[i, 0] = noone//the object resource
 shop_slots[i, 1] = noone//the actual object being referenced
 }
 //parts bin slots
+number_of_parts_slots = 15
 for (var i = 0; i < 15; i++){
 	parts_slot[i] = noone
+}
+//construction bays
+number_of_construction_bays = 3
+construction_bays = array_create(number_of_construction_bays, 0)
+for (var i = 0; i < number_of_construction_bays; i++){
+	//all of these will be specifically object references
+	construction_bay[0] = noone//frame in slot
+	construction_bay[1] = noone//weapons_system
+	construction_bay[2] = noone//shield system
+	construction_bay[3] = noone//armor
+	construction_bay[4] = noone//targeting
+	construction_bay[5] = noone//ability
+	construction_bay[6] = noone//powerplant
+	//construction_bay[7] = 0//Pilot
+	//construction_bay[8] = 0//Engineer
+	construction_bays[i] = construction_bay
 }
 #endregion
 
@@ -25,7 +42,7 @@ for (var i = 0; i < 5; i++){
 	shop_slot_ui_x_offset[i] = (347 + (i*245))*resolution_scale
 }
 //generate parts bin position array
-number_of_parts_slots = 15
+
 parts_slot_ui_x_offset = array_create(15, 0)//this array is the x position of the parts bin
 parts_slot_x_offset = array_create(15, 0)
 parts_slot_ui_y_offset = gui_height - (210*resolution_scale)
@@ -37,13 +54,31 @@ for (var i = 0; i < number_of_parts_slots; i++){
 	parts_slot_x_offset[i] = (385 + round((i* 81.6)))
 }
 //generate construction bay position array
-number_of_construction_bays = 3
+
 construction_bay_slot_x_offset = gui_width - (264 * resolution_scale)
 construction_bay_slot_y_offset = array_create(3, 0)
 
 for (var i =0; i < number_of_construction_bays; i++){
 	construction_bay_slot_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
+	
 }
+
+//generate contruction bay socket positions
+construction_bay_socket_offsets[0, 0] = 128 * resolution_scale //ship frame x
+construction_bay_socket_offsets[0, 1] = 122 * resolution_scale// ship frame y
+construction_bay_socket_offsets[1, 0] = 48 * resolution_scale//top left socket x
+construction_bay_socket_offsets[1, 1] = 48 * resolution_scale//top left socket y
+construction_bay_socket_offsets[2, 0] = 48 * resolution_scale//mid left socket x
+construction_bay_socket_offsets[2, 1] = 128 * resolution_scale//mid left socket y
+construction_bay_socket_offsets[3, 0] = 48 * resolution_scale//bot left socket x
+construction_bay_socket_offsets[3, 1] = 208 * resolution_scale//bot left socket y
+construction_bay_socket_offsets[4, 0] = 208 * resolution_scale//top right socket x
+construction_bay_socket_offsets[4, 1] = 48 * resolution_scale//top right socket y
+construction_bay_socket_offsets[5, 0] = 208 * resolution_scale//mid right socket x
+construction_bay_socket_offsets[5, 1] = 128 * resolution_scale//mid right socket y
+construction_bay_socket_offsets[6, 0] = 208 * resolution_scale//bot right socket x
+construction_bay_socket_offsets[6, 1] = 208 * resolution_scale//bot right socket y
+
 
 //generate repair bay position array
 number_of_repair_bays = 3
