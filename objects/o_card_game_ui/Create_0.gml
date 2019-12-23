@@ -79,6 +79,14 @@ construction_bay_socket_offsets[5, 1] = 128 * resolution_scale//mid right socket
 construction_bay_socket_offsets[6, 0] = 208 * resolution_scale//bot right socket x
 construction_bay_socket_offsets[6, 1] = 208 * resolution_scale//bot right socket y
 
+//generate construction bay accetpable item locations
+construction_bay_item_type[0] = "frame"
+construction_bay_item_type[1] = "weapon"
+construction_bay_item_type[2] = "sheilds"
+construction_bay_item_type[3] = "armor"
+construction_bay_item_type[4] = "targeting"
+construction_bay_item_type[5] = "ability"
+construction_bay_item_type[6] = "power plant"
 
 //generate repair bay position array
 number_of_repair_bays = 3

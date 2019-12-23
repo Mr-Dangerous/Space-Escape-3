@@ -1127,6 +1127,14 @@
             }
         },
         {
+            "Key": "b62d88bd-400b-4eb0-84d2-23591d6038b7",
+            "Value": {
+                "id": "90742a42-4399-416c-ac52-c0268188e888",
+                "resourcePath": "objects\\o_module_clone\\o_module_clone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b72e4258-6e08-4f8c-8f13-0bca7eece1f9",
             "Value": {
                 "id": "066a6194-b5b3-4203-9a83-0c65e51056b4",

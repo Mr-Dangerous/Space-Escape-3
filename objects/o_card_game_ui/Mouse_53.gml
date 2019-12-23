@@ -36,6 +36,9 @@ if (selected_shop_slot != -1){
 				selected_part.x = parts_slot_x_offset[i]
 				selected_part.y = parts_slot_y_offset
 				parts_slot[i] = selected_part
+				with(selected_part){
+					parts_bin_slot = i
+				}
 				shop_slots[@ selected_shop_slot, 0] = noone
 				shop_slots[@ selected_shop_slot, 1] = noone
 				break;
