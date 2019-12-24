@@ -38,7 +38,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "c034e6e6-b2f7-497a-8ad6-71d229d16211",
-            "value": "ability"
+            "value": "module.ability"
         }
     ],
     "parentObjectId": "7568de39-63b1-47c9-97da-04b07576bf11",

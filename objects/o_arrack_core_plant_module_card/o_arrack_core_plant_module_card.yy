@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "c034e6e6-b2f7-497a-8ad6-71d229d16211",
-            "value": "power"
+            "value": "module.power_plant"
         },
         {
             "id": "a161a5fa-3f38-4365-99fa-31a78e8bb8c9",
@@ -38,7 +38,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "61b39abf-bc5a-46ad-8701-258c7f2018ea",
-            "value": ".397"
+            "value": ".13"
         }
     ],
     "parentObjectId": "7568de39-63b1-47c9-97da-04b07576bf11",
@@ -57,6 +57,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "390f573f-f533-4904-bd0d-9552d56fed7a",
+    "spriteId": "a2ca660b-6c77-4111-b2bd-b0ab19e8b3d6",
     "visible": true
 }

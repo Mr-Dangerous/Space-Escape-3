@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "c034e6e6-b2f7-497a-8ad6-71d229d16211",
-            "value": "weapon"
+            "value": "module.weapon"
         }
     ],
     "parentObjectId": "7568de39-63b1-47c9-97da-04b07576bf11",
@@ -65,6 +65,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d911c5c7-4371-474f-a211-7e954f0576cc",
+    "spriteId": "e2ed327f-0258-40e9-8e85-f52641f63224",
     "visible": true
 }

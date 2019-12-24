@@ -15,14 +15,15 @@ for (var i = 0; i < 15; i++){
 number_of_construction_bays = 3
 construction_bays = array_create(number_of_construction_bays, 0)
 for (var i = 0; i < number_of_construction_bays; i++){
+	var construction_bay = array_create(7, noone)
 	//all of these will be specifically object references
-	construction_bay[0] = noone//frame in slot
-	construction_bay[1] = noone//weapons_system
-	construction_bay[2] = noone//shield system
-	construction_bay[3] = noone//armor
-	construction_bay[4] = noone//targeting
-	construction_bay[5] = noone//ability
-	construction_bay[6] = noone//powerplant
+	//construction_bay[0] = noone//frame in slot
+	//construction_bay[1] = noone//weapons_system
+	//construction_bay[2] = noone//shield system
+	//construction_bay[3] = noone//armor
+	//construction_bay[4] = noone//targeting
+	//construction_bay[5] = noone//ability
+	//construction_bay[6] = noone//powerplant
 	//construction_bay[7] = 0//Pilot
 	//construction_bay[8] = 0//Engineer
 	construction_bays[i] = construction_bay
@@ -57,12 +58,14 @@ for (var i = 0; i < number_of_parts_slots; i++){
 }
 //generate construction bay position array
 
-construction_bay_slot_x_offset = gui_width - (264 * resolution_scale)
-construction_bay_slot_y_offset = array_create(3, 0)
+construction_bay_slot_ui_x_offset = gui_width - (264 * resolution_scale)
+construction_bay_slot_ui_y_offset = array_create(3, 0)
+construction_bay_slot_x_offset = room_width - 264
+construction_bay_slot_y_offset = array_create(3,0)
 
 for (var i =0; i < number_of_construction_bays; i++){
-	construction_bay_slot_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
-	
+	construction_bay_slot_ui_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
+	construction_bay_slot_y_offset[i] = room_height - (264*(i+1))
 }
 
 //generate contruction bay socket positions
@@ -82,13 +85,13 @@ construction_bay_socket_offsets[6, 0] = 208 * resolution_scale//bot right socket
 construction_bay_socket_offsets[6, 1] = 208 * resolution_scale//bot right socket y
 
 //generate construction bay accetpable item locations
-construction_bay_item_type[0] = "frame"
-construction_bay_item_type[1] = "weapon"
-construction_bay_item_type[2] = "sheilds"
-construction_bay_item_type[3] = "armor"
-construction_bay_item_type[4] = "targeting"
-construction_bay_item_type[5] = "ability"
-construction_bay_item_type[6] = "power plant"
+construction_bay_item_type[0] = module.frame
+construction_bay_item_type[1] = module.weapon
+construction_bay_item_type[2] = module.shields
+construction_bay_item_type[3] = module.armor
+construction_bay_item_type[4] = module.targeting
+construction_bay_item_type[5] = module.ability
+construction_bay_item_type[6] = module.power_plant
 
 //generate repair bay position array
 number_of_repair_bays = 3

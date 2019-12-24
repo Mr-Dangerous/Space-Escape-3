@@ -951,6 +951,14 @@
             }
         },
         {
+            "Key": "9d7df79f-284c-472b-ab05-194e8b76ef39",
+            "Value": {
+                "id": "98f364be-d395-43b4-9c8f-aa15a7f77fb7",
+                "resourcePath": "scripts\\__enums\\__enums.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9edd750f-2a96-44ff-81e5-e5a9387d63df",
             "Value": {
                 "id": "7fe19b41-de2f-4963-ab42-542835d99106",
@@ -971,6 +979,14 @@
             "Value": {
                 "id": "9b3f62d1-4f10-4035-a9cc-0ea4d9e68128",
                 "resourcePath": "sprites\\s_projectile_leader\\s_projectile_leader.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a2ca660b-6c77-4111-b2bd-b0ab19e8b3d6",
+            "Value": {
+                "id": "b72fc84e-e42f-4b4a-946a-bf391883e0a2",
+                "resourcePath": "sprites\\s_blue_pulse_exhaust_module\\s_blue_pulse_exhaust_module.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1343,6 +1359,14 @@
             }
         },
         {
+            "Key": "e2ed327f-0258-40e9-8e85-f52641f63224",
+            "Value": {
+                "id": "42ad0b93-499e-4487-b9eb-dacf152c6e8f",
+                "resourcePath": "sprites\\s_bullet_original_module\\s_bullet_original_module.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e5541126-e0cd-4e66-92dc-23c342db623e",
             "Value": {
                 "id": "e5e1429e-01af-47b6-a74c-bf99eaeedb68",
@@ -1469,12 +1493,21 @@
                 "resourcePath": "views\\fe1251dd-4f36-4e3c-811b-061ad236842e.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "ffd34c9a-a866-4dd6-b490-508b65495d4e",
+            "Value": {
+                "id": "58c3fb7f-7d28-4675-97ab-a6e11eb4d453",
+                "resourcePath": "views\\ffd34c9a-a866-4dd6-b490-508b65495d4e.yy",
+                "resourceType": "GMFolder"
+            }
         }
     ],
     "script_order": [
         "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
         "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
-        "5ef05e9b-d57e-411d-9171-afad16f7b5ee"
+        "5ef05e9b-d57e-411d-9171-afad16f7b5ee",
+        "9d7df79f-284c-472b-ab05-194e8b76ef39"
     ],
     "tutorial": ""
 }

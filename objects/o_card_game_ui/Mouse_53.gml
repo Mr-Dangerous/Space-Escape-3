@@ -8,6 +8,7 @@ var _mouse_y = device_mouse_y_to_gui(0)
 //Selection variables that can be used
 var selected_shop_slot = -1
 var selected_part_bin_slot = -1
+
 //check each shop slot to see if it was selected
 
 for (var i =0; i<5; i++){
@@ -23,7 +24,16 @@ for (var i =0; i<5; i++){
 }
 
 //check parts bin
-
+for (var i =0; i<15; i++){
+	var _center_x = parts_slot_ui_x_offset[i]
+	var _center_y = parts_slot_ui_y_offset
+	var _radius = 32*resolution_scale
+	
+	if (point_in_circle(_mouse_x, _mouse_y, 
+	_center_x, _center_y, _radius)){
+		selected_part_bin_slot = i
+	}
+}
 //buy the part
 if (selected_shop_slot != -1){
 	if (shop_slots[selected_shop_slot, 0] != noone){
@@ -46,5 +56,6 @@ if (selected_shop_slot != -1){
 		}		
 	}
 }
+
 
 

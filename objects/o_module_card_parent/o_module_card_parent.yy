@@ -156,9 +156,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "shield",
+            "value": "module.shields",
             "varName": "module_type",
-            "varType": 2
+            "varType": 0
         },
         {
             "id": "e55b9d81-7628-4b3d-b5c9-b45e29bee141",

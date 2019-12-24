@@ -42,17 +42,20 @@ for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){
 }
 //draw the construction bays
 for (var i = 0; i < number_of_construction_bays; i++){
-	draw_sprite_ext(s_hangar_bay_placeholder, 0, construction_bay_slot_x_offset, construction_bay_slot_y_offset[i], resolution_scale, resolution_scale, 0, c_white, .3)
+	draw_sprite_ext(s_hangar_bay_placeholder, 0, construction_bay_slot_ui_x_offset, construction_bay_slot_ui_y_offset[i], resolution_scale, resolution_scale, 0, c_white, .3)
 	active_construction_bay = construction_bays[i]
 	number_of_sockets = array_length_1d(active_construction_bay)
-	if (active_construction_bay[i] != noone){
-		//get the sprite!
-		var _sprite = object_get_sprite(active_construction_bay[i])
-		//display the sprite
-		draw_sprite_ext(_sprite, 0, 
-			construction_bay_slot_x_offset + construction_bay_socket_offsets[i, 0],
-			construction_bay_slot_y_offset + construction_bay_socket_offsets[i, 1],
-			resolution_scale, resolution_scale, 0, c_white, 1)
+	for(var j = 0; j < number_of_sockets; j++){
+		var _module = active_construction_bay[j]
+		if (instance_exists(_module)){
+			//get the sprite
+			var _sprite = _module.sprite_index
+			//display the sprite
+			draw_sprite_ext(_sprite, 0, 
+				construction_bay_slot_ui_x_offset + construction_bay_socket_offsets[j, 0],
+				construction_bay_slot_ui_y_offset[i] + construction_bay_socket_offsets[j, 1],
+				_module.image_scale*resolution_scale, _module.image_scale*resolution_scale, 0, c_white, 1)
+		}
 			
 	}
 }
