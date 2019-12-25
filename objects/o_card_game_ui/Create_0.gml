@@ -198,50 +198,54 @@ level_3_module_book[5] = level_3_power_module_1
 #endregion
 
 #region Ship Frames Book
-ship_frame_book[0, 0] = o_ship_frame_parent//o_iron_interceptor_frame_card
+ship_frame_book = array_create(15, noone)
+
+ship_frame_book[0, 0] = o_iron_interceptor_frame_card
 ship_frame_book[0, 1] = 30
 
-ship_frame_book[1, 0] = o_ship_frame_parent//o_iron_fighter_frame_card
+ship_frame_book[1, 0] = o_iron_fighter_frame_card
 ship_frame_book[1, 1] = 20
 
-ship_frame_book[2, 0] = o_ship_frame_parent//o_iron_frigate_frame_card
+ship_frame_book[2, 0] = o_iron_frigate_frame_card
 ship_frame_book[2, 1] = 10
 
-ship_frame_book[3, 0] = o_ship_frame_parent// o_crystal_interceptor_frame_card
+ship_frame_book[3, 0] = o_crystal_interceptor_frame_card
 ship_frame_book[3, 1] = 30
 
-ship_frame_book[4, 0] = o_ship_frame_parent//o_crystal_fighter_frame_card
+ship_frame_book[4, 0] = o_crystal_fighter_frame_card
 ship_frame_book[4, 1] = 20
 
-ship_frame_book[5, 0] = o_ship_frame_parent//o_crystal_frigate_frame_card
+ship_frame_book[5, 0] = o_crystal_frigate_frame_card
 ship_frame_book[5, 1] = 10
 
-ship_frame_book[6, 0] = o_ship_frame_parent//o_pirate_interceptor_frame_card
+ship_frame_book[6, 0] = o_pirate_interceptor_frame_card
 ship_frame_book[6, 1] = 30
 
-ship_frame_book[7, 0] = o_ship_frame_parent//o_pirate_fighter_frame_card
+ship_frame_book[7, 0] = o_pirate_fighter_frame_card
 ship_frame_book[7, 1] = 20
 
-ship_frame_book[8, 0] = o_ship_frame_parent//o_pirate_frigate_frame_card
+ship_frame_book[8, 0] = o_pirate_frigate_frame_card
 ship_frame_book[8, 1] = 10
 
-ship_frame_book[9, 0] = o_ship_frame_parent//o_imperial_interceptor_frame_card
+ship_frame_book[9, 0] = o_imperial_interceptor_frame_card
 ship_frame_book[9, 1] = 30
 
-ship_frame_book[10, 0] = o_ship_frame_parent//o_imperial_fighter_frame_card
+ship_frame_book[10, 0] = o_imperial_fighter_frame_card
 ship_frame_book[10, 1] = 20
 
-ship_frame_book[11, 0] = o_ship_frame_parent//o_imperial_frigate_frame_card
+ship_frame_book[11, 0] = o_imperial_frigate_frame_card
 ship_frame_book[11, 1] = 10
 
-ship_frame_book[12, 0] = o_ship_frame_parent//o_solar_interceptor_frame_card
+ship_frame_book[12, 0] = o_solar_interceptor_frame_card
 ship_frame_book[12, 1] = 30
 
-ship_frame_book[13, 0] = o_ship_frame_parent//o_solar_fighter_frame_card
+ship_frame_book[13, 0] = o_solar_fighter_frame_card
 ship_frame_book[13, 1] = 20
 
-ship_frame_book[14, 0] = o_ship_frame_parent//o_solar_frigate_frame_card
+ship_frame_book[14, 0] = o_solar_frigate_frame_card
 ship_frame_book[14, 1] = 10
+
+
 
 #endregion
 

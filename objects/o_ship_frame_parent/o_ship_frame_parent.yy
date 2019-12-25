@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_ship_frame_parent",
     "eventList": [
-        
+        {
+            "id": "298788fd-2f4a-4210-a47c-ab2d8e7268ee",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "6bc5656f-427a-422a-b991-cea7dfbec16f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -76,7 +85,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "s_card_border_5",
-            "varName": "background_border",
+            "varName": "card_border",
             "varType": 5
         },
         {
@@ -89,9 +98,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.015",
+            "value": "0.075",
             "varName": "image_scale",
             "varType": 0
+        },
+        {
+            "id": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Pirate",
+            "varName": "origin",
+            "varType": 2
         }
     ],
     "solid": false,

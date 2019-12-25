@@ -63,21 +63,25 @@ if (selected_construction_hangar_slot != -1){
 	//check to see if the item can be placed into the construction bay
 	show_debug_message(selected_construction_hangar_slot)
 	
-	reference_object.x = 0
-	reference_object.y = 0
-	reference_object.visible = false
+	
 	var _construction_bay = _card_game_controller.construction_bays[selected_construction_hangar_slot]
 	//scan the construction bay for an open matching socket
 	var matching_socket = -1
 	for (var f = 0; f < _card_game_controller.number_of_sockets; f++){
 		if (_construction_bay[f] = noone and _card_game_controller.construction_bay_item_type[f] = reference_object.module_type){
 			matching_socket = f
+			
 			break;
+		} else {
+			selected_construction_hangar_slot = -1
 		}
 	}
 	if (matching_socket != -1){
 		_construction_bay[@ matching_socket] = reference_object
 		_card_game_controller.parts_slot[parts_bin_slot] = noone
+		reference_object.x = 0
+		reference_object.y = 0
+		reference_object.visible = false
 	} else {
 		selected_construction_hangar_slot = -1
 	}

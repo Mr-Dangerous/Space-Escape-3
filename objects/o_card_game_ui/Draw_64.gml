@@ -51,10 +51,12 @@ for (var i = 0; i < number_of_construction_bays; i++){
 			//get the sprite
 			var _sprite = _module.sprite_index
 			//display the sprite
+			var _rotation = 0
+			if (j = 0) _rotation = 270
 			draw_sprite_ext(_sprite, 0, 
 				construction_bay_slot_ui_x_offset + construction_bay_socket_offsets[j, 0],
 				construction_bay_slot_ui_y_offset[i] + construction_bay_socket_offsets[j, 1],
-				_module.image_scale*resolution_scale, _module.image_scale*resolution_scale, 0, c_white, 1)
+				_module.image_scale*resolution_scale, _module.image_scale*resolution_scale, _rotation, c_white, 1)
 		}
 			
 	}

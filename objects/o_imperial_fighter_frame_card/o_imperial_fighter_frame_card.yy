@@ -1,0 +1,62 @@
+{
+    "id": "d29c0676-38a9-4ece-ad4b-d935e6c59683",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "o_imperial_fighter_frame_card",
+    "eventList": [
+        
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": [
+        {
+            "id": "d985c9b1-c167-4b4f-9c84-782167550cec",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "356d0da6-a175-4171-94a4-45931808a292",
+            "value": "Fighter"
+        },
+        {
+            "id": "44ed5e06-f50f-4bba-9103-af9790d2a70f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "40158d9e-e883-46e1-bda4-c1e073a50e32",
+            "value": "Torres Nein"
+        },
+        {
+            "id": "4c30474b-ed73-4a14-af25-985ac3bdd076",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "4bff0198-c4df-482a-adab-78ca879c8bd3",
+            "value": "0.062"
+        },
+        {
+            "id": "0e66ebca-15f8-4869-a574-1106e59cd31d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
+            "value": "Imperial Armada"
+        }
+    ],
+    "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": null,
+    "solid": false,
+    "spriteId": "8c1e3074-4a94-4afe-bc04-557bf3a64007",
+    "visible": true
+}

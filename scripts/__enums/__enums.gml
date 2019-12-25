@@ -7,3 +7,8 @@ enum module {
 	ability, 
 	power_plant
 }
+
+enum card_type{
+	frame,
+	module
+}
