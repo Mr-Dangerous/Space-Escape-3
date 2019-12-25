@@ -118,7 +118,7 @@ card_origin_offset_y = 120*resolution_scale
 level_1_weapon_system_1[0] = 30
 level_1_weapon_system_1[1] = o_armada_5_module_card
 
-level_1_shield_module_1[0] = 30
+level_1_shield_module_1[0] = 10
 level_1_shield_module_1[1] = o_arrack_refractor_module_card
 
 level_1_armor_upgrade_1[0] = 30

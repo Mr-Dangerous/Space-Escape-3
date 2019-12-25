@@ -38,9 +38,11 @@ if (card_type = card_type.module){
 		selected_book = card_level_book[i]
 
 		var card_repeats = selected_book[0,0]
-		repeat(card_repeats){
-			remaining_leveled_cards[k] = selected_book
-			k++
+		if (card_repeats > 0){
+			repeat(card_repeats){
+				remaining_leveled_cards[k] = selected_book
+				k++
+			}
 		}
 	}
 	//shuffle the array
