@@ -1,3 +1,5 @@
+//reset variables that need to check release of mouse
+
 
 
 
@@ -42,7 +44,9 @@ for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){
 }
 //draw the construction bays
 for (var i = 0; i < number_of_construction_bays; i++){
-	draw_sprite_ext(s_hangar_bay_placeholder, 0, construction_bay_slot_ui_x_offset, construction_bay_slot_ui_y_offset[i], resolution_scale, resolution_scale, 0, c_white, .3)
+	var _x = construction_bay_slot_ui_x_offset
+	var _y = construction_bay_slot_ui_y_offset[i]
+	draw_sprite_ext(s_hangar_bay_placeholder, 0, _x, _y, resolution_scale, resolution_scale, 0, c_white, .3)
 	active_construction_bay = construction_bays[i]
 	number_of_sockets = array_length_1d(active_construction_bay)
 	for(var j = 0; j < number_of_sockets; j++){
@@ -54,12 +58,46 @@ for (var i = 0; i < number_of_construction_bays; i++){
 			var _rotation = 0
 			if (j = 0) _rotation = 270
 			draw_sprite_ext(_sprite, 0, 
-				construction_bay_slot_ui_x_offset + construction_bay_socket_offsets[j, 0],
-				construction_bay_slot_ui_y_offset[i] + construction_bay_socket_offsets[j, 1],
+				_x + construction_bay_socket_offsets[j, 0],
+				_y + construction_bay_socket_offsets[j, 1],
 				_module.image_scale*resolution_scale, _module.image_scale*resolution_scale, _rotation, c_white, 1)
 		}
 			
 	}
+	//display some text
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
+	//deploy string and button
+	 
+	
+	
+	var _deploy_string_x = _x + construction_bay_string_offset[1, 0]
+	var _deploy_string_y = _y + construction_bay_string_offset[1, 1]
+	var _deploy_string = "Deploy"
+	
+	var _deploy_button_top_x = _deploy_string_x - (40 * resolution_scale)
+	var _deploy_button_top_y = _deploy_string_y - (16 * resolution_scale)
+	var _deploy_button_bot_x = _deploy_string_x + (40 * resolution_scale)
+	var _deploy_button_bot_y = _deploy_string_y + (16 * resolution_scale)
+	
+	//draw outline
+	draw_rectangle_color(_deploy_button_top_x - 2, _deploy_button_top_y - 2,
+	_deploy_button_bot_x + 2, _deploy_button_bot_y + 2, c_black, c_black, c_black, c_black, false)
+	//draw button
+	deploy_button_pressed = construction_bay_deploy_button_pressed[i]
+	if (!deploy_button_pressed){
+		draw_rectangle_color(_deploy_button_top_x, _deploy_button_top_y,
+		_deploy_button_bot_x, _deploy_button_bot_y, c_red, c_red, c_red, c_red, false)
+	}
+	if (deploy_button_pressed){
+		draw_rectangle_color(_deploy_button_top_x, _deploy_button_top_y,
+		_deploy_button_bot_x, _deploy_button_bot_y, c_maroon, c_maroon, c_maroon, c_maroon, false)
+	}
+	
+	draw_text_transformed(_deploy_string_x, _deploy_string_y, _deploy_string, resolution_scale, resolution_scale, 0)
+	
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
 }
 
 //draw the repair bays

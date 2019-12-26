@@ -3,6 +3,8 @@
 //General variables
 var _mouse_x = device_mouse_x_to_gui(0)
 var _mouse_y = device_mouse_y_to_gui(0)
+var gui_height = display_get_gui_height()
+var gui_width = display_get_gui_width()
 
 //card variables
 var _card_reference = -1
@@ -81,6 +83,29 @@ if (selected_shop_slot != -1){
 		}
 	}
 }
+//check deploy_buttons(and other construction bay features later)
+for (var i = 0; i < number_of_construction_bays; i++){
+	var _x = construction_bay_slot_ui_x_offset
+	var _y = construction_bay_slot_ui_y_offset[i]
+	var _deploy_string_x = _x + construction_bay_string_offset[1, 0]
+	var _deploy_string_y = _y + construction_bay_string_offset[1, 1]
+	var _deploy_button_top_x = _deploy_string_x - (40 * resolution_scale)
+	var _deploy_button_top_y = _deploy_string_y - (16 * resolution_scale)
+	var _deploy_button_bot_x = _deploy_string_x + (40 * resolution_scale)
+	var _deploy_button_bot_y = _deploy_string_y + (16 * resolution_scale)
+
+	
+	//check to see if deploy button clicked
+	var deploy_button_pressed = point_in_rectangle(_mouse_x, _mouse_y, _deploy_button_top_x - 2, _deploy_button_top_y - 2,
+	_deploy_button_bot_x + 2, _deploy_button_bot_y + 2)
+	
+	
+	
+	if (deploy_button_pressed){
+		construction_bay_deploy_button_pressed[i] = true
+	}
+}
+
 
 
 

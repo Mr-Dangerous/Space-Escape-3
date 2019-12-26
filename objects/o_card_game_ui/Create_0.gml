@@ -32,7 +32,11 @@ for (var i = 0; i < number_of_construction_bays; i++){
 
 
 
-#region GUI locations
+#region GUI locations and variables
+//variables
+construction_bay_deploy_button_pressed = array_create(3, false)
+
+
 gui_height = view_get_hport(0)
 gui_width = view_get_wport(0)
 resolution_scale = view_get_wport(0)/camera_get_view_width(view_camera[0])
@@ -83,6 +87,12 @@ construction_bay_socket_offsets[5, 0] = 208 * resolution_scale//mid right socket
 construction_bay_socket_offsets[5, 1] = 128 * resolution_scale//mid right socket y
 construction_bay_socket_offsets[6, 0] = 208 * resolution_scale//bot right socket x
 construction_bay_socket_offsets[6, 1] = 208 * resolution_scale//bot right socket y
+
+//generate construction bay string locations
+construction_bay_string_offset[0, 0] = 0//name of frame offset from left x
+construction_bay_string_offset[0, 1] = 0//name of frame offset from top y
+construction_bay_string_offset[1, 0] = (256/2) * resolution_scale //Deploy button x offset
+construction_bay_string_offset[1, 1] = 232*resolution_scale //deploy button y offset
 
 //generate construction bay accetpable item locations
 construction_bay_item_type[0] = module.frame
