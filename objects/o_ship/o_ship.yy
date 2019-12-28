@@ -181,6 +181,20 @@
             "value": "0",
             "varName": "origin_grid_space",
             "varType": 0
+        },
+        {
+            "id": "f906c273-e3a4-4ae6-9a11-4e2c6f3ec06c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ability_script",
+            "varType": 4
         }
     ],
     "solid": false,

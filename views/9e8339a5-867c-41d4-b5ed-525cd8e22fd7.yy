@@ -1,0 +1,14 @@
+{
+    "id": "9e8339a5-867c-41d4-b5ed-525cd8e22fd7",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "9e8339a5-867c-41d4-b5ed-525cd8e22fd7",
+    "children": [
+        "15be53b0-623c-476c-a13f-2f72f4660818",
+        "5eb2afb3-a265-4407-b144-52d40a0f7452"
+    ],
+    "filterType": "GMScript",
+    "folderName": "Frames",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

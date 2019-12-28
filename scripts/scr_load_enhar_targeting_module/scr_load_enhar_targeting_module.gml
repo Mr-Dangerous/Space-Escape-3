@@ -1,0 +1,1 @@
+priority_target = target_class.interceptor

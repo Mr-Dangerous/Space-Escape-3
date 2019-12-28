@@ -1,8 +1,8 @@
 ///@param card_type
 //enum set up as card_type.frame and card_type.module
 var card_type = argument0
-selected_card[0] = 0
-selected_card[1] = 0
+selected_card[0] = 0 //the resource
+selected_card[1] = 0 //the book refrence....
 selected_card[2] = card_type
 
 
@@ -66,8 +66,9 @@ if (card_type = card_type.module){
 	var random_number = irandom(array_size)
 
 	selected_book = remaining_leveled_cards[random_number]
-
+	show_debug_message(selected_book[0])
 	selected_book[@ 0]-= 1
+	show_debug_message(selected_book[0])
 	selected_card[0] = selected_book[1]
 	selected_card[1] = selected_book
 

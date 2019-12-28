@@ -187,6 +187,20 @@
             "value": "-1",
             "varName": "parts_bin_slot",
             "varType": 1
+        },
+        {
+            "id": "3264d702-fb95-4cdd-bd50-08ddae68328a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "loading_script",
+            "varType": 4
         }
     ],
     "solid": false,

@@ -13,6 +13,13 @@ enum card_type{
 	module
 }
 
+enum projectile{
+	light,
+	medium,
+	heavy,
+	energy,
+	piercing
+}
 enum team{
 	//can eventually be sxpanded to have player slots
 	left, //player
@@ -23,5 +30,11 @@ enum ship{
 	locked,
 	planning,
 	battle
+}
+
+enum target_class{
+	interceptor,
+	fighter,
+	frigate
 }
 	

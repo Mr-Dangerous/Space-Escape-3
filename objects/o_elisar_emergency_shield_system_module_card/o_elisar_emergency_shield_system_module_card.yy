@@ -39,6 +39,14 @@
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "c034e6e6-b2f7-497a-8ad6-71d229d16211",
             "value": "module.ability"
+        },
+        {
+            "id": "aa362168-a937-4b12-ba97-fa6474230727",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
+            "propertyId": "3264d702-fb95-4cdd-bd50-08ddae68328a",
+            "value": "scr_load_elisar_emergency_shield"
         }
     ],
     "parentObjectId": "7568de39-63b1-47c9-97da-04b07576bf11",

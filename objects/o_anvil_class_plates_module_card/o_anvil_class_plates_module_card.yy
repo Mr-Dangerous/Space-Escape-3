@@ -47,6 +47,14 @@
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "c034e6e6-b2f7-497a-8ad6-71d229d16211",
             "value": "module.armor"
+        },
+        {
+            "id": "fa6487bd-79cb-416c-9e91-cf80e752917d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
+            "propertyId": "3264d702-fb95-4cdd-bd50-08ddae68328a",
+            "value": "scr_load_anvil_class_plates"
         }
     ],
     "parentObjectId": "7568de39-63b1-47c9-97da-04b07576bf11",

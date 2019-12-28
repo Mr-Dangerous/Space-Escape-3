@@ -9,17 +9,25 @@ for(var i = 0; i < 5; i++){
 		
 		var shop_item_reference = shop_slots[i, 0]
 		var shop_item_object_reference = shop_slots[i, 1]
+		
 		//if module
 		if (shop_item_reference[2] = card_type.module){
 			var _card_book = shop_item_reference[1]
+			
 			_card_book[@ 0] += 1
+			
 			instance_destroy(shop_item_object_reference)
 			shop_slots[@i, 0] = noone
 			shop_slots[@i, 1] = noone
 		}
 		if (shop_item_reference[2] = card_type.frame){
-			ship_frame_book[@ shop_item_reference[1], 1] += 1
-			instance_destroy(shop_item_object_reference)
+			var _target_book = shop_item_reference[0, 1]
+			show_debug_message(ship_frame_book[_target_book,1])
+			ship_frame_book[@ _target_book, 1] += 1
+			show_debug_message(ship_frame_book[_target_book, 1])
+			
+			var _object_index = shop_item_object_reference.object_index
+			var _name = object_get_name(_object_index)
 			shop_slots[@i, 0] = noone
 			shop_slots[@i, 1] = noone
 			
@@ -39,16 +47,21 @@ for(var i = 0; i < 5; i++){
 				visible = false
 				card_book = _card[1]
 			}
+			
+			
 			shop_slots[@ i, 1] = shop_object
 		}
 		if (_shop_item_reference[2] = card_type.frame){
-			var ship_frame = instance_create_layer(0, 0, "Ships", _shop_item_reference_card)
+			var ship_frame = instance_create_layer(0, 0, "Cards", _shop_item_reference_card)
 			with (ship_frame){
 				x = 0
 				y = 0
 				visible = true
 			}
+			
 			shop_slots[@ i, 1] = ship_frame
+			
+			
 		}
 	}
 }
