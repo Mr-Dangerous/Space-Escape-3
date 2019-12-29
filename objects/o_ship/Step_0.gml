@@ -2,6 +2,7 @@
 if (created = false){
 	created = true
 	#region loadup scripts
+	
 	loading_scripts[0] = frame_load_script
 	loading_scripts[1] = weapon_load_script
 	loading_scripts[2] = shield_load_script
@@ -9,6 +10,7 @@ if (created = false){
 	loading_scripts[4] = targeting_load_script
 	loading_scripts[5] = ability_load_script
 	loading_scripts[6] = power_load_script
+	
 	#endregion
 
 	#region script loading
@@ -18,9 +20,7 @@ if (created = false){
 			script_execute(loading_scripts[i])
 		}
 	}
-	
-	show_debug_message("shields" + string(shields))
-	show_debug_message("armor " +string(armor))
+
 	
 
 	//post script loading
@@ -36,7 +36,12 @@ switch(state){
 	break;
 	
 	case ship.planning:
-	
+	//just for shits and giggles
+	fire_counter++
+	if (fire_counter >= fire_counter_rate){
+		fire_basic_attack(basic_attack_array)
+		fire_counter = 0
+	}
 	break;
 	
 	case ship.battle:

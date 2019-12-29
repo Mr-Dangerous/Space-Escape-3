@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0817f68c-6ba1-4384-bbee-294cd01c3174",
+            "Value": {
+                "id": "84335b31-5f15-4bc8-a097-8b6b3258e5cd",
+                "resourcePath": "scripts\\create_basic_attack_array\\create_basic_attack_array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "08536d5b-6935-43a6-9aa6-e43d93de9346",
             "Value": {
                 "id": "c17f08ca-4be0-4878-af91-6ad7226e05b7",
@@ -547,6 +555,14 @@
             "Value": {
                 "id": "ede4acb6-1488-494c-bd1d-cde7c0ffd7d4",
                 "resourcePath": "objects\\o_crystal_fighter_frame_card\\o_crystal_fighter_frame_card.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d7de704-ede6-408c-8f8b-037c9988d245",
+            "Value": {
+                "id": "d513e53c-ff48-413d-8004-20be840f7525",
+                "resourcePath": "objects\\o_projectile\\o_projectile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1351,6 +1367,14 @@
             }
         },
         {
+            "Key": "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
+            "Value": {
+                "id": "7e34078d-8ebd-4aa8-9c84-4e4153bc30ee",
+                "resourcePath": "scripts\\fire_basic_attack\\fire_basic_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bb149276-1681-4da9-a382-dd6cf304b633",
             "Value": {
                 "id": "a015136e-d24b-41d7-bc33-7d6b2c710705",
@@ -1788,7 +1812,9 @@
         "482bb2f9-0755-44f1-9656-672c76c61b30",
         "15be53b0-623c-476c-a13f-2f72f4660818",
         "5eb2afb3-a265-4407-b144-52d40a0f7452",
-        "1c7235ca-d164-4095-9dd3-3ebbc74c7274"
+        "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
+        "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
+        "0817f68c-6ba1-4384-bbee-294cd01c3174"
     ],
     "tutorial": ""
 }
