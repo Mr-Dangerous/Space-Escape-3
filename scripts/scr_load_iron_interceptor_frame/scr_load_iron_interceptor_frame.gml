@@ -10,6 +10,7 @@ if (sprite_height > sprite_width){
 image_scale = 64 / _sprite_length
 image_xscale = image_scale
 image_yscale = image_scale
+visible = true
 
 
 
@@ -58,7 +59,7 @@ basic_attack_array[@ 2,2] = 10 //damage
 basic_attack_array[@ 2, 3] = projectile.light //damage_type
 basic_attack_array[@ 2, 4] = weapon_visual_offsets[1,0] //length from origin
 basic_attack_array[@ 2, 5] = weapon_visual_offsets[1, 1]
-basic_attack_array[@ 2, 6] = 100
+basic_attack_array[@ 2, 6] = 50
 
 #endregion
 

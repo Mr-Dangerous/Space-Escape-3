@@ -12,10 +12,10 @@ if (ship_team = team.right){
 #endregion
 
 basic_attack_array = create_basic_attack_array()
-fire_counter = 10
-fire_counter_rate = 40
+fire_counter = 0
+fire_rate = 40
 
-
+visible = false
 
 state = ship.planning
 

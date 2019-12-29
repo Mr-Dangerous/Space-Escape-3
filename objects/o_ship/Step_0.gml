@@ -38,7 +38,7 @@ switch(state){
 	case ship.planning:
 	//just for shits and giggles
 	fire_counter++
-	if (fire_counter >= fire_counter_rate){
+	if (fire_counter >= fire_rate){
 		fire_basic_attack(basic_attack_array)
 		fire_counter = 0
 	}
