@@ -1,0 +1,6 @@
+origin = 475x 510y
+weapon 1 = 927x 331y
+weapon 2 = 927x 690y
+
+x offset = 927 -475 = 502
+y offset = +/- 180

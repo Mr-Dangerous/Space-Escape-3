@@ -12,15 +12,15 @@ if (sprite_height > sprite_width){
 
 switch(class){
 	case "Interceptor":
-		image_scale = 56/largest_dimension
+		image_scale = 64/largest_dimension
 	break;
 	
 	case "Fighter":
-		image_scale = 72/largest_dimension
+		image_scale = 96/largest_dimension
 	break;
 	
 	case "Frigate":
-		image_scale = 104/largest_dimension
+		image_scale = 128/largest_dimension
 	break;
 }
 

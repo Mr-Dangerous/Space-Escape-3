@@ -41,8 +41,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Projectiles",
-            "id": "3c4823cc-984d-453a-b960-91051c13c181",
+            "name": "Ships",
+            "id": "c4c9a950-f356-47ab-8d03-07d4166ed96c",
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -67,8 +67,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Ships",
-            "id": "c4c9a950-f356-47ab-8d03-07d4166ed96c",
+            "name": "Projectiles",
+            "id": "3c4823cc-984d-453a-b960-91051c13c181",
             "depth": 200,
             "grid_x": 32,
             "grid_y": 32,

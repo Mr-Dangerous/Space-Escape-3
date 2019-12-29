@@ -1423,6 +1423,14 @@
             }
         },
         {
+            "Key": "c184c179-4501-4149-a081-c3ed6dffb24b",
+            "Value": {
+                "id": "5dc150cf-12df-4901-8005-e53a0e9fc8c0",
+                "resourcePath": "notes\\note0.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "c702c604-b7f2-42dc-9270-4b78681cc435",
             "Value": {
                 "id": "8dbadfe6-5c5f-492b-9694-79ff9d57fa31",
@@ -1703,6 +1711,14 @@
             }
         },
         {
+            "Key": "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
+            "Value": {
+                "id": "dc3047da-cd56-46e7-9672-634f82021234",
+                "resourcePath": "scripts\\scr_load_iron_fighter_frame\\scr_load_iron_fighter_frame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ecc4d1cc-c1e9-41db-9d6f-e80842ed655a",
             "Value": {
                 "id": "341070a2-d64d-45bb-ab1e-d136ce63ddb6",
@@ -1812,6 +1828,7 @@
         "482bb2f9-0755-44f1-9656-672c76c61b30",
         "15be53b0-623c-476c-a13f-2f72f4660818",
         "5eb2afb3-a265-4407-b144-52d40a0f7452",
+        "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
         "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
         "0817f68c-6ba1-4384-bbee-294cd01c3174"
