@@ -195,6 +195,34 @@
             "value": "0",
             "varName": "ability_script",
             "varType": 4
+        },
+        {
+            "id": "da6f0fa5-2572-4e1c-ba65-a766687ca3c0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "assigned_grid_x",
+            "varType": 1
+        },
+        {
+            "id": "9366c500-61a7-4982-b931-d16100a7c852",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "assigned_grid_y",
+            "varType": 1
         }
     ],
     "solid": false,

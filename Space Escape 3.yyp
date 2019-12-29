@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "10cc4fa8-db48-4e8c-94da-57adbef196d3",
+            "Value": {
+                "id": "a6be6723-3b4f-4503-84fd-2a55c7b93d3f",
+                "resourcePath": "objects\\o_projectile_destroyed\\o_projectile_destroyed.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "121b7466-ce61-443b-803b-8253bfe77da4",
             "Value": {
                 "id": "03fa3949-78ef-4bfe-b00a-28259d68fd4c",
@@ -876,6 +884,14 @@
                 "id": "39a1b7a6-79bc-4144-ad3c-a362fa40a85e",
                 "resourcePath": "sprites\\s_solar_capital_ship\\s_solar_capital_ship.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "81b1ceab-0203-40ea-a852-8309de845019",
+            "Value": {
+                "id": "9c5e3f02-ea15-4844-b9ba-21689d38b2fe",
+                "resourcePath": "scripts\\turn_to_face_direction\\turn_to_face_direction.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1831,7 +1847,8 @@
         "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
         "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
-        "0817f68c-6ba1-4384-bbee-294cd01c3174"
+        "0817f68c-6ba1-4384-bbee-294cd01c3174",
+        "81b1ceab-0203-40ea-a852-8309de845019"
     ],
     "tutorial": ""
 }

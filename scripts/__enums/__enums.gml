@@ -29,6 +29,7 @@ enum team{
 enum ship{
 	locked,
 	planning,
+	repositioning,
 	battle
 }
 

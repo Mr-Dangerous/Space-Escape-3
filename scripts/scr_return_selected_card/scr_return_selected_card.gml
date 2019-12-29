@@ -89,7 +89,7 @@ if (card_type = card_type.frame){
 		}
 	}
 
-	var _random_seed = irandom(_k)
+	var _random_seed = irandom_range(2, _k-1)
 	selected_card[0] = remaining_ship_frames[_random_seed, 0]
 	selected_card[1] = remaining_ship_frames[_random_seed, 1]
 		
