@@ -1007,14 +1007,6 @@
             }
         },
         {
-            "Key": "8f9d1bb9-6cdb-4d5d-a588-07267ae148de",
-            "Value": {
-                "id": "ab181051-0585-45e1-a08f-c07c1d2ad3d0",
-                "resourcePath": "views\\8f9d1bb9-6cdb-4d5d-a588-07267ae148de.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "8fadf395-e236-48f9-9140-06fb371e821c",
             "Value": {
                 "id": "6ade98db-6afb-49b4-8f9c-bd8f66287c26",
@@ -1652,6 +1644,14 @@
                 "id": "30f6bfd5-dade-40db-850f-700ed793dd16",
                 "resourcePath": "sprites\\s_alien_frigate_original\\s_alien_frigate_original.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e11bae3d-9b62-46f3-8c89-0130e3c2c7da",
+            "Value": {
+                "id": "737f9936-56ef-47f2-9cfd-e85d57dfd0f6",
+                "resourcePath": "objects\\o_ship_clone\\o_ship_clone.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -13,9 +13,9 @@ right_grid_positions = ds_grid_create(6, 7)
 //first value is the grid number
 //second number is either the x or y position (0 = x, 1 =y)
 left_grid_container = ds_grid_create(6, 7)
-ds_grid_clear(left_grid_container, 0)
+ds_grid_clear(left_grid_container, noone)
 right_grid_container = ds_grid_create(6, 7)
-ds_grid_clear(right_grid_container, 0)
+ds_grid_clear(right_grid_container, noone)
 //first value is the grid number,
 //second value is the object contained - to be implmented later.
 

@@ -40,7 +40,7 @@ switch(state){
 	y = _target_y
 	show_debug_message(assigned_grid_x)
 	show_debug_message(_target_x)
-	state = ship.locked
+	
 	
 	break;
 	
