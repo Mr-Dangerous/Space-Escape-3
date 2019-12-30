@@ -41,6 +41,12 @@ switch(state){
 	show_debug_message(assigned_grid_x)
 	show_debug_message(_target_x)
 	
+	fire_counter++
+	if (fire_counter >= fire_rate){
+		fire_counter = 0
+		fire_basic_attack(basic_attack_array)
+	}
+	
 	
 	break;
 	

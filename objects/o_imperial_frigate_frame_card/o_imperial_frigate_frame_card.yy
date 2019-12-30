@@ -39,6 +39,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "356d0da6-a175-4171-94a4-45931808a292",
             "value": "Frigate"
+        },
+        {
+            "id": "9c86f974-55bf-4d05-b70d-3f8dba5cd23f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
+            "value": "scr_load_imperial_frigate"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

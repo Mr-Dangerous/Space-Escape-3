@@ -1311,6 +1311,14 @@
             }
         },
         {
+            "Key": "b14636a3-42bc-4e91-b95f-7ec8cd1a7223",
+            "Value": {
+                "id": "ec05eb25-ea33-4910-9775-ef36e2d232f4",
+                "resourcePath": "scripts\\scr_load_imperial_frigate\\scr_load_imperial_frigate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b3969acc-9353-4fff-8aea-a9d54e8842f1",
             "Value": {
                 "id": "71644381-e144-4246-a6e1-51531fb4baa9",
@@ -1845,6 +1853,7 @@
         "15be53b0-623c-476c-a13f-2f72f4660818",
         "5eb2afb3-a265-4407-b144-52d40a0f7452",
         "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
+        "b14636a3-42bc-4e91-b95f-7ec8cd1a7223",
         "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
         "0817f68c-6ba1-4384-bbee-294cd01c3174",
