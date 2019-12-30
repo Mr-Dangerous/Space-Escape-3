@@ -1,4 +1,4 @@
-/// @description do all of the things
+
 
 //check to see what grid position is nearest
 var battle_map = instance_find(o_battle_map, 0)

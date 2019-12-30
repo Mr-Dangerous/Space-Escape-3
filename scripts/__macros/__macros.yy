@@ -1,8 +1,8 @@
 {
-    "id": "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
+    "id": "ed70b90b-a533-42e6-925b-bd4bb799c645",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_load_iron_fighter_frame",
+    "name": "__macros",
     "IsCompatibility": false,
     "IsDnD": false
 }

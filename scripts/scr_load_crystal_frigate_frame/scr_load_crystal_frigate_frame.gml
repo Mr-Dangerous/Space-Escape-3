@@ -1,6 +1,6 @@
 #region Graphic things
 //load the sprite
-sprite_index = s_iron_frigate_original
+sprite_index = s_crystal_frigate_original
 var _sprite_length
 if (sprite_height > sprite_width){
 	_sprite_length = sprite_height
@@ -54,6 +54,7 @@ var weapon_4_direction_offset = point_direction(0, 0, (weapon_4_base_x_offset * 
 
 var number_of_weapons = 4
 
+
 weapon_visual_offsets[0, 0] = weapon_1_length_offset
 weapon_visual_offsets[0, 1] = weapon_1_direction_offset
 
@@ -74,12 +75,13 @@ for (var i = 1; i <= number_of_weapons; i++){
 
 	basic_attack_array[@i, 0] = 5
 	basic_attack_array[@i, 1] = s_bullet_original
-	basic_attack_array[@i, 2] = weapon_damage_level_5 //damage
-	basic_attack_array[@i, 3] = projectile.medium //damage_type
+	basic_attack_array[@i, 2] = weapon_damage_level_2 //damage
+	basic_attack_array[@i, 3] = projectile.light //damage_type
 	basic_attack_array[@i, 4] = weapon_visual_offsets[i-1, 0] //length from origin
 	basic_attack_array[@i, 5] = weapon_visual_offsets[i-1, 1]//distance from origin
-	basic_attack_array[@i, 6] = close_range//duration, or range really.
+	basic_attack_array[@i, 6] = close_range //duration, or range really.
 }
+
 
 
 
@@ -87,14 +89,14 @@ for (var i = 1; i <= number_of_weapons; i++){
 
 #region Baseline variables
 shields = high_sheilds
-armor = high_armor
+armor = very_high_armor
 max_speed = 1
 acceleration_rate = 0.01
 turn_speed = .2
 priority_target = target_class.frigate
 energy = 0
 max_energy = 0
-fire_rate = very_slow_attack_speed
+fire_rate = fast_attack_speed
 fire_rate_counter = 0
 
 #endregion

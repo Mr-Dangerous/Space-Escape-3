@@ -1,8 +1,8 @@
 {
-    "id": "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
+    "id": "d533c9c7-9a91-40d8-a68d-4d1760132698",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_load_iron_fighter_frame",
+    "name": "scr_load_crystal_fighter_frame",
     "IsCompatibility": false,
     "IsDnD": false
 }

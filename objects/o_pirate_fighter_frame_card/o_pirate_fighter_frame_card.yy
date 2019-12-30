@@ -39,6 +39,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
             "value": "Pirate"
+        },
+        {
+            "id": "aca77e4d-269c-4a4b-b5af-dca90b6dbe52",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
+            "value": "scr_load_pirate_fighter_frame"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

@@ -39,6 +39,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
             "value": "Solar"
+        },
+        {
+            "id": "eb5494e8-af85-41db-9b90-725397b56515",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
+            "value": "scr_load_solar_fighter_frame"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

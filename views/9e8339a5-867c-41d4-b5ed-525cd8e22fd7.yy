@@ -4,10 +4,11 @@
     "mvc": "1.1",
     "name": "9e8339a5-867c-41d4-b5ed-525cd8e22fd7",
     "children": [
-        "15be53b0-623c-476c-a13f-2f72f4660818",
-        "5eb2afb3-a265-4407-b144-52d40a0f7452",
-        "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
-        "b14636a3-42bc-4e91-b95f-7ec8cd1a7223"
+        "5bff4362-1b5f-4d8f-95cd-e9d258fc7925",
+        "807d5c55-44bc-464e-9efd-710c4152160b",
+        "9b62d909-f6bc-475c-897c-93056dbd098c",
+        "44e11b6f-4dfc-436e-95c8-584c410715e0",
+        "4ca8ea61-60d5-4d69-8697-fdad086b3cfc"
     ],
     "filterType": "GMScript",
     "folderName": "Frames",
