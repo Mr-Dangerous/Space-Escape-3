@@ -62,5 +62,25 @@
 
 #endregion
 
+#region Origins
+#macro origin_imperial "Imperial"
+#macro origin_iron "Iron"
+#macro origin_crystal "Crystal"
+#macro origin_pirate "Pirate"
+#macro origin_solar "Solar"
+#endregion
+
+#region Class
+#macro class_recon "Recon"
+#macro class_ghost "Ghost"
+#macro class_breakthrough "Breakthrough"
+#macro class_shield "Shield"
+#macro class_weapons_platform "Weapons Platform"
+#macro class_corvette "Corvette"
+#macro class_support "Support"
+#macro class_ECP "Electronic Combat Platform"
+#macro class_command "Command"
+#endregion
+
 #endregion
 
