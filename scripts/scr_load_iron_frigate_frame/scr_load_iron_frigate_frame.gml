@@ -21,7 +21,7 @@ Using the length offset and direction offset, a lengthdir_x and y
 function can generate bullets from the desired location.
 */
 var weapon_1_base_x_offset = 10 //orginal sprite
-var weapon_1_base_y_offset = -40 //orginal sprite
+var weapon_1_base_y_offset = 0 //orginal sprite
 //length including adjusments for image scale
 var weapon_1_length_offset = point_distance(0, 0, (weapon_1_base_x_offset * image_scale), (weapon_1_base_y_offset * image_scale))
 //base direction offset
@@ -52,7 +52,7 @@ var weapon_4_direction_offset = point_direction(0, 0, (weapon_4_base_x_offset * 
 
 
 
-var number_of_weapons = 4
+var number_of_weapons = 1
 
 weapon_visual_offsets[0, 0] = weapon_1_length_offset
 weapon_visual_offsets[0, 1] = weapon_1_direction_offset
@@ -69,6 +69,7 @@ weapon_visual_offsets[3, 1] = weapon_4_direction_offset
 
 basic_attack_array[@0, 0] = number_of_weapons
 basic_attack_array[@0, 1] = team.right
+basic_attack_array[@0, 2] = 3 //image scale of projectile
 
 for (var i = 1; i <= number_of_weapons; i++){
 
@@ -78,7 +79,7 @@ for (var i = 1; i <= number_of_weapons; i++){
 	basic_attack_array[@i, 3] = projectile.medium //damage_type
 	basic_attack_array[@i, 4] = weapon_visual_offsets[i-1, 0] //length from origin
 	basic_attack_array[@i, 5] = weapon_visual_offsets[i-1, 1]//distance from origin
-	basic_attack_array[@i, 6] = close_range//duration, or range really.
+	basic_attack_array[@i, 6] = medium_range//duration, or range really.
 }
 
 
@@ -94,7 +95,7 @@ turn_speed = .2
 priority_target = target_class.frigate
 energy = 0
 max_energy = 0
-fire_rate = very_slow_attack_speed
+fire_rate = medium_slow_attack_speed
 fire_rate_counter = 0
 
 #endregion

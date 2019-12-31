@@ -62,6 +62,7 @@ for (var i = 1; i <= number_of_weapons; i++){
 	basic_attack_array[@i, 4] = weapon_visual_offsets[i-1, 0] //length from origin
 	basic_attack_array[@i, 5] = weapon_visual_offsets[i-1, 1]//distance from origin
 	basic_attack_array[@i, 6] = close_range //duration, or range really.
+	
 }
 
 #endregion

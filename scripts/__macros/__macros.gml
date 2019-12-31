@@ -53,12 +53,12 @@
 
 #region attack speed
 #macro very_fast_attack_speed 5
-#macro fast_attack_speed 10
-#macro medium_fast_attack_speed 20
-#macro medium_attack_speed 40
-#macro medium_slow_attack_speed 60
-#macro slow_attack_speed 80
-#macro very_slow_attack_speed 120
+#macro fast_attack_speed 15
+#macro medium_fast_attack_speed 40
+#macro medium_attack_speed 60
+#macro medium_slow_attack_speed 100
+#macro slow_attack_speed 180
+#macro very_slow_attack_speed 240
 
 #endregion
 

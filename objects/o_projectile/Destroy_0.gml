@@ -9,5 +9,5 @@ with (destroyed_projectile){
 	direction = other.direction
 	speed = 0
 	image_index = other.image_index
-	image_speed = 3
+	image_speed = 1
 }
