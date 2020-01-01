@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "6fa64519-e58c-4d1c-b11f-dbad4bb2b7bd",
+            "Value": {
+                "id": "31150143-65a7-47d6-99f0-47a8c0898e17",
+                "resourcePath": "objects\\o_enemy_fleet\\o_enemy_fleet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "73b1d068-f488-48b3-bef9-d8f7b79486cc",
             "Value": {
                 "id": "43c09ddc-8fa7-46ef-a170-63edac6f6ce3",
@@ -1100,6 +1108,14 @@
                 "id": "c4a9f1ab-3dfc-426f-bd3a-fa6ad9043138",
                 "resourcePath": "sprites\\s_blue_multi_burst_explosion_original\\s_blue_multi_burst_explosion_original.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9115f6d8-ba02-4e92-8d81-cefb19e1965c",
+            "Value": {
+                "id": "182fd04d-a7fe-4eb6-8e35-be8325793ebd",
+                "resourcePath": "scripts\\scr_find_target\\scr_find_target.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1575,6 +1591,14 @@
             }
         },
         {
+            "Key": "c78389f6-c7b8-446b-881c-2ffe64c7271b",
+            "Value": {
+                "id": "a19aac14-58a4-4952-8a97-a4df6c619204",
+                "resourcePath": "scripts\\scr_determine_start_location\\scr_determine_start_location.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c81e224a-cda4-4ec3-adfb-3cae2490ec49",
             "Value": {
                 "id": "b1ec1b89-f29e-44bf-96a5-6f2c13da12ce",
@@ -1951,6 +1975,14 @@
             }
         },
         {
+            "Key": "fb7eeddc-fdca-414b-a994-7935545834a0",
+            "Value": {
+                "id": "24d40cbd-137f-4899-8c36-20103acec69f",
+                "resourcePath": "scripts\\instance_nth_nearest\\instance_nth_nearest.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fd698e66-37bd-42e8-964c-3b04e0b9ccbf",
             "Value": {
                 "id": "c7a08ae3-aec0-4e49-9d5e-e7c8ef5a359d",
@@ -2005,7 +2037,10 @@
         "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
         "0817f68c-6ba1-4384-bbee-294cd01c3174",
-        "81b1ceab-0203-40ea-a852-8309de845019"
+        "81b1ceab-0203-40ea-a852-8309de845019",
+        "9115f6d8-ba02-4e92-8d81-cefb19e1965c",
+        "fb7eeddc-fdca-414b-a994-7935545834a0",
+        "c78389f6-c7b8-446b-881c-2ffe64c7271b"
     ],
     "tutorial": ""
 }

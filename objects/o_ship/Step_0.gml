@@ -11,6 +11,16 @@ if (created = false){
 	loading_scripts[5] = ability_load_script
 	loading_scripts[6] = power_load_script
 	
+	if (ship_team = team.left){
+		battle_grid = battle_map.left_grid_container
+		battle_grid_positions = battle_map.left_grid_positions
+	}
+	if (ship_team = team.right){
+		battle_grid = battle_map.right_grid_container
+		battle_grid_positions = battle_map.right_grid_positions
+	}
+	scr_determine_start_location()
+	
 	#endregion
 #region script loading
 var number_of_scripts = array_length_1d(loading_scripts)
@@ -24,6 +34,7 @@ image_xscale = image_scale
 image_yscale = image_scale
 }
 #endregion
+
 
 
 
@@ -41,6 +52,16 @@ switch(state){
 	show_debug_message(assigned_grid_x)
 	show_debug_message(_target_x)
 	
+	
+	//still just a test
+	if (ship_target = noone){
+		ship_target = scr_find_target()
+	}
+	if (instance_exists(ship_target)){
+		var p_dir = point_direction(x, y, ship_target.x, ship_target.y)
+		turn_to_face_direction(p_dir)
+		direction = image_angle
+	}
 	fire_counter++
 	if (fire_counter >= fire_rate){
 		fire_counter = 0

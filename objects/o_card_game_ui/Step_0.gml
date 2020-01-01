@@ -1,3 +1,4 @@
+///@description deploy!
 //reset deploy button, and deploy the armada!
 var mouse_left_released = mouse_check_button_released(mb_left)
 
