@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "2b7d0595-ec42-4c2e-a801-eb6c54a92c73",
+            "Value": {
+                "id": "80f4977f-5e83-4cda-973e-20ef51e81c5e",
+                "resourcePath": "notes\\attack array rework.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "2b92f5e8-eea3-4ac7-82ff-774e2cae3036",
             "Value": {
                 "id": "8d7e7dc6-3079-4f06-9258-f4b074974640",
@@ -676,6 +684,14 @@
                 "id": "597f1fb9-5bce-4835-b4ee-d50eda6de5a2",
                 "resourcePath": "sprites\\s_meteor_4\\s_meteor_4.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "548cc713-d699-4449-9186-f5b496312969",
+            "Value": {
+                "id": "4ab7890a-63d8-4cc0-ad4e-58e7cf0c86d8",
+                "resourcePath": "scripts\\fire_secondary_attack\\fire_secondary_attack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2083,6 +2099,7 @@
         "c78389f6-c7b8-446b-881c-2ffe64c7271b",
         "19c53d4e-2105-4aab-af7f-7b7bb21e309c",
         "2be1ff6c-6825-42f2-8639-43719779fcf9",
+        "548cc713-d699-4449-9186-f5b496312969",
         "c0e1275d-45e3-4a79-a7f9-621e48529590"
     ],
     "tutorial": ""

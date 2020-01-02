@@ -33,7 +33,7 @@ battle_grid_height = ds_grid_height(battle_grid)
 
 
 #endregion
-
+secondary_attack_array = create_basic_attack_array()
 basic_attack_array = create_basic_attack_array()
 fire_counter = 0
 fire_rate = 40

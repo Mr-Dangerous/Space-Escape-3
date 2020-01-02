@@ -1,3 +1,3 @@
 /// @description Enter combat!	
 
-state = ship.battle
+state = ship.firing_range

@@ -16,9 +16,8 @@ repeat(_basic_attack_number){
 	var _projectile = instance_create_layer(gun_offset_x, gun_offset_y, "Projectiles", o_projectile)
 	with (_projectile){
 		duration = _basic_attack_array[_i, 6]
-		image_scale = other.image_scale 
-		image_xscale = other.image_scale * _basic_attack_image_scale
-		image_yscale = other.image_scale * _basic_attack_image_scale
+		image_xscale = _basic_attack_image_scale
+		image_yscale = _basic_attack_image_scale
 		image_angle = other.image_angle
 		direction = image_angle
 		speed = _basic_attack_array[_i, 0]

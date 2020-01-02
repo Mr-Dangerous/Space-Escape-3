@@ -1,0 +1,53 @@
+EVERY ship frame loading script needs the following variables.
+#ALL _X AND _Y OFFSETS
+
+#ADD THE FOLLOWING VISUAL OFFSETS (CHANGE _X AND _Y VALUES
+var weapon_3_base_x_offset = 45 //orginal sprite
+var weapon_3_base_y_offset = -121 //orginal sprite
+//length including adjusments for image scale
+var weapon_3_length_offset = point_distance(0, 0, (weapon_3_base_x_offset * image_scale), (weapon_3_base_y_offset * image_scale))
+//base direction offset
+var weapon_3_direction_offset = point_direction(0, 0, (weapon_3_base_x_offset * image_scale), (weapon_3_base_y_offset* image_scale))
+
+
+var weapon_4_base_x_offset = 45 //orginal sprite
+var weapon_4_base_y_offset = -121 //orginal sprite
+//length including adjusments for image scale
+var weapon_4_length_offset = point_distance(0, 0, (weapon_4_base_x_offset * image_scale), (weapon_4_base_y_offset * image_scale))
+//base direction offset
+var weapon_4_direction_offset = point_direction(0, 0, (weapon_4_base_x_offset * image_scale), (weapon_4_base_y_offset* image_scale))
+
+#ADD THE FOLLOWING VISUAL OFFSETS
+weapon_visual_offsets[2, 0] = weapon_3_length_offset
+weapon_visual_offsets[2, 1] = weapon_3_direction_offset
+weapon_visual_offsets[3, 0] = weapon_4_length_offset
+weapon_visual_offsets[3, 1] = weapon_4_direction_offset
+
+
+#ABOVE BASIC ATTACK ARRAY
+CHANGE THE FOLLOWING LINE
+
+basic_attack_array[@0, 1] = ship_team
+
+#ABOVE BASIC ATTACK ARRAY
+secondary_attack_array[@0, 0] = secondary_number_of_weapons
+secondary_attack_array[@0, 1] = ship_team
+secondary_attack_array[@0, 2] = image_scale
+
+
+#UNDERNEATH BASIC ATTACK ARRAY
+for (var i = 1; i <= secondary_number_of_weapons; i++){
+	secondary_attack_array[@i, 0] = 0
+	secondary_attack_array[@i, 1] = 0
+	secondary_attack_array[@i, 2] = 0
+	secondary_attack_array[@i, 3] = 0
+	secondary_attack_array[@i, 4] = weapon_visual_offsets[i+number_of_weapons, 0] //length from origin
+	secondary_attack_array[@i, 5] = weapon_visual_offsets[i+number_of_weapons, 1]//distance from origin
+	secondary_attack_array[@i, 6] = 0
+}
+
+
+#BASELINE VARIABLES
+secondary_fire_rate = 0
+secondary_fire_rate_counter = 0
+

@@ -162,4 +162,14 @@ switch(state){
 		}
 		
 	break;
+	
+	case ship.firing_range://for testing purposes only.
+	fire_rate_counter++
+	image_angle+=.5
+	direction=image_angle
+	if (fire_rate_counter >= fire_rate){
+		fire_rate_counter = 0
+		fire_basic_attack(basic_attack_array)
+	}
+	break;
 }

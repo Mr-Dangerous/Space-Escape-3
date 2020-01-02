@@ -30,7 +30,8 @@ enum ship{
 	locked,
 	planning,
 	repositioning,
-	battle
+	battle,
+	firing_range//for testing purposes only
 }
 
 enum target_class{
