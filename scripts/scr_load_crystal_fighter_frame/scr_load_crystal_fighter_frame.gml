@@ -75,7 +75,7 @@ energy = 0
 max_energy = 0
 fire_rate = fast_attack_speed
 fire_rate_counter = 0
-
+class = target_class.fighter
 #endregion
 
 #region size in grid squares

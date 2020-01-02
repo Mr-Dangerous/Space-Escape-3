@@ -9,7 +9,7 @@ basic_attack_array[1, 1] = s_bullet_original //projectile resource
 basic_attack_array[1, 2] = 10 //damage
 basic_attack_array[1, 3] = projectile.light //damage_type
 basic_attack_array[1, 4] = 0//length from origin
-basic_attack_array[1, 5] = 0
-basic_attack_array[1, 6] = 50
+basic_attack_array[1, 5] = 0 //distance from origin
+basic_attack_array[1, 6] = 50 //flight time in frames
 
 return basic_attack_array

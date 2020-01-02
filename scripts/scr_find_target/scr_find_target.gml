@@ -14,15 +14,14 @@ if (enemy_target = noone){
 	//Find nearest target
 	
 	for (var i = 0; i < 20; i++){
+		//this needs a more specialized script
 		var nearby_ship = instance_nth_nearest(x, y, o_ship, i)
 		//cancel if no ships are found
-		if (nearby_ship = noone){
-			break;
-		}
+		
 		//cancel the while loop if a valid ship is found
 		if (nearby_ship.ship_team = enemy_team){
 			enemy_target = nearby_ship
-			break;	
+			i = 20
 		}
 	
 	}

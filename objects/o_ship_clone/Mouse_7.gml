@@ -35,7 +35,7 @@ for (var i = 0; i < grid_width; i++){
 				ds_grid_set(grid_container, _previous_grid_x, _previous_grid_y, noone)
 				ds_grid_set(grid_container, i, j, reference_object)
 				with (reference_object){
-					ship_team = team.left
+					
 					assigned_grid_x = _assigned_x
 					assigned_grid_y = _assigned_y
 					i = 100

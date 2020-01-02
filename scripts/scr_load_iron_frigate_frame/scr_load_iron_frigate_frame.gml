@@ -97,6 +97,7 @@ energy = 0
 max_energy = 0
 fire_rate = medium_slow_attack_speed
 fire_rate_counter = 0
+class = target_class.frigate
 
 #endregion
 
