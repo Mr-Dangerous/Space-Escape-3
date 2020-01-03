@@ -1,15 +1,27 @@
 ///@description deploy!
 //reset deploy button, and deploy the armada!
 var mouse_left_released = mouse_check_button_released(mb_left)
+fleet_object = instance_find(o_fleets, 0)
+var fleet = fleet_object.left_fleet
 
 if (mouse_left_released){
 	for (var  i =0; i < 3; i++){
 		if (construction_bay_deploy_button_pressed[i] = true){
 			construction_bay_deploy_button_pressed[i] = false
+			//check to see if the fleet has space
+			var fleet_size = array_length_1d(fleet)
+			var fleet_space = -1
+			for (var j = 0; j < fleet_size - 1; j++){
+				if (fleet[j] = noone){
+					fleet_space = j
+					j = 100
+				}
+			}
 			//deploy ship contained
 			var active_construction_bay = construction_bays[i]
+			
 		
-			if (active_construction_bay[0] != noone){
+			if (active_construction_bay[0] != noone and fleet_space != -1){
 				var _ship_resource = active_construction_bay[0].ship_resource
 				var deployed_ship = instance_create_layer(40, 40, "Ships", _ship_resource)
 				//may be replaced with an object reference.... hurm
@@ -38,14 +50,17 @@ if (mouse_left_released){
 				deployed_ship.power_load_script = loading_script[6]
 			
 				deployed_ship.ship_team = team.left
+				//place the ship in the fleet
+				fleet_object.left_fleet[fleet_space] = deployed_ship
 				//clear the construction bay
 				for (var i = 0; i < 7; i++){
 					instance_destroy(active_construction_bay[i])
 					active_construction_bay[i] = noone
+					
 				}
 			}
 			
-			//add to the fleet, when its time.
+			
 		}
 		
 	}

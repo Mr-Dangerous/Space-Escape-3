@@ -1,5 +1,8 @@
 module_list = array_create(7, [noone])
 created = false
+fleet_object = instance_find(o_fleets, 0)
+allied_fleet = 0
+enemy_fleet = 0
 
 //movement manager variables
 seek = false
@@ -12,6 +15,7 @@ target_y = 0
 ship_target = noone
 pilot_reflexes = 0
 combat_timing_counter = 0
+
 
 //movement stats
 acceleration_rate = .1

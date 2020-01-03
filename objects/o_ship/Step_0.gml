@@ -14,10 +14,15 @@ if (created = false){
 	if (ship_team = team.left){
 		battle_grid = battle_map.left_grid_container
 		battle_grid_positions = battle_map.left_grid_positions
+		allied_fleet = fleet_object.left_fleet
+		enemy_fleet = fleet_object.right_fleet
+		
 	}
 	if (ship_team = team.right){
 		battle_grid = battle_map.right_grid_container
 		battle_grid_positions = battle_map.right_grid_positions
+		allied_fleet = fleet_object.right_fleet
+		enemy_fleet = fleet_object.left_fleet
 	}
 	scr_determine_start_location()
 	projectile_speed = basic_attack_array[1,0]
@@ -62,104 +67,47 @@ switch(state){
 	break;
 	
 	case ship.battle:
-		//find valid target
-		if (!instance_exists(ship_target) or ship_target = noone){
-			ship_target = scr_find_target()
+		//find target
+		if (!instance_exists(ship_target)){
+			ship_target = scr_return_target()
 		}
 		
+		//whole thing may need to be folded into combat timing thing.
+		//check to see if in range of target
 		if (instance_exists(ship_target)){
-			//execute behavior
-			distance_to_target = point_distance(x, y, ship_target.x, ship_target.y)
-			weapon_range = projectile_flight_time*projectile_speed
-			
-			#region execute behavior
-			combat_timing_counter--
-			if (combat_timing_counter <= 0){
-				combat_timing_counter = (irandom_range(40, 80)-pilot_reflexes)
-			
+			var distance_to_target = distance_to_object(ship_target)
+			var current_weapon_range = basic_attack_array[1, 6]*basic_attack_array[1, 0]
+		
+			//if target is out of range....
+			if (distance_to_target > current_weapon_range*1.2){
+				//seek the target
+				scr_set_movement_variables(true, false, false, false, false)
+			} else {
+				//all of the combat AI should be here
 				switch(class){
-					//if ship is an interceptor....
-					case target_class.interceptor:
-						switch(ship_target.class){
-							//and is targeting an interceptor.....
-							case target_class.interceptor:
-							scr_behavior_plan_temp()
-							
-							break;
-						
-							//and is targeting a fighter.....
-							case target_class.fighter:
-							scr_behavior_plan_temp()
-							break;
-						
-							//and is targeting a frigate....
-							case target_class.frigate:
-							scr_behavior_plan_temp()
-							break;
-						}
-					break;
+				case target_class.interceptor:
+				//the interceptor should be agile and responsive.
+				//It will often use the strafe behavior.
+				var _number_of_ships_tailing = scr_get_ship_tail_number()
 				
-					//the ship is a fighter....
-					case target_class.fighter:
-						switch(ship_target.class){
-							//and is targeting an interceptor.....
-							case target_class.interceptor:
-							scr_behavior_plan_temp()
+				break;
+				case target_class.fighter:
+				//The fighter should be deadly and precise
+				//It will often attempt to anticipate the opponents movements 
+				//and attempt to get into solid positions
 				
-							break;
-						
-							//and is targeting a fighter.....
-							case target_class.fighter:
-							scr_behavior_plan_temp()
-							break;
-						
-							//and is targeting a frigate....
-							case target_class.frigate:
-							scr_behavior_plan_temp()
-							break;
-						}
-					break;
-				
-					//the ship is a frigate....
-					case target_class.frigate:
-						switch(ship_target.class){
-							//and is targeting an interceptor.....
-							case target_class.interceptor:
-							scr_behavior_plan_temp()
-							break;
-						
-							//and is targeting a fighter.....
-							case target_class.fighter:
-							scr_behavior_plan_temp()
-							break;
-						
-							//and is targeting a frigate....
-							case target_class.frigate:
-							scr_behavior_plan_temp()
-							break;
-						}
-					break;
+				break;
+				case target_class.frigate:
+				//The frigate should be mostly stationary.
+				//IT will use superior range to win the day.
+				break;
 				}
-				#endregion
-			
-			
-				//targeting and firing
 				
-		
-				
+			
 			}
-			var _direction_to_target = point_direction(x, y, ship_target.x, ship_target.y)
-			var _distance_to_target = distance_to_object(ship_target)
-			var _angle_difference_to_target = abs(angle_difference(image_angle, _direction_to_target))
-		
-			fire_counter++
-			if (fire_counter >= fire_rate and _angle_difference_to_target < 4 and _distance_to_target < weapon_range){
-				fire_counter = 0
-				fire_basic_attack(basic_attack_array)
-			}
-			scr_movement_manager()
 			
 		}
+		
 		
 	break;
 	

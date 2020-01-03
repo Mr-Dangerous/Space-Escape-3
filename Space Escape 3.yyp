@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "1faace0d-27b1-494b-8fc0-890448d6d15f",
+            "Value": {
+                "id": "49bd8463-8de9-4570-ab5c-fe17a5b7625d",
+                "resourcePath": "scripts\\scr_set_movement_variables\\scr_set_movement_variables.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "20aaf247-d6cb-40bd-9c9a-cf5290e1d940",
             "Value": {
                 "id": "6de08be9-b79b-44eb-9fbc-790836a549b4",
@@ -532,6 +540,14 @@
                 "id": "f5c6e123-3a29-4cda-a6f2-afdbe6267bff",
                 "resourcePath": "sprites\\s_meteor_2\\s_meteor_2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3f7a2b88-ec20-4a5e-9844-b2378d574f54",
+            "Value": {
+                "id": "70c897d0-1a76-44c4-b3b2-61c692c7d80c",
+                "resourcePath": "scripts\\scr_get_ship_tail_number\\scr_get_ship_tail_number.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -887,14 +903,6 @@
             }
         },
         {
-            "Key": "6fa64519-e58c-4d1c-b11f-dbad4bb2b7bd",
-            "Value": {
-                "id": "31150143-65a7-47d6-99f0-47a8c0898e17",
-                "resourcePath": "objects\\o_enemy_fleet\\o_enemy_fleet.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "73b1d068-f488-48b3-bef9-d8f7b79486cc",
             "Value": {
                 "id": "43c09ddc-8fa7-46ef-a170-63edac6f6ce3",
@@ -1154,7 +1162,7 @@
             "Key": "9115f6d8-ba02-4e92-8d81-cefb19e1965c",
             "Value": {
                 "id": "182fd04d-a7fe-4eb6-8e35-be8325793ebd",
-                "resourcePath": "scripts\\scr_find_target\\scr_find_target.yy",
+                "resourcePath": "scripts\\scr_return_target\\scr_return_target.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1263,6 +1271,14 @@
             }
         },
         {
+            "Key": "9e2e5895-41dd-431f-a40c-a21e1aca0692",
+            "Value": {
+                "id": "db83cecd-6a1b-4517-a1ac-7819115f888e",
+                "resourcePath": "scripts\\scr_movement_manager_2\\scr_movement_manager_2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e8339a5-867c-41d4-b5ed-525cd8e22fd7",
             "Value": {
                 "id": "51814e0d-03a6-4454-96d2-5706702e1704",
@@ -1324,6 +1340,14 @@
                 "id": "b72fc84e-e42f-4b4a-946a-bf391883e0a2",
                 "resourcePath": "sprites\\s_blue_pulse_exhaust_module\\s_blue_pulse_exhaust_module.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a3f25b59-5638-4797-9dd0-03dfbdc3026f",
+            "Value": {
+                "id": "ed6eec68-561f-4299-803d-c795ed5c44f2",
+                "resourcePath": "objects\\o_fleets\\o_fleets.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2100,6 +2124,9 @@
         "19c53d4e-2105-4aab-af7f-7b7bb21e309c",
         "2be1ff6c-6825-42f2-8639-43719779fcf9",
         "548cc713-d699-4449-9186-f5b496312969",
+        "9e2e5895-41dd-431f-a40c-a21e1aca0692",
+        "1faace0d-27b1-494b-8fc0-890448d6d15f",
+        "3f7a2b88-ec20-4a5e-9844-b2378d574f54",
         "c0e1275d-45e3-4a79-a7f9-621e48529590"
     ],
     "tutorial": ""
