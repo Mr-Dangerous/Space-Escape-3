@@ -62,6 +62,31 @@
 
 #endregion
 
+#region movement_speed
+
+#macro fast_turn_speed 3
+#macro medium_turn_speed 2
+#macro slow_turn_speed 1
+#macro very_slow_turn_speed .5
+
+#endregion
+
+#region acceleration
+
+#macro slow_acceleration .2
+#macro medium_acceleration .5
+#macro fast_acceleration 1
+
+#endregion
+
+#region
+
+#macro fast_movement_speed 3
+#macro medium_movement_speed 2
+#macro slow_movement_speed 1
+
+#endregion
+
 #region Origins
 #macro origin_imperial "Imperial"
 #macro origin_iron "Iron"

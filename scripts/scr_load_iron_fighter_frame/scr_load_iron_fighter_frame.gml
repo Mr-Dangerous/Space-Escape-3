@@ -101,9 +101,9 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 #region Baseline variables
 shields = medium_shields
 armor = medium_armor
-max_speed = 2
-acceleration_rate = 0.1
-turn_speed = .2
+max_speed = medium_movement_speed
+acceleration_rate = medium_acceleration
+turn_speed = medium_movement_speed
 priority_target = target_class.frigate
 energy = 0
 max_energy = 0

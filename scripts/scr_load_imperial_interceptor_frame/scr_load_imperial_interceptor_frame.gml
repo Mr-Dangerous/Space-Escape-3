@@ -100,9 +100,9 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 #region Baseline variables
 shields = low_shields
 armor = low_armor
-max_speed = 3
-acceleration_rate = 0.5
-turn_speed = .5
+max_speed = fast_movement_speed
+acceleration_rate = fast_acceleration
+turn_speed = fast_turn_speed
 priority_target = target_class.fighter
 energy = 0
 max_energy = 0
