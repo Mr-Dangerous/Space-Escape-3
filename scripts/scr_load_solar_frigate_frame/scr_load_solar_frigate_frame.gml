@@ -34,7 +34,7 @@ var weapon_1_length_offset = point_distance(0, 0, (weapon_1_base_x_offset * imag
 var weapon_1_direction_offset = point_direction(0, 0, (weapon_1_base_x_offset * image_scale), (weapon_1_base_y_offset* image_scale))
 
 var weapon_2_base_x_offset = 290//orginal sprite
-var weapon_2_base_y_offset = -388//orginal sprite
+var weapon_2_base_y_offset = 388//orginal sprite
 //length including adjusments for image scale
 var weapon_2_length_offset = point_distance(0, 0, (weapon_2_base_x_offset * image_scale), (weapon_2_base_y_offset * image_scale))
 //base direction offset
