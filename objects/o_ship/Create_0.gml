@@ -25,6 +25,9 @@ projectile_speed = 0
 dodge = 10
 dodge_reset_counter = 0
 
+max_armor = 0
+max_shields = 0
+
 //temporary
 #region positioning
 

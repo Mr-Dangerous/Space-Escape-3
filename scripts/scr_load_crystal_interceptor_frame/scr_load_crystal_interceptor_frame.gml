@@ -66,33 +66,33 @@ weapon_visual_offsets[2, 1] = weapon_3_direction_offset
 weapon_visual_offsets[3, 0] = weapon_4_length_offset
 weapon_visual_offsets[3, 1] = weapon_4_direction_offset
 
-basic_attack_array[@0, 0] = number_of_weapons
-basic_attack_array[@0, 1] = ship_team
-basic_attack_array[@0, 1] = image_scale
+basic_attack_array[0, 0] = number_of_weapons
+basic_attack_array[0, 1] = ship_team
+basic_attack_array[0, 2] = image_scale
 
-secondary_attack_array[@0, 0] = secondary_number_of_weapons
-secondary_attack_array[@0, 1] = ship_team
-secondary_attack_array[@0, 2] = image_scale
+secondary_attack_array[0, 0] = secondary_number_of_weapons
+secondary_attack_array[0, 1] = ship_team
+secondary_attack_array[0, 2] = image_scale
 
 for (var i = 1; i <= number_of_weapons; i++){
 
-	basic_attack_array[@i, 0] = 5
-	basic_attack_array[@i, 1] = s_bullet_original
-	basic_attack_array[@i, 2] = weapon_damage_level_2 //damage
-	basic_attack_array[@i, 3] = projectile.light //damage_type
-	basic_attack_array[@i, 4] = weapon_visual_offsets[i-1, 0] //length from origin
-	basic_attack_array[@i, 5] = weapon_visual_offsets[i-1, 1]//distance from origin
-	basic_attack_array[@i, 6] = close_range //duration, or range really.
+	basic_attack_array[i, 0] = 5
+	basic_attack_array[i, 1] = s_bullet_original
+	basic_attack_array[i, 2] = weapon_damage_level_2 //damage
+	basic_attack_array[i, 3] = projectile.light //damage_type
+	basic_attack_array[i, 4] = weapon_visual_offsets[i-1, 0] //length from origin
+	basic_attack_array[i, 5] = weapon_visual_offsets[i-1, 1]//distance from origin
+	basic_attack_array[i, 6] = close_range //duration, or range really.
 }
 
 for (var i = 1; i <= secondary_number_of_weapons; i++){
-	secondary_attack_array[@i, 0] = 0
-	secondary_attack_array[@i, 1] = 0
-	secondary_attack_array[@i, 2] = 0
-	secondary_attack_array[@i, 3] = 0
+	secondary_attack_array[i, 0] = 0
+	secondary_attack_array[i, 1] = 0
+	secondary_attack_array[i, 2] = 0
+	secondary_attack_array[i, 3] = 0
 	secondary_attack_array[i, 4] = weapon_visual_offsets[i+number_of_weapons-1, 0] //length from origin
 	secondary_attack_array[i, 5] = weapon_visual_offsets[i+number_of_weapons-1, 1]//distance from origin
-	secondary_attack_array[@i, 6] = 0
+	secondary_attack_array[i, 6] = 0
 }
 
 #endregion

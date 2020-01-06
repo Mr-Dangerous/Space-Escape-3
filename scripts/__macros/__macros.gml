@@ -15,7 +15,7 @@
 #macro medium_high_armor 350
 #macro high_armor 400
 #macro very_high_armor 450
-#macro max_armor 500
+#macro maximum_armor 500
 
 #endregion
 

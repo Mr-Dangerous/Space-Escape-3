@@ -61,7 +61,7 @@ weapon_visual_offsets[2, 1] = weapon_3_direction_offset
 
 basic_attack_array[0, 0] = number_of_weapons
 basic_attack_array[0, 1] = ship_team
-basic_attack_array[0, 1] = image_scale
+basic_attack_array[0, 2] = image_scale
 
 secondary_attack_array[0, 0] = secondary_number_of_weapons
 secondary_attack_array[0, 1] = ship_team

@@ -103,6 +103,20 @@
             "value": "0",
             "varName": "duration",
             "varType": 1
+        },
+        {
+            "id": "1ecdbdce-795a-4321-aefa-c426083be026",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "damage",
+            "varType": 1
         }
     ],
     "solid": false,

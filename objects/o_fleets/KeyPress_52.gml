@@ -1,6 +1,6 @@
 /// @description Spawn the enemy fleet
 var j = 0
-for (var i = 5; i > 0; i--){
+for (var i = 1; i > 0; i--){
 	var enemy_ship = instance_create_layer(x, y, "Ships", o_ship)
 	with (enemy_ship){
 		ship_team = team.right

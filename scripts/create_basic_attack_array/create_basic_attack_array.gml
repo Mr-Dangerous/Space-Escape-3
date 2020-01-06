@@ -2,7 +2,7 @@
 
 
 basic_attack_array[0, 0] = 1//number of basic attacks
-basic_attack_array[0, 1] = 0 //player team
+basic_attack_array[0, 1] = team.left
 basic_attack_array[0, 2] = image_scale //seperate image scale of projectile
 basic_attack_array[0, 3] = 5//gimbal_fire_angle
 //for each basic attack

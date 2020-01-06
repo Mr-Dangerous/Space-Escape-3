@@ -29,14 +29,16 @@ if (created = false){
 	#endregion
 #region script loading
 var number_of_scripts = array_length_1d(loading_scripts)
-for (var i = 0; i < number_of_scripts; i++){
-	if (loading_scripts[i] != 0){
-		script_execute(loading_scripts[i])
+	for (var i = 0; i < number_of_scripts; i++){
+		if (loading_scripts[i] != 0){
+			script_execute(loading_scripts[i])
+		}
 	}
-}
 //post script loading
-image_xscale = image_scale
-image_yscale = image_scale
+	image_xscale = image_scale
+	image_yscale = image_scale
+	max_armor = armor
+	max_shields = shields
 }
 #endregion
 
@@ -44,10 +46,17 @@ if (ship_team = team.right){
 	allied_fleet = fleet_object.right_fleet
 	enemy_fleet = fleet_object.left_fleet
 	
+	
 }
 if (ship_team = team.left){
 	allied_fleet = fleet_object.left_fleet
 	enemy_fleet = fleet_object.right_fleet
+	show_debug_message(shields)
+	show_debug_message(armor)
+}
+
+if (armor <= 0){
+	instance_destroy()
 }
 
 
