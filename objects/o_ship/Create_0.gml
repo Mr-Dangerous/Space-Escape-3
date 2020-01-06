@@ -22,6 +22,8 @@ acceleration_rate = .1
 max_speed = 1
 turn_speed = .5
 projectile_speed = 0
+dodge = 10
+dodge_reset_counter = 0
 
 //temporary
 #region positioning
@@ -39,10 +41,12 @@ battle_grid_height = ds_grid_height(battle_grid)
 #endregion
 secondary_attack_array = create_basic_attack_array()
 basic_attack_array = create_basic_attack_array()
-fire_counter = 0
-fire_rate = 40
 projectile_flight_time = 0
 projectile_speed = 0
+fire_rate = 40
+fire_rate_counter = 0
+secondary_fire_rate = 0
+secondary_fire_rate_counter = 0
 
 visible = false
 

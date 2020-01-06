@@ -1,3 +1,4 @@
+instance_destroy(projectile_leader)
 var destroyed_projectile = instance_create_layer(x, y, "Projectiles", o_projectile_destroyed)
 
 with (destroyed_projectile){

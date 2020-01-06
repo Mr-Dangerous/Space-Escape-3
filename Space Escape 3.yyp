@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "5dcf87be-854e-4aab-8963-2c47005ccf13",
+            "Value": {
+                "id": "24bec169-b9b3-4ce6-a64d-c15f6d54d4b1",
+                "resourcePath": "objects\\o_projectile_leader\\o_projectile_leader.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5eb2afb3-a265-4407-b144-52d40a0f7452",
             "Value": {
                 "id": "fee2c525-c075-4d81-a70f-e644d2b9bcc2",

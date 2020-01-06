@@ -1,10 +1,11 @@
 var _desired_direction = 0
 var _added_motion = 0
 
-target_x = ship_target.x
-target_y = ship_target.y
+
 
 if (seek or flee){
+	target_x = ship_target.x
+	target_y = ship_target.y
 	var _seek_direction = point_direction(x, y, target_x, target_y)
 	if (flee){
 		_seek_direction -= 180
