@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "4d7de704-ede6-408c-8f8b-037c9988d245"
+        },
+        {
+            "id": "92900fc2-0ae1-493d-ac1c-87a6b9995655",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "cbcd32a1-3b7d-460c-a036-0ca000a5179a",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "4d7de704-ede6-408c-8f8b-037c9988d245"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -64,7 +74,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "team_attack_from",
-            "varType": 4
+            "varType": 0
         },
         {
             "id": "b81c33af-a5b7-4c57-8a73-d0e12aa63b02",

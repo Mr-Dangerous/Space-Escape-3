@@ -77,24 +77,26 @@ switch(state){
 		if (!instance_exists(ship_target)){
 			ship_target = scr_return_target()
 		}
-		//find how many enemies on tail
-		var enemies_targeting_ship_array = scr_get_ship_tail_number()
-		var number_of_enemies_targeting_ship = array_length_1d(enemies_targeting_ship_array)
 		
-		//whole thing may need to be folded into combat timing thing.
-		//check to see if in range of target
 		if (instance_exists(ship_target)){
 			
-			var distance_to_target = distance_to_object(ship_target)
+			var distance_to_target = point_distance(x, y, ship_target.x, ship_target.y)
 			var direction_to_target = point_direction(x, y, ship_target.x, ship_target.y)
 			var current_weapon_range = basic_attack_array[1, 6]*basic_attack_array[1, 0]
 			var secondary_weapon_range = secondary_attack_array[1, 6]*secondary_attack_array[1, 0]
 			var gimbal_fire_angle = basic_attack_array[0,3]
 			var secondary_gimbal_fire_angle = secondary_attack_array[0, 3]
 			
+			turn_to_face_direction(direction_to_target)
+			direction = image_angle
+			if (distance_to_target > current_weapon_range){
+				speed += acceleration_rate
+			} else {
+				speed -= acceleration_rate
+			}
+			limit_speed()
 			
 			
-			scr_movement_manager()
 			//set up firing behavior
 			//primary attack
 			
