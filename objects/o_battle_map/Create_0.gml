@@ -32,3 +32,6 @@ for (var i = 0; i < 6; i++){
 		ds_grid_set(right_grid_positions, i, j, grid_position) 
 	}
 }
+
+
+battle_map_visible = true
