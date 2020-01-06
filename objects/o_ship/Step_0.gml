@@ -39,6 +39,9 @@ var number_of_scripts = array_length_1d(loading_scripts)
 	image_yscale = image_scale
 	max_armor = armor
 	max_shields = shields
+	//temporary for now
+	energy = 0
+	max_energy = 20
 }
 #endregion
 
@@ -58,7 +61,10 @@ if (ship_team = team.left){
 if (armor <= 0){
 	instance_destroy()
 }
-
+energy++
+if (energy > max_energy){
+	energy = 0
+}
 
 switch(state){
 	case ship.locked:
@@ -115,11 +121,12 @@ switch(state){
 				fire_rate_counter = 0
 				fire_basic_attack(basic_attack_array)
 			}
-			if (secondary_fire_rate != 0){
+			if (secondary_fire_rate != -1){
 				secondary_fire_rate_counter++
-				if (secondary_fire_rate_counter >= secondary_fire_rate and angle_to_target < secondary_gimbal_fire_angle and distance_to_target <= secondary_weapon_range){
+				if (secondary_fire_rate_counter >= secondary_fire_rate and angle_to_target < secondary_gimbal_fire_angle and distance_to_target <= secondary_weapon_range * 1.3){
 					secondary_fire_rate_counter = 0
-					fire_secondary_attack(secondary_attack_array)
+					fire_basic_attack(secondary_attack_array)
+					show_debug_message("secondary_attack_fired")
 				}
 			}
 		}

@@ -27,6 +27,7 @@ dodge_reset_counter = 0
 
 max_armor = 0
 max_shields = 0
+max_energy = 0
 
 //temporary
 #region positioning
@@ -48,7 +49,7 @@ projectile_flight_time = 0
 projectile_speed = 0
 fire_rate = 40
 fire_rate_counter = 0
-secondary_fire_rate = 0
+secondary_fire_rate = -1
 secondary_fire_rate_counter = 0
 
 visible = false

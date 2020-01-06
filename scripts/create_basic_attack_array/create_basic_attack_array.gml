@@ -1,5 +1,5 @@
 //each basic attack need to be manually created
-
+var basic_attack_array = array_create(1, 0)
 
 basic_attack_array[0, 0] = 1//number of basic attacks
 basic_attack_array[0, 1] = team.left

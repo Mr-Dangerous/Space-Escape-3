@@ -9,10 +9,10 @@ var _basic_attack_image_scale = _basic_attack_array[0, 2]
 
 var _i = 1
 repeat(_basic_attack_number){
-	gun_offset_length = basic_attack_array[_i, 4]//length
-	gun_offset_direction = image_angle + basic_attack_array[_i, 5]//direction
-	gun_offset_x = x+lengthdir_x(gun_offset_length, gun_offset_direction)
-	gun_offset_y = y+lengthdir_y(gun_offset_length, gun_offset_direction)
+	var gun_offset_length = _basic_attack_array[_i, 4]//length
+	var gun_offset_direction = image_angle + _basic_attack_array[_i, 5]//direction
+	var gun_offset_x = x+lengthdir_x(gun_offset_length, gun_offset_direction)
+	var gun_offset_y = y+lengthdir_y(gun_offset_length, gun_offset_direction)
 	var _projectile = instance_create_layer(gun_offset_x, gun_offset_y, "Projectiles", o_projectile)
 	with (_projectile){
 		duration = _basic_attack_array[_i, 6]
