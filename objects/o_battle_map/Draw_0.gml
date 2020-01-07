@@ -15,5 +15,7 @@ if (battle_map_visible){
 }
 
 
+
+
 	
 

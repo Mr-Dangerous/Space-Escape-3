@@ -35,11 +35,32 @@ for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
 	
 }
 
+//draw the economy ui
+
+
+
+//will eventuall be replaced by icons
+//draw a background
+draw_rectangle_color(shop_slot_ui_x_offset[0], resource_ui_y_offset - 6, 
+shop_slot_ui_x_offset[4] + (237*resolution_scale), shop_slot_ui_y_offset - 2, c_white, c_white, c_white
+, c_white, false)
+draw_rectangle_color(shop_slot_ui_x_offset[0] +2, resource_ui_y_offset - 4, 
+shop_slot_ui_x_offset[4] + (237*resolution_scale) - 2, shop_slot_ui_y_offset - 4, c_gray, c_gray, c_gray
+, c_gray, false)
+
+for (var i = 0; i < resource_elements; i++){
+	draw_text(resource_ui_x_offset[i], resource_ui_y_offset, economy_ui_string[i])
+}
+
+
+
+
 //draw the parts box
 for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){
 	if (parts_slot[i] = noone){
-		draw_sprite_ext(s_grid_box, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
-		draw_circle(parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, 34*resolution_scale, true)
+		//draw_sprite_ext(s_grid_box, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
+		
+		draw_sprite_stretched(s_window_original, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, 64, 64)
 	}
 }
 //draw the construction bays

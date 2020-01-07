@@ -1,10 +1,10 @@
 //create the player grid
 
-var left_x_offset = 360
+var left_x_offset = 385
 var top_y_offset = 160
 var grid_spacing = 96
 
-var right_x_offset = 1032
+var right_x_offset = 1038
 
 //i is horizantal, j is vertical!
 

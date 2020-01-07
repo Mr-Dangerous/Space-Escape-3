@@ -1,6 +1,16 @@
 /// @description Insert description here
 #region Creation Variables
 player_level = 1
+income = 0
+resources = 0
+current_turn = 0
+
+
+economy_ui_string[0] = "Income: " + string(income)
+economy_ui_string[1] = "Resources: " + string(resources)
+economy_ui_string[2] = "Current turn: " +string(current_turn)
+economy_ui_string[3] = "Infrastructure Level: " + string(player_level) 
+
 //shop slots
 for (var i = 0; i < 5; i++){
 shop_slots[i, 0] = noone//the object resource
@@ -48,12 +58,26 @@ shop_slot_ui_y_offset = gui_height - (161*resolution_scale)//card height with 8 
 for (var i = 0; i < 5; i++){
 	shop_slot_ui_x_offset[i] = (347 + (i*245))*resolution_scale
 }
+//generate text positions for resources
+resource_ui_x_offset = array_create(3, 0)//this array is the x position of the resources ui
+resource_x_offset = array_create(3, 0) //for hovering for infor
+resource_ui_y_offset = gui_height - (190*resolution_scale)
+resource_y_offset = room_height - (210)
+resource_elements = 4
+for (var i = 0; i < resource_elements; i++){
+	resource_ui_x_offset[i] = (360 + (i* 250))*resolution_scale
+}
+for (var i = 0; i < number_of_parts_slots; i++){
+	resource_x_offset[i] = (360 +(i* 245))
+}
+
+
 //generate parts bin position array
 
 parts_slot_ui_x_offset = array_create(15, 0)//this array is the x position of the parts bin
 parts_slot_x_offset = array_create(15, 0)
-parts_slot_ui_y_offset = gui_height - (210*resolution_scale)
-parts_slot_y_offset = room_height - (210)
+parts_slot_ui_y_offset = gui_height - (235*resolution_scale)
+parts_slot_y_offset = room_height - (235)
 for (var i = 0; i < number_of_parts_slots; i++){
 	parts_slot_ui_x_offset[i] = (385 + round((i* 81.6)))*resolution_scale
 }
