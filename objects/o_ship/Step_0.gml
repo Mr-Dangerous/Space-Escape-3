@@ -42,6 +42,7 @@ var number_of_scripts = array_length_1d(loading_scripts)
 	//temporary for now
 	energy = 0
 	max_energy = 20
+	
 }
 #endregion
 
@@ -65,6 +66,8 @@ energy++
 if (energy > max_energy){
 	energy = 0
 }
+
+
 
 switch(state){
 	case ship.locked:

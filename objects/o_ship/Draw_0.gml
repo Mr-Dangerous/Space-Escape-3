@@ -31,3 +31,17 @@ var energy_x_offset = x-32
 var energy_x_end_offset = x+((energy/max_energy) *64)-32
 draw_line_width_color(energy_x_offset, energy_y_offset, energy_x_end_offset, energy_y_offset, 6, energy_bar_color, c_purple)
 #endregion
+
+#region
+shield_color = c_white
+if (generate_shields > 0){
+	
+	shield_alpha = 1
+	if (!reinforced_shields){
+		var shield_alpha = generate_shields * .1
+	}
+	draw_sprite_ext(shield_sprite, 0, x, y, .15*sprite_height*image_scale, .15*sprite_height*image_scale, image_angle, shield_color, shield_alpha)
+	generate_shields--
+	
+}
+#endregion

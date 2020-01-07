@@ -6,6 +6,7 @@ if (team_attack_from != other.ship_team){
 	
 	if (other.shields > 0){
 		damage_to_shields += damage
+		other.generate_shields = 9
 		if (other.shields - damage_to_shields < 0){
 			damage_to_armor += other.shields - damage_to_shields
 			damage_to_shields += damage_to_armor
@@ -17,6 +18,8 @@ if (team_attack_from != other.ship_team){
 		armor -= damage_to_armor
 		shields -= damage_to_shields
 	}
+	
+	
 	
 	
 	instance_destroy()

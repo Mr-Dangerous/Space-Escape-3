@@ -4,6 +4,8 @@ fleet_object = instance_find(o_fleets, 0)
 allied_fleet = 0
 enemy_fleet = 0
 
+
+
 //movement manager variables
 seek = false
 flee = false
@@ -15,6 +17,7 @@ target_y = 0
 ship_target = noone
 pilot_reflexes = 0
 combat_timing_counter = 0
+
 
 
 //movement stats
@@ -51,6 +54,10 @@ fire_rate = 40
 fire_rate_counter = 0
 secondary_fire_rate = -1
 secondary_fire_rate_counter = 0
+
+shield_sprite = s_shield_2
+generate_shields = 0
+reinforced_shields = false
 
 visible = false
 
