@@ -64,4 +64,20 @@ if (mouse_left_released){
 		}
 		
 	}
+	if (invest_button_pressed){
+		if (resources >= 4){
+			invest_button_pressed = false
+			player_experience+=4
+			resources-=4
+			scr_return_player_level()
+		}
+	}
+	//TODO 
+	if (refresh_button_pressed){
+		if (resources >= 2){
+			invest_button_pressed = false
+			resources-=2
+			scr_create_shuffled_shop(module)
+		}
+	}
 }

@@ -121,6 +121,28 @@ for (var i = 0; i < number_of_construction_bays; i++){
 
 //check to see if invest or refresh button was pressed
 
+var _invest_button_top_left_x = invest_button_ui_x_offset-40
+var _invest_button_top_left_y = invest_button_ui_y_offset
+var _invest_button_bottom_right_x = invest_button_ui_x_offset
+var _invest_button_bottom_right_y = invest_button_ui_y_offset+40
+
+if (point_in_rectangle(_mouse_x, _mouse_y, 
+_invest_button_top_left_x, _invest_button_top_left_y,
+_invest_button_bottom_right_x, _invest_button_bottom_right_y)){
+	invest_button_pressed = true
+}
+
+var _refresh_button_top_left_x = refresh_button_ui_x_offset-40
+var _refresh_button_top_left_y = refresh_button_ui_y_offset
+var _refresh_button_bottom_right_x = refresh_button_ui_x_offset
+var _refresh_button_bottom_right_y = refresh_button_ui_y_offset+40
+
+if (point_in_rectangle(_mouse_x, _mouse_y, 
+_refresh_button_top_left_x, _refresh_button_top_left_y,
+_refresh_button_bottom_right_x, _refresh_button_bottom_right_y)){
+	refresh_button_pressed = true
+}
+
 
 
 

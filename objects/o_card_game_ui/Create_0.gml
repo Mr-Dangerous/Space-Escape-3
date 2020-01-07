@@ -9,6 +9,8 @@ streak_income = 0
 level_income = floor(player_level/2)
 bonus_income = 0
 income = base_income + streak_income + level_income + bonus_income
+invest_button_pressed = false
+refresh_button_pressed = false
 
 //player experience levels
 experience_to_level[0] = 0
