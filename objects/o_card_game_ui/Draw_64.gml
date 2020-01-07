@@ -57,11 +57,12 @@ for (var i = 0; i < resource_elements; i++){
 
 //draw the parts box
 for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){
-	if (parts_slot[i] = noone){
-		//draw_sprite_ext(s_grid_box, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
 		
-		draw_sprite_stretched(s_window_original, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, 64, 64)
-	}
+	//if (parts_slot[i] = noone){
+		//draw_sprite_ext(s_grid_box, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
+		//the offsets are due to the method in which the sprite is drawn.  may be made more concise later.
+		draw_sprite_stretched_ext(s_window_original, 0, parts_slot_ui_x_offset[i]-32, parts_slot_ui_y_offset-34, 64, 64, c_white, .5)
+	//}
 }
 //draw the construction bays
 for (var i = 0; i < number_of_construction_bays; i++){

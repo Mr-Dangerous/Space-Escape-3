@@ -42,7 +42,7 @@ for(var i = 0; i < 5; i++){
 		_shop_item_reference = shop_slots[i, 0]
 		_shop_item_reference_card = _shop_item_reference[0]
 		if (_shop_item_reference[2] = card_type.module){
-			var shop_object = instance_create_layer(0, 0, "Cards", _shop_item_reference_card)
+			var shop_object = instance_create_layer(0, 0, "Above_Cards", _shop_item_reference_card)
 			with(shop_object){
 				visible = false
 				card_book = _card[1]
