@@ -1,11 +1,15 @@
 //reset variables that need to check release of mouse
 
 //strings
+var _experience_to_level = experience_to_level[player_level]
+if (player_level = 10){
+	_experience_to_level = "MAX"
+}
 economy_ui_string[0] = "Income: " + string(income)
 economy_ui_string[1] = "Resources: " + string(resources)
 economy_ui_string[2] = "Current turn: " +string(current_turn)
-economy_ui_string[3] = "Infrastructure Level: " + string(player_level) 
-
+economy_ui_string[3] = "Investment: " + string(player_experience) +"/" + string(_experience_to_level)
+economy_ui_string[4] = "Infrastructure Level: " + string(player_level) 
 
 
 
@@ -39,6 +43,9 @@ for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
 	
 }
 
+//draw the upgrade and refresh button
+draw_sprite_ext(invest_button_image, 0, invest_button_ui_x_offset, invest_button_ui_y_offset, 1 ,1, 0, c_white, 1)
+draw_sprite_ext(refresh_button_image, 0, refresh_button_ui_x_offset, refresh_button_ui_y_offset, 1, 1, 0, c_white, 1)
 //draw the economy ui
 
 
@@ -52,6 +59,7 @@ draw_rectangle_color(shop_slot_ui_x_offset[0] +2, resource_ui_y_offset - 4,
 shop_slot_ui_x_offset[4] + (237*resolution_scale) - 2, shop_slot_ui_y_offset - 4, c_gray, c_gray, c_gray
 , c_gray, false)
 
+resource_elements = 5
 for (var i = 0; i < resource_elements; i++){
 	draw_text(resource_ui_x_offset[i], resource_ui_y_offset, economy_ui_string[i])
 }

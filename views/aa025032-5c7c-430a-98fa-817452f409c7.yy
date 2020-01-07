@@ -6,7 +6,8 @@
     "children": [
         "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
         "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
-        "5ef05e9b-d57e-411d-9171-afad16f7b5ee"
+        "5ef05e9b-d57e-411d-9171-afad16f7b5ee",
+        "04afe17e-437c-46fe-ba73-e9a6a7347db4"
     ],
     "filterType": "GMScript",
     "folderName": "Card gAme scripts",

@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "04afe17e-437c-46fe-ba73-e9a6a7347db4",
+            "Value": {
+                "id": "0d4a6862-59c7-4356-893e-f5476fcf45c5",
+                "resourcePath": "scripts\\scr_advance_turn\\scr_advance_turn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "04c9e2a6-b9b6-470b-b0e5-3fa06c2c9118",
             "Value": {
                 "id": "05d8bdf4-f3c9-42ee-bce7-6cf78bc6f564",
@@ -2139,6 +2147,7 @@
         "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
         "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
         "5ef05e9b-d57e-411d-9171-afad16f7b5ee",
+        "04afe17e-437c-46fe-ba73-e9a6a7347db4",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
         "0817f68c-6ba1-4384-bbee-294cd01c3174",
         "81b1ceab-0203-40ea-a852-8309de845019",

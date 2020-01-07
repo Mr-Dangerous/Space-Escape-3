@@ -46,39 +46,52 @@ if (selected_shop_slot != -1){
 	if (shop_slots[selected_shop_slot, 0] != noone){
 		_card_reference = shop_slots[selected_shop_slot, 0]
 		_card_type = _card_reference[2]
-		if(_card_type = card_type.module){
-		//scan the parts bins slots for the first empty slot
-			for (var i = 0; i < number_of_parts_slots; i++){
-				if (parts_slot[i] = noone){
-					// move the object into the parts slot
-					selected_part = shop_slots[selected_shop_slot, 1]
-					selected_part.visible = true
-					selected_part.x = parts_slot_x_offset[i]
-					selected_part.y = parts_slot_y_offset
-					parts_slot[i] = selected_part
-					with(selected_part){
-						parts_bin_slot = i
-					}
-					shop_slots[@ selected_shop_slot, 0] = noone
-					shop_slots[@ selected_shop_slot, 1] = noone
-					break;
-				}	
-			}
-		}
-		if (_card_type = card_type.frame){
-			//send to an empty hangar
-			for (var i = 0; i < number_of_construction_bays; i++){
-				var active_construction_bay = construction_bays[i]
-				if (active_construction_bay[0] = noone){
-					//took stuff from here - fix it!
-					var ship_frame = shop_slots[selected_shop_slot, 1]
-					active_construction_bay[@ 0] = ship_frame
-					shop_slots[@ selected_shop_slot, 0] = noone
-					shop_slots[@ selected_shop_slot, 1] = noone
-					break;
+		purchased = false
+		resources_spent = 0
+		var _resource_cost = shop_slots[selected_shop_slot, 1].resource_cost
+		show_debug_message(_resource_cost)
+		if( _resource_cost <= resources){
+			resources_spent = _resource_cost
+			if(_card_type = card_type.module){
+			//scan the parts bins slots for the first empty slot
+				for (var i = 0; i < number_of_parts_slots; i++){
+					if (parts_slot[i] = noone){
+						// move the object into the parts slot
+						selected_part = shop_slots[selected_shop_slot, 1]
+						selected_part.visible = true
+						selected_part.x = parts_slot_x_offset[i]
+						selected_part.y = parts_slot_y_offset
+						parts_slot[i] = selected_part
+						with(selected_part){
+							parts_bin_slot = i
+						}
+						
+						shop_slots[@ selected_shop_slot, 0] = noone
+						shop_slots[@ selected_shop_slot, 1] = noone
+						purchased = true
+						break;
+					}	
 				}
 			}
+			if (_card_type = card_type.frame){
+				//send to an empty hangar
+				for (var i = 0; i < number_of_construction_bays; i++){
+					var active_construction_bay = construction_bays[i]
+					if (active_construction_bay[0] = noone){
+						//took stuff from here - fix it!
+						var ship_frame = shop_slots[selected_shop_slot, 1]
+						active_construction_bay[@ 0] = ship_frame
+					
+						shop_slots[@ selected_shop_slot, 0] = noone
+						shop_slots[@ selected_shop_slot, 1] = noone
+						purchased = true
+						break;
+					}
+				}
 			
+			
+			}
+			resources -= resources_spent
 			
 		}
 	}
@@ -105,6 +118,9 @@ for (var i = 0; i < number_of_construction_bays; i++){
 		construction_bay_deploy_button_pressed[i] = true
 	}
 }
+
+//check to see if invest or refresh button was pressed
+
 
 
 

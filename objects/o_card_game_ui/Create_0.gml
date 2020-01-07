@@ -21,6 +21,7 @@ experience_to_level[6] = 54
 experience_to_level[7] = 68
 experience_to_level[8] = 80
 experience_to_level[9] = 104
+experience_to_level[10] = infinity
 
 
 
@@ -76,12 +77,12 @@ resource_ui_x_offset = array_create(3, 0)//this array is the x position of the r
 resource_x_offset = array_create(3, 0) //for hovering for infor
 resource_ui_y_offset = gui_height - (190*resolution_scale)
 resource_y_offset = room_height - (210)
-resource_elements = 4
+resource_elements = 5
 for (var i = 0; i < resource_elements; i++){
-	resource_ui_x_offset[i] = (360 + (i* 250))*resolution_scale
+	resource_ui_x_offset[i] = (360 + (i* 215))*resolution_scale
 }
-for (var i = 0; i < number_of_parts_slots; i++){
-	resource_x_offset[i] = (360 +(i* 245))
+for (var i = 0; i < resource_elements; i++){
+	resource_x_offset[i] = (360 +(i* 215))
 }
 
 
@@ -148,6 +149,15 @@ repair_bay_slot_y_offset = array_create(3, 0)
 for (var i =0; i < number_of_repair_bays; i++){
 	repair_bay_slot_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
 }
+
+//generate the positions for the invest button
+invest_button_image = s_button_upgrade_resized
+invest_button_ui_x_offset = shop_slot_ui_x_offset[0] - 4
+invest_button_ui_y_offset = shop_slot_ui_y_offset
+
+refresh_button_image = s_button_refresh_resized
+refresh_button_ui_x_offset = invest_button_ui_x_offset
+refresh_button_ui_y_offset = invest_button_ui_y_offset + (42)
 
 //generate the x and y offsets for elements on each card
 card_offset_sprite_x = 179*resolution_scale//the ships x_offset from the left top side of the card

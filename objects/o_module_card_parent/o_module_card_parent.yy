@@ -211,6 +211,20 @@
             "value": "0",
             "varName": "loading_script",
             "varType": 4
+        },
+        {
+            "id": "cacaf65c-bfc9-42ea-a989-9535ea81ec6f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "resource_cost",
+            "varType": 1
         }
     ],
     "solid": false,
