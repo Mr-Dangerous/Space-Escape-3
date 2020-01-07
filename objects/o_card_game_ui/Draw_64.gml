@@ -1,6 +1,10 @@
 //reset variables that need to check release of mouse
 
-
+//strings
+economy_ui_string[0] = "Income: " + string(income)
+economy_ui_string[1] = "Resources: " + string(resources)
+economy_ui_string[2] = "Current turn: " +string(current_turn)
+economy_ui_string[3] = "Infrastructure Level: " + string(player_level) 
 
 
 

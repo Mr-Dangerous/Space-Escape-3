@@ -1,15 +1,28 @@
 /// @description Insert description here
 #region Creation Variables
+player_experience = 0
 player_level = 1
-income = 0
 resources = 0
 current_turn = 0
+base_income = 5
+streak_income = 0
+level_income = floor(player_level/2)
+bonus_income = 0
+income = base_income + streak_income + level_income + bonus_income
+
+//player experience levels
+experience_to_level[0] = 0
+experience_to_level[1] = 4
+experience_to_level[2] = 10
+experience_to_level[3] = 18
+experience_to_level[4] = 28
+experience_to_level[5] = 40
+experience_to_level[6] = 54
+experience_to_level[7] = 68
+experience_to_level[8] = 80
+experience_to_level[9] = 104
 
 
-economy_ui_string[0] = "Income: " + string(income)
-economy_ui_string[1] = "Resources: " + string(resources)
-economy_ui_string[2] = "Current turn: " +string(current_turn)
-economy_ui_string[3] = "Infrastructure Level: " + string(player_level) 
 
 //shop slots
 for (var i = 0; i < 5; i++){
