@@ -31,6 +31,7 @@ enum ship{
 	planning,
 	repositioning,
 	battle,
+	cast_ability,
 	firing_range//for testing purposes only
 }
 

@@ -105,7 +105,7 @@ acceleration_rate = fast_acceleration
 turn_speed = fast_turn_speed
 priority_target = target_class.fighter
 energy = 0
-max_energy = 0
+
 fire_rate = very_fast_attack_speed
 fire_rate_counter = 0
 class = target_class.interceptor

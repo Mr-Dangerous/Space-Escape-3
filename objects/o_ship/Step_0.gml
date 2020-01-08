@@ -40,8 +40,6 @@ var number_of_scripts = array_length_1d(loading_scripts)
 	max_armor = armor
 	max_shields = shields
 	//temporary for now
-	energy = 0
-	max_energy = 20
 	
 }
 #endregion
@@ -62,10 +60,16 @@ if (ship_team = team.left){
 if (armor <= 0){
 	instance_destroy()
 }
-energy++
-if (energy > max_energy){
-	energy = 0
+var _energy_multiplier = 10
+if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter++
+energy = energy_sub_counter/_energy_multiplier
+if (energy >= max_energy){
+	if (ability_load_script != 0){
+		//will actually be a state
+		state = ship.cast_ability
+	}
 }
+
 
 
 
@@ -136,6 +140,10 @@ switch(state){
 			
 	break;
 	
+	case ship.cast_ability:
+		script_execute(ability_script)
+	break;
+	
 	case ship.firing_range://for testing purposes only.
 	fire_rate_counter++
 	image_angle+=.5
@@ -145,4 +153,14 @@ switch(state){
 		fire_basic_attack(basic_attack_array)
 	}
 	break;
+}
+
+//Post stat machine ability scripts
+if (temporary_shield_counter > 0){
+	temporary_shield_counter--
+	if (temporary_shield_counter = 1){
+		if (temporary_shields > 0){
+			temporary_shields = 0
+		}
+	}
 }

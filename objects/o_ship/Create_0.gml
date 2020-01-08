@@ -4,6 +4,9 @@ fleet_object = instance_find(o_fleets, 0)
 card_game_ui_object = instance_find(o_card_game_ui, 0)
 allied_fleet = 0
 enemy_fleet = 0
+energy_sub_counter = 0
+temporary_shields = 0
+temporary_shield_counter = 0
 
 
 
@@ -31,7 +34,7 @@ dodge_reset_counter = 0
 
 max_armor = 0
 max_shields = 0
-max_energy = 0
+max_energy = 20
 
 
 

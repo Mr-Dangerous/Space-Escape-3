@@ -72,7 +72,7 @@ acceleration_rate = medium_acceleration
 turn_speed = medium_turn_speed
 priority_target = target_class.frigate
 energy = 0
-max_energy = 0
+
 fire_rate = fast_attack_speed
 fire_rate_counter = 0
 class = target_class.fighter
