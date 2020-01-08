@@ -49,15 +49,17 @@ if (mouse_left_released){
 				var deployed_ship = instance_create_layer(40, 40, "Ships", _ship_resource)
 				var _fuel_cost = 0
 				switch(_ship_class){
-					case target_class.interceptor:
+					//TODO:  Needs to become an enum or macro.
+					//Currently, ship frame carrds are strings.
+					case "Interceptor":
 						_fuel_cost = 2
 					break;
 	
-					case target_class.fighter:
+					case "Fighter":
 						_fuel_cost = 4
 					break;
 	
-					case target_class.frigate:
+					case "Frigate":
 						_fuel_cost = 10
 					break;
 				}
