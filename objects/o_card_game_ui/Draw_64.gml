@@ -1,6 +1,8 @@
 //reset variables that need to check release of mouse
 
 //strings
+draw_set_font(f_card_font)
+
 var _experience_to_level = experience_to_level[player_level]
 if (player_level = 10){
 	_experience_to_level = "MAX"
@@ -25,7 +27,7 @@ for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
 	if (shop_slots[i, 0] != noone){
 		if (instance_exists(shop_slots[i, 1])){
 			var _sprite = shop_slots[i, 1].sprite_index
-			var image_scale = shop_slots[i, 1].image_scale*1.3
+			var image_scale = shop_slots[i, 1].image_scale
 			var card_border = shop_slots[i, 1].card_border
 			draw_sprite_ext(card_border, 0, shop_slot_ui_x_offset[i], shop_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1)
 			draw_sprite_ext(_sprite, 0, shop_slot_ui_x_offset[i]+card_offset_sprite_x, shop_slot_ui_y_offset+card_offset_sprite_y, image_scale*resolution_scale, image_scale*resolution_scale, 0, c_white, 1)
@@ -33,6 +35,7 @@ for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
 			draw_text_ext(shop_slot_ui_x_offset[i]+card_text_offset_x, shop_slot_ui_y_offset+card_name_offset_y, shop_slots[i, 1].name, 16, 220*resolution_scale)
 			draw_text_ext(shop_slot_ui_x_offset[i]+card_text_offset_x, shop_slot_ui_y_offset+card_class_offset_y, shop_slots[i, 1].class, 16, 220*resolution_scale)
 			draw_text_ext(shop_slot_ui_x_offset[i]+card_text_offset_x, shop_slot_ui_y_offset+card_origin_offset_y, shop_slots[i, 1].origin, 16, 220*resolution_scale)
+			draw_text_ext(shop_slot_ui_x_offset[i]+card_resource_cost_x, shop_slot_ui_y_offset+card_resource_cost_y, string(shop_slots[i, 1].resource_cost), 16, 220*resolution_scale)
 			draw_set_valign(fa_top)
 		}
 	}

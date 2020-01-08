@@ -1743,6 +1743,14 @@
             }
         },
         {
+            "Key": "cbbcddb2-e75f-474f-968f-f35cfbfef741",
+            "Value": {
+                "id": "9c39588d-f265-414c-87c6-230358422d72",
+                "resourcePath": "fonts\\f_card_font\\f_card_font.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "cbcd32a1-3b7d-460c-a036-0ca000a5179a",
             "Value": {
                 "id": "14d1c3be-4b47-4397-bef0-383a45c53144",

@@ -78,7 +78,7 @@ if (_card_type = card_type.frame){
 	selected_card[0] = remaining_ship_frames[_random_seed, 0]
 	selected_card[1] = remaining_ship_frames[_random_seed, 1]
 		
-	ship_frame_book[@ selected_card[1], 1] -=1 
+	ship_frame_book[selected_card[1], 1] -=1 
 }
 return selected_card
 

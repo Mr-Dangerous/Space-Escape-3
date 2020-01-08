@@ -9,25 +9,31 @@ if (sprite_height > sprite_width){
 } else {
 	largest_dimension = sprite_width
 }
-
+card_image_scale = 0
 switch(class){
 	case "Interceptor":
 		image_scale = 64/largest_dimension
+		card_image_scale = 100/largest_dimension
+		resource_cost = 2
 	break;
 	
 	case "Fighter":
 		image_scale = 96/largest_dimension
+		card_image_scale = 100/largest_dimension
+		resource_cost = 4
 	break;
 	
 	case "Frigate":
 		image_scale = 128/largest_dimension
+		card_image_scale = 100/largest_dimension
+		resource_cost = 10
 	break;
 }
 
 
 
 
-image_xscale = image_scale
-image_yscale = image_scale
+image_xscale = card_image_scale
+image_yscale = card_image_scale
 visible = false
 image_speed = 0

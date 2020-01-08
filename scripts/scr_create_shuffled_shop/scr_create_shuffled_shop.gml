@@ -49,7 +49,7 @@ for(var i = 0; i < 5; i++){
 			}
 			
 			
-			shop_slots[@ i, 1] = shop_object
+			shop_slots[@i, 1] = shop_object
 		}
 		if (_shop_item_reference[2] = card_type.frame){
 			var ship_frame = instance_create_layer(0, 0, "Cards", _shop_item_reference_card)
@@ -59,7 +59,7 @@ for(var i = 0; i < 5; i++){
 				visible = true
 			}
 			
-			shop_slots[@ i, 1] = ship_frame
+			shop_slots[@i, 1] = ship_frame
 			
 			
 		}

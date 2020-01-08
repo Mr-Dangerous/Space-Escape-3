@@ -4,7 +4,7 @@
 var selected_bin_slot = -1
 var selected_construction_hangar_slot = -1
 var _mouse_x = device_mouse_x_to_gui(0)
-var _mouse_y = device_mouse_y(0)
+var _mouse_y = device_mouse_y_to_gui(0)
 
 var _card_game_controller = instance_find(o_card_game_ui, 0)
 
@@ -89,8 +89,23 @@ if (selected_construction_hangar_slot != -1){
 }
 
 //check to see if hovering over the shop to sell
+var top_left_x = _card_game_controller.shop_slot_ui_x_offset[0]
+var top_left_y = _card_game_controller.shop_slot_ui_y_offset
+var bottom_right_x = _card_game_controller.shop_slot_ui_x_offset[4] + (245*_card_game_controller.resolution_scale)
+var bottom_right_y = _card_game_controller.shop_slot_ui_y_offset+(150*_card_game_controller.resolution_scale)
+var selling = false
+if (point_in_rectangle(_mouse_x, _mouse_y, top_left_x, top_left_y, bottom_right_x, bottom_right_y)){
+	show_debug_message("sold!")
+	selling = true
+	_card_game_controller.resources += reference_object.resource_cost
+	_card_game_controller.parts_slot[reference_object.parts_bin_slot] = noone 
+	//TODO check to figure out how to increase the number in the book - maybe its in the destroy event?
+	instance_destroy(reference_object)
+	
+}
 
-if (selected_bin_slot = -1 and selected_construction_hangar_slot = -1){
+
+if (selected_bin_slot = -1 and selected_construction_hangar_slot = -1 and selling != true){
 	reference_object.visible = true
 
 }

@@ -8,6 +8,7 @@ resources = 10
 current_turn = 1
 base_income = 5
 streak_income = 0
+investment_income = 0
 level_income = floor(player_level/2)
 bonus_income = 0
 income = base_income + streak_income + level_income + bonus_income
@@ -85,12 +86,20 @@ resource_x_offset = array_create(3, 0) //for hovering for infor
 resource_ui_y_offset = gui_height - (190*resolution_scale)
 resource_y_offset = room_height - (210)
 resource_elements = 6
-for (var i = 0; i < resource_elements; i++){
-	resource_ui_x_offset[i] = (360 + (i* 180))*resolution_scale
-}
-for (var i = 0; i < resource_elements; i++){
-	resource_x_offset[i] = (360 +(i* 180))
-}
+base_resource_offset = (360)
+//These used to be for loops, but needed to change to allow for individual formatting
+resource_ui_x_offset[0] = (base_resource_offset + 2)*resolution_scale//income
+resource_ui_x_offset[1] = (base_resource_offset + 130)*resolution_scale//resources
+resource_ui_x_offset[2] = (base_resource_offset + 320)*resolution_scale//turn
+resource_ui_x_offset[3] = (base_resource_offset + 530)*resolution_scale//fuel
+resource_ui_x_offset[4] = (base_resource_offset + 660)*resolution_scale//investment
+resource_ui_x_offset[5] = (base_resource_offset + 880)*resolution_scale//infratructure level
+resource_x_offset[0] = (base_resource_offset + 2)//income
+resource_x_offset[1] = (base_resource_offset + 130)//resources
+resource_x_offset[2] = (base_resource_offset + 320)//turn
+resource_x_offset[3] = (base_resource_offset + 530)//fuel
+resource_x_offset[4] = (base_resource_offset + 660)//investment
+resource_x_offset[5] = (base_resource_offset + 880)//infratructure level
 
 
 //generate parts bin position array
@@ -178,6 +187,8 @@ card_text_offset_x = 16*resolution_scale // all card text will be the same x_off
 card_name_offset_y = 20*resolution_scale
 card_class_offset_y = 65*resolution_scale
 card_origin_offset_y = 120*resolution_scale
+card_resource_cost_x = 198*resolution_scale
+card_resource_cost_y = 40*resolution_scale
 
 #endregion
 

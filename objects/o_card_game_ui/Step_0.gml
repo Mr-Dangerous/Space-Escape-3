@@ -4,7 +4,8 @@
 
 max_fuel = 5+player_level*3
 level_income = floor(player_level/2)
-income = base_income + streak_income + level_income + bonus_income
+investment_income = floor(resources/10)
+income = base_income + streak_income + level_income + bonus_income + investment_income
 
 
 
