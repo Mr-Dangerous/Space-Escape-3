@@ -77,7 +77,7 @@ if (mouse_left_released){
 		if (resources >= 2){
 			invest_button_pressed = false
 			resources-=2
-			scr_create_shuffled_shop(module)
+			scr_create_shuffled_shop(card_type.module)
 		}
 	}
 }
