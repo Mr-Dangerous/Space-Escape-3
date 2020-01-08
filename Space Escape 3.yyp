@@ -1383,6 +1383,14 @@
             }
         },
         {
+            "Key": "a4cc88fa-61cf-4363-a53a-f8980f2a4672",
+            "Value": {
+                "id": "854ce9eb-8936-441e-ad80-f4b19408303e",
+                "resourcePath": "sprites\\s_button_hangar_resized\\s_button_hangar_resized.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a625f644-fd84-407b-94b1-553070930b39",
             "Value": {
                 "id": "fd3edc1f-c669-4935-8750-7420ab5ed39b",

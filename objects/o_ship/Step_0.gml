@@ -47,14 +47,14 @@ var number_of_scripts = array_length_1d(loading_scripts)
 #endregion
 
 if (ship_team = team.right){
-	allied_fleet = fleet_object.right_fleet
-	enemy_fleet = fleet_object.left_fleet
+	allied_fleet = card_game_ui_object.right_fleet
+	enemy_fleet = card_game_ui_object.left_fleet
 	
 	
 }
 if (ship_team = team.left){
-	allied_fleet = fleet_object.left_fleet
-	enemy_fleet = fleet_object.right_fleet
+	allied_fleet = card_game_ui_object.left_fleet
+	enemy_fleet = card_game_ui_object.right_fleet
 	show_debug_message(shields)
 	show_debug_message(armor)
 }

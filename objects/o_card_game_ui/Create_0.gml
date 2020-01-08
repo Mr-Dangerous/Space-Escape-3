@@ -2,8 +2,10 @@
 #region Creation Variables
 player_experience = 0
 player_level = 1
-resources = 0
-current_turn = 0
+current_fuel_spent = 0
+max_fuel = 5+player_level*3
+resources = 10
+current_turn = 1
 base_income = 5
 streak_income = 0
 level_income = floor(player_level/2)
@@ -11,6 +13,9 @@ bonus_income = 0
 income = base_income + streak_income + level_income + bonus_income
 invest_button_pressed = false
 refresh_button_pressed = false
+hangar_button_pressed = false
+left_fleet = array_create(35, noone)
+right_fleet = array_create(35, noone)
 
 //player experience levels
 experience_to_level[0] = 0
@@ -41,7 +46,7 @@ for (var i = 0; i < 15; i++){
 number_of_construction_bays = 3
 construction_bays = array_create(number_of_construction_bays, 0)
 for (var i = 0; i < number_of_construction_bays; i++){
-	var construction_bay = array_create(7, noone)
+	var construction_bay = array_create(8, noone)
 	//all of these will be specifically object references
 	//construction_bay[0] = noone//frame in slot
 	//construction_bay[1] = noone//weapons_system
@@ -50,7 +55,7 @@ for (var i = 0; i < number_of_construction_bays; i++){
 	//construction_bay[4] = noone//targeting
 	//construction_bay[5] = noone//ability
 	//construction_bay[6] = noone//powerplant
-	//construction_bay[7] = 0//Pilot
+	//construction_bay[7] = 0//ship_class
 	//construction_bay[8] = 0//Engineer
 	construction_bays[i] = construction_bay
 }
@@ -79,12 +84,12 @@ resource_ui_x_offset = array_create(3, 0)//this array is the x position of the r
 resource_x_offset = array_create(3, 0) //for hovering for infor
 resource_ui_y_offset = gui_height - (190*resolution_scale)
 resource_y_offset = room_height - (210)
-resource_elements = 5
+resource_elements = 6
 for (var i = 0; i < resource_elements; i++){
-	resource_ui_x_offset[i] = (360 + (i* 215))*resolution_scale
+	resource_ui_x_offset[i] = (360 + (i* 180))*resolution_scale
 }
 for (var i = 0; i < resource_elements; i++){
-	resource_x_offset[i] = (360 +(i* 215))
+	resource_x_offset[i] = (360 +(i* 180))
 }
 
 
@@ -152,7 +157,7 @@ for (var i =0; i < number_of_repair_bays; i++){
 	repair_bay_slot_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
 }
 
-//generate the positions for the invest button
+//generate the positions for the refresh, hangar, and invest button
 invest_button_image = s_button_upgrade_resized
 invest_button_ui_x_offset = shop_slot_ui_x_offset[0] - 4
 invest_button_ui_y_offset = shop_slot_ui_y_offset
@@ -160,6 +165,11 @@ invest_button_ui_y_offset = shop_slot_ui_y_offset
 refresh_button_image = s_button_refresh_resized
 refresh_button_ui_x_offset = invest_button_ui_x_offset
 refresh_button_ui_y_offset = invest_button_ui_y_offset + (42)
+
+hangar_button_image = s_button_hangar_resized
+hangar_button_ui_x_offset = invest_button_ui_x_offset
+hangar_button_ui_y_offset = invest_button_ui_y_offset + (84)
+
 
 //generate the x and y offsets for elements on each card
 card_offset_sprite_x = 179*resolution_scale//the ships x_offset from the left top side of the card
@@ -258,51 +268,109 @@ level_3_module_book[5] = level_3_power_module_1
 
 #region Ship Frames Book
 ship_frame_book = array_create(15, noone)
+interceptor_frame_book = 0
+fighter_frame_book = 0
+frigate_frame_book = 0
+/*
+TODO
+
+At the current moment, there are TWO different systems being built.  The first system, involving the 
+ship_frame_book is the old system.  It will be phased out.
+
+When the new system is in place, the first two lines of each entry should be deleted.
+*/
 
 ship_frame_book[0, 0] = o_iron_interceptor_frame_card
 ship_frame_book[0, 1] = 30
+iron_interceptor_frame_book[0, 0] = o_iron_interceptor_frame_card
+iron_interceptor_frame_book[0, 1] = 30
+interceptor_frame_book[0] = iron_interceptor_frame_book
 
 ship_frame_book[1, 0] = o_iron_fighter_frame_card
 ship_frame_book[1, 1] = 20
+iron_fighter_frame_book[0, 0] = o_iron_fighter_frame_card
+iron_fighter_frame_book[0, 1] = 20
+fighter_frame_book[0] = iron_fighter_frame_book
 
 ship_frame_book[2, 0] = o_iron_frigate_frame_card
 ship_frame_book[2, 1] = 10
+iron_frigate_frame_book[0, 0] = o_iron_frigate_frame_card
+iron_frigate_frame_book[0, 1] = 10
+frigate_frame_book[0] = iron_frigate_frame_book
 
 ship_frame_book[3, 0] = o_crystal_interceptor_frame_card
 ship_frame_book[3, 1] = 30
+crystal_interceptor_frame_book[0, 0] = o_crystal_interceptor_frame_card
+crystal_interceptor_frame_book[0, 1] = 30
+interceptor_frame_book[1] = crystal_interceptor_frame_book
 
 ship_frame_book[4, 0] = o_crystal_fighter_frame_card
 ship_frame_book[4, 1] = 20
+crystal_fighter_frame_book[0, 0] = o_crystal_fighter_frame_card
+crystal_fighter_frame_book[0, 1] = 20
+fighter_frame_book[1] = crystal_fighter_frame_book
 
 ship_frame_book[5, 0] = o_crystal_frigate_frame_card
 ship_frame_book[5, 1] = 10
+crystal_frigate_frame_book[0, 0] = o_crystal_frigate_frame_card
+crystal_frigate_frame_book[0, 1] = 10
+frigate_frame_book[1] = crystal_frigate_frame_book
 
 ship_frame_book[6, 0] = o_pirate_interceptor_frame_card
 ship_frame_book[6, 1] = 30
+pirate_interceptor_frame_book[0, 0] = o_pirate_interceptor_frame_card
+pirate_interceptor_frame_book[0, 1] = 30
+interceptor_frame_book[2] = pirate_interceptor_frame_book
 
 ship_frame_book[7, 0] = o_pirate_fighter_frame_card
 ship_frame_book[7, 1] = 20
+pirate_fighter_frame_book[0, 0] = o_pirate_fighter_frame_card
+pirate_fighter_frame_book[0, 1] = 20
+fighter_frame_book[2] = pirate_fighter_frame_book
 
 ship_frame_book[8, 0] = o_pirate_frigate_frame_card
 ship_frame_book[8, 1] = 10
+pirate_frigate_frame_book[0, 0] = o_pirate_frigate_frame_card
+pirate_frigate_frame_book[0, 1] = 10
+frigate_frame_book[2] = pirate_frigate_frame_book
 
 ship_frame_book[9, 0] = o_imperial_interceptor_frame_card
 ship_frame_book[9, 1] = 30
+imperial_interceptor_frame_book[0, 0] = o_imperial_interceptor_frame_card
+imperial_interceptor_frame_book[0, 1] = 30
+interceptor_frame_book[3] = imperial_interceptor_frame_book
 
 ship_frame_book[10, 0] = o_imperial_fighter_frame_card
 ship_frame_book[10, 1] = 20
+imperial_fighter_frame_book[0, 0] = o_imperial_fighter_frame_card
+imperial_fighter_frame_book[0, 1] = 20
+fighter_frame_book[3] = imperial_fighter_frame_book
 
 ship_frame_book[11, 0] = o_imperial_frigate_frame_card
 ship_frame_book[11, 1] = 10
+imperial_frigate_frame_book[0, 0] = o_imperial_frigate_frame_card
+imperial_frigate_frame_book[0, 1] = 10
+frigate_frame_book[3] = imperial_frigate_frame_book
 
 ship_frame_book[12, 0] = o_solar_interceptor_frame_card
 ship_frame_book[12, 1] = 30
+solar_interceptor_frame_book[0, 0] = o_solar_interceptor_frame_card
+solar_interceptor_frame_book[0, 1] = 30
+interceptor_frame_book[4] = solar_interceptor_frame_book
 
 ship_frame_book[13, 0] = o_solar_fighter_frame_card
 ship_frame_book[13, 1] = 20
+solar_fighter_frame_book[0, 0] = o_solar_fighter_frame_card
+solar_fighter_frame_book[0, 1] = 20
+fighter_frame_book[4] = solar_fighter_frame_book
 
 ship_frame_book[14, 0] = o_solar_frigate_frame_card
 ship_frame_book[14, 1] = 10
+solar_frigate_frame_book[0, 0] = o_solar_frigate_frame_card
+solar_frigate_frame_book[0, 1] = 10
+frigate_frame_book[4] = solar_frigate_frame_book
+
+
 
 
 
@@ -310,6 +378,8 @@ ship_frame_book[14, 1] = 10
 
 
 #endregion
+
+scr_create_shuffled_shop(card_type.frame)
 
 
 

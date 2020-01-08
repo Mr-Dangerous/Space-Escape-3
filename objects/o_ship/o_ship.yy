@@ -273,6 +273,20 @@
             "value": "0",
             "varName": "assigned_grid_y",
             "varType": 1
+        },
+        {
+            "id": "09ec9dcc-059f-4f8f-81e0-405e6e400767",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fuel_cost",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -1,13 +1,13 @@
 ///@param card_type
 //enum set up as card_type.frame and card_type.module
-var card_type = argument0
+var _card_type = argument0
 selected_card[0] = 0 //the resource
 selected_card[1] = 0 //the book refrence....
-selected_card[2] = card_type
+selected_card[2] = _card_type
 
 
-if (card_type = card_type.module){
-	var card_level = 1//scr_return_card_level()
+if (_card_type = card_type.module){
+	var card_level = scr_return_card_level(card_type.module)
 
 	card_level_book = 0
 	switch(card_level){
@@ -45,24 +45,9 @@ if (card_type = card_type.module){
 			}
 		}
 	}
-	//shuffle the array
-	//hey, is this even needed?
-	var array_size = array_length_1d(remaining_leveled_cards) -1
-	/*
-	repeat (array_size){
-		var random_number_1 = irandom(array_size)
-		var random_number_2 = irandom(array_size)
-		while (random_number_1 = random_number_2){
-			random_number_2 = irandom(array_size)
-		}
-		var card_1 = remaining_leveled_cards[random_number_1]
-		var card_2 = remaining_leveled_cards[random_number_2]
-	
-		remaining_leveled_cards[random_number_1] = card_2
-		remaining_leveled_cards[random_number_2] = card_1
-	}
-	*/
 
+	var array_size = array_length_1d(remaining_leveled_cards) -1
+	
 	var random_number = irandom(array_size)
 
 	selected_book = remaining_leveled_cards[random_number]
@@ -74,7 +59,7 @@ if (card_type = card_type.module){
 
 	
 }
-if (card_type = card_type.frame){
+if (_card_type = card_type.frame){
 	//add every single ship frame exsisting to an array...
 	var number_of_remaining_ship_frame_types = array_length_1d(ship_frame_book)
 	var remaining_ship_frames

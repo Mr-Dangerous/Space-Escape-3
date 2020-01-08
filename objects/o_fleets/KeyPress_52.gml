@@ -13,8 +13,8 @@ for (var i = 1; i > 0; i--){
 	var ship_added = false
 
 	while (!ship_added){
-		if (right_fleet[j] = noone){
-			right_fleet[j] = enemy_ship
+		if (_right_fleet[j] = noone){
+			_right_fleet[j] = enemy_ship
 			ship_added = true
 		}
 		j++

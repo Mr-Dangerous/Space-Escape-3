@@ -45,10 +45,12 @@ for (var i =0; i<15; i++){
 if (selected_shop_slot != -1){
 	if (shop_slots[selected_shop_slot, 0] != noone){
 		_card_reference = shop_slots[selected_shop_slot, 0]
+		_card_object_reference = shop_slots[selected_shop_slot, 1]
 		_card_type = _card_reference[2]
 		purchased = false
 		resources_spent = 0
-		var _resource_cost = shop_slots[selected_shop_slot, 1].resource_cost
+		var _resource_cost = _card_object_reference.resource_cost
+		var _ship_class = _card_object_reference.class
 		show_debug_message(_resource_cost)
 		if( _resource_cost <= resources){
 			resources_spent = _resource_cost
@@ -81,6 +83,7 @@ if (selected_shop_slot != -1){
 						//took stuff from here - fix it!
 						var ship_frame = shop_slots[selected_shop_slot, 1]
 						active_construction_bay[@ 0] = ship_frame
+						active_construction_bay[@ 7] = _ship_class
 					
 						shop_slots[@ selected_shop_slot, 0] = noone
 						shop_slots[@ selected_shop_slot, 1] = noone
@@ -141,6 +144,17 @@ if (point_in_rectangle(_mouse_x, _mouse_y,
 _refresh_button_top_left_x, _refresh_button_top_left_y,
 _refresh_button_bottom_right_x, _refresh_button_bottom_right_y)){
 	refresh_button_pressed = true
+}
+
+var _hangar_button_top_left_x = hangar_button_ui_x_offset-(40*resolution_scale)
+var _hangar_button_top_left_y = hangar_button_ui_y_offset
+var _hangar_button_bottom_right_x = hangar_button_ui_x_offset
+var _hangar_button_bottom_right_y = hangar_button_ui_y_offset+(40*resolution_scale)
+
+if (point_in_rectangle(_mouse_x, _mouse_y, 
+_hangar_button_top_left_x, _hangar_button_top_left_y,
+_hangar_button_bottom_right_x, _hangar_button_bottom_right_y)){
+	hangar_button_pressed = true
 }
 
 

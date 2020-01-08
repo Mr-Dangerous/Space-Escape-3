@@ -1,6 +1,9 @@
 //track the fleets here
-left_fleet = array_create(15, noone)
-right_fleet = array_create(15, noone)
+
+
+var _card_game_ui = instance_find(o_card_game_ui, 0)
+_left_fleet = _card_game_ui.left_fleet
+_right_fleet = _card_game_ui.right_fleet
 
 
 

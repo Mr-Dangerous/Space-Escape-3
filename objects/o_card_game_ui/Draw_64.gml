@@ -8,8 +8,10 @@ if (player_level = 10){
 economy_ui_string[0] = "Income: " + string(income)
 economy_ui_string[1] = "Resources: " + string(resources)
 economy_ui_string[2] = "Current turn: " +string(current_turn)
-economy_ui_string[3] = "Investment: " + string(player_experience) +"/" + string(_experience_to_level)
-economy_ui_string[4] = "Infrastructure Level: " + string(player_level) 
+economy_ui_string[3] = "Fuel: " + string(current_fuel_spent) + "/" + string(max_fuel)
+economy_ui_string[4] = "Investment: " + string(player_experience) +"/" + string(_experience_to_level)
+economy_ui_string[5] = "Infrastructure Level: " + string(player_level) 
+
 
 
 
@@ -46,6 +48,7 @@ for (var i = 0; i < array_length_1d(shop_slot_ui_x_offset); i++){
 //draw the upgrade and refresh button
 draw_sprite_ext(invest_button_image, 0, invest_button_ui_x_offset, invest_button_ui_y_offset, 1 ,1, 0, c_white, 1)
 draw_sprite_ext(refresh_button_image, 0, refresh_button_ui_x_offset, refresh_button_ui_y_offset, 1, 1, 0, c_white, 1)
+draw_sprite_ext(hangar_button_image, 0, hangar_button_ui_x_offset, hangar_button_ui_y_offset, 1, 1, 0, c_white, 1)
 //draw the economy ui
 
 
@@ -59,7 +62,7 @@ draw_rectangle_color(shop_slot_ui_x_offset[0] +2, resource_ui_y_offset - 4,
 shop_slot_ui_x_offset[4] + (237*resolution_scale) - 2, shop_slot_ui_y_offset - 4, c_gray, c_gray, c_gray
 , c_gray, false)
 
-resource_elements = 5
+
 for (var i = 0; i < resource_elements; i++){
 	draw_text(resource_ui_x_offset[i], resource_ui_y_offset, economy_ui_string[i])
 }
@@ -82,7 +85,7 @@ for (var i = 0; i < number_of_construction_bays; i++){
 	var _y = construction_bay_slot_ui_y_offset[i]
 	draw_sprite_ext(s_hangar_bay_placeholder, 0, _x, _y, resolution_scale, resolution_scale, 0, c_white, .3)
 	active_construction_bay = construction_bays[i]
-	number_of_sockets = array_length_1d(active_construction_bay)
+	number_of_sockets = array_length_1d(active_construction_bay)-1//NOTE  - 1 because some information is in slot 7
 	for(var j = 0; j < number_of_sockets; j++){
 		var _module = active_construction_bay[j]
 		if (instance_exists(_module)){
