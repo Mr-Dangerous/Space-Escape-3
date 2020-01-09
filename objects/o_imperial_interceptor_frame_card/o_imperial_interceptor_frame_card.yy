@@ -39,6 +39,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
             "value": "scr_load_imperial_interceptor_frame"
+        },
+        {
+            "id": "0f485fbf-37dc-4dcd-b6f1-0a97486b61a9",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
+            "value": "Hunter"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

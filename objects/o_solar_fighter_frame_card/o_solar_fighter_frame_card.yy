@@ -47,6 +47,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
             "value": "scr_load_solar_fighter_frame"
+        },
+        {
+            "id": "a4fc8fff-60d5-4dee-bf23-33e0745eefbd",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
+            "value": "Shield"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

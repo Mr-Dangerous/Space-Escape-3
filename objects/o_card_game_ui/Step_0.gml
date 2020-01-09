@@ -2,7 +2,7 @@
 //creation variables that need to be dynamically updated based on other variables
 
 
-max_fuel = 5+player_level*3
+max_fuel = 10+(player_level*5)
 level_income = floor(player_level/2)
 investment_income = floor(resources/10)
 income = base_income + streak_income + level_income + bonus_income + investment_income

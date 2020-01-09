@@ -61,6 +61,34 @@
             "varType": 2
         },
         {
+            "id": "8aec0bbf-6b81-493e-a854-6681b0071a56",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "sub_class",
+            "varType": 2
+        },
+        {
+            "id": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Pirate",
+            "varName": "origin",
+            "varType": 2
+        },
+        {
             "id": "48c2131a-aa46-4ec7-9231-7a1c665b34ca",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -101,20 +129,6 @@
             "value": "0.075",
             "varName": "image_scale",
             "varType": 0
-        },
-        {
-            "id": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Pirate",
-            "varName": "origin",
-            "varType": 2
         },
         {
             "id": "a1133eda-6d12-4e11-843c-beb994470bb4",

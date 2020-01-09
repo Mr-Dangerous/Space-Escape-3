@@ -47,6 +47,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
             "value": "scr_load_pirate_frigate_frame"
+        },
+        {
+            "id": "c760789c-4e84-4df5-8105-9351c891c8a8",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
+            "value": "Corvette"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

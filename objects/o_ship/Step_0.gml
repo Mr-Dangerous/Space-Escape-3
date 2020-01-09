@@ -61,16 +61,6 @@ if (armor <= 0){
 	instance_destroy()
 }
 var _energy_multiplier = 10
-if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter++
-energy = energy_sub_counter/_energy_multiplier
-if (energy >= max_energy){
-	if (ability_load_script != 0){
-		//will actually be a state
-		state = ship.cast_ability
-	}
-}
-
-
 
 
 switch(state){
@@ -95,6 +85,16 @@ switch(state){
 	break;
 	
 	case ship.battle:
+		//tick variables
+		if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter++
+		energy = energy_sub_counter/_energy_multiplier
+		if (energy >= max_energy){
+			if (ability_load_script != 0){
+				//will actually be a state
+				state = ship.cast_ability
+			}
+		}
+	
 		//find target
 		if (!instance_exists(ship_target)){
 			ship_target = scr_return_target()
@@ -142,6 +142,8 @@ switch(state){
 	
 	case ship.cast_ability:
 		script_execute(ability_script)
+		
+
 	break;
 	
 	case ship.firing_range://for testing purposes only.
