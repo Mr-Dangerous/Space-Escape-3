@@ -1,6 +1,5 @@
 if (temporary_shields < 200){
 	temporary_shields = 200
-	shields += temporary_shields
 }
 show_debug_message("spell cast")
 temporary_shield_counter = 360

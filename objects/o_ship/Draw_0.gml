@@ -16,12 +16,20 @@ var armor_y_offset = y+30
 var armor_x_offset = x-32
 var armor_x_end_offset = x+((armor/max_armor) *64)-32
 draw_line_width_color(armor_x_offset, armor_y_offset, armor_x_end_offset, armor_y_offset, 6, c_green, armor_color)
+
 //shield bar
 var shield_y_offset = y+24
 var shield_x_offset = x-32
 var shield_x_end_offset = x+((shields/max_shields) *64)-32
-draw_line_width_color(shield_x_offset, shield_y_offset, shield_x_end_offset, shield_y_offset, 6, c_blue, c_white)
+draw_line_width_color(shield_x_offset, shield_y_offset, shield_x_end_offset, shield_y_offset, 6, c_blue, c_blue)
 
+if (temporary_shields > 0){
+	var percent_of_bar_to_show = (temporary_shields/max_shields) * 64
+	
+	var temporary_shield_x_end_offset = x-(percent_of_bar_to_show) +32
+	var temporary_shield_x_offset = x+32
+	draw_line_width_color(temporary_shield_x_offset, shield_y_offset, temporary_shield_x_end_offset, shield_y_offset, 6, c_white, c_white)
+}
 var energy_bar_color = c_teal
 if (energy >= max_energy){
 	energy_bar_color = c_purple
