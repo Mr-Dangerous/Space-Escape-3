@@ -17,6 +17,8 @@ refresh_button_pressed = false
 hangar_button_pressed = false
 left_fleet = array_create(35, noone)
 right_fleet = array_create(35, noone)
+master_left_fleet = array(35, noone)
+master_right_fleet = array(35, noone)
 
 //player experience levels
 experience_to_level[0] = 0
