@@ -76,51 +76,48 @@ if (selected_shop_slot != -1){
 				}
 			}
 			if (_card_type = card_type.frame){
+				//find an empty factory
+				var ship_frame = shop_slots[selected_shop_slot, 1]
+				for (var i = 0; i < array_length_1d(ship_factories); i++){
+					if (ship_factories[i].ship_frame_contained = noone){
+						ship_factories[i].ship_frame_contained = ship_frame
+						shop_slots[@ selected_shop_slot, 0] = noone
+						shop_slots[@ selected_shop_slot, 1] = noone
+						purchased = true
+						break;
+					} 
+				}
+				
+				#region to be eventually deleted
+				/*
 				//send to an empty hangar
 				for (var i = 0; i < number_of_construction_bays; i++){
 					var active_construction_bay = construction_bays[i]
 					if (active_construction_bay[0] = noone){
 						//took stuff from here - fix it!
-						var ship_frame = shop_slots[selected_shop_slot, 1]
+						
 						active_construction_bay[@ 0] = ship_frame
 						active_construction_bay[@ 7] = _ship_class
-					
-						shop_slots[@ selected_shop_slot, 0] = noone
-						shop_slots[@ selected_shop_slot, 1] = noone
-						purchased = true
+								
+						
+						
+						
+						
 						break;
 					}
 				}
-			
-			
+			*/
+			#endregion
+				
 			}
+			
 			resources -= resources_spent
 			
 		}
 	}
 }
 //check deploy_buttons(and other construction bay features later)
-for (var i = 0; i < number_of_construction_bays; i++){
-	var _x = construction_bay_slot_ui_x_offset
-	var _y = construction_bay_slot_ui_y_offset[i]
-	var _deploy_string_x = _x + construction_bay_string_offset[1, 0]
-	var _deploy_string_y = _y + construction_bay_string_offset[1, 1]
-	var _deploy_button_top_x = _deploy_string_x - (40 * resolution_scale)
-	var _deploy_button_top_y = _deploy_string_y - (16 * resolution_scale)
-	var _deploy_button_bot_x = _deploy_string_x + (40 * resolution_scale)
-	var _deploy_button_bot_y = _deploy_string_y + (16 * resolution_scale)
 
-	
-	//check to see if deploy button clicked
-	var deploy_button_pressed = point_in_rectangle(_mouse_x, _mouse_y, _deploy_button_top_x - 2, _deploy_button_top_y - 2,
-	_deploy_button_bot_x + 2, _deploy_button_bot_y + 2)
-	
-	
-	
-	if (deploy_button_pressed){
-		construction_bay_deploy_button_pressed[i] = true
-	}
-}
 
 //check to see if invest or refresh button was pressed
 

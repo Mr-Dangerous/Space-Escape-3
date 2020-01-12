@@ -76,8 +76,36 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "noone",
             "varName": "reference_object",
+            "varType": 0
+        },
+        {
+            "id": "f709baef-db2b-48a7-bad8-218aad0852f1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "reference_factory",
+            "varType": 0
+        },
+        {
+            "id": "2f775ab4-01ef-4f61-997d-d3ae9b53c52a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "new_ship",
             "varType": 0
         }
     ],

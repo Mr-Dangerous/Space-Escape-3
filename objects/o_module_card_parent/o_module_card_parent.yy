@@ -235,6 +235,34 @@
             "value": "1",
             "varName": "resource_cost",
             "varType": 1
+        },
+        {
+            "id": "0caecc20-0090-43be-9b97-fa4ae8dda759",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "class",
+            "varName": "sub_class",
+            "varType": 0
+        },
+        {
+            "id": "ed772f1f-bb23-40c9-95b4-dc9ebf976b7a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "variable_name",
+            "varType": 0
         }
     ],
     "solid": false,

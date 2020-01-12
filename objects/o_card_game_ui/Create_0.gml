@@ -1,79 +1,54 @@
 /// @description Insert description here
-#region Creation Variables
+//shop slots
+for (var i = 0; i < 5; i++){
+	shop_slots[i, 0] = noone//the object resource
+	shop_slots[i, 1] = noone//the actual object being referenced
+}
+//parts bin slots
+number_of_parts_slots = 15
+parts_slot = array_create(number_of_parts_slots, noone)
+
+
+//Player variables
 player_experience = 0
 player_level = 1
+
+//Economy variables
 current_fuel_spent = 0
-max_fuel = 5+player_level*3
 resources = 10
-current_turn = 1
 base_income = 5
 streak_income = 0
 investment_income = 0
 level_income = floor(player_level/2)
 bonus_income = 0
 income = base_income + streak_income + level_income + bonus_income
-invest_button_pressed = false
-refresh_button_pressed = false
-hangar_button_pressed = false
+
+//Game mangement variables
+current_turn = 1
+max_fuel = 5 + player_level*3
+
+//Fleet management variables
 left_fleet = array_create(35, noone)
 right_fleet = array_create(35, noone)
-master_left_fleet = array(35, noone)
-master_right_fleet = array(35, noone)
+
+
+
+
+
 
 //player experience levels
-experience_to_level[0] = 0
-experience_to_level[1] = 4
-experience_to_level[2] = 10
-experience_to_level[3] = 18
-experience_to_level[4] = 28
-experience_to_level[5] = 40
-experience_to_level[6] = 54
-experience_to_level[7] = 68
-experience_to_level[8] = 80
-experience_to_level[9] = 104
-experience_to_level[10] = infinity
-
-
-
-//shop slots
-for (var i = 0; i < 5; i++){
-shop_slots[i, 0] = noone//the object resource
-shop_slots[i, 1] = noone//the actual object being referenced
-}
-//parts bin slots
-number_of_parts_slots = 15
-for (var i = 0; i < 15; i++){
-	parts_slot[i] = noone
-}
-//construction bays
-number_of_construction_bays = 3
-construction_bays = array_create(number_of_construction_bays, 0)
-for (var i = 0; i < number_of_construction_bays; i++){
-	var construction_bay = array_create(8, noone)
-	//all of these will be specifically object references
-	//construction_bay[0] = noone//frame in slot
-	//construction_bay[1] = noone//weapons_system
-	//construction_bay[2] = noone//shield system
-	//construction_bay[3] = noone//armor
-	//construction_bay[4] = noone//targeting
-	//construction_bay[5] = noone//ability
-	//construction_bay[6] = noone//powerplant
-	//construction_bay[7] = 0//ship_class
-	//construction_bay[8] = 0//Engineer
-	construction_bays[i] = construction_bay
-}
-#endregion
-
-
+experience_to_level = scr_create_player_experience_levels()
 
 #region GUI locations and variables
-//variables
-construction_bay_deploy_button_pressed = array_create(3, false)
-
-
+//resolution variables
 gui_height = view_get_hport(0)
 gui_width = view_get_wport(0)
 resolution_scale = view_get_wport(0)/camera_get_view_width(view_camera[0])
+//Buttons
+
+invest_button_pressed = false
+refresh_button_pressed = false
+hangar_button_pressed = false
 
 //generate UI arrays
 //generate shop position arrays
@@ -123,51 +98,6 @@ construction_bay_slot_ui_y_offset = array_create(3, 0)
 construction_bay_slot_x_offset = room_width - 264
 construction_bay_slot_y_offset = array_create(3,0)
 
-for (var i =0; i < number_of_construction_bays; i++){
-	construction_bay_slot_ui_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
-	construction_bay_slot_y_offset[i] = room_height - (264*(i+1))
-}
-
-//generate contruction bay socket positions
-construction_bay_socket_offsets[0, 0] = 128 * resolution_scale //ship frame x
-construction_bay_socket_offsets[0, 1] = 122 * resolution_scale// ship frame y
-construction_bay_socket_offsets[1, 0] = 48 * resolution_scale//top left socket x
-construction_bay_socket_offsets[1, 1] = 48 * resolution_scale//top left socket y
-construction_bay_socket_offsets[2, 0] = 48 * resolution_scale//mid left socket x
-construction_bay_socket_offsets[2, 1] = 128 * resolution_scale//mid left socket y
-construction_bay_socket_offsets[3, 0] = 48 * resolution_scale//bot left socket x
-construction_bay_socket_offsets[3, 1] = 208 * resolution_scale//bot left socket y
-construction_bay_socket_offsets[4, 0] = 208 * resolution_scale//top right socket x
-construction_bay_socket_offsets[4, 1] = 48 * resolution_scale//top right socket y
-construction_bay_socket_offsets[5, 0] = 208 * resolution_scale//mid right socket x
-construction_bay_socket_offsets[5, 1] = 128 * resolution_scale//mid right socket y
-construction_bay_socket_offsets[6, 0] = 208 * resolution_scale//bot right socket x
-construction_bay_socket_offsets[6, 1] = 208 * resolution_scale//bot right socket y
-
-//generate construction bay string locations
-construction_bay_string_offset[0, 0] = 0//name of frame offset from left x
-construction_bay_string_offset[0, 1] = 0//name of frame offset from top y
-construction_bay_string_offset[1, 0] = (256/2) * resolution_scale //Deploy button x offset
-construction_bay_string_offset[1, 1] = 232*resolution_scale //deploy button y offset
-
-//generate construction bay accetpable item locations
-construction_bay_item_type[0] = module.frame
-construction_bay_item_type[1] = module.weapon
-construction_bay_item_type[2] = module.shields
-construction_bay_item_type[3] = module.armor
-construction_bay_item_type[4] = module.targeting
-construction_bay_item_type[5] = module.ability
-construction_bay_item_type[6] = module.power_plant
-
-//generate repair bay position array
-number_of_repair_bays = 3
-repair_bay_slot_x_offset = (8 * resolution_scale)
-repair_bay_slot_y_offset = array_create(3, 0)
-
-for (var i =0; i < number_of_repair_bays; i++){
-	repair_bay_slot_y_offset[i] = gui_height- (264*(i+1)*resolution_scale)
-}
-
 //generate the positions for the refresh, hangar, and invest button
 invest_button_image = s_button_upgrade_resized
 invest_button_ui_x_offset = shop_slot_ui_x_offset[0] - 4
@@ -183,16 +113,56 @@ hangar_button_ui_y_offset = invest_button_ui_y_offset + (84)
 
 
 //generate the x and y offsets for elements on each card
-card_offset_sprite_x = 179*resolution_scale//the ships x_offset from the left top side of the card
-card_offset_sprite_y = 75*resolution_scale//the ships y offset from the left top
-card_text_offset_x = 16*resolution_scale // all card text will be the same x_offset
-card_name_offset_y = 20*resolution_scale
-card_class_offset_y = 65*resolution_scale
-card_origin_offset_y = 120*resolution_scale
-card_resource_cost_x = 198*resolution_scale
-card_resource_cost_y = 40*resolution_scale
+card_offset_sprite_x = round(179*resolution_scale)//the ships x_offset from the left top side of the card
+card_offset_sprite_y = round(75*resolution_scale)//the ships y offset from the left top
+card_text_offset_x = round(16*resolution_scale) // all card text will be the same x_offset
+card_name_offset_y = round(20*resolution_scale)
+card_class_offset_y = round(65*resolution_scale)
+card_origin_offset_y = round(120*resolution_scale)
+card_resource_cost_x = round(198*resolution_scale)
+card_resource_cost_y = round(40*resolution_scale)
+
+
 
 #endregion
+
+#region Creation Variables
+
+
+//create the factories
+ship_factories = array_create(16, noone)
+factory_positions = array_create(16, [0, 0])
+var _base_x_offset = 80
+var _base_y_offset = 80
+var _spacing = 130
+for (var i = 0; i < 8; i++){
+	factory_positions[i, 0] = _base_x_offset //x position
+	factory_positions[i, 1] = _base_y_offset + (i*_spacing)
+	factory_positions[i+8, 0] = _base_x_offset + _spacing
+	factory_positions[i+8, 1] = _base_y_offset + (i*_spacing)
+}
+var _factory_array_size = array_length_1d(factory_positions)
+for (var i = 0; i < _factory_array_size; i++){
+	if (factory_positions[i, 0] != 0){
+		_x = factory_positions[i, 0]
+		_y = factory_positions[i, 1]
+		var _factory = instance_create_layer(_x, _y, "Cards", o_ship_factory)
+		with (_factory){
+			card_game_controller = other
+		}
+		ship_factories[i] = _factory
+	}
+}
+
+
+
+
+
+#endregion
+
+
+
+
 
 #region Card Books
 #region Level 1 Books

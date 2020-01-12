@@ -49,44 +49,26 @@ if (selected_bin_slot != -1){
 	}
 }
 
-//check to see if hovering over a construction hangar
-for (var i = 0; i < _card_game_controller.number_of_construction_bays; i++){
-	if (point_in_rectangle(mouse_x, mouse_y, 
-	_card_game_controller.construction_bay_slot_x_offset,
-	_card_game_controller.construction_bay_slot_y_offset[i],
-	_card_game_controller.construction_bay_slot_x_offset + (256),
-	_card_game_controller.construction_bay_slot_y_offset[i] + (256))){
-		selected_construction_hangar_slot = i
-	}
-}
-if (selected_construction_hangar_slot != -1){
-	//check to see if the item can be placed into the construction bay
-	show_debug_message(selected_construction_hangar_slot)
-	
-	
-	var _construction_bay = _card_game_controller.construction_bays[selected_construction_hangar_slot]
-	//scan the construction bay for an open matching socket
-	var matching_socket = -1
-	for (var f = 0; f < _card_game_controller.number_of_sockets; f++){
-		if (_construction_bay[f] = noone and _card_game_controller.construction_bay_item_type[f] = reference_object.module_type){
-			matching_socket = f
-			
-			break;
-		} else {
-			selected_construction_hangar_slot = -1
+//check to see if hovering over a factory
+var _factory = instance_position(x, y, o_ship_factory)
+if (instance_exists(_factory)){
+	if (_factory.ship_frame_contained != noone){
+		for (var i = 0; i < 6; i++){
+			if (reference_object.module_type = _factory.factory_item[i, 0]){
+				if (_factory.factory_item[i, 1] = noone){
+					_factory.factory_item[i, 1] = reference_object
+					_card_game_controller.parts_slot[parts_bin_slot] = noone
+					reference_object.x = -120
+					reference_object.y = -120
+					reference_object.visible = false
+				}
+				break;
+			}
 		}
 	}
-	if (matching_socket != -1){
-		_construction_bay[@ matching_socket] = reference_object
-		_card_game_controller.parts_slot[parts_bin_slot] = noone
-		reference_object.x = 0
-		reference_object.y = 0
-		reference_object.visible = false
-	} else {
-		selected_construction_hangar_slot = -1
-	}
-	
 }
+	
+
 
 //check to see if hovering over the shop to sell
 var top_left_x = _card_game_controller.shop_slot_ui_x_offset[0]
