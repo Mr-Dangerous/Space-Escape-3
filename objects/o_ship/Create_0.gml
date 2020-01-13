@@ -40,6 +40,9 @@ energy = 0
 max_armor = 0
 max_shields = 0
 max_energy = 20
+_energy_multiplier = 10//not really sure what this is right now.
+
+ship_disabled_counter = 0
 
 
 

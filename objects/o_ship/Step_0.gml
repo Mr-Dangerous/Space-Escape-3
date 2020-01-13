@@ -1,7 +1,17 @@
 #region loadup scripts
 if (created = false){
 	created = true
+	if (ship_team = team.right){
+	allied_fleet = card_game_ui_object.right_fleet
+	enemy_fleet = card_game_ui_object.left_fleet
 	
+	
+	}
+	if (ship_team = team.left){
+		allied_fleet = card_game_ui_object.left_fleet
+		enemy_fleet = card_game_ui_object.right_fleet
+
+	}
 	
 	
 	if (ship_team = team.left){
@@ -37,25 +47,22 @@ var number_of_scripts = array_length_1d(loading_scripts)
 	
 }
 #endregion
+#region Pre state machine checks
 
-if (ship_team = team.right){
-	allied_fleet = card_game_ui_object.right_fleet
-	enemy_fleet = card_game_ui_object.left_fleet
-	
-	
-}
-if (ship_team = team.left){
-	allied_fleet = card_game_ui_object.left_fleet
-	enemy_fleet = card_game_ui_object.right_fleet
 
-}
 
 if (armor <= 0){
 	instance_destroy()
 }
-var _energy_multiplier = 10
+
+if (ship_disabled_counter > 0){
+	state = ship.disabled
+}
+#endregion
 
 
+
+#region State MAchine
 switch(state){
 	case ship.locked:
 	
@@ -171,7 +178,24 @@ switch(state){
 	if (keyboard_check_pressed(ord("Z"))) state = ship.cast_ability
 	
 	break;
+	
+	case ship.disabled:
+	if (ship_disabled_counter > 0) ship_disabled_counter--
+	if (ship_disabled_counter <= 0){
+		state = ship.firing_range//TO BE CHANGED
+	}
+	
+	if (speed > 0){
+		speed -= .05
+	}
+	if (speed < 0){
+		speed = 0
+	}
+	
+	break;
 }
+#endregion
+#region Temporary area for abilities
 //NOTE!!!  These will need to be lifted out of poost state machine at some poitn and put into battle
 if (armor_script != 0){
 	
@@ -194,3 +218,4 @@ if (thermal_lance_damage_counter > 0) thermal_lance_damage_counter--
 if (serrated_plates_damage_counter > 0) serrated_plates_damage_counter--
 if (emergency_shield_counter > 0) emergency_shield_counter--
 if (wave_crasher_shield_damage_counter > 0) wave_crasher_shield_damage_counter--
+#endregion
