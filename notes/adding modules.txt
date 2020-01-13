@@ -1,0 +1,6 @@
+Here is the procedure for creating a new module
+
+#1)  clone module card, adjust variables
+#2)  add in the sprite
+#3)  add in the card book for the item
+#4)  add the card book into the appropriate leveled book

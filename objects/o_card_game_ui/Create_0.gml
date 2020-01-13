@@ -179,11 +179,20 @@ level_1_armor_upgrade_1[1] = o_anvil_class_plates_module_card
 level_1_targeting_module_1[0] = 30
 level_1_targeting_module_1[1] = o_enhar_targeting_module_module_card
 
-level_1_ability_module_1[0] = 30
-level_1_ability_module_1[1] = o_elisar_emergency_shield_system_module_card
-
 level_1_power_module_1[0] = 30
 level_1_power_module_1[1] = o_arrack_core_plant_module_card
+
+thermal_lance_1[0] = 30
+thermal_lance_1[1] = o_thermal_lance_module_card
+
+emergency_shield_1[0] = 30
+emergency_shield_1[1] = o_emergency_shield_module_card
+
+serrated_plates_1[0] = 30
+serrated_plates_1[1] = o_serrated_plates_module_card
+
+wave_crasher_shield_3[0] = 30//NOTE:  temporarily here in level 1.  needs to be in level 3
+wave_crasher_shield_3[1] = o_wave_crasher_shield_module_card
 
 
 //refrences to all level 1 books
@@ -191,8 +200,11 @@ level_1_module_book[0] = level_1_weapon_system_1
 level_1_module_book[1] = level_1_shield_module_1
 level_1_module_book[2] = level_1_armor_upgrade_1
 level_1_module_book[3] = level_1_targeting_module_1
-level_1_module_book[4] = level_1_ability_module_1
+level_1_module_book[4] = emergency_shield_1
 level_1_module_book[5] = level_1_power_module_1
+level_1_module_book[6] = thermal_lance_1
+level_1_module_book[7] = serrated_plates_1
+level_1_module_book[8] = wave_crasher_shield_3//NOTE:  needs to move to level 3 book later
 #endregion
 
 #region Level 2 Books

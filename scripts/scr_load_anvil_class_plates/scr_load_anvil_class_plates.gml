@@ -1,1 +1,3 @@
-armor += 150
+armor += 30
+max_armor += 30
+armor_script = scr_check_anvil_class_plates

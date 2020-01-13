@@ -1,0 +1,1 @@
+ability_script = scr_cast_thermal_lance

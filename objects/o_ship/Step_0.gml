@@ -133,7 +133,11 @@ switch(state){
 	break;
 	
 	case ship.cast_ability:
+	if (ability_script != 0){
 		script_execute(ability_script)
+	} else {
+		state = ship.firing_range//to change later
+	}
 		
 
 	break;
@@ -155,8 +159,25 @@ switch(state){
 			show_debug_message("secondary_attack_fired")
 		}
 	}
+	
+	if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter+=.5
+	energy = energy_sub_counter/_energy_multiplier
+	if (energy >= max_energy){
+		if (ability_script != 0){
+			//will actually be a state
+			state = ship.cast_ability
+		}
+	}
+	if (keyboard_check_pressed(ord("Z"))) state = ship.cast_ability
+	
 	break;
 }
+//NOTE!!!  These will need to be lifted out of poost state machine at some poitn and put into battle
+if (armor_script != 0){
+	
+	script_execute(armor_script)
+}
+
 
 //Post stat machine ability scripts
 if (temporary_shield_counter > 0){
@@ -167,3 +188,9 @@ if (temporary_shield_counter > 0){
 		}
 	}
 }
+
+//spell checks
+if (thermal_lance_damage_counter > 0) thermal_lance_damage_counter--
+if (serrated_plates_damage_counter > 0) serrated_plates_damage_counter--
+if (emergency_shield_counter > 0) emergency_shield_counter--
+if (wave_crasher_shield_damage_counter > 0) wave_crasher_shield_damage_counter--

@@ -220,7 +220,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "loading_script",
-            "varType": 4
+            "varType": 5
         },
         {
             "id": "cacaf65c-bfc9-42ea-a989-9535ea81ec6f",

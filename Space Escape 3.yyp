@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "046263c0-6d80-4e91-9ea6-4a84e69f2f83",
+            "Value": {
+                "id": "15c8ed7a-519a-4635-9afd-865b3a2a6fd8",
+                "resourcePath": "objects\\o_thermal_lance_module_card\\o_thermal_lance_module_card.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04afe17e-437c-46fe-ba73-e9a6a7347db4",
             "Value": {
                 "id": "0d4a6862-59c7-4356-893e-f5476fcf45c5",
@@ -92,6 +100,14 @@
                 "id": "5b0d2442-d72f-40ff-827c-bc7d77e64615",
                 "resourcePath": "views\\08d6a7cf-f6ef-43e1-8018-2e20d52728ff.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "09e4f926-7dc9-4722-b219-fd4b16e63cb4",
+            "Value": {
+                "id": "6ad7e93f-2459-4bb1-ae7b-ab224770b2cb",
+                "resourcePath": "scripts\\scr_load_emergency_shield\\scr_load_emergency_shield.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -183,6 +199,14 @@
             }
         },
         {
+            "Key": "135d6fe4-09b4-48d5-a4a1-72b1c439af53",
+            "Value": {
+                "id": "59359a34-f8d4-4c69-be2a-d8fcd111e771",
+                "resourcePath": "scripts\\scr_cast_thermal_lance\\scr_cast_thermal_lance.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
             "Value": {
                 "id": "67bfd2fc-e755-4fcc-9712-9cdc384e6ce2",
@@ -255,6 +279,14 @@
             }
         },
         {
+            "Key": "1d18febc-1a49-4993-bb2e-2955aff4403d",
+            "Value": {
+                "id": "6eb0df70-62e5-42c4-be94-d747a6273854",
+                "resourcePath": "objects\\o_serrated_plates_module_card\\o_serrated_plates_module_card.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1d20a9b5-f0a0-4baf-ab9c-d54a798bc601",
             "Value": {
                 "id": "a9692c07-ea46-45b3-89e4-302b66f917bc",
@@ -324,6 +356,14 @@
                 "id": "b653cfdb-1b78-44c4-9fe4-053ffe04a6b6",
                 "resourcePath": "sprites\\s_laser_red_test_endpoint\\s_laser_red_test_endpoint.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "244ef7c2-820f-4f67-9151-b0a0ba3ddbf8",
+            "Value": {
+                "id": "85d1f531-83bb-4742-947f-a43277d76fa5",
+                "resourcePath": "objects\\o_emergency_shield_module_card\\o_emergency_shield_module_card.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -460,6 +500,14 @@
                 "id": "f09c2e14-1922-438c-80d8-5e51ee1ef960",
                 "resourcePath": "scripts\\scr_load_crystal_frigate_frame\\scr_load_crystal_frigate_frame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "354b48aa-21e2-43cb-86b7-513ad2cb9cab",
+            "Value": {
+                "id": "10cc6ca8-21f2-4ce8-92f1-c09920a42cee",
+                "resourcePath": "sprites\\s_thermal_lance_icon\\s_thermal_lance_icon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -759,6 +807,14 @@
             }
         },
         {
+            "Key": "55e95e95-22df-406e-992a-e496f3e20e0f",
+            "Value": {
+                "id": "708c4ab6-4967-4829-979a-4c7586ea9e7d",
+                "resourcePath": "scripts\\scr_load_wave_crasher_shield\\scr_load_wave_crasher_shield.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5608c435-226f-48bc-b779-f0ce43ce337f",
             "Value": {
                 "id": "1d66d113-8d85-40b4-8174-0b6282884bac",
@@ -823,6 +879,14 @@
             }
         },
         {
+            "Key": "5d12aa74-6ef2-431b-91c6-0be0d34e1fbf",
+            "Value": {
+                "id": "e23c762c-2f7f-4507-b66a-2587c89352a0",
+                "resourcePath": "sprites\\s_serrated_plates_placeholder\\s_serrated_plates_placeholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5d74aeeb-d85a-4734-a621-4b119a9220cf",
             "Value": {
                 "id": "01cf637a-9b77-417c-8a1d-49c4cd7b0f4b",
@@ -879,6 +943,14 @@
             }
         },
         {
+            "Key": "627fc024-6db7-417f-8a2b-4d8429aa6ecf",
+            "Value": {
+                "id": "05403666-2151-4eb5-87a0-0a33c45d8155",
+                "resourcePath": "sprites\\s_wave_crasher_shield\\s_wave_crasher_shield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "63a55d36-95ea-4eb6-8f70-02bcdbb908c6",
             "Value": {
                 "id": "5b06057e-66a6-4a84-b024-853df6da545a",
@@ -900,6 +972,14 @@
                 "id": "07e117eb-3b36-4620-abe1-d8476cdddf99",
                 "resourcePath": "scripts\\scr_return_income\\scr_return_income.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "65c6d873-c231-4155-9c22-6cdc10c7eeda",
+            "Value": {
+                "id": "9cda848d-77a5-43c5-a70c-4ecda74a371f",
+                "resourcePath": "views\\65c6d873-c231-4155-9c22-6cdc10c7eeda.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1071,6 +1151,14 @@
             }
         },
         {
+            "Key": "7ee3eda1-ecdd-40e4-b00e-0a2a4316166c",
+            "Value": {
+                "id": "362371ad-0b94-43a5-bc9a-3469054ccda0",
+                "resourcePath": "notes\\adding modules.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "800750be-eac9-40a9-a644-009c93aeaeb6",
             "Value": {
                 "id": "39a1b7a6-79bc-4144-ad3c-a362fa40a85e",
@@ -1215,6 +1303,14 @@
             }
         },
         {
+            "Key": "90a53b8b-20c7-4055-907e-aa4b265eb82b",
+            "Value": {
+                "id": "0731cf18-4260-4f9a-a257-bce58b8b2814",
+                "resourcePath": "sprites\\s_thermal_lance_spell\\s_thermal_lance_spell.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "90b0c8ab-7ea9-4146-a72d-bdcd06494cc3",
             "Value": {
                 "id": "edb7ee9d-dd1f-47db-a51a-fbdba59a78ec",
@@ -1335,6 +1431,14 @@
             }
         },
         {
+            "Key": "9be3ad4f-1bb5-4128-b595-25ade698142e",
+            "Value": {
+                "id": "0efb6837-4f57-479c-b139-d4e80eb089ac",
+                "resourcePath": "views\\9be3ad4f-1bb5-4128-b595-25ade698142e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9d7df79f-284c-472b-ab05-194e8b76ef39",
             "Value": {
                 "id": "98f364be-d395-43b4-9c8f-aa15a7f77fb7",
@@ -1431,6 +1535,14 @@
             }
         },
         {
+            "Key": "a4d223f1-df5c-489d-adb4-439c6bfd8c34",
+            "Value": {
+                "id": "81e56af9-f6c7-4a28-8bc1-ce5baaf4ec2c",
+                "resourcePath": "scripts\\scr_check_anvil_class_plates\\scr_check_anvil_class_plates.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a625f644-fd84-407b-94b1-553070930b39",
             "Value": {
                 "id": "fd3edc1f-c669-4935-8750-7420ab5ed39b",
@@ -1495,6 +1607,14 @@
             }
         },
         {
+            "Key": "a929a7a6-71b6-4909-a62f-793281bb67de",
+            "Value": {
+                "id": "5c7abe4b-aa51-401c-a5e7-51014f4bbb49",
+                "resourcePath": "scripts\\scr_cast_emergency_shield\\scr_cast_emergency_shield.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9a42ce5-06e6-4c7a-9c7d-0b28ffa2e214",
             "Value": {
                 "id": "28f9fe21-203e-41f2-ae5e-84ca6e9b5fb1",
@@ -1516,6 +1636,14 @@
                 "id": "4dab55dd-7d15-4780-b067-e4c49a1b19a2",
                 "resourcePath": "objects\\o_anvil_class_plates_module_card\\o_anvil_class_plates_module_card.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "abe07c50-8dd1-47a2-b28c-f58cbe187c2f",
+            "Value": {
+                "id": "806af635-ce72-4814-bfb8-c2555b7d1403",
+                "resourcePath": "scripts\\scr_load_serrated_plates\\scr_load_serrated_plates.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1636,6 +1764,14 @@
                 "id": "066a6194-b5b3-4203-9a83-0c65e51056b4",
                 "resourcePath": "views\\b72e4258-6e08-4f8c-8f13-0bca7eece1f9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b799a5eb-3f45-4930-9686-1e25e31f296e",
+            "Value": {
+                "id": "20f96e05-f3cf-4d30-972a-ed2f82e4d90a",
+                "resourcePath": "objects\\o_wave_crasher_shield_module_card\\o_wave_crasher_shield_module_card.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1852,6 +1988,14 @@
                 "id": "86c1695d-083e-40c8-a8c0-75b36edd8f82",
                 "resourcePath": "sprites\\s_enemy_squad_placeholder\\s_enemy_squad_placeholder.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d3092cbc-446c-4b19-a860-ae40e9601c72",
+            "Value": {
+                "id": "6f964c09-68cf-48f9-9228-af4fa66eb929",
+                "resourcePath": "objects\\o_spell_thermal_lance\\o_spell_thermal_lance.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2103,6 +2247,14 @@
             }
         },
         {
+            "Key": "f4e3d24c-35f8-4024-92e5-42af4e5f9d69",
+            "Value": {
+                "id": "29395eda-9df7-49ff-bc3f-70ab0d430f55",
+                "resourcePath": "scripts\\scr_load_thermal_lance\\scr_load_thermal_lance.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f5111969-4b99-4678-921d-ce9388b11a3f",
             "Value": {
                 "id": "2df641be-9371-4ee9-9bff-21bab7d5b9f1",
@@ -2167,14 +2319,6 @@
             }
         },
         {
-            "Key": "fcccab57-ecbe-45c3-86d7-7d01a1df025d",
-            "Value": {
-                "id": "624db7a8-bb3f-4a97-a779-6182f7405742",
-                "resourcePath": "objects\\o_ship_clone_2\\o_ship_clone_2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "fd698e66-37bd-42e8-964c-3b04e0b9ccbf",
             "Value": {
                 "id": "c7a08ae3-aec0-4e49-9d5e-e7c8ef5a359d",
@@ -2206,8 +2350,12 @@
         "04c9e2a6-b9b6-470b-b0e5-3fa06c2c9118",
         "db797097-37c2-40f5-9ede-0d7e06561c9b",
         "960dd721-fae1-4eda-a771-00d84be30738",
+        "09e4f926-7dc9-4722-b219-fd4b16e63cb4",
         "df94cc31-2e07-4c0b-8870-43c9b26f4147",
         "482bb2f9-0755-44f1-9656-672c76c61b30",
+        "f4e3d24c-35f8-4024-92e5-42af4e5f9d69",
+        "abe07c50-8dd1-47a2-b28c-f58cbe187c2f",
+        "55e95e95-22df-406e-992a-e496f3e20e0f",
         "15be53b0-623c-476c-a13f-2f72f4660818",
         "5eb2afb3-a265-4407-b144-52d40a0f7452",
         "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
@@ -2224,6 +2372,9 @@
         "78d8e449-86ac-4ab0-828c-417da3876583",
         "a9a42ce5-06e6-4c7a-9c7d-0b28ffa2e214",
         "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
+        "a929a7a6-71b6-4909-a62f-793281bb67de",
+        "135d6fe4-09b4-48d5-a4a1-72b1c439af53",
+        "a4d223f1-df5c-489d-adb4-439c6bfd8c34",
         "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
         "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
         "5ef05e9b-d57e-411d-9171-afad16f7b5ee",

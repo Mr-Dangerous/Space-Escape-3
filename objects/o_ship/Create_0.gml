@@ -74,5 +74,16 @@ visible = false
 
 state = ship.planning
 
+//spell module variables
+thermal_lance_damage_counter = 0
+emergency_shield_counter = 0
+
+//armor module variables
+anvil_class_plates_timing_counter = 0
+serrated_plates = 0 //level of the plates
+serrated_plates_damage_counter = 0//the counter that ticks for damage from plates
+wave_crasher_shield = 0//level of the part
+wave_crasher_shield_damage_counter = 0 //counter that ticks for damage and effect
+
 
 

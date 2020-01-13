@@ -159,8 +159,8 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "armor_load_script",
-            "varType": 0
+            "varName": "armor_script",
+            "varType": 4
         },
         {
             "id": "bbdf982f-a11e-445e-9fb9-8cb2a31d4611",
