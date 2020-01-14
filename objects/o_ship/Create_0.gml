@@ -37,9 +37,20 @@ armor = 1
 shields = 1
 energy = 0
 
-max_armor = 0
-max_shields = 0
+max_armor = 1
+max_shields = 1
 max_energy = 20
+
+//
+max_mass_shield_can_deflect = 5 
+
+//sheild directional strength
+shield_forward_strength = 80
+shield_left_strength = 60
+shield_right_strength = 60
+shield_rear_strength = 20
+
+
 _energy_multiplier = 10//not really sure what this is right now.
 
 ship_disabled_counter = 0
