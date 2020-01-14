@@ -2,7 +2,7 @@ var thermal_lance = instance_create_layer(x, y, "Projectiles", o_spell_thermal_l
 var size_multiplier = energy/20
 size_multiplier = clamp(size_multiplier, 1, 2.5)
 //testing
-size_multiplier = 2.5
+size_multiplier = 1
 show_debug_message("spell cast!")
 energy_sub_counter = 0
 energy = 0
