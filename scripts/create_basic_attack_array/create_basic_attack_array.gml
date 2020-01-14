@@ -5,6 +5,7 @@ basic_attack_array[0, 0] = 1//number of basic attacks
 basic_attack_array[0, 1] = team.left
 basic_attack_array[0, 2] = image_scale //seperate image scale of projectile
 basic_attack_array[0, 3] = 5//gimbal_fire_angle
+basic_attack_array[0, 4] = 2//weapon mass
 //for each basic attack
 basic_attack_array[1, 0] = 5//basic speed
 basic_attack_array[1, 1] = s_bullet_original //projectile resource

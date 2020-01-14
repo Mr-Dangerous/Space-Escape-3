@@ -1,9 +1,16 @@
 
 ///@param targeted_ship
 ///@param damage
-///@param projectile_weight
+///@param weapon_weight
+/*
+Weapons havre mass.  If the mass is 0, the weapon is an energy weapon.  
+If the mass is 10, it is a piercing weapon.  WEapon weight is between 1 and 9
+*/
+
+
 var targeted_ship = argument0
 var _damage = argument1
+var _projectile_mass = argument2
 
 
 var _temporary_shields = targeted_ship.temporary_shields
