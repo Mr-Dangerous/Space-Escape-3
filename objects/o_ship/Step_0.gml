@@ -90,10 +90,10 @@ switch(state){
 		if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter++
 		energy = energy_sub_counter/_energy_multiplier
 		if (energy >= max_energy){
-			if (ability_script != 0){
-				//will actually be a state
-				state = ship.cast_ability
-			}
+		
+			//will actually be a state
+			state = ship.cast_ability
+			
 		}
 	
 		//find target

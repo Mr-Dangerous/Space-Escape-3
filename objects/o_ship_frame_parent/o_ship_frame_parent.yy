@@ -168,7 +168,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "scr_hunter_strike()",
+            "value": "scr_hunter_strike",
             "varName": "basic_ability_script",
             "varType": 5
         }
