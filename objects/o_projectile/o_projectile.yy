@@ -117,6 +117,34 @@
             "value": "0",
             "varName": "damage",
             "varType": 1
+        },
+        {
+            "id": "6823651a-da81-4981-a8e5-1fd0ebb87dac",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "mass",
+            "varType": 1
+        },
+        {
+            "id": "1bc3d4f6-3d4e-4c66-9855-0d8e97bc618d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "directional_damage",
+            "varType": 3
         }
     ],
     "solid": false,

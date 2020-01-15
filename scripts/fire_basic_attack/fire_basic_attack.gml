@@ -42,6 +42,8 @@ repeat(_basic_attack_number){
 		damage = _basic_attack_array[_i, 2]
 		team_attack_from = _basic_attack_team
 		damage_type = _basic_attack_array[_i, 3]
+		mass = _basic_attack_array[0, 4]
+		directional_damage = _basic_attack_array[0, 5]
 	}
 	_i++
 }

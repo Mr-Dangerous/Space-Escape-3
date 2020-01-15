@@ -15,7 +15,8 @@
         "548cc713-d699-4449-9186-f5b496312969",
         "9e2e5895-41dd-431f-a40c-a21e1aca0692",
         "1faace0d-27b1-494b-8fc0-890448d6d15f",
-        "3f7a2b88-ec20-4a5e-9844-b2378d574f54"
+        "3f7a2b88-ec20-4a5e-9844-b2378d574f54",
+        "79eac401-ce0e-4d68-80dc-f272118fe2ec"
     ],
     "filterType": "GMScript",
     "folderName": "Ai and movement scripts",

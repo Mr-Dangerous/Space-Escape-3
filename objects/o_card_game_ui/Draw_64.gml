@@ -81,8 +81,6 @@ for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){
 	//}
 }
 
-//draw the repair bays
-
 
 //testing something
 
