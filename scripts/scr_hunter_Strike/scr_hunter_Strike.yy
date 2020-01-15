@@ -1,8 +1,8 @@
 {
-    "id": "4e05162a-f86f-4045-8980-c9a6653644aa",
+    "id": "ab0c06c7-3b3e-42c3-8262-3ac6fb70a756",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_fire_missile",
+    "name": "scr_hunter_strike",
     "IsCompatibility": false,
     "IsDnD": false
 }

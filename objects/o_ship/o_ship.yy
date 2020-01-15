@@ -287,6 +287,20 @@
             "value": "0",
             "varName": "fuel_cost",
             "varType": 0
+        },
+        {
+            "id": "7e0c7f23-5d0a-4f3e-af43-3a5e5bbec039",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "basic_ability",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -1,3 +1,4 @@
+
 if (instance_exists(ship_target)){
 	var _missile = instance_create_layer(x, y, "Projectiles", o_propelled_weapon)
 	with (_missile){

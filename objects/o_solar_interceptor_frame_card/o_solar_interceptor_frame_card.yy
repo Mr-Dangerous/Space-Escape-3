@@ -47,6 +47,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
             "value": "Breakthrough"
+        },
+        {
+            "id": "efb014a0-52a1-4983-9f90-b87a2464ee8a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
+            "value": "scr_hyper_boost()"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

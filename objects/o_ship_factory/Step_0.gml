@@ -44,6 +44,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 				_module_array[i] = factory_item[i-1,1].loading_script
 			}
 		}
+		deployed_ship.basic_ability = ship_frame_contained.basic_ability_script
 		deployed_ship.assigned_grid_x = assigned_grid_x
 		deployed_ship.assigned_grid_y = assigned_grid_y
 		deployed_ship.reference_factory = self

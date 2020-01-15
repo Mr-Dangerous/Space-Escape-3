@@ -54,7 +54,15 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "Command"
+            "value": "Weapons Platform"
+        },
+        {
+            "id": "76fe4fd5-16ba-4193-8246-94fe1f19efc5",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
+            "value": "scr_precision_strike()"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

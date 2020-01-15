@@ -142,14 +142,15 @@ switch(state){
 	break;
 	
 	case ship.cast_ability:
-	if (ability_script != 0){
-		script_execute(ability_script)
-	} else {
-		state = ship.battle//to change later
-	}
+
+	script_execute(basic_ability)
+	script_execute(ability_script)
 	energy = 0
 	energy_sub_counter = 0
-	state = ship.battle
+	//some abilities will trigger a new state, if they don't, here's where it switches back.
+	if (state = ship.cast_ability){
+		state = ship.battle
+	}
 		
 
 	break;

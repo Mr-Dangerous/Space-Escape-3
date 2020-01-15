@@ -55,6 +55,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
             "value": "Support"
+        },
+        {
+            "id": "b5ec0dc6-5b93-4ef4-86b6-2680997f7b44",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
+            "value": "scr_deploy_drones()"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
