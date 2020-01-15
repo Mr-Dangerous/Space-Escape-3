@@ -1,0 +1,12 @@
+Just for reference
+
+1:  Shuffle shop for modules
+2:  Shuffle shop for ships
+3:  
+4:  Old spawn enemy fleet button, now deprecated
+5:  Ships enter battle/firing range
+0:  restart gmae
+9:  Music on or off
+Z:  Ships gain energy and cast their ability
+S:  Advance turn by one (gains resources, ect.)
+E:  Spawn enemy fleet in the factories

@@ -141,6 +141,7 @@ for (var i = 0; i < 8; i++){
 	factory_positions[i+8, 0] = _base_x_offset + _spacing
 	factory_positions[i+8, 1] = _base_y_offset + (i*_spacing)
 }
+//create allied ship factories
 var _factory_array_size = array_length_1d(factory_positions)
 for (var i = 0; i < _factory_array_size; i++){
 	if (factory_positions[i, 0] != 0){
@@ -149,8 +150,35 @@ for (var i = 0; i < _factory_array_size; i++){
 		var _factory = instance_create_layer(_x, _y, "Cards", o_ship_factory)
 		with (_factory){
 			card_game_controller = other
+			factory_team = team.left
 		}
 		ship_factories[i] = _factory
+	}
+}
+//create enemy ship factories - on screen for now!
+enemy_ship_factories = array_create(16, noone)
+enemy_factory_positions = array_create(16, [0, 0])
+_base_x_offset = room_width - 250
+_base_y_offset = 80
+_spacing = 130
+for (var i = 0; i < 8; i++){
+	enemy_factory_positions[i, 0] = _base_x_offset //x position
+	enemy_factory_positions[i, 1] = _base_y_offset + (i*_spacing)
+	enemy_factory_positions[i+8, 0] = _base_x_offset + _spacing
+	enemy_factory_positions[i+8, 1] = _base_y_offset + (i*_spacing)
+}
+
+var _factory_array_size = array_length_1d(enemy_factory_positions)
+for (var i = 0; i < _factory_array_size; i++){
+	if (enemy_factory_positions[i, 0] != 0){
+		_x = enemy_factory_positions[i, 0]
+		_y = enemy_factory_positions[i, 1]
+		var _enemy_factory = instance_create_layer(_x, _y, "Cards", o_ship_factory)
+		with (_enemy_factory){
+			card_game_controller = other
+			factory_team = team.right
+		}
+		enemy_ship_factories[i] = _enemy_factory
 	}
 }
 

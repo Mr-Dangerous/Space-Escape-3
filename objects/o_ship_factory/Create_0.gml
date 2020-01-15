@@ -8,6 +8,7 @@ image_yscale = .8
 
 ship_deployed = false
 create_ship = false
+factory_team = team.left
 
 //module socket offests - assuming factories are origin center
 socket_offsets[0, 0]= 0 //x

@@ -23,6 +23,8 @@ if (created = false){
 	if (ship_team = team.right){
 		battle_grid = battle_map.right_grid_container
 		battle_grid_positions = battle_map.right_grid_positions
+		direction = 180
+		image_angle = 180
 	
 		
 	}

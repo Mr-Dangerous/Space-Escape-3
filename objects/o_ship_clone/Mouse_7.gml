@@ -1,6 +1,6 @@
-
-#region Old solution, may need to be deleted later
 var grid_space_radius = 32
+#region change positions
+
 if (new_ship = false){
 	//check to see what grid position is nearest
 	var battle_map = instance_find(o_battle_map, 0)

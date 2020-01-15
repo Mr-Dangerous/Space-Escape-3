@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "035e3d7a-3504-40b1-b2c9-b907f805992e",
+            "Value": {
+                "id": "0ebe9b71-fdcb-4dbb-a9cf-08b2599fc865",
+                "resourcePath": "notes\\Debug menu.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "046263c0-6d80-4e91-9ea6-4a84e69f2f83",
             "Value": {
                 "id": "15c8ed7a-519a-4635-9afd-865b3a2a6fd8",
