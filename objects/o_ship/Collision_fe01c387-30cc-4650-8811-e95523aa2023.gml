@@ -22,13 +22,13 @@ if (serrated_plates != 0){
 		}
 	}
 }
-if (wave_crasher_shield != 0){
+if (wave_crasher_shield != 0 and speed >= max_speed-.05){
 	//ALSO NEEDS A CHECK TO SEE IF GOING AT MAX SPEED
-	if (other.ship_team = ship_team){//set up like this for nwo for testing purposes
+	if (other.ship_team != ship_team){//set up like this for nwo for testing purposes
 		if (other.wave_crasher_shield_damage_counter = 0){
 			other.wave_crasher_shield_damage_counter = 15
 			//generate the direction to add motion
-			generate_shields = .9
+			generate_shields = 10
 			var _p_dir = point_direction(x, y, other.x, other.y)
 			var _p_distance = point_distance(x, y, other.x, other.y)
 			var _force = (3)//defintely needs to be tweaked

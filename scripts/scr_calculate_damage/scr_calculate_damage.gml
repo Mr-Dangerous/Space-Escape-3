@@ -46,8 +46,8 @@ if (_shields > 0){
 		} else {
 			targeted_ship.shields -= ceil(_projectile_mass)
 		}
-		if (targeted_ship.generate_shields <= 0){
-			generate_shields = _projectile_mass*2
+		if (targeted_ship.generate_shields <= _projectile_mass*2){
+			targeted_ship.generate_shields = _projectile_mass*2
 		}
 		
 		//find which shield strength to use
@@ -94,6 +94,7 @@ if (_shields > 0){
 			} else {
 				targeted_ship.shields -= _max_mass_shield_can_deflect
 			}
+			targeted_ship.generate_shields = 10
 		}
 		if (_projectile_mass = 0){
 			if (_temporary_shields > 0){
@@ -101,6 +102,7 @@ if (_shields > 0){
 			} else {
 				targeted_ship.shields -= _damage
 			}
+			targeted_ship.generate_shields = 10
 		}
 	}
 }

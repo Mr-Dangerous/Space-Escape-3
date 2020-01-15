@@ -8,6 +8,7 @@
 //enemy_spawn_fleet[0, 3]= //module array, if needed
 var _enemy_ship_card = instance_create_layer(room_width, room_height, "Cards", o_iron_frigate_frame_card)
 var _enemy_module_array = array_create(6, noone)
+_enemy_module_array[0] = instance_create_layer(0, 0, "Cards", o_armada_5_module_card)
 enemy_spawn_fleet[0, 0] = 2
 enemy_spawn_fleet[0, 1] = 2
 enemy_spawn_fleet[0, 2] = _enemy_ship_card

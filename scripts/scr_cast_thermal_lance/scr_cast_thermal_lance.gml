@@ -12,4 +12,3 @@ with(thermal_lance){
 	image_yscale *= size_multiplier
 	
 }
-state = ship.firing_range//to change to battle

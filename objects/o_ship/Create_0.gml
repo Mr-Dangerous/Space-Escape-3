@@ -80,7 +80,7 @@ fire_rate_counter = 0
 secondary_fire_rate = -1
 secondary_fire_rate_counter = 0
 
-shield_sprite = s_shield_2
+shield_sprite = s_shield
 generate_shields = 0
 reinforced_shields = false
 

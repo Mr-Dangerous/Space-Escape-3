@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "1d0420e1-9086-4993-b27d-cb0d6ac049d1",
+            "Value": {
+                "id": "89007240-1d27-4903-ba2d-8b16ddcf09a0",
+                "resourcePath": "objects\\o_missile_explosion\\o_missile_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1d18febc-1a49-4993-bb2e-2955aff4403d",
             "Value": {
                 "id": "6eb0df70-62e5-42c4-be94-d747a6273854",
@@ -740,6 +748,14 @@
                 "id": "3494e6a6-5c9c-43a8-b3f9-0ab30384e17c",
                 "resourcePath": "views\\4df3774a-87a9-430e-8aa2-0eb74256364d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4e05162a-f86f-4045-8980-c9a6653644aa",
+            "Value": {
+                "id": "5c0042db-750c-4eb3-b7f1-9fe30c4d04e9",
+                "resourcePath": "scripts\\scr_fire_missile\\scr_fire_missile.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1420,6 +1436,14 @@
                 "id": "08964484-e32a-4d68-874c-1f2f8fd29a9e",
                 "resourcePath": "views\\9672e054-0f16-4a0d-86b2-b6e88d58a746.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "975d6444-c069-4c17-b7b2-e3e53a4f7f4d",
+            "Value": {
+                "id": "e016ad8a-3224-405f-b1af-f8b3d5902306",
+                "resourcePath": "objects\\o_propelled_weapon\\o_propelled_weapon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2421,7 +2445,8 @@
         "65147479-3cce-4afa-b939-b3411f0c6298",
         "dfc99b0c-6f1e-4e3d-aa12-efa48e4b7f3c",
         "58427b9d-cb13-45bd-ad3c-9b40f73fd8e9",
-        "6023a1ea-bce5-4432-bd9e-3a016cd5f56f"
+        "6023a1ea-bce5-4432-bd9e-3a016cd5f56f",
+        "4e05162a-f86f-4045-8980-c9a6653644aa"
     ],
     "tutorial": ""
 }

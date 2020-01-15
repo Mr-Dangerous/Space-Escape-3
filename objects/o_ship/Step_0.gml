@@ -90,7 +90,7 @@ switch(state){
 		if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter++
 		energy = energy_sub_counter/_energy_multiplier
 		if (energy >= max_energy){
-			if (ability_load_script != 0){
+			if (ability_script != 0){
 				//will actually be a state
 				state = ship.cast_ability
 			}
@@ -145,8 +145,11 @@ switch(state){
 	if (ability_script != 0){
 		script_execute(ability_script)
 	} else {
-		state = ship.firing_range//to change later
+		state = ship.battle//to change later
 	}
+	energy = 0
+	energy_sub_counter = 0
+	state = ship.battle
 		
 
 	break;
@@ -184,7 +187,7 @@ switch(state){
 	case ship.disabled:
 	if (ship_disabled_counter > 0) ship_disabled_counter--
 	if (ship_disabled_counter <= 0){
-		state = ship.firing_range//TO BE CHANGED
+		state = ship.battle//TO BE CHANGED
 	}
 	
 	if (speed > 0){
