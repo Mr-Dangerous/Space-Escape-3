@@ -19,7 +19,7 @@ if (enemy_target = noone){
 		//cancel if no ships are found
 		
 		//cancel the while loop if a valid ship is found
-		if (nearby_ship.ship_team = enemy_team){
+		if (nearby_ship.ship_team = enemy_team and !nearby_ship.cloak){
 			enemy_target = nearby_ship
 			i = 20
 		}

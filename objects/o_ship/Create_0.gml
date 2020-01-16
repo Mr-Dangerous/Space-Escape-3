@@ -101,6 +101,8 @@ hyper_boost_duration_timer = -1
 old_max_speed = 0
 old_turning_speed = 0
 old_acceleration_rate = 0
+cloak = false
+cloak_timer = -1
 
 //spell module variables
 thermal_lance_damage_counter = 0

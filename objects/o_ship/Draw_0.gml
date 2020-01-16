@@ -61,7 +61,7 @@ for (var i = 0; i < array_height_2d(exhaust_array); i++){
 	_y = y+lengthdir_y(exhaust_array[i, 1], image_angle+exhaust_array[i, 0])
 	var _exhaust_image_scale = image_scale * exhaust_scale_multiplier//times a multiplier that makes it bigger or smaller!
 	draw_sprite_ext(exhaust_sprite, _sub_image, _x, _y, 
-	_exhaust_image_scale, _exhaust_image_scale, image_angle, c_white, 1)
+	_exhaust_image_scale, _exhaust_image_scale, image_angle, c_white, image_alpha)
 	if (exhaust_sub_image_counter > sprite_get_number(exhaust_sprite)*5){
 		exhaust_sub_image_counter = 0
 	}

@@ -61,6 +61,25 @@ if (ship_disabled_counter > 0){
 	state = ship.disabled
 }
 
+if (cloak){
+	if (cloak_timer > 0){
+		cloak_timer--
+	}
+	if (image_alpha > .5){
+		image_alpha -= .05
+	}
+	if (cloak_timer = 0){
+		cloak = false
+	}
+} else {
+	if (image_alpha < 1){
+		image_alpha += .1
+		if (image_alpha>1){
+			image_alpha = 1
+		}
+	}
+}
+
 //determine exhaust scale multipler
 exhaust_scale_multiplier = 1
 #endregion
