@@ -94,8 +94,13 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 	secondary_attack_array[i, 5] = weapon_visual_offsets[i+number_of_weapons-1, 1]//distance from origin
 	secondary_attack_array[i, 6] = 0
 }
+#region Exhaust
+var _exhaust_1_x_offset = -458*image_scale
+var _exhaust_1_y_offset = 0
 
 
+exhaust_array[0, 0] = point_direction(0, 0, _exhaust_1_x_offset, _exhaust_1_y_offset)
+exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_offset)
 
 
 #endregion

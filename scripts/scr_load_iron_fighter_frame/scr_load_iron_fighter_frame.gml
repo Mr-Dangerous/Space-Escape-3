@@ -98,6 +98,24 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 
 #endregion
 
+#region exhausts
+var _exhaust_1_x_offset = -412*image_scale
+var _exhaust_1_y_offset = 79*image_scale
+
+var _exhaust_2_x_offset = -412*image_scale
+var _exhaust_2_y_offset = -79*image_scale
+
+
+
+exhaust_array[0, 0] = point_direction(0, 0, _exhaust_1_x_offset, _exhaust_1_y_offset)
+exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_offset)
+
+exhaust_array[1, 0] = point_direction(0, 0, _exhaust_2_x_offset, _exhaust_2_y_offset)
+exhaust_array[1, 1] = point_distance(0, 0, _exhaust_2_x_offset, _exhaust_2_y_offset)
+
+
+#endregion
+
 #region Baseline variables
 shields = medium_shields
 armor = medium_armor

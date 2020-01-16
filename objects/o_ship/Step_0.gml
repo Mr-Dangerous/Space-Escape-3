@@ -60,6 +60,9 @@ if (armor <= 0){
 if (ship_disabled_counter > 0){
 	state = ship.disabled
 }
+
+//determine exhaust scale multipler
+exhaust_scale_multiplier = 1
 #endregion
 
 
@@ -188,6 +191,7 @@ switch(state){
 			if (hyper_boost_channel_timer = 0){
 				//eventually, this will jsut seek the target, overshoot for
 				//sure, and then leave the state.
+				exhaust_scale_multiplier *= 2
 				ship_target = instance_furthest(x, y, o_ship)
 				if (hyper_boost_duration_timer = -1){
 					hyper_boost_duration_timer = 60

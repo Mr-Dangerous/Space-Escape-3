@@ -40,7 +40,7 @@ var energy_x_end_offset = x+((energy/max_energy) *64)-32
 draw_line_width_color(energy_x_offset, energy_y_offset, energy_x_end_offset, energy_y_offset, 6, energy_bar_color, c_purple)
 #endregion
 
-#region
+#region shield srpites
 shield_color = c_white
 if (generate_shields > 0){
 	
@@ -51,4 +51,20 @@ if (generate_shields > 0){
 	generate_shields-=.3
 	
 }
+#endregion
+
+#region exhaust_sprites
+for (var i = 0; i < array_height_2d(exhaust_array); i++){
+	exhaust_sub_image_counter++
+	var _sub_image = round(exhaust_sub_image_counter/5)
+	_x = x+lengthdir_x(exhaust_array[i, 1], image_angle+exhaust_array[i, 0])
+	_y = y+lengthdir_y(exhaust_array[i, 1], image_angle+exhaust_array[i, 0])
+	var _exhaust_image_scale = image_scale * exhaust_scale_multiplier//times a multiplier that makes it bigger or smaller!
+	draw_sprite_ext(exhaust_sprite, _sub_image, _x, _y, 
+	_exhaust_image_scale, _exhaust_image_scale, image_angle, c_white, 1)
+	if (exhaust_sub_image_counter > sprite_get_number(exhaust_sprite)*5){
+		exhaust_sub_image_counter = 0
+	}
+}
+
 #endregion

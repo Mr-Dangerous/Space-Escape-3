@@ -84,6 +84,11 @@ shield_sprite = s_shield
 generate_shields = 0
 reinforced_shields = false
 
+exhaust_sprite = s_rocket_exhaust_original
+exhaust_array = scr_return_exhaust_array()
+exhaust_sub_image_counter = 0
+exhaust_scale_multiplier = 1
+
 visible = false
 
 state = ship.planning
