@@ -22,5 +22,7 @@ if (projectile_class != projectile.rocket){
 		image_angle = other.image_angle
 		direction = other.image_angle
 		speed = 0
+		team_attack_from = other.team_attack_from
+		damage = other.damage
 	}
 }

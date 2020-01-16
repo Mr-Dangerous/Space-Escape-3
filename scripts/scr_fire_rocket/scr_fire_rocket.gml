@@ -18,6 +18,7 @@ if (instance_exists(ship_target)){
 		mass = 7
 		projectile_target = other.ship_target
 		duration = 1000
-		projectile_class = _projectile_class
+		
 	}
+	_missile.projectile_class = _projectile_class
 }
