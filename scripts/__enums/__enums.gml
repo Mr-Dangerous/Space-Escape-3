@@ -23,6 +23,11 @@ enum projectile{
 	missile,
 	torpedo
 }
+enum channel_ability{
+	null,
+	hyper_boost
+}
+
 enum team{
 	//can eventually be sxpanded to have player slots
 	left, //player
@@ -36,6 +41,7 @@ enum ship{
 	battle,
 	cast_ability,
 	disabled,
+	channel_ability,
 	firing_range//for testing purposes only
 }
 

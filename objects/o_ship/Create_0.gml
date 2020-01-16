@@ -87,6 +87,15 @@ reinforced_shields = false
 visible = false
 
 state = ship.planning
+channel_ability_state = channel_ability.null
+saved_variables = ds_map_create()
+
+//ability variables
+hyper_boost_channel_timer = -2
+hyper_boost_duration_timer = -1
+old_max_speed = 0
+old_turning_speed = 0
+old_acceleration_rate = 0
 
 //spell module variables
 thermal_lance_damage_counter = 0

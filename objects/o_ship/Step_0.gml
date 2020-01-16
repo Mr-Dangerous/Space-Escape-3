@@ -145,14 +145,104 @@ switch(state){
 
 	script_execute(basic_ability)
 	script_execute(ability_script)
-	energy = 0
-	energy_sub_counter = 0
+	
 	//some abilities will trigger a new state, if they don't, here's where it switches back.
 	if (state = ship.cast_ability){
 		state = ship.battle
+		energy = 0
+		energy_sub_counter = 0
 	}
 		
 
+	break;
+	
+	
+	case ship.channel_ability:
+	#region Ability state machine
+		switch(channel_ability_state){
+			case channel_ability.hyper_boost:
+			if (hyper_boost_channel_timer = -2){
+				hyper_boost_channel_timer = 60
+				//sets the base variables, although maybe this shouldnt be needed
+				old_max_speed = max_speed
+				old_turning_speed = turn_speed
+				old_acceleration_rate = acceleration_rate
+			}
+			if (hyper_boost_channel_timer > 0){
+				hyper_boost_channel_timer--
+				if (speed > 0){
+					speed -= .5
+				}
+				if (speed < 0){
+					speed = 0
+				}
+				turn_speed = 5
+					
+			
+				ship_target = scr_return_furthest_target()
+				
+				var _p_dir = point_direction(x, y, ship_target.x, ship_target.y)
+				turn_to_face_direction(_p_dir)
+				direction = image_angle
+			}
+			if (hyper_boost_channel_timer = 0){
+				//eventually, this will jsut seek the target, overshoot for
+				//sure, and then leave the state.
+				ship_target = instance_furthest(x, y, o_ship)
+				if (hyper_boost_duration_timer = -1){
+					hyper_boost_duration_timer = 60
+				}
+				if (hyper_boost_duration_timer > 0){
+					hyper_boost_duration_timer--
+				}
+				max_speed = old_max_speed * 3 //hyperboost multiplier
+				turn_speed = 1
+				acceleration_rate = old_acceleration_rate * 2
+				speed += acceleration_rate
+				if (speed > max_speed){
+					speed = max_speed
+				}
+				
+				if (instance_exists(ship_target)){
+					var _p_dir = point_direction(x, y, ship_target.x, ship_target.y)
+					turn_to_face_direction(_p_dir)
+					direction = image_angle
+					
+				}
+				if (hyper_boost_duration_timer = 0){
+					
+					hyper_boost_channel_timer--
+					ship_target = scr_return_target()
+					turn_speed = old_turning_speed
+					acceleration_rate = old_acceleration_rate
+					
+				}
+			}
+			if (hyper_boost_channel_timer = -1){
+				//begin to restore old values
+				if (!instance_exists(ship_target)){
+					ship_target = scr_return_target()
+				}
+				max_speed -=.2
+				if (instance_exists(ship_target)){
+					var _p_dir = point_direction(x, y, ship_target.x, ship_target.y)
+					turn_to_face_direction(_p_dir)
+					direction = image_angle
+				}
+				if (max_speed < old_max_speed){
+					max_speed = old_max_speed
+					hyper_boost_channel_timer--
+					energy = 0
+					energy_sub_counter = 0
+					hyper_boost_duration_timer--
+					state = ship.battle
+				}
+			}
+				
+			
+			break;
+		}
+		#endregion
 	break;
 	
 	case ship.firing_range://for testing purposes only.
