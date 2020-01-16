@@ -1,1 +1,1 @@
-scr_fire_rocket()
+scr_fire_rocket(projectile.torpedo)

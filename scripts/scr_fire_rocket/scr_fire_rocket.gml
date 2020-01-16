@@ -1,4 +1,6 @@
+///@param projectile_class
 
+var _projectile_class = argument0
 if (instance_exists(ship_target)){
 	var _missile = instance_create_layer(x, y, "Projectiles", o_propelled_weapon)
 	with (_missile){
@@ -11,9 +13,11 @@ if (instance_exists(ship_target)){
 		image_speed = 5
 		direction = point_direction(x, y, other.ship_target.x, other.ship_target.y)
 		image_angle = direction
+		projectile_class = _projectile_class
 		damage = 100
 		mass = 7
 		projectile_target = other.ship_target
 		duration = 1000
+		projectile_class = _projectile_class
 	}
 }

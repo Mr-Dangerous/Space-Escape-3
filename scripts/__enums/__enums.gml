@@ -18,7 +18,10 @@ enum projectile{
 	medium,
 	heavy,
 	energy,
-	piercing
+	piercing,
+	rocket,
+	missile,
+	torpedo
 }
 enum team{
 	//can eventually be sxpanded to have player slots

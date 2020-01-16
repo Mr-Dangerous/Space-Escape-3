@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 1,
             "m_owner": "975d6444-c069-4c17-b7b2-e3e53a4f7f4d"
+        },
+        {
+            "id": "7b8acb47-3519-4c61-bfec-660b53f654b4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "975d6444-c069-4c17-b7b2-e3e53a4f7f4d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -137,7 +147,7 @@
             "varType": 5
         },
         {
-            "id": "ca1fafaf-3179-4fcc-a6ba-f994c2fe4daf",
+            "id": "fe6a4fb8-56c9-4ab3-b2f5-b01cc85895ef",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -146,9 +156,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.1",
-            "varName": "acceleration_rate1",
+            "value": "0",
+            "varName": "projectile_class",
             "varType": 0
+        },
+        {
+            "id": "bb254e8b-5510-4ccd-b307-b3c083105793",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "secondary_explosion_sprite",
+            "varType": 5
         }
     ],
     "solid": false,

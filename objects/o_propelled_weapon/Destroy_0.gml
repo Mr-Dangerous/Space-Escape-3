@@ -1,4 +1,4 @@
-instance_destroy(projectile_leader)
+
 if (!misfire){
 var destroyed_projectile = instance_create_layer(x, y, "Projectiles", o_missile_explosion)
 	destroyed_projectile.sprite_index = explosion_sprite
@@ -8,6 +8,19 @@ var destroyed_projectile = instance_create_layer(x, y, "Projectiles", o_missile_
 		visible = true
 		image_angle = other.image_angle
 		direction = other.direction
+		speed = 0
+	}
+}
+if (projectile_class != projectile.rocket){
+	var explosion = instance_create_layer(x, y, "Projectiles", o_missile_explosion)
+	with (explosion){
+		//add some damage
+		sprite_index = other.secondary_explosion_sprite
+		image_xscale = other.explosion_image_scale
+		image_yscale = other.explosion_image_scale
+		visible = true
+		image_angle = other.image_angle
+		direction = other.image_angle
 		speed = 0
 	}
 }
