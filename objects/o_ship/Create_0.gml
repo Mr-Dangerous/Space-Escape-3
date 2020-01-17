@@ -103,6 +103,8 @@ old_turning_speed = 0
 old_acceleration_rate = 0
 cloak = false
 cloak_timer = -1
+inhibitor_shield_counter = -1
+inhibitor_shields_granted = 0
 
 //spell module variables
 thermal_lance_damage_counter = 0

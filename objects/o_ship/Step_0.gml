@@ -331,10 +331,25 @@ if (temporary_shield_counter > 0){
 		}
 	}
 }
+if (inhibitor_shield_counter = 0){
+	inhibitor_shield_counter-=1
+	if (temporary_shields > 0){
+		temporary_shields -= inhibitor_shields_granted
+		if (temporary_shields < 0){
+			temporary_shields = 0
+		}
+	}
+}
 
 //spell checks
 if (thermal_lance_damage_counter > 0) thermal_lance_damage_counter--
 if (serrated_plates_damage_counter > 0) serrated_plates_damage_counter--
 if (emergency_shield_counter > 0) emergency_shield_counter--
+if (inhibitor_shield_counter > 0){
+	inhibitor_shield_counter--
+	if (temporary_shields > 0){
+		generate_shields = 10
+	}
+}
 if (wave_crasher_shield_damage_counter > 0) wave_crasher_shield_damage_counter--
 #endregion
