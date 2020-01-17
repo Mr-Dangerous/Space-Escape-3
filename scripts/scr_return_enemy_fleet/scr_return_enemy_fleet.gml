@@ -42,7 +42,7 @@ for (var i =0; i < _fleet_size; i++){
 	}
 	//select the module
 	
-	for (var i = 0; i<_enemy_modules_can_spawn; i++){
+	for (var k = 0; k<_enemy_modules_can_spawn; k++){
 		var _module_assigned = noone
 		while (_module_assigned = noone){
 			var _random_seed = irandom(5)
@@ -75,7 +75,7 @@ for (var i =0; i < _fleet_size; i++){
 			} else {
 				continue
 			}
-			if (i > 7){
+			if (k > 7){
 				break;
 			}
 		}
@@ -86,8 +86,8 @@ for (var i =0; i < _fleet_size; i++){
 	//find the location
 	var _location_found = false
 	while (_location_found = false){
-		_random_x = irandom(6)
-		_random_y = irandom(6)
+		_random_x = irandom(5)
+		_random_y = irandom(5)
 		if (enemy_spawn_locations[_random_x, _random_y] = noone){
 			_x = _random_x
 			_y = _random_y

@@ -119,7 +119,7 @@ switch(state){
 		}
 	
 		//find target
-		if (!instance_exists(ship_target)){
+		if (!instance_exists(ship_target) or ship_target.cloak){
 			ship_target = scr_return_target()
 		}
 		
