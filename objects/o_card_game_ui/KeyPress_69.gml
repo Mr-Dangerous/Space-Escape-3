@@ -6,6 +6,20 @@
 //enemy_spawn_fleet[0, 2]= //assigned frame
 //enemy_module_array = array_create(6, noone)//assign objects as needed, need to spawn them though.
 //enemy_spawn_fleet[0, 3]= //module array, if needed
+
+
+
+for (var i = 0; i < 5; i++){
+	
+}
+var _frigate_card = choose (o_iron_frigate_frame_card, 
+o_imperial_frigate_frame_card, o_crystal_frigate_frame_card, 
+o_solar_frigate_frame_card, o_pirate_frigate_frame_card)
+
+
+
+
+
 var _enemy_ship_card = instance_create_layer(room_width, room_height, "Cards", o_iron_frigate_frame_card)
 var _enemy_module_array = array_create(6, noone)
 _enemy_module_array[0] = instance_create_layer(0, 0, "Cards", o_armada_5_module_card)
