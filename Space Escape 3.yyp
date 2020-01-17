@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "824f7328-ccbf-4dfb-80df-2a924ea95743",
+            "Value": {
+                "id": "5d6381b4-658a-48b3-af29-e12fec49a883",
+                "resourcePath": "objects\\o_repair_drone\\o_repair_drone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "82640618-b837-481b-bddf-e14aa1febae6",
             "Value": {
                 "id": "9a67ea5e-bb88-4c8f-ae6c-7a62f84827cc",

@@ -1,5 +1,5 @@
 if (emergency_shield_counter = 0){
-	temporary_shields += 5*energy
+	temporary_shields += energy
 }
 show_debug_message("spell cast")
 temporary_shield_counter = 360

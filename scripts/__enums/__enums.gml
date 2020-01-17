@@ -8,6 +8,11 @@ enum module {
 	power_plant
 }
 
+enum repair_drone {
+	traveling,
+	attached
+}
+
 enum card_type{
 	frame,
 	module
