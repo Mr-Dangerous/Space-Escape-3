@@ -10,7 +10,8 @@ enum module {
 
 enum repair_drone {
 	traveling,
-	attached
+	attached, 
+	deploy
 }
 
 enum card_type{

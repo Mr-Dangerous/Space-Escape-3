@@ -1,4 +1,4 @@
-var i = 0
+var i = 1
 var _target_ship = self
 var _radius = 300
 var _target_list_acquired = false
@@ -6,7 +6,7 @@ var _target_list = ds_list_create()
 
 while (!_target_list_acquired){
 	var _nearby_ship = instance_nth_nearest(x, y, o_ship, i)
-	var _distance = distance_to_object(_nearby_ship)
+	var _distance = point_distance(x, y, _nearby_ship.x, _nearby_ship.y)
 	if (instance_exists(_nearby_ship)){
 		if (_distance < _radius){
 			if (_nearby_ship.ship_team = ship_team){
@@ -26,10 +26,13 @@ while (!_target_list_acquired){
 
 var _list_size = ds_list_size(_target_list)
 
+
 for (var i = 0; i< _list_size; i++){
 	var _ship_to_check = ds_list_find_value(_target_list, i)
-	if (_ship_to_check.armor/_ship_to_check.max_armor < _target_ship.armor/_target_ship.max_armor){
-		_target_ship = _ship_to_check
+	if (instance_exists(_ship_to_check) and instance_exists(_target_ship)){
+		if (_ship_to_check.armor/_ship_to_check.max_armor < _target_ship.armor/_target_ship.max_armor){
+			_target_ship = _ship_to_check
+		}
 	}
 }
 
