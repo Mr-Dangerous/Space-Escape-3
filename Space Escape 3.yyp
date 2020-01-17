@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "60c4d33e-addd-4b31-855a-581957201e0d",
+            "Value": {
+                "id": "60f66aee-811d-41c6-b727-dbf7453087aa",
+                "resourcePath": "objects\\o_overload\\o_overload.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "61ad6458-26e1-487a-940f-3ef8238738f4",
             "Value": {
                 "id": "b392ed71-c7c9-40ec-8b8d-f6ad4ea7cacc",
@@ -1556,6 +1564,14 @@
                 "id": "db83cecd-6a1b-4517-a1ac-7819115f888e",
                 "resourcePath": "scripts\\scr_movement_manager_2\\scr_movement_manager_2.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9e2f51fb-95bc-44a1-8941-3c22f9e920e0",
+            "Value": {
+                "id": "15d7b2ac-7209-42c3-8dbd-a78a8927cd1c",
+                "resourcePath": "sprites\\sprite131\\sprite131.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
