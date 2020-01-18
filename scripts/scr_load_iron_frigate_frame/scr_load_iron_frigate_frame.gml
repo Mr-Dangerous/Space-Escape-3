@@ -126,18 +126,9 @@ armor = high_armor
 max_speed = slow_movement_speed
 acceleration_rate = 0.01
 turn_speed = slow_acceleration
-priority_target = target_class.frigate
-energy = 0
-
 fire_rate = medium_slow_attack_speed
-fire_rate_counter = 0
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
 class = target_class.frigate
+origin = origin_iron
+sub_class = class_corvette
 
-#endregion
-
-#region size in grid squares
-ship_length = 3
-ship_width = 2
 #endregion

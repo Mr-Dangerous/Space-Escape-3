@@ -94,8 +94,6 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 	secondary_attack_array[i, 5] = weapon_visual_offsets[i+number_of_weapons-1, 1]//distance from origin
 	secondary_attack_array[i, 6] = 0
 }
-
-#endregion
 #region exhausts
 var _exhaust_1_x_offset = -336*image_scale
 var _exhaust_1_y_offset = 0*image_scale
@@ -107,6 +105,8 @@ exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_off
 
 
 #endregion
+#endregion
+
 
 #region Baseline variables
 shields = low_shields
@@ -114,17 +114,9 @@ armor = low_armor
 max_speed = fast_movement_speed
 acceleration_rate = fast_acceleration
 turn_speed = fast_turn_speed
-priority_target = target_class.fighter
-energy = 0
-
 fire_rate = medium_fast_attack_speed
-fire_rate_counter = 0
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
 class = target_class.interceptor
+origin = origin_crystal
+sub_class = class_ghost
 #endregion
 
-#region size in grid squares
-ship_length = 1
-ship_width = 1
-#endregion

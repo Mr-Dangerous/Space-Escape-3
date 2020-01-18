@@ -1,5 +1,6 @@
 /// @description 
 duration_counter++
+if (!instance_exists(origin_ship)) instance_destroy()
 if (duration_counter < 10){
 	image_alpha = duration_counter * .05 // caps at .5 or .45
 }

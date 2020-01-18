@@ -95,10 +95,6 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 	secondary_attack_array[i, 6] = 0
 }
 
-
-
-#endregion
-
 #region Exhaust
 var _exhaust_1_x_offset = -579*image_scale
 var _exhaust_1_y_offset = 0
@@ -122,20 +118,18 @@ exhaust_array[2, 1] = point_distance(0, 0, _exhaust_3_x_offset, _exhaust_3_y_off
 
 #endregion
 
+#endregion
+
 #region Baseline variables
 shields = high_sheilds
 armor = very_high_armor
 max_speed = slow_movement_speed
 acceleration_rate = slow_acceleration
 turn_speed = slow_turn_speed
-priority_target = target_class.frigate
-energy = 0
-
 fire_rate = fast_attack_speed
-fire_rate_counter = 0
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
 class = target_class.frigate
+origin = origin_imperial
+class = class_command
 
 #endregion
 

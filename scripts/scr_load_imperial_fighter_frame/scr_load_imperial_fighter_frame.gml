@@ -104,6 +104,8 @@ exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_off
 
 
 #endregion
+#endregion
+
 
 #region Baseline variables
 shields = medium_low_shields
@@ -111,17 +113,8 @@ armor = medium_high_armor
 max_speed = medium_movement_speed
 acceleration_rate = slow_acceleration
 turn_speed = slow_turn_speed
-priority_target = target_class.frigate
-energy = 0
-
 fire_rate = fast_attack_speed
-fire_rate_counter = 0
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
 class = target_class.fighter
-#endregion
-
-#region size in grid squares
-ship_length = 2
-ship_width = 1
+origin = origin_imperial
+sub_class = class_weapons_platform
 #endregion

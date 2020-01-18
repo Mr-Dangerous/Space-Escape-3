@@ -54,6 +54,7 @@ enum ship{
 enum target_class{
 	interceptor,
 	fighter,
-	frigate
+	frigate,
+	any
 }
 	

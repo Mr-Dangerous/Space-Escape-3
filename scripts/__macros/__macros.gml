@@ -21,7 +21,7 @@
 
 #region shields
 #macro no_shields 0
-#macro low_shields 50
+#macro low_shields 500
 #macro medium_low_shields 100
 #macro medium_shields 150
 #macro medium_high_sheilds 200
@@ -96,7 +96,7 @@
 #endregion
 
 #region Class
-#macro class_recon "Recon"
+#macro class_hunter "Hunter"
 #macro class_ghost "Ghost"
 #macro class_breakthrough "Breakthrough"
 #macro class_shield "Shield"

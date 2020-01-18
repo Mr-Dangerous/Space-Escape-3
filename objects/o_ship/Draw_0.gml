@@ -43,11 +43,14 @@ draw_line_width_color(energy_x_offset, energy_y_offset, energy_x_end_offset, ene
 #region shield srpites
 shield_color = c_white
 if (generate_shields > 0){
-	
+	var _shield_sprite = shield_sprite
+	if (temporary_shields > 0){
+		_shield_sprite = secondary_shield_sprite
+	}
 	shield_alpha = generate_shields * .1
 	shield_alpha = clamp(shield_alpha, 0, 1)
 
-	draw_sprite_ext(shield_sprite, 0, x, y, .15*sprite_height*image_scale, .15*sprite_height*image_scale, image_angle, shield_color, shield_alpha)
+	draw_sprite_ext(_shield_sprite, 0, x, y, .15*sprite_height*image_scale, .15*sprite_height*image_scale, image_angle, shield_color, shield_alpha)
 	generate_shields-=.3
 	
 }

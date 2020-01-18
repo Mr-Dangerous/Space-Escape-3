@@ -14,12 +14,6 @@ visible = true
 
 
 
-
-
-
-
-
-
 //Weapon visual offsets
 /*
 Weapon 1 offsets are the x and y offsets on the base image.
@@ -91,12 +85,6 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 	secondary_attack_array[i, 5] = weapon_visual_offsets[i+number_of_weapons-1, 1]//distance from origin
 	secondary_attack_array[i, 6] = 0
 }
-
-
-
-
-#endregion
-
 #region Exhaust
 var _exhaust_1_x_offset = -688*image_scale
 var _exhaust_1_y_offset = 0
@@ -106,24 +94,19 @@ exhaust_array[0, 0] = point_direction(0, 0, _exhaust_1_x_offset, _exhaust_1_y_of
 exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_offset)
 #endregion
 
+#endregion
+
+
+
 #region Baseline variables
 shields = high_sheilds
 armor = very_high_armor
-max_speed = slow_acceleration
+max_speed = slow_movement_speed
 acceleration_rate = slow_acceleration
 turn_speed = slow_turn_speed
-priority_target = target_class.frigate
-energy = 0
-
 fire_rate = fast_attack_speed
-fire_rate_counter = 0
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
 class = target_class.frigate
+origin = origin_solar
+sub_class = class_support
 
-#endregion
-
-#region size in grid squares
-ship_length = 3
-ship_width = 2
 #endregion

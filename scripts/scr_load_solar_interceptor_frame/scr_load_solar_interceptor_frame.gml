@@ -89,8 +89,6 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 	secondary_attack_array[i, 6] = 0
 }
 
-#endregion
-
 #region exhaust_Array
 //direction
 //length
@@ -106,10 +104,10 @@ exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_off
 exhaust_array[1, 0] = point_direction(0, 0, _exhaust_2_x_offset, _exhaust_2_y_offset)
 exhaust_array[1, 1] = point_distance(0, 0, _exhaust_2_x_offset, _exhaust_2_y_offset)
 
-
-
+#endregion
 
 #endregion
+
 
 #region Baseline variables
 shields = low_shields
@@ -117,14 +115,10 @@ armor = low_armor
 max_speed = fast_movement_speed
 acceleration_rate = fast_acceleration
 turn_speed = fast_turn_speed
-priority_target = target_class.fighter
-energy = 0
-
 fire_rate = fast_attack_speed
-fire_rate_counter = 0
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
 class = target_class.interceptor
+origin = origin_solar
+sub_class = class_breakthrough
 #endregion
 
 #region size in grid squares

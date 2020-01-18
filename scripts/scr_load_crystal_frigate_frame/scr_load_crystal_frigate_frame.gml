@@ -88,11 +88,6 @@ for (var i = 1; i <= secondary_number_of_weapons; i++){
 	secondary_attack_array[i, 6] = 0
 }
 
-
-
-
-#endregion
-
 #region exhausts
 var _exhaust_1_x_offset = -258*image_scale
 var _exhaust_1_y_offset = 0*image_scale
@@ -104,6 +99,11 @@ exhaust_array[0, 1] = point_distance(0, 0, _exhaust_1_x_offset, _exhaust_1_y_off
 
 
 #endregion
+
+
+#endregion
+
+
 
 #region Baseline variables
 shields = high_sheilds
@@ -122,7 +122,3 @@ class = target_class.frigate
 
 #endregion
 
-#region size in grid squares
-ship_length = 3
-ship_width = 2
-#endregion

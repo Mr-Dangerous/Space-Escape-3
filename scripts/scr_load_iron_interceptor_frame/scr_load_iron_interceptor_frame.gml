@@ -113,17 +113,8 @@ armor = low_armor
 max_speed = fast_movement_speed
 acceleration_rate = fast_acceleration
 turn_speed = fast_turn_speed
-priority_target = target_class.fighter
-energy = 0
-
 fire_rate = medium_fast_attack_speed
-fire_rate_counter = 0
 class = target_class.interceptor
-secondary_fire_rate = 0
-secondary_fire_rate_counter = 0
-#endregion
-
-#region size in grid squares
-ship_length = 1
-ship_width = 1
+origin = origin_iron
+sub_class = class_ECP
 #endregion

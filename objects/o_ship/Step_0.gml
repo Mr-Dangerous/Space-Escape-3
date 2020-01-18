@@ -1,51 +1,39 @@
 #region loadup scripts
 if (created = false){
 	created = true
-	if (ship_team = team.right){
-	allied_fleet = card_game_ui_object.right_fleet
-	enemy_fleet = card_game_ui_object.left_fleet
-	
-	
-	}
 	if (ship_team = team.left){
 		allied_fleet = card_game_ui_object.left_fleet
 		enemy_fleet = card_game_ui_object.right_fleet
-
-	}
-	
-	
-	if (ship_team = team.left){
 		battle_grid = battle_map.left_grid_container
 		battle_grid_positions = battle_map.left_grid_positions
-	
-		
+			
 	}
 	if (ship_team = team.right){
+		allied_fleet = card_game_ui_object.right_fleet
+		enemy_fleet = card_game_ui_object.left_fleet
 		battle_grid = battle_map.right_grid_container
 		battle_grid_positions = battle_map.right_grid_positions
 		direction = 180
 		image_angle = 180
-	
-		
 	}
 	
 	projectile_speed = basic_attack_array[1,0]
 	projectile_flight_time = basic_attack_array[1, 6]
 	
-	#endregion
+#endregion
 #region script loading
-var number_of_scripts = array_length_1d(loading_scripts)
+	var number_of_scripts = array_length_1d(loading_scripts)
 	for (var i = 0; i < number_of_scripts; i++){
 		if (loading_scripts[i] != noone){
 			script_execute(loading_scripts[i])
 		}
 	}
-//post script loading
+	//post script loading
 	image_xscale = image_scale
 	image_yscale = image_scale
 	max_armor = armor
 	max_shields = shields
-	//temporary for now
+
 	
 }
 #endregion
@@ -109,8 +97,8 @@ switch(state){
 	
 	case ship.battle:
 		//tick variables
-		if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter++
-		energy = energy_sub_counter/_energy_multiplier
+		if (energy_sub_counter < max_energy*energy_multiplier) energy_sub_counter++
+		energy = energy_sub_counter/energy_multiplier
 		if (energy >= max_energy){
 		
 			//will actually be a state
@@ -286,8 +274,8 @@ switch(state){
 		}
 	}
 	
-	if (energy_sub_counter < max_energy*_energy_multiplier) energy_sub_counter+=.5
-	energy = energy_sub_counter/_energy_multiplier
+	if (energy_sub_counter < max_energy*energy_multiplier) energy_sub_counter+=.5
+	energy = energy_sub_counter/energy_multiplier
 	if (energy >= max_energy){
 		if (ability_script != 0){
 			//will actually be a state

@@ -12,7 +12,8 @@
         "e40aa70e-63dc-493b-ab19-6476a68c6530",
         "189a0023-9ece-4086-bb62-13a25a468239",
         "5f77c537-8d4f-4333-99d4-6cb7bf41415b",
-        "ea32e0b1-5c89-4d36-bdcd-2b20745e8c40"
+        "ea32e0b1-5c89-4d36-bdcd-2b20745e8c40",
+        "4e05162a-f86f-4045-8980-c9a6653644aa"
     ],
     "filterType": "GMScript",
     "folderName": "Basic Abilities",
