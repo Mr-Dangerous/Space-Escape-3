@@ -263,6 +263,20 @@
             "value": "0",
             "varName": "variable_name",
             "varType": 0
+        },
+        {
+            "id": "8cf39762-2325-4e9b-b702-156e1faa3d18",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "card_type.module",
+            "varName": "card_type",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -43,15 +43,12 @@ for (var i =0; i<15; i++){
 }
 //buy the part
 if (selected_shop_slot != -1){
-	if (shop_slots[selected_shop_slot, 0] != noone){
-		_card_reference = shop_slots[selected_shop_slot, 0]
-		_card_object_reference = shop_slots[selected_shop_slot, 1]
-		_card_type = _card_reference[2]
+	if (shop_slots[selected_shop_slot] != noone){
+		_card_reference = shop_slots[selected_shop_slot]
+		_card_type = _card_reference.card_type
 		purchased = false
 		resources_spent = 0
-		var _resource_cost = _card_object_reference.resource_cost
-		var _ship_class = _card_object_reference.class
-		show_debug_message(_resource_cost)
+		var _resource_cost = _card_reference.resource_cost
 		if( _resource_cost <= resources){
 			resources_spent = _resource_cost
 			if(_card_type = card_type.module){
@@ -59,7 +56,7 @@ if (selected_shop_slot != -1){
 				for (var i = 0; i < number_of_parts_slots; i++){
 					if (parts_slot[i] = noone){
 						// move the object into the parts slot
-						selected_part = shop_slots[selected_shop_slot, 1]
+						selected_part = _card_reference
 						selected_part.visible = true
 						selected_part.x = parts_slot_x_offset[i]
 						selected_part.y = parts_slot_y_offset
@@ -68,8 +65,7 @@ if (selected_shop_slot != -1){
 							parts_bin_slot = i
 						}
 						
-						shop_slots[@ selected_shop_slot, 0] = noone
-						shop_slots[@ selected_shop_slot, 1] = noone
+						shop_slots[@ selected_shop_slot] = noone
 						purchased = true
 						break;
 					}	
@@ -77,37 +73,15 @@ if (selected_shop_slot != -1){
 			}
 			if (_card_type = card_type.frame){
 				//find an empty factory
-				var ship_frame = shop_slots[selected_shop_slot, 1]
+				var _ship_frame = _card_reference
 				for (var i = 0; i < array_length_1d(ship_factories); i++){
 					if (ship_factories[i].ship_frame_contained = noone){
-						ship_factories[i].ship_frame_contained = ship_frame
-						shop_slots[@ selected_shop_slot, 0] = noone
-						shop_slots[@ selected_shop_slot, 1] = noone
+						ship_factories[i].ship_frame_contained = _ship_frame
+						shop_slots[@ selected_shop_slot] = noone
 						purchased = true
 						break;
 					} 
 				}
-				
-				#region to be eventually deleted
-				/*
-				//send to an empty hangar
-				for (var i = 0; i < number_of_construction_bays; i++){
-					var active_construction_bay = construction_bays[i]
-					if (active_construction_bay[0] = noone){
-						//took stuff from here - fix it!
-						
-						active_construction_bay[@ 0] = ship_frame
-						active_construction_bay[@ 7] = _ship_class
-								
-						
-						
-						
-						
-						break;
-					}
-				}
-			*/
-			#endregion
 				
 			}
 			

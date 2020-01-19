@@ -1,8 +1,8 @@
 /// @description Insert description here
 //shop slots
 for (var i = 0; i < 5; i++){
-	shop_slots[i, 0] = noone//the object resource
-	shop_slots[i, 1] = noone//the actual object being referenced
+	shop_slots[i] = noone//the object
+
 }
 //parts bin slots
 number_of_parts_slots = 15
@@ -195,32 +195,32 @@ for (var i = 0; i < _factory_array_size; i++){
 #region Card Books
 #region Level 1 Books
 
-level_1_weapon_system_1[0] = 30
-level_1_weapon_system_1[1] = o_armada_5_module_card
+level_1_weapon_system_1[1] = 30
+level_1_weapon_system_1[0] = o_armada_5_module_card
 
-level_1_shield_module_1[0] = 10
-level_1_shield_module_1[1] = o_arrack_refractor_module_card
+level_1_shield_module_1[1] = 10
+level_1_shield_module_1[0] = o_arrack_refractor_module_card
 
-level_1_armor_upgrade_1[0] = 30
-level_1_armor_upgrade_1[1] = o_anvil_class_plates_module_card
+level_1_armor_upgrade_1[1] = 30
+level_1_armor_upgrade_1[0] = o_anvil_class_plates_module_card
 
-level_1_targeting_module_1[0] = 30
-level_1_targeting_module_1[1] = o_enhar_targeting_module_module_card
+level_1_targeting_module_1[1] = 30
+level_1_targeting_module_1[0] = o_enhar_targeting_module_module_card
 
-level_1_power_module_1[0] = 30
-level_1_power_module_1[1] = o_arrack_core_plant_module_card
+level_1_power_module_1[1] = 30
+level_1_power_module_1[0] = o_arrack_core_plant_module_card
 
-thermal_lance_1[0] = 30
-thermal_lance_1[1] = o_thermal_lance_module_card
+thermal_lance_1[1] = 30
+thermal_lance_1[0] = o_thermal_lance_module_card
 
-emergency_shield_1[0] = 30
-emergency_shield_1[1] = o_emergency_shield_module_card
+emergency_shield_1[1] = 30
+emergency_shield_1[0] = o_emergency_shield_module_card
 
-serrated_plates_1[0] = 30
-serrated_plates_1[1] = o_serrated_plates_module_card
+serrated_plates_1[1] = 30
+serrated_plates_1[0] = o_serrated_plates_module_card
 
-wave_crasher_shield_3[0] = 30//NOTE:  temporarily here in level 1.  needs to be in level 3
-wave_crasher_shield_3[1] = o_wave_crasher_shield_module_card
+wave_crasher_shield_3[1] = 30//NOTE:  temporarily here in level 1.  needs to be in level 3
+wave_crasher_shield_3[0] = o_wave_crasher_shield_module_card
 
 
 //refrences to all level 1 books
@@ -236,23 +236,23 @@ level_1_module_book[8] = wave_crasher_shield_3//NOTE:  needs to move to level 3 
 #endregion
 
 #region Level 2 Books
-level_2_weapon_system_1[0] = 30
-level_2_weapon_system_1[1] = o_module_card_parent// o_duocannon_railgun_module_card
+level_2_weapon_system_1[1] = 30
+level_2_weapon_system_1[0] = o_module_card_parent// o_duocannon_railgun_module_card
 
-level_2_shield_module_1[0] = 30
-level_2_shield_module_1[1] = o_module_card_parent// o_sun_shield_module_card
+level_2_shield_module_1[1] = 30
+level_2_shield_module_1[0] = o_module_card_parent// o_sun_shield_module_card
 
-level_2_armor_upgrade_1[0] = 30
-level_2_armor_upgrade_1[1] = o_module_card_parent// o_prism_skin_module_card
+level_2_armor_upgrade_1[1] = 30
+level_2_armor_upgrade_1[0] = o_module_card_parent// o_prism_skin_module_card
 
-level_2_targeting_module_1[0] = 30
-level_2_targeting_module_1[1] = o_module_card_parent// o_sniper_module_module_card
+level_2_targeting_module_1[1] = 30
+level_2_targeting_module_1[0] = o_module_card_parent// o_sniper_module_module_card
 
-level_2_ability_module_1[0] = 30
-level_2_ability_module_1[1] = o_module_card_parent// o_bombardment_cannon_module_card
+level_2_ability_module_1[1] = 30
+level_2_ability_module_1[0] = o_module_card_parent// o_bombardment_cannon_module_card
 
-level_2_power_module_1[0] = 30
-level_2_power_module_1[1] = o_module_card_parent// o_hyperdrive_module_card
+level_2_power_module_1[1] = 30
+level_2_power_module_1[0] = o_module_card_parent// o_hyperdrive_module_card
 
 level_2_module_book[0] = level_2_weapon_system_1
 level_2_module_book[1] = level_2_shield_module_1
@@ -263,23 +263,23 @@ level_2_module_book[5] = level_2_power_module_1
 #endregion
 
 #region Level 3 Books
-level_3_weapon_system_1[0] = 30
-level_3_weapon_system_1[1] = o_module_card_parent// o_thermal_javelin_module_card
+level_3_weapon_system_1[1] = 30
+level_3_weapon_system_1[0] = o_module_card_parent// o_thermal_javelin_module_card
 
-level_3_shield_module_1[0] = 30
-level_3_shield_module_1[1] = o_module_card_parent// o_enhar_dissipater_module_card
+level_3_shield_module_1[1] = 30
+level_3_shield_module_1[0] = o_module_card_parent// o_enhar_dissipater_module_card
 
-level_3_armor_upgrade_1[0] = 30
-level_3_armor_upgrade_1[1] = o_module_card_parent// o_neosteel_plates_module_card
+level_3_armor_upgrade_1[1] = 30
+level_3_armor_upgrade_1[0] = o_module_card_parent// o_neosteel_plates_module_card
 
-level_3_targeting_module_1[0] = 30
-level_3_targeting_module_1[1] = o_module_card_parent// o_shipbreaker_ECM_module_card
+level_3_targeting_module_1[1] = 30
+level_3_targeting_module_1[0] = o_module_card_parent// o_shipbreaker_ECM_module_card
 
-level_3_ability_module_1[0] = 30
-level_3_ability_module_1[1] = o_module_card_parent// o_electric_swing_module_card
+level_3_ability_module_1[1] = 30
+level_3_ability_module_1[0] = o_module_card_parent// o_electric_swing_module_card
 
-level_3_power_module_1[0] = 30
-level_3_power_module_1[1] = o_module_card_parent// o_post_fission_plant_module_card
+level_3_power_module_1[1] = 30
+level_3_power_module_1[0] = o_module_card_parent// o_post_fission_plant_module_card
 
 level_3_module_book[0] = level_3_weapon_system_1
 level_3_module_book[1] = level_3_shield_module_1

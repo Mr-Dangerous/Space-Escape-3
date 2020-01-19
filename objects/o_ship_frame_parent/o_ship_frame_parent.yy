@@ -171,6 +171,20 @@
             "value": "scr_hunter_strike",
             "varName": "basic_ability_script",
             "varType": 5
+        },
+        {
+            "id": "969a9d52-8d89-4cab-b421-4eb056e0bc2c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "card_type.frame",
+            "varName": "card_type",
+            "varType": 0
         }
     ],
     "solid": false,

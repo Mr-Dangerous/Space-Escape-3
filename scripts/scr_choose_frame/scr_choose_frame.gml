@@ -43,7 +43,6 @@ _ship_frame_resource = ds_list_find_value(_remaining_ship_frames, _random_seed)
 //destroy the list
 ds_list_destroy(_remaining_ship_frames)
 //decrement the book number
-_ship_frame_resource[@1] -= 1
-_ship_frame_resource[2] = card_type.frame
+
 
 return _ship_frame_resource
