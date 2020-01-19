@@ -1967,6 +1967,14 @@
             }
         },
         {
+            "Key": "ba206e17-1319-4f16-acf4-a59b9ebff6e0",
+            "Value": {
+                "id": "8abb5b2a-08a4-4313-a538-98ded005ec88",
+                "resourcePath": "objects\\o_ship_explosion\\o_ship_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bab8197d-d001-4dc8-baf7-796b113c4c36",
             "Value": {
                 "id": "4757e536-fbb9-4696-9fc5-584f97ef5531",
@@ -2076,6 +2084,14 @@
                 "id": "a19aac14-58a4-4952-8a97-a4df6c619204",
                 "resourcePath": "scripts\\scr_determine_start_location\\scr_determine_start_location.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c78ecc1f-b2b6-4004-b897-3df56f813034",
+            "Value": {
+                "id": "e27a8cc2-d459-48c3-ac91-7a4a330a51ee",
+                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {

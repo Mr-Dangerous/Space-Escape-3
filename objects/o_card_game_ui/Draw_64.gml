@@ -76,12 +76,17 @@ for (var i = 0; i < resource_elements; i++){
 //draw the parts box
 for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){
 		
-	//if (parts_slot[i] = noone){
-		//draw_sprite_ext(s_grid_box, 0, parts_slot_ui_x_offset[i], parts_slot_ui_y_offset, resolution_scale, resolution_scale, 0, c_white, 1 )
+	
+	draw_sprite_stretched_ext(s_window_original, 0, parts_slot_ui_x_offset[i]-32, parts_slot_ui_y_offset-34, 64, 64, c_white, .5)
+	var _module = parts_slot[i]
+	if (instance_exists(_module)){
+		var _sprite = _module.sprite_index
+		draw_sprite_stretched_ext(_sprite, 0, parts_slot_ui_x_offset[i]-(32*resolution_scale), parts_slot_ui_y_offset-(32*resolution_scale), resolution_scale*64, resolution_scale*64, c_white, 1 )
 		//the offsets are due to the method in which the sprite is drawn.  may be made more concise later.
-		draw_sprite_stretched_ext(s_window_original, 0, parts_slot_ui_x_offset[i]-32, parts_slot_ui_y_offset-34, 64, 64, c_white, .5)
-	//}
+	}
 }
+
+
 
 
 //testing something

@@ -38,7 +38,7 @@ if (image_index = image_number-3 and number_of_bounces > 0){
 				} else {
 					ds_list_add(ships_shocked, _ship_to_check)
 					overload_target_found = true
-					var _overload = instance_create_layer(_ship_to_check.x, _ship_to_check.y, "Projectiles", o_overload)
+					var _overload = instance_create_layer(_ship_to_check.x, _ship_to_check.y, "Effects", o_overload)
 					with(_overload){
 						ds_list_copy(ships_shocked, other.ships_shocked)
 						number_of_bounces = other.number_of_bounces - 1

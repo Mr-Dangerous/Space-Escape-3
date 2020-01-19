@@ -132,9 +132,9 @@ card_resource_cost_y = round(40*resolution_scale)
 //create the factories
 ship_factories = array_create(16, noone)
 factory_positions = array_create(16, [0, 0])
-var _base_x_offset = 80
-var _base_y_offset = 80
-var _spacing = 130
+var _base_x_offset = 16 * resolution_scale
+var _base_y_offset = 16 * resolution_scale
+var _spacing = 132 * resolution_scale
 for (var i = 0; i < 8; i++){
 	factory_positions[i, 0] = _base_x_offset //x position
 	factory_positions[i, 1] = _base_y_offset + (i*_spacing)
@@ -145,12 +145,16 @@ for (var i = 0; i < 8; i++){
 var _factory_array_size = array_length_1d(factory_positions)
 for (var i = 0; i < _factory_array_size; i++){
 	if (factory_positions[i, 0] != 0){
-		_x = factory_positions[i, 0]
-		_y = factory_positions[i, 1]
-		var _factory = instance_create_layer(_x, _y, "Cards", o_ship_factory)
+		var _x = factory_positions[i, 0]
+		var _y = factory_positions[i, 1]
+
+		var _factory = instance_create_layer(100, 100, "Cards", o_ship_factory)
 		with (_factory){
 			card_game_controller = other
 			factory_team = team.left
+			gui_x = _x
+			gui_y = _y
+			
 		}
 		ship_factories[i] = _factory
 	}

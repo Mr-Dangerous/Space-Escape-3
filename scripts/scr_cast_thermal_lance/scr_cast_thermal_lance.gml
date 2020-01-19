@@ -3,7 +3,7 @@ var size_multiplier = energy/20
 size_multiplier = clamp(size_multiplier, 1, 2.5)
 //testing
 size_multiplier = 1
-show_debug_message("spell cast!")
+
 energy_sub_counter = 0
 energy = 0
 with(thermal_lance){

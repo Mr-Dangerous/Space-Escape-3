@@ -1,10 +1,7 @@
 /// @description 
+
 _card_game_controller = instance_find(o_card_game_ui, 0)
-resolution_scale = .8
-
-
-image_xscale = .8
-image_yscale = .8
+resolution_scale = _card_game_controller.resolution_scale
 
 ship_deployed = false
 create_ship = false
@@ -16,10 +13,10 @@ socket_offsets[0, 1]= 0//y
 var _vertical_spacing = 24*resolution_scale
 
 for (var i = 0; i < 3; i++){
-	socket_offsets[i, 0] = -40*resolution_scale
-	socket_offsets[i, 1] = (40*resolution_scale) - (_vertical_spacing*i)
-	socket_offsets[i+3, 0] = 40*resolution_scale
-	socket_offsets[i+3, 1] = (40*resolution_scale) - (_vertical_spacing*i)
+	socket_offsets[i, 0] = 24*resolution_scale
+	socket_offsets[i, 1] = (100*resolution_scale) - (_vertical_spacing*i)
+	socket_offsets[i+3, 0] = 96*resolution_scale
+	socket_offsets[i+3, 1] = (100*resolution_scale) - (_vertical_spacing*i)
 }
 
 

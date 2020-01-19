@@ -60,7 +60,7 @@ if (_card_type = card_type.frame){
 
 
 _selected_card_book[@1] -= 1
-var _selected_card_object = instance_create_layer(50, 50, "Cards", _selected_card_book[0])
+var _selected_card_object = instance_create_layer(-50, -50, "Cards", _selected_card_book[0])
 with (_selected_card_object){
 	card_book = _selected_card_book
 }

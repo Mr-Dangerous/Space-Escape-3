@@ -1,4 +1,5 @@
 var grid_space_radius = 32
+
 #region change positions
 
 if (new_ship = false){
@@ -23,7 +24,7 @@ if (new_ship = false){
 	for (var i = 0; i < grid_width; i++){
 		for (var j = 0; j < grid_height; j++){
 			grid_position = ds_grid_get(grid_position_map, i, j)
-		
+			
 			var distance_to_grid_space = point_distance(mouse_x, mouse_y, grid_position[0], grid_position[1])
 			//check to see if there are any ohte rnearby grid spaces
 		

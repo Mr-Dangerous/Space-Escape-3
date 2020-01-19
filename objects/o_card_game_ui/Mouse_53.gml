@@ -13,6 +13,36 @@ var _card_type = -1
 //Selection variables that can be used
 var selected_shop_slot = -1
 var selected_part_bin_slot = -1
+var selected_factory = -1
+
+
+//check each factory to see if it was selected
+for (var i = 0; i < array_height_2d(factory_positions); i++){
+	var _x = factory_positions[i, 0]
+	var _y = factory_positions[i, 1]
+	var _xx = _x + 128*resolution_scale
+	var _yy = _y + 128*resolution_scale
+	if (point_in_rectangle(_mouse_x, _mouse_y, _x, _y, _xx, _yy)){
+		selected_factory = i
+		show_debug_message(selected_factory)
+	}
+}
+
+//if a factory is seleted, create the ship clone!
+if (selected_factory != -1){
+	var _factory = ship_factories[selected_factory]
+	if (_factory.ship_frame_contained != noone and _factory.ship_deployed = false){
+	var _deployment_clone = instance_create_layer(mouse_x, mouse_y, "Ships", o_ship_clone)
+		with (_deployment_clone){
+			new_ship = true
+			reference_factory = _factory
+			ship_team = team.left
+			sprite_index = _factory.ship_frame_contained.sprite_index
+			image_xscale = _factory.ship_frame_contained.image_scale
+			image_yscale = _factory.ship_frame_contained.image_scale
+		}
+	}
+}
 
 //check each shop slot to see if it was selected
 
@@ -41,6 +71,26 @@ for (var i =0; i<15; i++){
 		selected_part_bin_slot = i
 	}
 }
+
+if (selected_part_bin_slot != -1){
+	var _module = parts_slot[selected_part_bin_slot]
+	
+	var _module_clone = instance_create_layer(mouse_x, mouse_y, "Instances", o_module_clone)
+
+	with (_module_clone){
+		reference_object= _module
+		parts_bin_slot = _module.parts_bin_slot
+		sprite_index = _module.sprite_index
+		image_xscale = _module.image_scale
+		image_yscale = _module.image_scale
+
+	
+	}	
+}
+
+
+
+
 //buy the part
 if (selected_shop_slot != -1){
 	if (shop_slots[selected_shop_slot] != noone){
@@ -57,12 +107,12 @@ if (selected_shop_slot != -1){
 					if (parts_slot[i] = noone){
 						// move the object into the parts slot
 						selected_part = _card_reference
-						selected_part.visible = true
-						selected_part.x = parts_slot_x_offset[i]
-						selected_part.y = parts_slot_y_offset
+						
+						
 						parts_slot[i] = selected_part
 						with(selected_part){
 							parts_bin_slot = i
+					
 						}
 						
 						shop_slots[@ selected_shop_slot] = noone

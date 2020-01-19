@@ -6,6 +6,7 @@ if (created = false){
 		enemy_fleet = card_game_ui_object.right_fleet
 		battle_grid = battle_map.left_grid_container
 		battle_grid_positions = battle_map.left_grid_positions
+
 			
 	}
 	if (ship_team = team.right){
@@ -19,7 +20,8 @@ if (created = false){
 	
 	projectile_speed = basic_attack_array[1,0]
 	projectile_flight_time = basic_attack_array[1, 6]
-	
+	basic_attack_array[0, 1] = ship_team
+	secondary_attack_array[0, 1] = ship_team
 #endregion
 #region script loading
 	var number_of_scripts = array_length_1d(loading_scripts)
@@ -144,7 +146,7 @@ switch(state){
 				if (secondary_fire_rate_counter >= secondary_fire_rate and angle_to_target < secondary_gimbal_fire_angle and distance_to_target <= secondary_weapon_range * 1.3){
 					secondary_fire_rate_counter = 0
 					fire_basic_attack(secondary_attack_array)
-					show_debug_message("secondary_attack_fired")
+
 				}
 			}
 		}
@@ -270,7 +272,7 @@ switch(state){
 		if (secondary_fire_rate_counter >= secondary_fire_rate){
 			secondary_fire_rate_counter = 0
 			fire_basic_attack(secondary_attack_array)
-			show_debug_message("secondary_attack_fired")
+
 		}
 	}
 	

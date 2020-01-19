@@ -1,2 +1,2 @@
 /// @description
-image_alpha = .6
+image_alpha = 0

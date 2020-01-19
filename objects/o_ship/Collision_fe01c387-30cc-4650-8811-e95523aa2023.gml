@@ -18,7 +18,7 @@ if (serrated_plates != 0){
 			other.serrated_plates_damage_counter = 15
 			//need to figure out damage through a script!
 			other.armor -= 15
-			show_debug_message("Serrated Plates dealt damage!")
+
 		}
 	}
 }
@@ -34,7 +34,7 @@ if (wave_crasher_shield != 0 and speed >= max_speed-.05){
 			var _force = (3)//defintely needs to be tweaked
 			with (other){
 				ship_disabled_counter = 60
-				show_debug_message(ship_disabled_counter)
+
 				motion_add(_p_dir, _force)
 				
 			}

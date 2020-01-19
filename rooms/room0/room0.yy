@@ -11,7 +11,8 @@
         "93a09756-e08d-4717-92d4-d7fea0fa8998",
         "8546d9de-c0df-4039-860c-9e3d8d2175da",
         "c69d016b-04c1-4e1c-a202-3b35d1674e14",
-        "882e0bfa-ece4-44fe-aa78-1391662e4ef2"
+        "882e0bfa-ece4-44fe-aa78-1391662e4ef2",
+        "04c5b7c4-2fb3-44fc-b093-939783d144a7"
     ],
     "IsDnD": false,
     "layers": [
@@ -29,7 +30,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_788D0DA5","id": "882e0bfa-ece4-44fe-aa78-1391662e4ef2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_788D0DA5","objId": "0ad51658-7ed4-4db0-82ab-ed48a9c3c2ec","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 1632,"y": 800}
+{"name": "inst_788D0DA5","id": "882e0bfa-ece4-44fe-aa78-1391662e4ef2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_788D0DA5","objId": "0ad51658-7ed4-4db0-82ab-ed48a9c3c2ec","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 1632,"y": 800},
+{"name": "inst_524AEC52","id": "04c5b7c4-2fb3-44fc-b093-939783d144a7","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_524AEC52","objId": "c78ecc1f-b2b6-4004-b897-3df56f813034","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 800,"y": 512}
             ],
             "layers": [
 
@@ -70,9 +72,35 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Effects",
+            "id": "24bd0a2e-0e99-4aeb-bcc8-615f76ab1f37",
+            "depth": 200,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Ships",
             "id": "c4c9a950-f356-47ab-8d03-07d4166ed96c",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -98,7 +126,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Projectiles",
             "id": "3c4823cc-984d-453a-b960-91051c13c181",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -124,7 +152,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "c494fd7f-dc7d-4894-abb4-a50691300175",
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -154,7 +182,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 500,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -189,7 +217,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 2063597567 },
-            "depth": 600,
+            "depth": 700,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

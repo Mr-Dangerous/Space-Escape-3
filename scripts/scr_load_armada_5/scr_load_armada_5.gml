@@ -24,4 +24,3 @@ for (var  i = 1; i < secondary_attack_array[0,0]+1; i++){
 	secondary_attack_array[i, 6] = close_range
 }
 
-show_debug_message("module loaded!")
