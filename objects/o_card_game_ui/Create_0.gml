@@ -305,92 +305,92 @@ When the new system is in place, the first two lines of each entry should be del
 
 ship_frame_book[0, 0] = o_iron_interceptor_frame_card
 ship_frame_book[0, 1] = 30
-iron_interceptor_frame_book[0, 0] = o_iron_interceptor_frame_card
-iron_interceptor_frame_book[0, 1] = 30
+iron_interceptor_frame_book[0] = o_iron_interceptor_frame_card
+iron_interceptor_frame_book[1] = 30
 interceptor_frame_book[0] = iron_interceptor_frame_book
 
 ship_frame_book[1, 0] = o_iron_fighter_frame_card
 ship_frame_book[1, 1] = 20
-iron_fighter_frame_book[0, 0] = o_iron_fighter_frame_card
-iron_fighter_frame_book[0, 1] = 20
+iron_fighter_frame_book[0] = o_iron_fighter_frame_card
+iron_fighter_frame_book[1] = 20
 fighter_frame_book[0] = iron_fighter_frame_book
 
 ship_frame_book[2, 0] = o_iron_frigate_frame_card
 ship_frame_book[2, 1] = 10
-iron_frigate_frame_book[0, 0] = o_iron_frigate_frame_card
-iron_frigate_frame_book[0, 1] = 10
+iron_frigate_frame_book[0] = o_iron_frigate_frame_card
+iron_frigate_frame_book[1] = 10
 frigate_frame_book[0] = iron_frigate_frame_book
 
 ship_frame_book[3, 0] = o_crystal_interceptor_frame_card
 ship_frame_book[3, 1] = 30
-crystal_interceptor_frame_book[0, 0] = o_crystal_interceptor_frame_card
-crystal_interceptor_frame_book[0, 1] = 30
+crystal_interceptor_frame_book[0] = o_crystal_interceptor_frame_card
+crystal_interceptor_frame_book[1] = 30
 interceptor_frame_book[1] = crystal_interceptor_frame_book
 
 ship_frame_book[4, 0] = o_crystal_fighter_frame_card
 ship_frame_book[4, 1] = 20
-crystal_fighter_frame_book[0, 0] = o_crystal_fighter_frame_card
-crystal_fighter_frame_book[0, 1] = 20
+crystal_fighter_frame_book[0] = o_crystal_fighter_frame_card
+crystal_fighter_frame_book[1] = 20
 fighter_frame_book[1] = crystal_fighter_frame_book
 
 ship_frame_book[5, 0] = o_crystal_frigate_frame_card
 ship_frame_book[5, 1] = 10
-crystal_frigate_frame_book[0, 0] = o_crystal_frigate_frame_card
-crystal_frigate_frame_book[0, 1] = 10
+crystal_frigate_frame_book[0] = o_crystal_frigate_frame_card
+crystal_frigate_frame_book[1] = 10
 frigate_frame_book[1] = crystal_frigate_frame_book
 
 ship_frame_book[6, 0] = o_pirate_interceptor_frame_card
 ship_frame_book[6, 1] = 30
-pirate_interceptor_frame_book[0, 0] = o_pirate_interceptor_frame_card
-pirate_interceptor_frame_book[0, 1] = 30
+pirate_interceptor_frame_book[0] = o_pirate_interceptor_frame_card
+pirate_interceptor_frame_book[1] = 30
 interceptor_frame_book[2] = pirate_interceptor_frame_book
 
 ship_frame_book[7, 0] = o_pirate_fighter_frame_card
 ship_frame_book[7, 1] = 20
-pirate_fighter_frame_book[0, 0] = o_pirate_fighter_frame_card
-pirate_fighter_frame_book[0, 1] = 20
+pirate_fighter_frame_book[0] = o_pirate_fighter_frame_card
+pirate_fighter_frame_book[1] = 20
 fighter_frame_book[2] = pirate_fighter_frame_book
 
 ship_frame_book[8, 0] = o_pirate_frigate_frame_card
 ship_frame_book[8, 1] = 10
-pirate_frigate_frame_book[0, 0] = o_pirate_frigate_frame_card
-pirate_frigate_frame_book[0, 1] = 10
+pirate_frigate_frame_book[0] = o_pirate_frigate_frame_card
+pirate_frigate_frame_book[1] = 10
 frigate_frame_book[2] = pirate_frigate_frame_book
 
 ship_frame_book[9, 0] = o_imperial_interceptor_frame_card
 ship_frame_book[9, 1] = 30
-imperial_interceptor_frame_book[0, 0] = o_imperial_interceptor_frame_card
-imperial_interceptor_frame_book[0, 1] = 30
+imperial_interceptor_frame_book[0] = o_imperial_interceptor_frame_card
+imperial_interceptor_frame_book[1] = 30
 interceptor_frame_book[3] = imperial_interceptor_frame_book
 
 ship_frame_book[10, 0] = o_imperial_fighter_frame_card
 ship_frame_book[10, 1] = 20
-imperial_fighter_frame_book[0, 0] = o_imperial_fighter_frame_card
-imperial_fighter_frame_book[0, 1] = 20
+imperial_fighter_frame_book[0] = o_imperial_fighter_frame_card
+imperial_fighter_frame_book[1] = 20
 fighter_frame_book[3] = imperial_fighter_frame_book
 
 ship_frame_book[11, 0] = o_imperial_frigate_frame_card
 ship_frame_book[11, 1] = 10
-imperial_frigate_frame_book[0, 0] = o_imperial_frigate_frame_card
-imperial_frigate_frame_book[0, 1] = 10
+imperial_frigate_frame_book[0] = o_imperial_frigate_frame_card
+imperial_frigate_frame_book[1] = 10
 frigate_frame_book[3] = imperial_frigate_frame_book
 
 ship_frame_book[12, 0] = o_solar_interceptor_frame_card
 ship_frame_book[12, 1] = 30
-solar_interceptor_frame_book[0, 0] = o_solar_interceptor_frame_card
-solar_interceptor_frame_book[0, 1] = 30
+solar_interceptor_frame_book[0] = o_solar_interceptor_frame_card
+solar_interceptor_frame_book[1] = 30
 interceptor_frame_book[4] = solar_interceptor_frame_book
 
 ship_frame_book[13, 0] = o_solar_fighter_frame_card
 ship_frame_book[13, 1] = 20
-solar_fighter_frame_book[0, 0] = o_solar_fighter_frame_card
-solar_fighter_frame_book[0, 1] = 20
+solar_fighter_frame_book[0] = o_solar_fighter_frame_card
+solar_fighter_frame_book[1] = 20
 fighter_frame_book[4] = solar_fighter_frame_book
 
 ship_frame_book[14, 0] = o_solar_frigate_frame_card
 ship_frame_book[14, 1] = 10
-solar_frigate_frame_book[0, 0] = o_solar_frigate_frame_card
-solar_frigate_frame_book[0, 1] = 10
+solar_frigate_frame_book[0] = o_solar_frigate_frame_card
+solar_frigate_frame_book[1] = 10
 frigate_frame_book[4] = solar_frigate_frame_book
 
 

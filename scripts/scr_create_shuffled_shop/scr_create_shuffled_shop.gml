@@ -11,15 +11,17 @@ for(var i = 0; i < 5; i++){
 		var shop_item_object_reference = shop_slots[i, 1]
 		
 		//if module
-		if (shop_item_reference[2] = card_type.module){
+		//if (shop_item_reference[2] = card_type.module){
+		if(1+1 = 2){
 			var _card_book = shop_item_reference[1]
 			
-			_card_book[@ 0] += 1
+			_card_book[0] += 1
 			
 			instance_destroy(shop_item_object_reference)
-			shop_slots[@i, 0] = noone
-			shop_slots[@i, 1] = noone
+			shop_slots[i, 0] = noone
+			shop_slots[i, 1] = noone
 		}
+		/*
 		if (shop_item_reference[2] = card_type.frame){
 			var _target_book = shop_item_reference[0, 1]
 			show_debug_message(ship_frame_book[_target_book,1])
@@ -32,6 +34,7 @@ for(var i = 0; i < 5; i++){
 			shop_slots[@i, 1] = noone
 			
 		}
+		*/
 	}
 }
 

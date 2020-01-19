@@ -61,6 +61,15 @@ if (_card_type = card_type.module){
 }
 if (_card_type = card_type.frame){
 	//add every single ship frame exsisting to an array...
+	//script to choose frame type
+	var _ship_class = scr_choose_ship_class()
+	var _ship_frame = scr_choose_frame(_ship_class)
+	selected_card[0] = _ship_frame[0]
+	selected_card[1] = _ship_frame[1]
+	//script to randomly choose a ship from the frame types
+	/*
+	//script to handle the shop stuff
+	
 	var number_of_remaining_ship_frame_types = array_length_1d(ship_frame_book)
 	var remaining_ship_frames
 	var _k = 0
@@ -79,6 +88,7 @@ if (_card_type = card_type.frame){
 	selected_card[1] = remaining_ship_frames[_random_seed, 1]
 		
 	ship_frame_book[selected_card[1], 1] -=1 
+	*/
 }
 return selected_card
 
