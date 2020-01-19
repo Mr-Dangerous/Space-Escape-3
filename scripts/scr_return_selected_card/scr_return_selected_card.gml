@@ -52,7 +52,7 @@ if (_card_type = card_type.module){
 
 	selected_book = remaining_leveled_cards[random_number]
 	show_debug_message(selected_book[0])
-	selected_book[@ 0]-= 1
+	selected_book[0]-= 1
 	show_debug_message(selected_book[0])
 	selected_card[0] = selected_book[1]
 	selected_card[1] = selected_book
@@ -66,29 +66,7 @@ if (_card_type = card_type.frame){
 	var _ship_frame = scr_choose_frame(_ship_class)
 	selected_card[0] = _ship_frame[0]
 	selected_card[1] = _ship_frame[1]
-	//script to randomly choose a ship from the frame types
-	/*
-	//script to handle the shop stuff
 	
-	var number_of_remaining_ship_frame_types = array_length_1d(ship_frame_book)
-	var remaining_ship_frames
-	var _k = 0
-	for (var i = 0; i < number_of_remaining_ship_frame_types; i++){
-		var number_of_frames = ship_frame_book[i, 1]
-		repeat(number_of_frames){
-			
-			remaining_ship_frames[_k, 0] = ship_frame_book[i, 0]
-			remaining_ship_frames[_k, 1] = i//references which book to add or subtract from
-			_k++
-		}
-	}
-
-	var _random_seed = irandom_range(2, _k-1)
-	selected_card[0] = remaining_ship_frames[_random_seed, 0]
-	selected_card[1] = remaining_ship_frames[_random_seed, 1]
-		
-	ship_frame_book[selected_card[1], 1] -=1 
-	*/
 }
 return selected_card
 

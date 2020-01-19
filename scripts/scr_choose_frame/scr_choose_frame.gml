@@ -36,6 +36,6 @@ _ship_frame_resource[0] = ds_list_find_value(_remaining_frames_in_pool, _random_
 ds_list_destroy(_remaining_frames_in_pool)
 
 //decrement the number of frames
-_frame_book[1] -= 1
+_frame_book[@ 1] -= 1//@ sign used to diretly access the array!
 _ship_frame_resource[1] = _frame_book//think aobut refactoring this
 return _ship_frame_resource
