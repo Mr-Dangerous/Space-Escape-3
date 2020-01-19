@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "262753c6-499c-4887-9ffb-b2917e98e7ad",
+            "Value": {
+                "id": "59297902-6aeb-4589-9396-b44235eaed7e",
+                "resourcePath": "objects\\o_explosion_particles\\o_explosion_particles.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "265fa38a-e55b-4bb8-8476-8a43391cc337",
             "Value": {
                 "id": "cfc7c5f7-17a8-4384-a9e4-58ec1129eb87",
@@ -1972,6 +1980,14 @@
                 "id": "8abb5b2a-08a4-4313-a538-98ded005ec88",
                 "resourcePath": "objects\\o_ship_explosion\\o_ship_explosion.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ba8b4d90-24e5-4a01-85fd-4a3a2bf26789",
+            "Value": {
+                "id": "324246ed-ac36-4d81-ba3a-d0e6cf9c584f",
+                "resourcePath": "sprites\\s_explosion_particle_1\\s_explosion_particle_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
