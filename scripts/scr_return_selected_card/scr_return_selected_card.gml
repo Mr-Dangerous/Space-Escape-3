@@ -64,8 +64,12 @@ if (_card_type = card_type.frame){
 	//script to choose frame type
 	var _ship_class = scr_choose_ship_class()
 	var _ship_frame = scr_choose_frame(_ship_class)
+	
+	
 	selected_card[0] = _ship_frame[0]
 	selected_card[1] = _ship_frame[1]
+	
+	
 	
 }
 return selected_card

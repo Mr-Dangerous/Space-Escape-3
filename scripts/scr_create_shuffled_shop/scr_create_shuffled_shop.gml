@@ -12,7 +12,7 @@ for(var i = 0; i < 5; i++){
 		
 		var _card_book = shop_item_reference[1]
 			
-		_card_book[0] += 1
+		_card_book[@ 0] += 1
 			
 		instance_destroy(shop_item_object_reference)
 		shop_slots[i, 0] = noone
