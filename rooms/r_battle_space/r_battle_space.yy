@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "r_battle_space",
     "id": "3da03e6f-683e-4d84-9dc3-0fa1e5cd9e3e",
     "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
