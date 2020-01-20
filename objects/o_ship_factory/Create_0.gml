@@ -6,6 +6,7 @@ resolution_scale = _card_game_controller.resolution_scale
 ship_deployed = false
 create_ship = false
 factory_team = team.left
+new_ship = true
 
 //module socket offests - assuming factories are origin center
 socket_offsets[0, 0]= 0 //x

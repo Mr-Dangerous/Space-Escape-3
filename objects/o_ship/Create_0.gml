@@ -105,6 +105,7 @@ ship_disabled_counter = 0
 state = ship.planning
 channel_ability_state = channel_ability.null
 saved_variables = ds_map_create()
+in_play = true
 #endregion
 
 

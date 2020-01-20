@@ -199,6 +199,20 @@
             "value": "0",
             "varName": "card_book",
             "varType": 0
+        },
+        {
+            "id": "1081d503-9dc0-43c0-9239-8234d903c0f8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "fuel_cost",
+            "varType": 1
         }
     ],
     "solid": false,

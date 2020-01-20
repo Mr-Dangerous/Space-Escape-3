@@ -70,6 +70,11 @@ if (instance_exists(_factory)){
 				break;
 			}
 		}
+		if (instance_exists(_factory.fielded_ship)){
+			//destroy the ship, make a new one
+			instance_destroy(_factory.fielded_ship)
+			_factory.create_ship = true
+		}
 	}
 }
 	

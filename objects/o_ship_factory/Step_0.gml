@@ -12,25 +12,15 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 	var _ship_class = ship_frame_contained.class
 	//woudl also want to check to see if there are fuel reducing modules here
 	var deployed_ship = instance_create_layer(40, 40, "Ships", _ship_resource)
-	var _fuel_cost = 0
-	switch(_ship_class){
-	//TODO:  Needs to become an enum or macro.
-	//Currently, ship frame cards are strings.
-	case "Interceptor":
-		_fuel_cost = 2
-	break;
-	
-	case "Fighter":
-		_fuel_cost = 4
-	break;
-	
-	case "Frigate":
-		_fuel_cost = 10
-	break;
-	}
+	var _fuel_cost = ship_frame_contained.fuel_cost
 	if (card_game_controller.current_fuel_spent + _fuel_cost > card_game_controller.max_fuel){
 		instance_destroy(deployed_ship)
 		//TODO empty the assigned x and y in the grid
+	} else {
+		if (new_ship = true){
+			card_game_controller.current_fuel_spent += _fuel_cost
+			new_ship = false
+		}
 	}
 	
 
@@ -49,6 +39,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 		deployed_ship.assigned_grid_y = assigned_grid_y
 		deployed_ship.reference_factory = self
 		deployed_ship.ship_team = team.left
+		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost
 		
 				
 		for (var i = 0; i < 7; i++){
@@ -96,6 +87,7 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 		deployed_ship.assigned_grid_y = assigned_grid_y
 		deployed_ship.reference_factory = self
 		deployed_ship.ship_team = team.right
+		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost
 		
 				
 		for (var i = 0; i < 7; i++){
@@ -112,4 +104,6 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 	fielded_ship = deployed_ship
 	create_ship = false
 }
+
+if (create_ship = true) create_ship = false
 
