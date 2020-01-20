@@ -2,7 +2,7 @@
     "id": "8510aac5-ce51-43d1-b754-8ec64eda2110",
     "modelName": "GMFont",
     "mvc": "1.1",
-    "name": "f_card_font1",
+    "name": "f_card_font_large",
     "AntiAlias": 1,
     "TTFName": "",
     "ascenderOffset": 0,
