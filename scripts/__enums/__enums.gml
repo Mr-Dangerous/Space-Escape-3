@@ -2,6 +2,14 @@ enum menu{
 	main,
 	resolution
 }
+
+enum phase{
+	pre_planning,
+	planning,
+	pre_combat,
+	combat,
+	post_combat
+}
 enum module {
 	frame,
 	weapon,

@@ -28,8 +28,8 @@ current_turn = 1
 max_fuel = 5 + player_level*3
 
 //Fleet management variables
-left_fleet = array_create(35, noone)
-right_fleet = array_create(35, noone)
+left_fleet = ds_list_create()
+right_fleet = ds_list_create()
 
 
 
@@ -122,6 +122,15 @@ card_origin_offset_y = round(120*resolution_scale)
 card_resource_cost_x = round(198*resolution_scale)
 card_resource_cost_y = round(40*resolution_scale)
 
+//generate the timer location
+timer_offset[0] = round(gui_width - 30*resolution_scale)
+timer_offset[1] = round(gui_height - 30*resolution_scale)
+
+//generate the timer variables
+planning_phase_length = 45*60 //45 seconds * 60 FPS
+timer_counter = 0
+timer = timer_counter/60
+game_phase = phase.planning
 
 
 #endregion

@@ -11,13 +11,46 @@ income = base_income + streak_income + level_income + bonus_income + investment_
 
 
 
+
 //reset deploy button, and deploy the armada!
 //TODO Just a thought - there shoudl likely be a check to see if the mouse is still in the correct
 //position when released, in case the player wants to cancel a mouse click.  Shouldn't be too tough.
 
 
+//phase machine lol
+switch (game_phase){
+	case phase.pre_planning:
+	//create all ships in the factory
+	break;
+	case phase.planning:
+	if (timer_counter > 0){
+		timer_counter--
+		timer = floor(timer_counter/60)
+	}
+	
+	break;
+	
+	case phase.pre_combat:
+	
+	//some condition to start
+	with(o_ship){
+		state = ship.battle
+	}
+	game_phase = phase.combat
+	
+	break;
+	
+	case phase.combat:
+		
+	break;
+	
+	case phase.post_combat:
+	
+	break;
+}
 
 
+//actions
 var mouse_left_released = mouse_check_button_released(mb_left)
 
 if (mouse_left_released){

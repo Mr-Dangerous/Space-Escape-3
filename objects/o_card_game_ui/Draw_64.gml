@@ -15,6 +15,8 @@ economy_ui_string[4] = "Investment: " + string(player_experience) +"/" + string(
 economy_ui_string[5] = "Infrastructure Level: " + string(player_level) 
 
 
+//draw the timer
+
 
 
 //draw the shop
