@@ -106,4 +106,55 @@ if (new_ship){
 
 #endregion
 
+#region check to see if in the shop!
+//first check to see if the ship is over a shop
+
+var _mouse_x = device_mouse_x_to_gui(0)
+var _mouse_y = device_mouse_y_to_gui(0)
+
+var _shop_x = _card_game_controller.shop_slot_ui_x_offset[0]
+var _shop_y = _card_game_controller.shop_slot_ui_y_offset
+var _shop_xx = _card_game_controller.shop_slot_ui_x_offset[4]
+var _shop_yy = _card_game_controller.shop_slot_ui_y_offset+110
+if (point_in_rectangle(_mouse_x, _mouse_y, _shop_x,_shop_y, _shop_xx, _shop_yy)) {
+	show_debug_message("sold!")
+	var _frame = reference_factory.ship_frame_contained
+	var _resources_salvaged = floor(_frame.resource_cost/2)//CONSIDERATION: maybe a sell price?
+	if (_resources_salvaged = 0) _resources_salvaged++
+	for (var i = 0; i < 6; i++){
+		var _module = reference_factory.factory_item[i, 1]
+		if (instance_exists(_module)){
+			//sell the fucking module!
+			_resources_salvaged += 1//CONSIDERATION: maybe an actualy cost
+			_module.card_book[1] += 1
+			instance_destroy(_module)
+			reference_factory.factory_item[i, 1] = noone
+		}
+	}
+	reference_factory.ship_frame_contained = noone
+	if (instance_exists(reference_factory.fielded_ship)){
+		reference_factory.fielded_ship.ship_sold = true
+		reference_factory.fielded_ship.ship_sold_amount = _resources_salvaged
+		instance_destroy(reference_factory.fielded_ship)
+		reference_factory.fielded_ship = noone
+		reference_factory.assigned_grid_x = 0
+		reference_factory.assigned_grid_y = 0
+		reference_factory.ship_deployed = false
+		
+	}
+	_frame.card_book[@1] += 1
+	instance_destroy(_frame)
+	_card_game_controller.resources += _resources_salvaged
+	var _sold_item = instance_create_layer(_card_game_controller.resource_x_offset[1],
+	_card_game_controller.resource_y_offset, "Above_Cards", o_sold_item)
+	_sold_item.amount = _resources_salvaged
+	
+}
+//next, destroy the ship if it's fielded
+
+//next, sell the ship and all attached modules
+
+//finally, clear the factory
+#endregion
+
 instance_destroy()

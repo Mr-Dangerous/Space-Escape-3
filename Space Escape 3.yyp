@@ -1399,6 +1399,14 @@
             }
         },
         {
+            "Key": "8510aac5-ce51-43d1-b754-8ec64eda2110",
+            "Value": {
+                "id": "08870b90-eee0-4efc-9f87-321fdba1878d",
+                "resourcePath": "fonts\\f_card_font_large\\f_card_font_large.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "85db90be-541f-4024-8d0e-8e997f8b316f",
             "Value": {
                 "id": "694c7863-495b-4e45-9641-af1ee11e95a2",
@@ -1508,6 +1516,14 @@
                 "id": "182fd04d-a7fe-4eb6-8e35-be8325793ebd",
                 "resourcePath": "scripts\\scr_return_target\\scr_return_target.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9120971a-b815-4cb2-924b-029e51e67aba",
+            "Value": {
+                "id": "3de35fc3-0104-412f-b0f8-618b9b8b9bae",
+                "resourcePath": "objects\\o_sold_item\\o_sold_item.yy",
+                "resourceType": "GMObject"
             }
         },
         {

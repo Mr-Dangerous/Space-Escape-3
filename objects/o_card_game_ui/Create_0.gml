@@ -132,6 +132,7 @@ card_resource_cost_y = round(40*resolution_scale)
 //create the factories
 ship_factories = array_create(16, noone)
 factory_positions = array_create(16, [0, 0])
+
 var _base_x_offset = 16 * resolution_scale
 var _base_y_offset = 16 * resolution_scale
 var _spacing = 132 * resolution_scale

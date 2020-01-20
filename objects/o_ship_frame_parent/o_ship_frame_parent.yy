@@ -185,6 +185,20 @@
             "value": "card_type.frame",
             "varName": "card_type",
             "varType": 0
+        },
+        {
+            "id": "50a4059d-eaf5-455f-90e0-796e93c4ae4a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "card_book",
+            "varType": 0
         }
     ],
     "solid": false,

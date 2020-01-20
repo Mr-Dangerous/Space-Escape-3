@@ -10,7 +10,7 @@
 //will create the ship
 
 if (ship_frame_contained != noone and ship_deployed = false){
-	var _deployment_clone = instance_create_layer(mouse_x, mouse_y, "Ships", o_ship_clone)
+	var _deployment_clone = instance_create_layer(mouse_x, mouse_y, "Above Cards", o_ship_clone)
 	with (_deployment_clone){
 		new_ship = true
 		reference_factory = other

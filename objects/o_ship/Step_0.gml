@@ -44,6 +44,7 @@ if (created = false){
 
 
 if (armor <= 0){
+	combat_explosion = true
 	instance_destroy()
 }
 

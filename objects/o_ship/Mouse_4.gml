@@ -8,6 +8,7 @@ if (state = ship.planning){
 		image_yscale = other.image_yscale*1.2
 		direction = other.direction
 		image_angle = other.image_angle
+		reference_factory = other.reference_factory
 		ship_team = other.ship_team
 		reference_object = other
 	}

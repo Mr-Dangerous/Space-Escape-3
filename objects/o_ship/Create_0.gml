@@ -94,6 +94,12 @@ exhaust_sub_image_counter = 0
 exhaust_scale_multiplier = 1
 #endregion
 
+#region graphic values
+combat_explosion = false
+ship_sold = false
+ship_sold_amount = 0
+#endregion
+
 #region state variables
 ship_disabled_counter = 0
 state = ship.planning
