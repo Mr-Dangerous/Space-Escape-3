@@ -17,5 +17,14 @@ switch(button_function){
 	button_text = "1280 x 768"
 	break;
 	case 5:
+	var _full_screen = _ui_spawner.full_screen
+	if (_full_screen){
+		button_text = "Windowed"
+	} else {
+		button_text = "Full Screen"
+	}
+	break;
+	case 6:
 	button_text = "Main Menu"
+	break;
 }

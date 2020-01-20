@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "2a77c9ed-82af-43b8-a4a2-ecf2867ed4b8",
+            "Value": {
+                "id": "0642920f-55b0-4c8d-afc1-969b8d8724fb",
+                "resourcePath": "scripts\\scr_destroy_and_respawn_menu\\scr_destroy_and_respawn_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2b7d0595-ec42-4c2e-a801-eb6c54a92c73",
             "Value": {
                 "id": "80f4977f-5e83-4cda-973e-20ef51e81c5e",
@@ -1975,6 +1983,14 @@
             }
         },
         {
+            "Key": "b58bffeb-e5b6-4a60-8f88-8c0d44a5bf63",
+            "Value": {
+                "id": "c0447d09-bc46-4a89-9f68-fc312ecbb154",
+                "resourcePath": "fonts\\f_title_font\\f_title_font.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "b62d88bd-400b-4eb0-84d2-23591d6038b7",
             "Value": {
                 "id": "90742a42-4399-416c-ac52-c0268188e888",
@@ -2291,6 +2307,14 @@
             "Value": {
                 "id": "daf48333-8baa-4e2c-b09a-a5d4a55fbd65",
                 "resourcePath": "scripts\\scr_load_crystal_fighter_frame\\scr_load_crystal_fighter_frame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d730cd8a-6009-406d-b8f5-a9845f7fb04b",
+            "Value": {
+                "id": "2837e807-bc54-494f-9a44-ae4a144ecd4d",
+                "resourcePath": "scripts\\scr_destroy_all_buttons\\scr_destroy_all_buttons.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2693,7 +2717,9 @@
         "5f77c537-8d4f-4333-99d4-6cb7bf41415b",
         "ea32e0b1-5c89-4d36-bdcd-2b20745e8c40",
         "4e05162a-f86f-4045-8980-c9a6653644aa",
-        "44f487dc-d072-4984-b15f-e1158d6ba52a"
+        "44f487dc-d072-4984-b15f-e1158d6ba52a",
+        "d730cd8a-6009-406d-b8f5-a9845f7fb04b",
+        "2a77c9ed-82af-43b8-a4a2-ecf2867ed4b8"
     ],
     "tutorial": ""
 }

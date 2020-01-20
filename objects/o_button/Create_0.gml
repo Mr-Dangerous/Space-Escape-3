@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+_ui_spawner = instance_find(o_ui_spawner, 0)
 alarm[0] = 1
 button_function = 0
 hover = 0

@@ -1,5 +1,1 @@
-/// @description destroy all buttons
-
-with(o_button){
-	instance_destroy()
-}
+scr_destroy_and_respawn_menu()

@@ -36,8 +36,15 @@ _1280x_720_resolution_button.hover = 1
 _1280x_720_resolution_button.x = view_wport[0] / 2
 _1280x_720_resolution_button.y = view_hport[0] / 2 + 80 * (_1280x_720_resolution_button.button_function-_1920x_1080_resolution_button.button_function)
 
+var _fullscreen_button = instance_create_layer(x, y, "Instances", o_button)
+_fullscreen_button.button_function = 5
+_fullscreen_button.hover = 1
+_fullscreen_button.x = view_wport[0] / 2
+_fullscreen_button.y = view_hport[0] / 2 + 80 * (_fullscreen_button.button_function-_1920x_1080_resolution_button.button_function)
+
+
 var return_button = instance_create_layer(x, y, "Instances", o_button)
-return_button.button_function = 5
+return_button.button_function = 6
 return_button.hover = 1
 return_button.x = view_wport[0] / 2
 return_button.y = view_hport[0] / 2 + 80 * (return_button.button_function-_1920x_1080_resolution_button.button_function)
