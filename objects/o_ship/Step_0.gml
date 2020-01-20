@@ -72,6 +72,7 @@ if (cloak){
 
 //determine exhaust scale multipler
 exhaust_scale_multiplier = 1
+if (speed = 0) exhaust_scale_multiplier = 0
 #endregion
 
 

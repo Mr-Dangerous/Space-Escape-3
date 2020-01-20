@@ -11,7 +11,7 @@ for (var i = 0; i < _number_of_particles; i++){
 		image_yscale = image_scale
 		rotation = random_range(-3, 3)
 		image_angle = direction
-		speed = random_range(2, 6)
-		duration = irandom_range(80, 180)
+		speed = random_range(.5, 3)
+		duration = irandom_range(40, 80)
 	}
 }
