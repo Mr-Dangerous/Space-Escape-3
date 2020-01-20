@@ -1,3 +1,7 @@
+enum menu{
+	main,
+	resolution
+}
 enum module {
 	frame,
 	weapon,
