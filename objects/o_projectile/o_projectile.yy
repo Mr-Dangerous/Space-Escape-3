@@ -145,6 +145,20 @@
             "value": "True",
             "varName": "directional_damage",
             "varType": 3
+        },
+        {
+            "id": "7b449813-018f-4e08-8428-240d970d96cb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "origin_ship",
+            "varType": 0
         }
     ],
     "solid": false,

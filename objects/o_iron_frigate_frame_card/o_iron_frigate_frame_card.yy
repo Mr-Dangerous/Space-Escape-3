@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "Iron Fleet"
+            "value": "origin_iron"
         },
         {
             "id": "181ab1a6-29ea-4b94-a8b7-b84f2a91c9f2",
@@ -54,7 +54,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "Corvette"
+            "value": "class_corvette"
         },
         {
             "id": "77bfed78-c409-41bb-af68-d9b7f210599a",
@@ -63,6 +63,22 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "value": "scr_orbital_strike"
+        },
+        {
+            "id": "959478c8-3fc2-4bf4-8953-4c9b18d6cec4",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "value": "origin_iron"
+        },
+        {
+            "id": "f392d994-c047-46f1-8a89-0f02e7c1fbdc",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "value": "class_corvette"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

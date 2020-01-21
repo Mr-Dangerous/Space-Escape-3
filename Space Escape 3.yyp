@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "169c8787-c7ce-45cc-9b6c-fd66570dd373",
+            "Value": {
+                "id": "47b04ee3-7597-4d0c-aa76-9837d7bcd3cd",
+                "resourcePath": "scripts\\scr_assign_origin_class_counters\\scr_assign_origin_class_counters.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1803801e-b08c-46eb-9be4-273b1e54a6c3",
             "Value": {
                 "id": "5b311ba0-3d2a-4910-88b4-6b21ee045c9b",
@@ -956,6 +964,14 @@
                 "id": "1a830dee-9088-4a7d-99ab-a9c98b8c3bb3",
                 "resourcePath": "sprites\\s_rocket_exhaust_original\\s_rocket_exhaust_original.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b63311e-7739-4b4e-8dc2-f8b82b0b7672",
+            "Value": {
+                "id": "dd0efc84-20be-4116-871a-8457fb4fe4b1",
+                "resourcePath": "objects\\o_ECP_bonus_spark\\o_ECP_bonus_spark.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2343,6 +2359,14 @@
             }
         },
         {
+            "Key": "da29e4e2-4882-44b8-937a-0d541c038b11",
+            "Value": {
+                "id": "133448bb-f279-4aa3-8256-299b54f4fadd",
+                "resourcePath": "scripts\\scr_apply_origin_class_bonus\\scr_apply_origin_class_bonus.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "da386009-cb0d-4a5e-a704-8460c0a4abe2",
             "Value": {
                 "id": "c7e4129a-41bd-4113-9216-0ec957345f1c",
@@ -2712,6 +2736,8 @@
         "565adde7-942d-4104-be41-b84a6bcc501f",
         "9d48971f-2a34-4b6b-b763-64b07875338d",
         "06e83dc8-101d-4927-9263-0d2640a22345",
+        "169c8787-c7ce-45cc-9b6c-fd66570dd373",
+        "da29e4e2-4882-44b8-937a-0d541c038b11",
         "dfc99b0c-6f1e-4e3d-aa12-efa48e4b7f3c",
         "58427b9d-cb13-45bd-ad3c-9b40f73fd8e9",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",

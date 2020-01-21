@@ -108,6 +108,26 @@ saved_variables = ds_map_create()
 in_play = true
 #endregion
 
+#region origin and class counters
+//origin
+imperial_count = 0
+iron_count = 0
+solar_count = 0
+crystal_count = 0
+pirate_count = 0
+
+//classes
+hunter_count = 0
+breakthrough_count = 0
+ghost_count = 0
+ECP_count = 0
+weapons_platform_count = 0
+shield_count = 0
+command_count = 0
+support_count = 0
+corvette_count = 0
+#endregion
+
 
 
 
@@ -138,6 +158,8 @@ cloak = false
 cloak_timer = -1
 inhibitor_shield_counter = -1
 inhibitor_shields_granted = 0
+number_of_overload_bounces = 1
+overload_damage = 15
 #endregion
 
 #region spell module variables

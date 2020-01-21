@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "Solar"
+            "value": "origin_solar"
         },
         {
             "id": "4e4977d0-4e1a-442e-ba95-e6d16b3cbea0",
@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "Breakthrough"
+            "value": "class_breakthrough"
         },
         {
             "id": "efb014a0-52a1-4983-9f90-b87a2464ee8a",
@@ -55,6 +55,22 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "value": "scr_hyper_boost"
+        },
+        {
+            "id": "51e06298-cfd9-437c-b2b2-66b7c2a249c8",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "value": "origin_solar"
+        },
+        {
+            "id": "b953d559-9706-40fc-9322-559944c14467",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "value": "class_breakthrough"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

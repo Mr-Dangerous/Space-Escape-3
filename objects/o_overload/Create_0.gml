@@ -7,3 +7,4 @@ overload_damage = 0
 number_of_bounces = 0
 ship_team = 0
 target_ship = noone
+

@@ -17,14 +17,6 @@
             "value": "Delta 5 Frame"
         },
         {
-            "id": "ed58379b-4015-41c6-80e5-8d127f41c171",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
-            "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "origin_iron"
-        },
-        {
             "id": "7e3068a1-f759-45e2-8b77-f45046f58b39",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -33,20 +25,44 @@
             "value": "0.06"
         },
         {
-            "id": "32b0c37f-ee69-4b28-afd7-79bc1e37f535",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
-            "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "ECP"
-        },
-        {
             "id": "2a1c0f08-b344-4514-8fd8-97fbe622baff",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "value": "scr_EMP_overload"
+        },
+        {
+            "id": "4c19b8e6-e152-4804-ab97-bdd749e2d1b2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "value": "origin_iron"
+        },
+        {
+            "id": "330d85d3-ee1b-4d4a-838d-67fa1ab82f8f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "value": "class_ECP"
+        },
+        {
+            "id": "2b7217a0-581e-48ec-b69a-5f41afd954ea",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
+            "value": "class_ECP"
+        },
+        {
+            "id": "93aedd89-581d-4030-b741-019a911e940a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
+            "value": "origin_iron"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
@@ -63,7 +79,9 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        
+    ],
     "solid": false,
     "spriteId": "e95513a8-3351-49f9-9b33-c173e133d211",
     "visible": true

@@ -12,7 +12,9 @@
         "65147479-3cce-4afa-b939-b3411f0c6298",
         "565adde7-942d-4104-be41-b84a6bcc501f",
         "9d48971f-2a34-4b6b-b763-64b07875338d",
-        "06e83dc8-101d-4927-9263-0d2640a22345"
+        "06e83dc8-101d-4927-9263-0d2640a22345",
+        "169c8787-c7ce-45cc-9b6c-fd66570dd373",
+        "da29e4e2-4882-44b8-937a-0d541c038b11"
     ],
     "filterType": "GMScript",
     "folderName": "Card gAme scripts",

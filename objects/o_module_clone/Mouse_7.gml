@@ -66,6 +66,7 @@ if (selected_factory != -1){
 						reference_object.x = -120
 						reference_object.y = -120
 						reference_object.visible = false
+						
 					}
 					break;
 				}

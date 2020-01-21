@@ -38,7 +38,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "Crystal"
+            "value": "origin_crystal"
         },
         {
             "id": "41b6f1bb-6444-43d9-9025-8fa4a82f4779",
@@ -54,7 +54,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "Shield"
+            "value": "class_shield"
         },
         {
             "id": "5e7fe99c-fe5e-4263-ba1f-a5868ebe22dd",
@@ -63,6 +63,22 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "value": "scr_inhibitor_shield"
+        },
+        {
+            "id": "26c64c38-ba30-45ff-97e1-699f4ce4f331",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "value": "origin_crystal"
+        },
+        {
+            "id": "ffb39efb-f156-4036-b538-27dcf38124ea",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "value": "class_shield"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

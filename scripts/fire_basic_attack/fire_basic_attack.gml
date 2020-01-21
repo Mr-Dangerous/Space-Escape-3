@@ -6,6 +6,7 @@ var _basic_attack_array = argument0
 var _basic_attack_number = _basic_attack_array[0, 0]
 var _basic_attack_team = _basic_attack_array[0, 1]
 var _basic_attack_image_scale = _basic_attack_array[0, 2]
+var _origin_ship = self
 
 var _i = 1
 repeat(_basic_attack_number){
@@ -44,6 +45,7 @@ repeat(_basic_attack_number){
 		damage_type = _basic_attack_array[_i, 3]
 		mass = _basic_attack_array[0, 4]
 		directional_damage = _basic_attack_array[0, 5]
+		origin_ship = _origin_ship
 	}
 	_i++
 }

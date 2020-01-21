@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "Imperial Armada"
+            "value": "origin_imperial"
         },
         {
             "id": "5ea4c973-2e2e-4bb8-9974-1cff6483eea2",
@@ -54,7 +54,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "Weapons Platform"
+            "value": "class_weapons_platform"
         },
         {
             "id": "76fe4fd5-16ba-4193-8246-94fe1f19efc5",
@@ -63,6 +63,22 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "value": "scr_precision_strike"
+        },
+        {
+            "id": "2f040b23-96eb-40c6-b495-9ada5e6facca",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "value": "origin_imperial"
+        },
+        {
+            "id": "e625b7cd-fbc7-4089-9443-9942989f3d68",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "value": "class_weapons_platform"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

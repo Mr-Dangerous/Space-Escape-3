@@ -96,9 +96,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Crystal",
+            "value": "origin_crystal",
             "varName": "origin",
-            "varType": 2
+            "varType": 4
         },
         {
             "id": "11c38a2c-1ec5-4714-aed8-fc6ab16e8f6e",
@@ -110,9 +110,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Ghost",
+            "value": "class_ghost",
             "varName": "class",
-            "varType": 2
+            "varType": 4
         },
         {
             "id": "4db05186-3ecc-4c11-9715-1265a3506919",
@@ -238,7 +238,7 @@
             "resourceFilter": 1023,
             "value": "class",
             "varName": "sub_class",
-            "varType": 0
+            "varType": 4
         },
         {
             "id": "ed772f1f-bb23-40c9-95b4-dc9ebf976b7a",

@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "11c38a2c-1ec5-4714-aed8-fc6ab16e8f6e",
-            "value": "ECM"
+            "value": "class_ECP"
         },
         {
             "id": "5fef48b4-5bfd-48f7-b961-08ddbfa71dfe",

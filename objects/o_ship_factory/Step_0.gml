@@ -1,5 +1,98 @@
 /// @description 
+#region Origin and class counting
+//CONSIDERATION:  This section should probably be somewhere else.  I'm just not sure where.
+if (instance_exists(ship_frame_contained)){
+	//assign origin
+	iron_count = 0
+	solar_count = 0
+	imperial_count = 0
+	pirate_count = 0
+	crystal_count = 0
+	hunter_count = 0
+	breakthrough_count = 0
+	ghost_count = 0
+	ECP_count = 0
+	weapons_platform_count = 0
+	shield_count = 0
+	command_count = 0
+	support_count = 0
+	corvette_count = 0
+	
+	for (var i = 0; i < 7; i++){
+		var _module
+		if (i < 6){
+			_module = factory_item[i, 1]
+		}
+		if (i = 6){
+			_module = ship_frame_contained
+		}
+		if (instance_exists(_module)){
+			var _origin = _module.origin
+			var _class = _module.sub_class
 
+			switch (_origin){
+				case origin_iron:
+					iron_count++
+				break;
+		
+				case origin_crystal:
+					crystal_count++
+				break;
+		
+				case origin_imperial:
+					imperial_count++
+				break;
+		
+				case origin_pirate:
+					pirate_count++
+				break;
+		
+				case origin_solar:
+					solar_count++
+				break;
+			}
+			//assign class
+			switch(_class){
+				case class_hunter:
+					hunter_count++
+				break;
+		
+				case class_ghost:
+					ghost_count++
+				break;
+		
+				case class_breakthrough:
+					breakthrough_count++
+				break;
+		
+				case class_weapons_platform:
+					weapons_platform_count++
+				break;
+		
+				case class_ECP:
+					ECP_count++
+				break;
+		
+				case class_shield:
+					shield_count++
+				break;
+		
+				case class_support:
+					support_count++
+				break;
+		
+				case class_corvette:
+					corvette_count++
+				break;
+		
+				case class_command:
+					command_count++
+				break;
+			}
+		}
+	}
+}
+#endregion
 
 
 if (create_ship = true and factory_team = team.left 
@@ -40,6 +133,9 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 		deployed_ship.reference_factory = self
 		deployed_ship.ship_team = team.left
 		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost
+		#region assign the origin and class counters.... this is not very good.
+		scr_assign_origin_class_counters(deployed_ship)
+		#endregion
 		
 				
 		for (var i = 0; i < 7; i++){
@@ -106,4 +202,8 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 }
 
 if (create_ship = true) create_ship = false
+
+
+
+
 

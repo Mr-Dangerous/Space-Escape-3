@@ -70,9 +70,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "class_breakthrough",
             "varName": "sub_class",
-            "varType": 2
+            "varType": 4
         },
         {
             "id": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
@@ -213,6 +213,34 @@
             "value": "2",
             "varName": "fuel_cost",
             "varType": 1
+        },
+        {
+            "id": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "factory_origin",
+            "varType": 4
+        },
+        {
+            "id": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "factory_class",
+            "varType": 4
         }
     ],
     "solid": false,

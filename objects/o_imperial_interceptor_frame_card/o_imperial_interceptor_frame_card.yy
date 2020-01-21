@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "Imperial Armada"
+            "value": "origin_imperial"
         },
         {
             "id": "05655692-d4fe-40bb-813c-5d0e612f4d6c",
@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "8aec0bbf-6b81-493e-a854-6681b0071a56",
-            "value": "Hunter"
+            "value": "class_hunter"
         },
         {
             "id": "03199c46-411e-49ca-975c-16e82bdb23f4",
@@ -55,6 +55,22 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "value": "scr_hunter_strike"
+        },
+        {
+            "id": "35f6b387-9c8d-4000-ab86-4083480c6abe",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
+            "value": "origin_imperial"
+        },
+        {
+            "id": "7b9cefd1-bdd8-4491-ac77-b3406c961e83",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
+            "value": "class_hunter"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

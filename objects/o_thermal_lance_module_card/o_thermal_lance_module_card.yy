@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "f20a39b4-b2f8-41af-a2b0-ae2c8141c4cd",
-            "value": "Imperial"
+            "value": "origin_imperial"
         },
         {
             "id": "b6220513-6981-4427-87c7-5e35fc4c6435",
@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "11c38a2c-1ec5-4714-aed8-fc6ab16e8f6e",
-            "value": "Breakthrough"
+            "value": "class_breakthrough"
         },
         {
             "id": "98887b95-7d72-4ee7-ad01-ee4b3b428809",

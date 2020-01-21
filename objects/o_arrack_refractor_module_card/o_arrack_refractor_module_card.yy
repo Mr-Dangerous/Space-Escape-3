@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "f20a39b4-b2f8-41af-a2b0-ae2c8141c4cd",
-            "value": "Crystal"
+            "value": "origin_crystal"
         },
         {
             "id": "948295d5-66aa-41f6-b932-193b8b145a98",
@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "11c38a2c-1ec5-4714-aed8-fc6ab16e8f6e",
-            "value": "Ghost"
+            "value": "class_ghost"
         },
         {
             "id": "6e5364e3-a59d-418d-bc61-615a61bbefd3",

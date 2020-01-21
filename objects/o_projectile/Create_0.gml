@@ -5,3 +5,6 @@ with (projectile_leader){
 	
 }
 
+//ability tags
+ECP_bonus = 0
+

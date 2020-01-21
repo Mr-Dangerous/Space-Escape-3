@@ -56,7 +56,7 @@ for (var i = 0; i < _enemy_fleet_size; i++){
 	}
 }
 */
-var _enemy_fleet = scr_return_enemy_fleet(6, 1)
+var _enemy_fleet = scr_return_enemy_fleet(4, 1)
 var _enemy_fleet_size = ds_list_size(_enemy_fleet)
 for (var i = 0; i < _enemy_fleet_size; i++){
 	var _enemy_ship = ds_list_find_value(_enemy_fleet, i)

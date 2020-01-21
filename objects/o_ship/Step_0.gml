@@ -35,6 +35,7 @@ if (created = false){
 	image_yscale = image_scale
 	max_armor = armor
 	max_shields = shields
+	scr_apply_origin_class_bonus()//Consideration - maybe somewhere else?
 
 	
 }

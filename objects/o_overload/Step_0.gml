@@ -23,7 +23,7 @@ if (image_index = image_number-3 and number_of_bounces > 0){
 		var _ship_to_check = instance_nth_nearest(x, y, o_ship, i)
 		if (instance_exists(_ship_to_check)){
 			var _distance = distance_to_object(_ship_to_check)
-			if (_distance < 200){
+			if (_distance < 400){
 				var _pos = ds_list_find_index(ships_shocked, _ship_to_check)
 				var _can_shock = true
 				if (_pos != -1){
