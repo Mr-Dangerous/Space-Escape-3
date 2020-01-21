@@ -54,26 +54,27 @@ for (var i = 0; i < array_height_2d(_factory_position_list); i++){
 }
 
 
-
-var _factory = _card_game_controller.ship_factories[selected_factory]
-if (instance_exists(_factory)){
-	if (_factory.ship_frame_contained != noone){
-		for (var i = 0; i < 6; i++){
-			if (reference_object.module_type = _factory.factory_item[i, 0]){
-				if (_factory.factory_item[i, 1] = noone){
-					_factory.factory_item[i, 1] = reference_object
-					_card_game_controller.parts_slot[parts_bin_slot] = noone
-					reference_object.x = -120
-					reference_object.y = -120
-					reference_object.visible = false
+if (selected_factory != -1){
+	var _factory = _card_game_controller.ship_factories[selected_factory]
+	if (instance_exists(_factory)){
+		if (_factory.ship_frame_contained != noone){
+			for (var i = 0; i < 6; i++){
+				if (reference_object.module_type = _factory.factory_item[i, 0]){
+					if (_factory.factory_item[i, 1] = noone){
+						_factory.factory_item[i, 1] = reference_object
+						_card_game_controller.parts_slot[parts_bin_slot] = noone
+						reference_object.x = -120
+						reference_object.y = -120
+						reference_object.visible = false
+					}
+					break;
 				}
-				break;
 			}
-		}
-		if (instance_exists(_factory.fielded_ship)){
-			//destroy the ship, make a new one
-			instance_destroy(_factory.fielded_ship)
-			_factory.create_ship = true
+			if (instance_exists(_factory.fielded_ship)){
+				//destroy the ship, make a new one
+				instance_destroy(_factory.fielded_ship)
+				_factory.create_ship = true
+			}
 		}
 	}
 }
@@ -90,9 +91,13 @@ if (point_in_rectangle(_mouse_x, _mouse_y, top_left_x, top_left_y, bottom_right_
 
 	selling = true
 	_card_game_controller.resources += reference_object.resource_cost
+	var _sold_item = instance_create_layer(_card_game_controller.resource_x_offset[1],
+	_card_game_controller.resource_y_offset, "Above_Cards", o_sold_item)
+	
+	_sold_item.amount = reference_object.resource_cost
 	_card_game_controller.parts_slot[reference_object.parts_bin_slot] = noone 
 	//TODO check to figure out how to increase the number in the book - maybe its in the destroy event?
-	_card_game_controller.reference_object.card_book[1] += 1
+	reference_object.card_book[1] += 1
 	instance_destroy(reference_object)
 	
 }

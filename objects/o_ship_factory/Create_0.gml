@@ -34,4 +34,21 @@ factory_item[4, 1] = noone
 factory_item[5, 0] = module.power_plant
 factory_item[5, 1] = noone
 
+//origin
+imperial_count = 0
+iron_count = 0
+solar_count = 0
+crystal_count = 0
+pirate_count = 0
+
+//classes
+hunter_count = 0
+breakthrough_count = 0
+ghost_count = 0
+ECP_count = 0
+weapons_platform_count = 0
+shield_count = 0
+command_count = 0
+support_count = 0
+corvette_count = 0
 

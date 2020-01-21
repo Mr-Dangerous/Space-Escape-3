@@ -84,9 +84,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Pirate",
+            "value": "origin_pirate",
             "varName": "origin",
-            "varType": 2
+            "varType": 4
         },
         {
             "id": "48c2131a-aa46-4ec7-9231-7a1c665b34ca",

@@ -2591,6 +2591,14 @@
             }
         },
         {
+            "Key": "f6ffa2cd-6077-408f-bff1-c883e7bf22a4",
+            "Value": {
+                "id": "e12872fe-b3e3-4224-b8e5-a5fb0d2c42eb",
+                "resourcePath": "notes\\sold item default.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "f83ef7d8-19e1-4ebc-8b72-794245ac9af7",
             "Value": {
                 "id": "33c049e2-796d-42c7-b34b-d943eb27f5f2",

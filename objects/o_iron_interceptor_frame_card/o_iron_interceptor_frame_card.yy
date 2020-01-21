@@ -22,7 +22,7 @@
             "mvc": "1.0",
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "a1bfc644-8edd-4002-9a1b-aa1bcd3a74e2",
-            "value": "Iron Fleet"
+            "value": "origin_iron"
         },
         {
             "id": "7e3068a1-f759-45e2-8b77-f45046f58b39",
