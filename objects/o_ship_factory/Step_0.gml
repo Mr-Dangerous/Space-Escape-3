@@ -106,7 +106,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 	//woudl also want to check to see if there are fuel reducing modules here
 	var deployed_ship = instance_create_layer(40, 40, "Ships", _ship_resource)
 	var _fuel_cost = ship_frame_contained.fuel_cost
-	if (card_game_controller.current_fuel_spent + _fuel_cost > card_game_controller.max_fuel){
+	if (card_game_controller.current_fuel_spent + _fuel_cost > card_game_controller.max_fuel and new_ship = true){
 		instance_destroy(deployed_ship)
 		//TODO empty the assigned x and y in the grid
 	} else {

@@ -34,7 +34,7 @@ switch (game_phase){
 	if (phase_timer = -1){
 		phase_timer = 60 //CONSIDERATION: 1 second for animations and stuff
 			with (o_ship_factory){
-			if (factory_team = team.left){
+			if (factory_team = team.left and instance_exists(ship_frame_contained)){
 				new_ship = false
 				create_ship = true
 			
@@ -138,15 +138,18 @@ switch (game_phase){
 	//destroy all ships
 	if (phase_timer = -1){
 		phase_timer = 60
+		with (o_ship){
+			state = ship.locked
+		}
+		with (o_projectile){
+			instance_destroy()
+		}
 	}
 	if (phase_timer > 0){
 		phase_timer--
 	}
 	if (phase_timer = 0){
 		with (o_ship){
-			instance_destroy()
-		}
-		with (o_projectile){
 			instance_destroy()
 		}
 		

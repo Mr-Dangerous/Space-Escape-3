@@ -157,4 +157,8 @@ if (point_in_rectangle(_mouse_x, _mouse_y, _shop_x,_shop_y, _shop_xx, _shop_yy))
 //finally, clear the factory
 #endregion
 
+#region check to see if over a factory - swap it if you can!
+
+#endregion
+
 instance_destroy()
