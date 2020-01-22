@@ -62,6 +62,28 @@ switch (game_phase){
 	}
 	
 	if (timer_counter = 0){
+		//commands to spawn the enemy here
+		var _enemy_fleet_number = 3 + ceil(current_turn/4)
+		var _enemy_fleet_strength = 0 + floor (current_turn/5)
+		var _enemy_fleet = scr_return_enemy_fleet(_enemy_fleet_number, _enemy_fleet_strength)
+		var _enemy_fleet_size = ds_list_size(_enemy_fleet)
+		for (var i = 0; i < _enemy_fleet_size; i++){
+			var _enemy_ship = ds_list_find_value(_enemy_fleet, i)
+			var enemy_ship_factory = enemy_ship_factories[i]
+			enemy_ship_factory.assigned_grid_x = _enemy_ship[0]
+			enemy_ship_factory.assigned_grid_y = _enemy_ship[1]
+			enemy_ship_factory.ship_frame_contained = _enemy_ship[2]
+			var _enemy_ship_module_list = _enemy_ship[3]
+			for (var j = 0; j < array_length_1d(_enemy_ship[3]); j++){
+				enemy_ship_factory.factory_item[j, 1] = _enemy_ship_module_list[j]
+			}
+		}
+		for (var i = 0; i < array_length_1d(enemy_ship_factories); i++){
+			var _factory = enemy_ship_factories[i]
+			if (_factory.ship_frame_contained != noone){
+				_factory.create_ship = true
+			}
+		}
 		timer_counter--
 		game_phase = phase.pre_combat
 		current_phase_text = "Precombat"

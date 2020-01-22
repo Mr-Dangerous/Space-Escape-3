@@ -31,7 +31,7 @@ if (wave_crasher_shield != 0 and speed >= max_speed-.05){
 			generate_shields = 10
 			var _p_dir = point_direction(x, y, other.x, other.y)
 			var _p_distance = point_distance(x, y, other.x, other.y)
-			var _force = (3)//defintely needs to be tweaked
+			var _force = (6/other.mass)//defintely needs to be tweaked
 			with (other){
 				ship_disabled_counter = 60
 

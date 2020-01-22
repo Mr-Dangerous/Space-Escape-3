@@ -70,6 +70,7 @@ max_speed = 1
 turn_speed = .5
 dodge = 10
 dodge_reset_counter = 0
+mass = 2
 #endregion
 
 #region targeting variables

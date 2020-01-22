@@ -21,8 +21,8 @@ if (team_attack_from != other.ship_team){
 		}
 		//create the overload spark effect
 		show_debug_message ("spark made")
-		_x = other.x + irandom_range(-32, 32)
-		_y = other.y + irandom_range(-32, 32)
+		var _x = other.x + irandom_range(-32, 32)
+		var _y = other.y + irandom_range(-32, 32)
 		image_scale = random_range(.25, .5)
 		var _static_spark = instance_create_layer(_x, _y, "Effects", o_ECP_bonus_spark)
 	
