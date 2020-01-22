@@ -150,14 +150,62 @@ if (point_in_rectangle(_mouse_x, _mouse_y, _shop_x,_shop_y, _shop_xx, _shop_yy))
 	_sold_item.amount = _resources_salvaged
 	
 }
-//next, destroy the ship if it's fielded
 
-//next, sell the ship and all attached modules
-
-//finally, clear the factory
-#endregion
 
 #region check to see if over a factory - swap it if you can!
+var _selected_factory = -1
+
+
+//check each factory to see if it was selected
+for (var i = 0; i < array_height_2d(_card_game_controller.factory_positions); i++){
+	var _x = _card_game_controller.factory_positions[i, 0]
+	var _y = _card_game_controller.factory_positions[i, 1]
+	var _xx = _x + 128*_card_game_controller.resolution_scale
+	var _yy = _y + 128*_card_game_controller.resolution_scale
+	if (point_in_rectangle(_mouse_x, _mouse_y, _x, _y, _xx, _yy)){
+		_selected_factory = i
+
+	}
+}
+
+
+if (_selected_factory != -1){
+//check to see if the selected factory has a ship frame in it
+	var _factory = _card_game_controller.ship_factories[_selected_factory]
+	var _ship_frame_in_selected_factory = _factory._card_game_controller
+	
+	if (!instance_exists(_ship_frame_in_selected_factory)){
+		//if it doesn't, transfer over everything
+		var _ship_frame = reference_factory.ship_frame_contained
+		_factory.ship_frame_contained = _ship_frame
+		reference_factory.ship_frame_contained = noone
+		var _factory_items = reference_factory.factory_item
+		for (var i = 0; i < array_height_2d(_factory_items); i++){
+			if (instance_exists(_factory_items[i, 1])){
+				_factory.factory_item[i, 1] = _factory_items [i, 1]
+				_factory_items[i, 1] = noone
+			}
+		}
+		if (instance_exists(reference_factory.fielded_ship)){
+			_factory.fielded_ship = reference_factory.fielded_ship
+			_factory.assigned_grid_x = reference_factory.assigned_grid_x
+			_factory.assigned_grid_y = reference_factory.assigned_grid_y
+			//1/22/20202 piuck up here.
+			
+			//clear those variables now
+		}
+			
+		//clear the old factory
+		
+	}
+
+
+	
+
+//if it does have a frame, swap the ship factories of the two ships
+
+//then field the other ship (thje one being swapped)
+}
 
 #endregion
 
