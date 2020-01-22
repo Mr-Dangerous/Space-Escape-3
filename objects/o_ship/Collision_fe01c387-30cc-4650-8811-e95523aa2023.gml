@@ -11,7 +11,7 @@ motion_add(_p_dir, .1)
 
 
 //Modules and abilities
-if (serrated_plates != 0){
+if (serrated_plates != 0){//BUG
 	//deal damage!
 	if (other.ship_team != ship_team){
 		if (other.serrated_plates_damage_counter = 0){
