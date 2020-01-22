@@ -87,7 +87,7 @@ switch(state){
 	
 	case ship.planning:
 	var _target_coordinate_array = battle_grid_positions[# assigned_grid_x, assigned_grid_y]
-	var _target_x = _target_coordinate_array[0]
+	var _target_x = _target_coordinate_array[0]//there is a strange bug going on here....
 	var _target_y = _target_coordinate_array[1]
 	x = _target_x
 	y = _target_y

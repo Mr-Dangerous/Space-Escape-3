@@ -18,52 +18,92 @@ income = base_income + streak_income + level_income + bonus_income + investment_
 
 
 //phase machine lol
+
+if (keyboard_check(ord("L"))){
+}
 switch (game_phase){
 	case phase.pre_planning:
 	//create all ships in the factory
-	with (o_ship_factory){
-		if (factory_team = team.left){
-			new_ship = false
-			create_ship = true
-			
-		}
-	}
+	
 	//process income
-	scr_advance_turn()
+	
 	//temporary
-
-	game_phase = phase.planning
-	show_debug_message("phase is now planning!")
+	if (phase_timer = -1){
+		phase_timer = 60 //CONSIDERATION: 1 second for animations and stuff
+			with (o_ship_factory){
+			if (factory_team = team.left){
+				new_ship = false
+				create_ship = true
+			
+			}
+		}
+	} 
+	if (phase_timer > 0){
+		phase_timer--
+	}
+	if (phase_timer = 0){
+		phase_timer--
+		game_phase = phase.planning
+		timer_counter = -1
+		current_phase_text = "Planning"
+	}
+	//needs to be something more intesting, maybe some phase text?
+	
 
 
 	break;
 	case phase.planning:
+	if (timer_counter <= 0){
+		timer_counter = planning_phase_length
+	}
 	if (timer_counter > 0){
 		timer_counter--
 		timer = floor(timer_counter/60)
 	}
 	
-	if (keyboard_check_pressed(ord("L"))){
+	if (timer_counter = 0){
+		timer_counter--
 		game_phase = phase.pre_combat
-		show_debug_message("phase is now precombat!")
+		current_phase_text = "Precombat"
+		phase_timer = -1
 	}
+	
 	
 	break;
 	
 	case phase.pre_combat:
 	
 	//some condition to start
-	with(o_ship){
-		state = ship.battle
+	if (phase_timer = -1){
+		phase_timer = 60
 	}
-	game_phase = phase.combat
-	show_debug_message("phase is now combat!")
+	if (phase_timer > 0){
+		phase_timer--
+	}
+	if (phase_timer = 0){
+		phase_timer--
+		with(o_ship){
+			state = ship.battle
+		}
+		game_phase = phase.combat
+		current_phase_text="Combat!"
+		timer_counter = -1
+	}
 	break;
 	
 	case phase.combat:
-	if (keyboard_check_pressed(ord("L"))){
+	if (timer_counter = -1){
+		timer_counter = planning_phase_length//to be replaced with combat!
+	}
+	if (timer_counter > 0){
+		timer_counter--
+		timer = floor(timer_counter/60)
+	}
+	if (timer_counter = 0){
+		timer_counter--
 		game_phase = phase.post_combat
-		show_debug_message("phase is now post_combat!")
+		current_phase_text = "Post Combat"
+		phase_timer = -1
 	}
 	break;
 	
@@ -71,13 +111,24 @@ switch (game_phase){
 	//remaining ships calculate player damage
 	//eventually enemy damage
 	//destroy all ships
-	with (o_ship){
-		instance_destroy()
+	if (phase_timer = -1){
+		phase_timer = 60
 	}
-	if (keyboard_check_pressed(ord("L"))){
+	if (phase_timer > 0){
+		phase_timer--
+	}
+	if (phase_timer = 0){
+		with (o_ship){
+			instance_destroy()
+		}
+		
 		game_phase = phase.pre_planning
-		show_debug_message("phase is now pre_planning!")
+		current_phase_text = "Pre-planning"
+		timer_counter = -1
+		phase_timer = -1
+		scr_advance_turn()
 	}
+		
 	break;
 }
 

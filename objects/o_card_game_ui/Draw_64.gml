@@ -16,7 +16,15 @@ economy_ui_string[5] = "Infrastructure Level: " + string(player_level)
 
 
 //draw the timer
-
+draw_set_halign(fa_center)
+var _x = timer_offset[0]
+var _y = timer_offset[1]
+if (timer_counter > 0){
+	draw_text(_x, _y, string(timer))
+}
+//phase name underneath?
+draw_text(_x, _y + 30, current_phase_text)
+draw_set_halign(fa_left)
 
 
 //draw the shop

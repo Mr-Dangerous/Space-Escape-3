@@ -39,6 +39,7 @@ right_fleet = ds_list_create()
 //player experience levels
 experience_to_level = scr_create_player_experience_levels()
 
+
 #region GUI locations and variables
 //resolution variables
 gui_height = view_get_hport(0)
@@ -123,14 +124,16 @@ card_resource_cost_x = round(198*resolution_scale)
 card_resource_cost_y = round(40*resolution_scale)
 
 //generate the timer location
-timer_offset[0] = round(gui_width - 30*resolution_scale)
-timer_offset[1] = round(gui_height - 30*resolution_scale)
+timer_offset[0] = round(gui_width - 200*resolution_scale)
+timer_offset[1] = round(100*resolution_scale)
 
 //generate the timer variables
-planning_phase_length = 45*60 //45 seconds * 60 FPS
-timer_counter = 0
-timer = timer_counter/60
+phase_timer = -1
+planning_phase_length = 10*60 //45 seconds * 60 FPS
+timer_counter = -1
+timer = 0
 game_phase = phase.planning
+current_phase_text = ""
 
 
 #endregion
