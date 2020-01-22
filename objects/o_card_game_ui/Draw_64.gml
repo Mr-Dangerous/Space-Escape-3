@@ -1,5 +1,6 @@
 //reset variables that need to check release of mouse
-
+var _mouse_x = device_mouse_x_to_gui(0)
+var _mouse_y = device_mouse_y_to_gui(0)
 //strings
 draw_set_font(f_card_font)
 
@@ -82,6 +83,22 @@ shop_slot_ui_x_offset[4] + (237*resolution_scale) - 2, shop_slot_ui_y_offset - 4
 for (var i = 0; i < resource_elements; i++){
 	draw_text(resource_ui_x_offset[i], resource_ui_y_offset, economy_ui_string[i])
 }
+//generate income window
+if (point_in_rectangle(_mouse_x, _mouse_y, resource_ui_x_offset[0], resource_ui_y_offset, resource_ui_x_offset[1], resource_y_offset + 16)){
+	if (income_hover_timer < 80){
+		income_hover_timer++
+	}
+	if (income_hover_timer >= 60){
+		income_hover = true
+	}
+} else {
+	income_hover_timer = 0
+	income_hover = false
+}
+if (income_hover = true){
+	//TODO more work here
+}
+
 
 //draw the parts box
 for (var i = 0; i < array_length_1d(parts_slot_ui_x_offset); i++){

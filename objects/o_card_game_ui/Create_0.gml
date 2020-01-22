@@ -22,6 +22,7 @@ investment_income = 0
 level_income = floor(player_level/2)
 bonus_income = 0
 income = base_income + streak_income + level_income + bonus_income
+income_hover_timer = 0
 
 //Game mangement variables
 current_turn = 1

@@ -2,9 +2,12 @@
 //creation variables that need to be dynamically updated based on other variables
 
 
-max_fuel = 10+(player_level*5)
+max_fuel = 7+(player_level*3)
 level_income = floor(player_level/2)
 investment_income = floor(resources/10)
+if (investment_income > 5){
+	investment_income = 5
+}
 income = base_income + streak_income + level_income + bonus_income + investment_income
 
 
@@ -141,6 +144,9 @@ switch (game_phase){
 	}
 	if (phase_timer = 0){
 		with (o_ship){
+			instance_destroy()
+		}
+		with (o_projectile){
 			instance_destroy()
 		}
 		
