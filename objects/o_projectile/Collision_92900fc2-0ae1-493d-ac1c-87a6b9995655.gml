@@ -1,7 +1,7 @@
 
 if (team_attack_from != other.ship_team){
 	//on hit effects
-	if (ECP_bonus = 1){
+	if (ECP_bonus >= 1){
 		var _shield_damage = mass
 		if (other.temporary_shields > 0){
 			other.temporary_shields -= _shield_damage
@@ -10,7 +10,8 @@ if (team_attack_from != other.ship_team){
 				_shield_damage -= other.temporary_shields
 				other.temporary_shields = 0
 			}
-		} if (other.shields > 0 and _shield_damage != 0){
+		} 
+		if (other.shields > 0 and _shield_damage != 0){
 			other.shields -= _shield_damage
 			_shield_damage = 0
 			if (other.shields < 0){
@@ -19,10 +20,11 @@ if (team_attack_from != other.ship_team){
 		}
 		//create the overload spark effect
 		show_debug_message ("spark made")
-		_x = other.x + irandom_range(-64, 64)
-		_y = other.y + irandom_range(-64, 64)
-		image_scale = irandom_range(.125, .25)
+		_x = other.x + irandom_range(-32, 32)
+		_y = other.y + irandom_range(-32, 32)
+		image_scale = random_range(.25, .5)
 		var _static_spark = instance_create_layer(_x, _y, "Effects", o_ECP_bonus_spark)
+	
 		_static_spark.image_xscale = image_scale
 		_static_spark.image_yscale = image_scale
 	}
