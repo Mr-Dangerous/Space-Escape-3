@@ -79,6 +79,14 @@
             "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
             "propertyId": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
             "value": "class_corvette"
+        },
+        {
+            "id": "86180f5b-d649-4cb8-b4a6-cb73fd315810",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",
+            "propertyId": "1081d503-9dc0-43c0-9239-8234d903c0f8",
+            "value": "8"
         }
     ],
     "parentObjectId": "6bc5656f-427a-422a-b991-cea7dfbec16f",

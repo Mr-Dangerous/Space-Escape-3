@@ -95,28 +95,36 @@ if (instance_exists(ship_frame_contained)){
 #endregion
 
 
+//check to see if the ship is deployed
+
+	
+
+
+
 if (create_ship = true and factory_team = team.left 
 and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and assigned_grid_x != -1){
 	show_debug_message("Command to create recieved!")
 	show_debug_message("assigned grid x = " + string(assigned_grid_x))
 	show_debug_message("assigned grid y = " + string(assigned_grid_y))
 	//create the ship
-	var _ship_resource = o_ship
-	var _ship_class = ship_frame_contained.class
+	var deployed_ship = noone
 	//woudl also want to check to see if there are fuel reducing modules here
-	var deployed_ship = instance_create_layer(40, 40, "Ships", _ship_resource)
-	var _fuel_cost = ship_frame_contained.fuel_cost
-	if (card_game_controller.current_fuel_spent + _fuel_cost > card_game_controller.max_fuel and new_ship = true){
-		instance_destroy(deployed_ship)
-		//TODO empty the assigned x and y in the grid
-	} else {
-		if (new_ship = true){
-			card_game_controller.current_fuel_spent += _fuel_cost
+	var _fuel_discount = 0 // would be done via factories.
+	//check to make sure this is the first time this ship is being created
+	//you don't want to deduct fuel for ships already fielded
+	
+	if (new_ship = true){
+		if (card_game_controller.current_fuel_spent + ship_frame_contained.fuel_cost + _fuel_discount <= card_game_controller.max_fuel){//COME BACK TO THIS
+			deployed_ship = instance_create_layer(40, 40, "Ships", o_ship)
+			card_game_controller.current_fuel_spent += ship_frame_contained.fuel_cost
 			new_ship = false
 		}
+	} else {
+		deployed_ship = instance_create_layer(40, 40, "Ships", o_ship)
 	}
-	
 
+
+	
 	//inject variables here
 	if (instance_exists(deployed_ship)){
 		//may be replaced with an object reference.... hurm
@@ -132,7 +140,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and
 		deployed_ship.assigned_grid_y = assigned_grid_y
 		deployed_ship.reference_factory = self
 		deployed_ship.ship_team = team.left
-		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost
+		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost + _fuel_discount
 		#region assign the origin and class counters.... this is not very good.
 		scr_assign_origin_class_counters(deployed_ship)
 		#endregion
@@ -165,7 +173,6 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 	show_debug_message("assigned grid y = " + string(assigned_grid_y))
 	//create the ship
 	var _ship_resource = o_ship
-	var _ship_class = ship_frame_contained.class
 	//woudl also want to check to see if there are fuel reducing modules here
 	var deployed_ship = instance_create_layer(40, 40, "Ships", _ship_resource)
 	

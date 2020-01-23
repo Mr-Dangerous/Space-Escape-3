@@ -1,7 +1,10 @@
 draw_self()
 
+
+
 #region armor, shield, and energy bars
 //background
+
 var whole_bar_y_offset = y + 26
 var whole_bar_x_offset = x - 34
 var whole_bar_x_end_offset = x + 34

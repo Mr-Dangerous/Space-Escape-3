@@ -45,7 +45,7 @@ switch (game_phase){
 	if (phase_timer = -1){
 		phase_timer = 60 //CONSIDERATION: 1 second for animations and stuff
 			with (o_ship_factory){
-			if (factory_team = team.left and instance_exists(ship_frame_contained)){
+			if (factory_team = team.left and instance_exists(ship_frame_contained) and ship_deployed = true){
 				new_ship = false
 				create_ship = true
 			
@@ -112,6 +112,11 @@ switch (game_phase){
 	//some condition to start
 	if (phase_timer = -1){
 		phase_timer = 60
+		with (o_ship_factory){
+			if (instance_exists(fielded_ship)){
+				ship_deployed = true
+			}
+		}
 	}
 	if (phase_timer > 0){
 		phase_timer--

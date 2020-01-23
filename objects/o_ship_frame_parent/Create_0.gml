@@ -14,22 +14,20 @@ switch(class){
 	case "Interceptor":
 		image_scale = 64/largest_dimension
 		card_image_scale = 100/largest_dimension
-		resource_cost = 2
-		fuel_cost = 2
+	
 	break;
 	
 	case "Fighter":
 		image_scale = 96/largest_dimension
 		card_image_scale = 100/largest_dimension
-		resource_cost = 4
-		fuel_cost = 4
+		
+	
 	break;
 	
 	case "Frigate":
 		image_scale = 128/largest_dimension
 		card_image_scale = 100/largest_dimension
-		resource_cost = 10
-		fuel_cost = 10
+
 	break;
 }
 

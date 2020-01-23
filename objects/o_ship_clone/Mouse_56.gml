@@ -33,6 +33,8 @@ if (new_ship = false){
 				if (ds_grid_get(grid_container, i, j) = noone){
 					_assigned_x = i
 					_assigned_y = j
+					reference_factory.assigned_grid_x = _assigned_x
+					reference_factory.assigned_grid_y = _assigned_y
 					_previous_grid_x = reference_object.assigned_grid_x
 					_previous_grid_y = reference_object.assigned_grid_y
 					ds_grid_set(grid_container, _previous_grid_x, _previous_grid_y, noone)

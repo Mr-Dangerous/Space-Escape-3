@@ -26,7 +26,7 @@ income_hover_timer = 0
 
 //Game mangement variables
 current_turn = 1
-max_fuel = 5 + player_level*3
+max_fuel = 7 + player_level*3
 
 //Fleet management variables
 left_fleet = ds_list_create()

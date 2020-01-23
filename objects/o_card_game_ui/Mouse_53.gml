@@ -29,18 +29,21 @@ for (var i = 0; i < array_height_2d(factory_positions); i++){
 }
 
 //if a factory is seleted, create the ship clone!
-if (selected_factory != -1){
+if (selected_factory != -1 and game_phase = phase.planning){
 	var _factory = ship_factories[selected_factory]
-	if (_factory.ship_frame_contained != noone and _factory.ship_deployed = false){
-	var _deployment_clone = instance_create_layer(mouse_x, mouse_y, "Ships", o_ship_clone)
-		with (_deployment_clone){
-			new_ship = true
-			reference_factory = _factory
-			ship_team = team.left
-			sprite_index = _factory.ship_frame_contained.sprite_index
-			image_xscale = _factory.ship_frame_contained.image_scale
-			image_yscale = _factory.ship_frame_contained.image_scale
-		}
+	if (_factory.ship_frame_contained != noone){
+		var _deployment_clone = instance_create_layer(mouse_x, mouse_y, "Ships", o_ship_clone)
+		var _fielded_ship = _factory.fielded_ship
+		_deployment_clone.new_ship = true
+		_deployment_clone.reference_factory = _factory
+		_deployment_clone.ship_team = _factory.factory_team
+		_deployment_clone.sprite_index = _factory.ship_frame_contained.sprite_index
+		_deployment_clone.image_xscale = _factory.ship_frame_contained.image_scale
+		_deployment_clone.image_yscale = _factory.ship_frame_contained.image_scale
+		if(instance_exists(_fielded_ship)){
+			_deployment_clone.reference_object = _fielded_ship
+			_deployment_clone.new_ship = false
+		}	
 	}
 }
 
