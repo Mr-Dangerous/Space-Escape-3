@@ -150,6 +150,7 @@ if (point_in_rectangle(_mouse_x, _mouse_y, _shop_x,_shop_y, _shop_xx, _shop_yy))
 	_sold_item.amount = _resources_salvaged
 	
 }
+#endregion
 
 
 #region check to see if over a factory - swap it if you can!
@@ -187,12 +188,10 @@ if (_selected_factory != -1){
 			}
 		}
 		if (instance_exists(reference_factory.fielded_ship)){
-			_factory.fielded_ship = reference_factory.fielded_ship
-			_factory.assigned_grid_x = reference_factory.assigned_grid_x
-			_factory.assigned_grid_y = reference_factory.assigned_grid_y
-			//1/22/20202 piuck up here.
+			reference_factory.fielded_ship.in_play = false//check this
+			instance_destroy(reference_factory.fielded_ship)
+			reference_factory.ship_deployed = false
 			
-			//clear those variables now
 		}
 			
 		//clear the old factory
