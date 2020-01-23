@@ -173,7 +173,7 @@ for (var i = 0; i < array_height_2d(_card_game_controller.factory_positions); i+
 if (_selected_factory != -1){
 //check to see if the selected factory has a ship frame in it
 	var _factory = _card_game_controller.ship_factories[_selected_factory]
-	var _ship_frame_in_selected_factory = _factory._card_game_controller
+	var _ship_frame_in_selected_factory = _factory.ship_frame_contained
 	
 	if (!instance_exists(_ship_frame_in_selected_factory)){
 		//if it doesn't, transfer over everything
@@ -182,9 +182,10 @@ if (_selected_factory != -1){
 		reference_factory.ship_frame_contained = noone
 		var _factory_items = reference_factory.factory_item
 		for (var i = 0; i < array_height_2d(_factory_items); i++){
-			if (instance_exists(_factory_items[i, 1])){
-				_factory.factory_item[i, 1] = _factory_items [i, 1]
-				_factory_items[i, 1] = noone
+			var _module = _factory_items[i, 1]
+			if (instance_exists(_module)){
+				_factory.factory_item[i, 1] = _module
+				_factory_items[@i, 1] = noone
 			}
 		}
 		if (instance_exists(reference_factory.fielded_ship)){
@@ -193,17 +194,35 @@ if (_selected_factory != -1){
 			reference_factory.ship_deployed = false
 			
 		}
-			
-		//clear the old factory
-		
 	}
+	/* TODO:  this is a fuckign mess
+	else {
+		//if it does have a frame, swap the ship factories of the two ships
+		_factory.ship_frame_contained = reference_factory.ship_frame_contained
+		reference_factory.ship_frame_contained = _ship_frame_in_selected_factory
+		var _factory_items = reference_factory.factory_item
+		for (var i = 0; i < array_height_2d(_factory_items); i++){
+			var _module = _factory_items[i, 1]
+			var _item_to_insert = _factory.factory_item[i, 1]
+			_factory.factory_item[@i, 1] = _module
+			reference_factory.factory_item[@i, 1] = _item_to_insert
+		}
+		if (instance_exists(reference_factory.fielded_ship){
+			
+		}
+		
+	
+		//then field the other ship (thje one being swapped)
+	}
+	*/
+		
 
 
 	
 
-//if it does have a frame, swap the ship factories of the two ships
 
-//then field the other ship (thje one being swapped)
+
+
 }
 
 #endregion

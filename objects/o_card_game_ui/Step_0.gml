@@ -22,9 +22,20 @@ income = base_income + streak_income + level_income + bonus_income + investment_
 
 //phase machine lol
 
-if (keyboard_check(ord("L"))){
+if (phase_debug_mode){
+	if (game_phase = phase.phase_debug_mode){
+		game_phase = phase.planning
+	}  else {
+		game_phase = phase.phase_debug_mode
+	}
 }
 switch (game_phase){
+	case phase.phase_debug_mode:
+		phase_timer = -1
+		timer_counter = -1
+		
+	break;
+	
 	case phase.pre_planning:
 	//create all ships in the factory
 	

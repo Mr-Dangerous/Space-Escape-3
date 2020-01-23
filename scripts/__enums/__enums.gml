@@ -8,7 +8,8 @@ enum phase{
 	planning,
 	pre_combat,
 	combat,
-	post_combat
+	post_combat,
+	phase_debug_mode
 }
 enum module {
 	frame,

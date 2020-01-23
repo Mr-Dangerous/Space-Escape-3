@@ -135,6 +135,7 @@ timer_counter = -1
 timer = 0
 game_phase = phase.planning
 current_phase_text = ""
+phase_debug_mode = false
 
 
 #endregion

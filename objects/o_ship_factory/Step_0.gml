@@ -96,7 +96,7 @@ if (instance_exists(ship_frame_contained)){
 
 
 if (create_ship = true and factory_team = team.left 
-and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
+and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and assigned_grid_x != -1){
 	show_debug_message("Command to create recieved!")
 	show_debug_message("assigned grid x = " + string(assigned_grid_x))
 	show_debug_message("assigned grid y = " + string(assigned_grid_y))
