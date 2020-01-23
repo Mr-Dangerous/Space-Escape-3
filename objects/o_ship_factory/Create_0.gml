@@ -5,8 +5,14 @@ resolution_scale = _card_game_controller.resolution_scale
 
 ship_deployed = false
 create_ship = false
+create_deactivated_ship = false
+deactivated_ship_copy = noone
 factory_team = team.left
 new_ship = true
+hover = false
+hover_timer = 0
+hover_card = noone
+_factory_sprite_size = sprite_get_width(s_factory_dock)*.8
 
 //module socket offests - assuming factories are origin center
 socket_offsets[0, 0]= 0 //x

@@ -81,6 +81,9 @@ if (speed = 0) exhaust_scale_multiplier = 0
 
 #region State MAchine
 switch(state){
+	case ship.deactivated:
+		instance_deactivate_object(self)
+	break;
 	case ship.locked:
 	
 	break;

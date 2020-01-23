@@ -60,6 +60,7 @@ enum ship{
 	battle,
 	cast_ability,
 	disabled,
+	deactivated,//for information gathering purposes
 	channel_ability,
 	firing_range//for testing purposes only
 }

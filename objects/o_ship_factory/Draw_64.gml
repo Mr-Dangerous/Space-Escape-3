@@ -1,6 +1,6 @@
 if (factory_team = team.left){
 
-	draw_sprite_ext(s_factory_dock, 0, gui_x, gui_y, .8, .8, 0, c_white, 1)
+	draw_sprite_stretched(s_factory_dock, 0, gui_x, gui_y, _factory_sprite_size, _factory_sprite_size)//102 is 80% of the sprite width
 
 	if (instance_exists(ship_frame_contained)){
 		var _image_alpha = 1

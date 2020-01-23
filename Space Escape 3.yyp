@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "70c91bc1-bfb4-4bda-a3c8-046f8448a6d7",
+            "Value": {
+                "id": "947eb1de-f74b-4e9e-8755-25f71012d525",
+                "resourcePath": "objects\\o_hover_card\\o_hover_card.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "73b1d068-f488-48b3-bef9-d8f7b79486cc",
             "Value": {
                 "id": "43c09ddc-8fa7-46ef-a170-63edac6f6ce3",

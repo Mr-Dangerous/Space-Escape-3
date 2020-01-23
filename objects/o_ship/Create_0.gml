@@ -11,6 +11,7 @@ battle_grid = 0
 battle_grid_positions = 0
 battle_map = instance_find(o_battle_map, 0)
 reference_factory = noone
+is_deactivated = false
 #endregion
 
 #region Energy Variables
