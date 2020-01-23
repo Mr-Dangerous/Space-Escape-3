@@ -113,6 +113,7 @@ if (hover = true){
 			hover_card = instance_create_layer(0, 0, "Above_Cards", o_hover_card)
 			hover_card.gui_x = gui_x + _factory_sprite_size + 20
 			hover_card.gui_y = gui_y
+		
 		}
 	}
 	
