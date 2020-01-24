@@ -16,7 +16,7 @@ if (projectile_class != projectile.rocket){
 	with (explosion){
 		//add some damage
 		sprite_index = other.secondary_explosion_sprite
-		image_xscale = other.explosion_image_scale
+		image_xscale = other.explosion_image_scale//BUG
 		image_yscale = other.explosion_image_scale
 		visible = true
 		image_angle = other.image_angle

@@ -97,7 +97,8 @@ if (instance_exists(ship_frame_contained)){
 #region hover and information
 var _mouse_x = device_mouse_x_to_gui(0)
 var _mouse_y = device_mouse_y_to_gui(0)
-if (point_in_rectangle(_mouse_x, _mouse_y, gui_x, gui_y, gui_x+_factory_sprite_size, gui_y+_factory_sprite_size)){
+if (point_in_rectangle(_mouse_x, _mouse_y, gui_x, gui_y, gui_x+_factory_sprite_size, gui_y+_factory_sprite_size) and
+	factory_team = team.left){
 	hover = true
 } else {
 	hover = false
