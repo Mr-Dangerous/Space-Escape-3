@@ -14,7 +14,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "3b60d160-4e20-417d-a131-90478545e5dc",
-            "value": "Arrack Refractor"
+            "value": "Refractor Shield"
         },
         {
             "id": "00a9cfb0-ed34-46b7-8140-0008db9c056d",
@@ -46,7 +46,7 @@
             "mvc": "1.0",
             "objectId": "7568de39-63b1-47c9-97da-04b07576bf11",
             "propertyId": "3264d702-fb95-4cdd-bd50-08ddae68328a",
-            "value": "scr_load_arrack_refractor"
+            "value": "scr_load_refractor_shield"
         }
     ],
     "parentObjectId": "7568de39-63b1-47c9-97da-04b07576bf11",

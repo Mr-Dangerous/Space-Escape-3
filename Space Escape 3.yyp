@@ -2482,7 +2482,7 @@
             "Key": "e201ef17-e3e2-48db-9646-66299b3dca28",
             "Value": {
                 "id": "f686496f-8d8d-4376-b08f-8d28786f6fbe",
-                "resourcePath": "scripts\\scr_load_arrack_refractor\\scr_load_arrack_refractor.yy",
+                "resourcePath": "scripts\\scr_load_refractor_shield\\scr_load_refractor_shield.yy",
                 "resourceType": "GMScript"
             }
         },
