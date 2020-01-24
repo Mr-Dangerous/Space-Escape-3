@@ -141,6 +141,20 @@
             "value": "noone",
             "varName": "reference_ship",
             "varType": 0
+        },
+        {
+            "id": "a8c96869-626e-4849-936d-ababd294b15f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "reference_factory",
+            "varType": 0
         }
     ],
     "solid": false,

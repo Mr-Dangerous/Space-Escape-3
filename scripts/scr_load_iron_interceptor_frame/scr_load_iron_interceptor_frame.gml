@@ -1,3 +1,5 @@
+var _object_type = object_index
+if (_object_type = o_ship){
 #region Graphic things
 //load the sprite
 sprite_index = s_iron_interceptor_original
@@ -118,3 +120,7 @@ class = target_class.interceptor
 origin = origin_iron
 sub_class = class_ECP
 #endregion
+}
+if (_object_type = o_ship_factory){
+
+}

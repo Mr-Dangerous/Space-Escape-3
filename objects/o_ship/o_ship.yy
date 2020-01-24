@@ -291,6 +291,20 @@
             "value": "0",
             "varName": "basic_ability",
             "varType": 0
+        },
+        {
+            "id": "ebeb19af-253e-41b8-9e6f-0b229a27bfa1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "shield_script",
+            "varType": 0
         }
     ],
     "solid": false,

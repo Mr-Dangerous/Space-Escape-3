@@ -95,6 +95,11 @@ if (instance_exists(ship_frame_contained)){
 #endregion
 
 #region hover and information
+//adjust the variables of the factory
+
+
+
+
 var _mouse_x = device_mouse_x_to_gui(0)
 var _mouse_y = device_mouse_y_to_gui(0)
 if (point_in_rectangle(_mouse_x, _mouse_y, gui_x, gui_y, gui_x+_factory_sprite_size, gui_y+_factory_sprite_size) and
@@ -110,10 +115,11 @@ if (hover = true){
 	//code to create the hover object here
 	if (hover_timer >= 60){
 		if (!instance_exists(hover_card)){
-			create_deactivated_ship = true
+			
 			hover_card = instance_create_layer(0, 0, "Above_Cards", o_hover_card)
 			hover_card.gui_x = gui_x + _factory_sprite_size + 20
 			hover_card.gui_y = gui_y
+			hover_card.reference_factory = self
 		
 		}
 	}

@@ -1,3 +1,4 @@
+if (object_get_name(self) = "o_ship"){
 #region Graphic things
 //load the sprite
 sprite_index = s_iron_frigate_original
@@ -121,14 +122,18 @@ exhaust_array[2, 1] = point_distance(0, 0, _exhaust_3_x_offset, _exhaust_3_y_off
 #endregion
 
 #region Baseline variables
-shields = high_sheilds
-armor = high_armor
-max_speed = slow_movement_speed
+shields = 300
+armor = 800
+max_speed = 1
 acceleration_rate = 0.01
-turn_speed = slow_acceleration
-fire_rate = medium_slow_attack_speed
+turn_speed = 1
+fire_rate = 100
 class = target_class.frigate
 origin = origin_iron
 sub_class = class_corvette
 
 #endregion
+}
+if (object_get_name(self) = "o_ship_factory"){
+	shields = 200
+}

@@ -2295,6 +2295,14 @@
             }
         },
         {
+            "Key": "ce09b7f2-eea0-4797-bf26-4d6c155d19da",
+            "Value": {
+                "id": "d4fe6e3d-e608-4953-b648-cb4483608951",
+                "resourcePath": "scripts\\scr_cast_refractor_shield\\scr_cast_refractor_shield.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d1173272-ac01-4fe1-8005-4835e0ed0e29",
             "Value": {
                 "id": "68b07d08-4df6-43ae-ba5b-12512fdb4bb5",
@@ -2751,6 +2759,7 @@
         "a929a7a6-71b6-4909-a62f-793281bb67de",
         "135d6fe4-09b4-48d5-a4a1-72b1c439af53",
         "a4d223f1-df5c-489d-adb4-439c6bfd8c34",
+        "ce09b7f2-eea0-4797-bf26-4d6c155d19da",
         "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
         "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
         "5ef05e9b-d57e-411d-9171-afad16f7b5ee",
