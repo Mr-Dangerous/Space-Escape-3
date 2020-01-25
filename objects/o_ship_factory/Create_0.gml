@@ -65,13 +65,19 @@ support_count = 0
 corvette_count = 0
 
 //Stats
-shields = 0
 armor = 0
+shields = 0
+basic_attack_speed = 0 // divide by 60 for attacks per second
+basic_attack_number = 0 //quantity of attacks per attack
+basic_attack_damage = 0 
+basic_attack_mass = 0
+basic_attack_range = 0 //shortish range
 max_speed = 0
-acceleration_rate = 0
 turn_speed = 0
-fire_rate = 0
-class = 0
+acceleration_rate = 0
+energy_starting = 0
+energy_to_cast = 0 //
+energy_regeneration = 0
 origin = ""
 sub_class = ""
 
