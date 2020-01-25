@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "467ff235-7dc7-4612-9690-9c5bcee1caf7",
+            "Value": {
+                "id": "274bfd1b-db09-48ea-878a-664f1c2c9494",
+                "resourcePath": "datafiles_yy\\Space_escape_cards.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "4709f2cd-6aea-47f9-8e2b-8406de45519c",
             "Value": {
                 "id": "0f6d164f-e984-430d-9e2b-0d2fe21c465e",

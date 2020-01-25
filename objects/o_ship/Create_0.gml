@@ -15,11 +15,13 @@ is_deactivated = false
 #endregion
 
 #region Energy Variables
-energy_sub_counter = 0
-max_energy = 20
+energy_sub_counter = 0//counts it in ticks
+max_energy = 20 //energy to cast
 energy = 0
 energy_multiplier = 10
 #endregion
+
+
 
 #region Shield Variables
 temporary_shields = 0
