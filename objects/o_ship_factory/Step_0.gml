@@ -256,60 +256,7 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 if (create_ship = true) create_ship = false
 #endregion
 
-#region create the ship when commanded to
-if (create_deactivated_ship = true and factory_team = team.left 
-and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
-	show_debug_message("Command to create deactivated ship recieved!")
 
-	var deployed_ship = noone
-	//woudl also want to check to see if there are fuel reducing modules here
-	var _fuel_discount = 0 // would be done via factories.
-	//check to make sure this is the first time this ship is being created
-	//you don't want to deduct fuel for ships already fielded
-	
-	
-	deployed_ship = instance_create_layer(40, 40, "Ships", o_ship)
-		
-	
-	//inject variables here
-	if (instance_exists(deployed_ship)){
-		//may be replaced with an object reference.... hurm
-		var _module_array = array_create(7, 0)
-		_module_array[0] = ship_frame_contained.loading_script
-		for (var i = 1; i < 7; i++){
-			if (factory_item[i-1, 1] != noone){
-				_module_array[i] = factory_item[i-1,1].loading_script
-			}
-		}
-		deployed_ship.basic_ability = ship_frame_contained.basic_ability_script
-		deployed_ship.is_deactivated = true
-		deployed_ship.reference_factory = self
-		deployed_ship.ship_team = team.left
-		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost + _fuel_discount
-		deployed_ship.state = ship.deactivated
-		#region assign the origin and class counters.... this is not very good.
-		scr_assign_origin_class_counters(deployed_ship)
-		#endregion
-		
-				
-		for (var i = 0; i < 7; i++){
-			deployed_ship.loading_scripts[i] = _module_array[i]
-		}
-	}
-	//fill the grid container
-
-	deactivated_ship_copy = deployed_ship
-	if (instance_exists(hover_card)){
-		hover_card.reference_ship = deactivated_ship_copy
-	}
-	create_deactivated_ship = false
-}
-
-/// @description 
-
-
-
-#endregion
 
 
 

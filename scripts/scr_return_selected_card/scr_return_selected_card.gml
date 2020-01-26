@@ -60,8 +60,16 @@ if (_card_type = card_type.frame){
 
 
 _selected_card_book[@1] -= 1
-var _selected_card_object = instance_create_layer(-50, -50, "Cards", _selected_card_book[0])
+var _selected_card_object = instance_create_layer(-50, -50, "Cards", o_ship_frame_parent)//o_card eventually
+var _ship_stats = ship_maps[? _selected_card_book[0]]
 with (_selected_card_object){
+	//CONSIDERATION: you may want to have ALL stats in this]//because you might want to hover for them!
+	name = string(_ship_stats[? "Name"])
+	class = string(_ship_stats[? "Class"])
+	sub_class = string(_ship_stats[? "Sub Class"])
+	origin = string(_ship_stats[? "Origin"])
+	var _sprite = asset_get_index(string(_ship_stats[? "sprite"] + "_original"))
+	sprite_index = _sprite
 	card_book = _selected_card_book
 }
 return _selected_card_object

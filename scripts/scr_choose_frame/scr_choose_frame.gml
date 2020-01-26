@@ -1,6 +1,6 @@
 ///@param class
 var _class = argument0
-var _ship_frame_resource = array_create(2, 0)
+var _selected_card_book = array_create(2, 0)
 var _frame_type_book
 
 //select the actual class book eg interceptor_Frame_book
@@ -39,10 +39,10 @@ var _remaining_frame_number = ds_list_size(_remaining_ship_frames) - 1
 var _random_seed = irandom(_remaining_frame_number)
 
 //select the frame
-_ship_frame_resource = ds_list_find_value(_remaining_ship_frames, _random_seed)
+_selected_card_book = ds_list_find_value(_remaining_ship_frames, _random_seed)
 //destroy the list
 ds_list_destroy(_remaining_ship_frames)
 //decrement the book number
 
 
-return _ship_frame_resource
+return _selected_card_book

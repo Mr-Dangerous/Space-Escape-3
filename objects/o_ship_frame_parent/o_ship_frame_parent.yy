@@ -13,11 +13,21 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "6bc5656f-427a-422a-b991-cea7dfbec16f"
+        },
+        {
+            "id": "364c2b0d-0555-41c2-b68e-717b425b3be3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "6bc5656f-427a-422a-b991-cea7dfbec16f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "c2cb2b58-8c4e-44e6-91e6-8b4c55ef31c7",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -213,34 +223,6 @@
             "value": "2",
             "varName": "fuel_cost",
             "varType": 1
-        },
-        {
-            "id": "aabc89d3-28a0-44ec-b80d-df37e350fb9e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "factory_origin",
-            "varType": 4
-        },
-        {
-            "id": "dd1a00df-6744-49f7-b1d2-cbf52723844a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "factory_class",
-            "varType": 4
         }
     ],
     "solid": false,

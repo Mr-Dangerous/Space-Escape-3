@@ -1,4 +1,6 @@
-/// @description Insert description here
+/// @description Create... EVERYTHING!
+
+
 //shop slots
 for (var i = 0; i < 5; i++){
 	shop_slots[i] = noone//the object
@@ -208,7 +210,26 @@ for (var i = 0; i < _factory_array_size; i++){
 #endregion
 
 
+#region JSON funny business
 
+var _buffer = buffer_load("Space_escape_cards.json");
+var _json_string = buffer_read(_buffer, buffer_string)
+buffer_delete(_buffer)
+root_map = json_decode(_json_string)
+
+//take the map data and put it into individual ship maps
+var  _list_of_ships = root_map[? "Ships"]
+ship_maps = ds_map_create()
+for (var i =0; i < ds_list_size(_list_of_ships); i++){
+	var _ship_map = ds_list_find_value(_list_of_ships, i)
+	var _map_key = _ship_map[? "Name"]
+	ds_map_add(ship_maps, _map_key, _ship_map)
+}
+
+//ds_map_destroy(root_map)//CONSIDERATION:  DONT DESTROY IF YOU NEED TO ITERATE!
+//
+
+#endregion
 
 
 #region Card Books
@@ -323,76 +344,76 @@ When the new system is in place, the first two lines of each entry should be del
 */
 
 
-iron_interceptor_frame_book[0] = o_iron_interceptor_frame_card
+iron_interceptor_frame_book[0] = "Iron Interceptor"
 iron_interceptor_frame_book[1] = 30
 interceptor_frame_book[0] = iron_interceptor_frame_book
 
-iron_fighter_frame_book[0] = o_iron_fighter_frame_card
+iron_fighter_frame_book[0] = "Iron Fighter"
 iron_fighter_frame_book[1] = 20
 fighter_frame_book[0] = iron_fighter_frame_book
 
 
-iron_frigate_frame_book[0] = o_iron_frigate_frame_card
+iron_frigate_frame_book[0] = "Iron Frigate"
 iron_frigate_frame_book[1] = 10
 frigate_frame_book[0] = iron_frigate_frame_book
 
 
-crystal_interceptor_frame_book[0] = o_crystal_interceptor_frame_card
+crystal_interceptor_frame_book[0] = "Crystal Interceptor"
 crystal_interceptor_frame_book[1] = 30
 interceptor_frame_book[1] = crystal_interceptor_frame_book
 
 
-crystal_fighter_frame_book[0] = o_crystal_fighter_frame_card
+crystal_fighter_frame_book[0] = "Crystal Fighter"
 crystal_fighter_frame_book[1] = 20
 fighter_frame_book[1] = crystal_fighter_frame_book
 
 
-crystal_frigate_frame_book[0] = o_crystal_frigate_frame_card
+crystal_frigate_frame_book[0] = "Crystal Frigate"
 crystal_frigate_frame_book[1] = 10
 frigate_frame_book[1] = crystal_frigate_frame_book
 
 
-pirate_interceptor_frame_book[0] = o_pirate_interceptor_frame_card
+pirate_interceptor_frame_book[0] = "Pirate Interceptor"
 pirate_interceptor_frame_book[1] = 30
 interceptor_frame_book[2] = pirate_interceptor_frame_book
 
 
-pirate_fighter_frame_book[0] = o_pirate_fighter_frame_card
+pirate_fighter_frame_book[0] = "Pirate Fighter"
 pirate_fighter_frame_book[1] = 20
 fighter_frame_book[2] = pirate_fighter_frame_book
 
 
-pirate_frigate_frame_book[0] = o_pirate_frigate_frame_card
+pirate_frigate_frame_book[0] = "Pirate Frigate"
 pirate_frigate_frame_book[1] = 10
 frigate_frame_book[2] = pirate_frigate_frame_book
 
 
-imperial_interceptor_frame_book[0] = o_imperial_interceptor_frame_card
+imperial_interceptor_frame_book[0] = "Imperial Interceptor"
 imperial_interceptor_frame_book[1] = 30
 interceptor_frame_book[3] = imperial_interceptor_frame_book
 
 
-imperial_fighter_frame_book[0] = o_imperial_fighter_frame_card
+imperial_fighter_frame_book[0] = "Imperial Fighter"
 imperial_fighter_frame_book[1] = 20
 fighter_frame_book[3] = imperial_fighter_frame_book
 
 
-imperial_frigate_frame_book[0] = o_imperial_frigate_frame_card
+imperial_frigate_frame_book[0] = "Imperial Frigate"
 imperial_frigate_frame_book[1] = 10
 frigate_frame_book[3] = imperial_frigate_frame_book
 
 
-solar_interceptor_frame_book[0] = o_solar_interceptor_frame_card
+solar_interceptor_frame_book[0] = "Solar Interceptor"
 solar_interceptor_frame_book[1] = 30
 interceptor_frame_book[4] = solar_interceptor_frame_book
 
 
-solar_fighter_frame_book[0] = o_solar_fighter_frame_card
+solar_fighter_frame_book[0] = "Solar Fighter"
 solar_fighter_frame_book[1] = 20
 fighter_frame_book[4] = solar_fighter_frame_book
 
 
-solar_frigate_frame_book[0] = o_solar_frigate_frame_card
+solar_frigate_frame_book[0] = "Solar Frigate"
 solar_frigate_frame_book[1] = 10
 frigate_frame_book[4] = solar_frigate_frame_book
 
