@@ -1,4 +1,3 @@
-
 {
   "Ships": [
     {
@@ -23,8 +22,9 @@
       "Energy": 0,
       "Energy to cast": 20,
       "Energy generation": 1,
-      "sprite": "s_iron_interceptor",
-      "weapons and exhaust ": "scr_iron_interceptor_graphic_offsets"
+      "Sprite": "s_iron_interceptor",
+      "Weapons and exhaust ": "scr_iron_interceptor_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Iron Fighter",
@@ -48,8 +48,9 @@
       "Energy": 0,
       "Energy to cast": 40,
       "Energy generation": 2,
-      "sprite": "s_iron_fighter",
-      "weapons and exhaust ": "scr_iron_fighter_graphic_offsets"
+      "Sprite": "s_iron_fighter",
+      "Weapons and exhaust ": "scr_iron_fighter_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Iron Frigate",
@@ -73,8 +74,9 @@
       "Energy": 0,
       "Energy to cast": 60,
       "Energy generation": 2,
-      "sprite": "s_iron_frigate",
-      "weapons and exhaust ": "scr_iron_frigate_graphic_offsets"
+      "Sprite": "s_iron_frigate",
+      "Weapons and exhaust ": "scr_iron_frigate_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Imperial Interceptor",
@@ -98,8 +100,9 @@
       "Energy": 0,
       "Energy to cast": 20,
       "Energy generation": 1,
-      "sprite": "s_imperial_interceptor",
-      "weapons and exhaust ": "scr_imperial_interceptor"
+      "Sprite": "s_imperial_interceptor",
+      "Weapons and exhaust ": "scr_imperial_interceptor_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Imperial Fighter",
@@ -123,8 +126,9 @@
       "Energy": 0,
       "Energy to cast": 40,
       "Energy generation": 2,
-      "sprite": "s_imperial_fighter",
-      "weapons and exhaust ": "scr_imperial_fighter"
+      "Sprite": "s_imperial_fighter",
+      "Weapons and exhaust ": "scr_imperial_fighter_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Imperial Frigate",
@@ -148,8 +152,9 @@
       "Energy": 0,
       "Energy to cast": 60,
       "Energy generation": 2,
-      "sprite": "s_imperial_frigate",
-      "weapons and exhaust ": "scr_imperial_frigate"
+      "Sprite": "s_imperial_frigate",
+      "Weapons and exhaust ": "scr_imperial_frigate_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Solar Interceptor",
@@ -173,8 +178,9 @@
       "Energy": 0,
       "Energy to cast": 20,
       "Energy generation": 1,
-      "sprite": "s_solar_interceptor",
-      "weapons and exhaust ": "scr_solar_interceptor"
+      "Sprite": "s_solar_interceptor",
+      "Weapons and exhaust ": "scr_solar_interceptor_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Solar Fighter",
@@ -198,8 +204,9 @@
       "Energy": 0,
       "Energy to cast": 40,
       "Energy generation": 2,
-      "sprite": "s_solar_fighter",
-      "weapons and exhaust ": "scr_solar_fighter"
+      "Sprite": "s_solar_fighter",
+      "Weapons and exhaust ": "scr_solar_fighter_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Solar Frigate",
@@ -223,8 +230,9 @@
       "Energy": 0,
       "Energy to cast": 60,
       "Energy generation": 2,
-      "sprite": "s_solar_frigate",
-      "weapons and exhaust ": "scr_solar_frigate"
+      "Sprite": "s_solar_frigate",
+      "Weapons and exhaust ": "scr_solar_frigate_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Crystal Interceptor",
@@ -248,8 +256,9 @@
       "Energy": 0,
       "Energy to cast": 20,
       "Energy generation": 1,
-      "sprite": "s_crystal_interceptor",
-      "weapons and exhaust ": "scr_crystal_interceptor"
+      "Sprite": "s_crystal_interceptor",
+      "Weapons and exhaust ": "scr_crystal_interceptor_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Crystal Fighter",
@@ -273,8 +282,9 @@
       "Energy": 0,
       "Energy to cast": 40,
       "Energy generation": 2,
-      "sprite": "s_crystal_fighter",
-      "weapons and exhaust ": "scr_crystal_fighter"
+      "Sprite": "s_crystal_fighter",
+      "Weapons and exhaust ": "scr_crystal_fighter_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Crystal Frigate",
@@ -298,8 +308,9 @@
       "Energy": 0,
       "Energy to cast": 60,
       "Energy generation": 2,
-      "sprite": "s_crystal_frigate",
-      "weapons and exhaust ": "scr_crystal_frigate"
+      "Sprite": "s_crystal_frigate",
+      "Weapons and exhaust ": "scr_crystal_frigate_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Pirate Interceptor",
@@ -323,8 +334,9 @@
       "Energy": 0,
       "Energy to cast": 20,
       "Energy generation": 1,
-      "sprite": "s_pirate_interceptor",
-      "weapons and exhaust ": "scr_pirate_interceptor"
+      "Sprite": "s_pirate_interceptor",
+      "Weapons and exhaust ": "scr_pirate_interceptor_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Pirate Fighter",
@@ -348,8 +360,9 @@
       "Energy": 0,
       "Energy to cast": 40,
       "Energy generation": 2,
-      "sprite": "s_pirate_fighter",
-      "weapons and exhaust ": "scr_pirate_fighter"
+      "Sprite": "s_pirate_fighter",
+      "Weapons and exhaust ": "scr_pirate_fighter_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     },
     {
       "Name": "Pirate Frigate",
@@ -373,8 +386,9 @@
       "Energy": 0,
       "Energy to cast": 60,
       "Energy generation": 2,
-      "sprite": "s_pirate_frigate",
-      "weapons and exhaust ": "scr_pirate_frigate"
+      "Sprite": "s_pirate_frigate",
+      "Weapons and exhaust ": "scr_pirate_frigate_graphic_offsets",
+      "Basic Ability Script": "scr_inhibitor_shield"
     }
   ]
 }

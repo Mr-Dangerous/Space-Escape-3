@@ -167,6 +167,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and
 	//inject variables here
 	if (instance_exists(deployed_ship)){
 		//may be replaced with an object reference.... hurm
+		//get some work done here!
 		var _module_array = array_create(7, 0)
 		_module_array[0] = ship_frame_contained.loading_script
 		for (var i = 1; i < 7; i++){

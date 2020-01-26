@@ -26,9 +26,9 @@ energy_multiplier = 10
 #region Shield Variables
 temporary_shields = 0
 temporary_shield_counter = 0
-shields = 1
+shields = 1  //MAP VALUE
 max_shields = 1
-max_mass_shield_can_deflect = 5 
+max_mass_shield_can_deflect = 5 //MAP VALUE SHIELD POWER
 shield_forward_strength = 80
 shield_left_strength = 60
 shield_right_strength = 60
@@ -41,7 +41,7 @@ reinforced_shields = false
 #endregion
 
 #region armor variables
-armor = 1
+armor = 1 //MAP VALUE
 max_armor = 1
 #endregion
 
@@ -68,12 +68,12 @@ target_y = 0
 
 pilot_reflexes = 0
 combat_timing_counter = 0
-acceleration_rate = .1
-max_speed = 1
-turn_speed = .5
+acceleration_rate = .1 //MAP VALUE
+max_speed = 1 //MAP VALUE
+turn_speed = .5 //MAP VALUE
 dodge = 10
 dodge_reset_counter = 0
-mass = 2
+mass = 2 //SHOULD BE A MAP VALUE
 #endregion
 
 #region targeting variables
@@ -83,10 +83,10 @@ priority_target = target_class.any
 #region attack variables
 secondary_attack_array = create_basic_attack_array()
 basic_attack_array = create_basic_attack_array()
-projectile_flight_time = 0
-projectile_speed = 0
-fire_rate = 40
-fire_rate_counter = 0
+projectile_flight_time = 0 //MAP VALUE
+projectile_speed = 0 //MAP VALUE
+fire_rate = 40 //MAP VALUE
+fire_rate_counter = 0 //MAP  VALUE
 secondary_fire_rate = -1
 secondary_fire_rate_counter = 0
 #endregion
