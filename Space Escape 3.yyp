@@ -242,7 +242,7 @@
             "Key": "15be53b0-623c-476c-a13f-2f72f4660818",
             "Value": {
                 "id": "5cbd188d-1a78-4198-8adb-fd46a82d1135",
-                "resourcePath": "scripts\\scr_load_iron_frigate_frame\\scr_load_iron_frigate_frame.yy",
+                "resourcePath": "scripts\\scr_iron_frigate_graphic_offsets\\scr_iron_frigate_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -498,7 +498,7 @@
             "Key": "2bb16de7-3017-4356-bf51-519031c2585f",
             "Value": {
                 "id": "2d5cd317-3b7f-4148-98bd-7ad2c9f313a0",
-                "resourcePath": "scripts\\scr_load_pirate_interceptor_frame\\scr_load_pirate_interceptor_frame.yy",
+                "resourcePath": "scripts\\scr_pirate_interceptor_graphic_offsets\\scr_pirate_interceptor_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -570,7 +570,7 @@
             "Key": "3261a086-3ba4-450b-a9cb-e3e35aa62eed",
             "Value": {
                 "id": "f09c2e14-1922-438c-80d8-5e51ee1ef960",
-                "resourcePath": "scripts\\scr_load_crystal_frigate_frame\\scr_load_crystal_frigate_frame.yy",
+                "resourcePath": "scripts\\scr_crystal_frigate_graphic_offsets\\scr_crystal_frigate_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1058,7 +1058,7 @@
             "Key": "5eb2afb3-a265-4407-b144-52d40a0f7452",
             "Value": {
                 "id": "fee2c525-c075-4d81-a70f-e644d2b9bcc2",
-                "resourcePath": "scripts\\scr_load_iron_interceptor_frame\\scr_load_iron_interceptor_frame.yy",
+                "resourcePath": "scripts\\scr_iron_interceptor_graphic_offsets\\scr_iron_interceptor_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1090,7 +1090,7 @@
             "Key": "60994a3a-a1b8-413d-978d-f8e861e087c0",
             "Value": {
                 "id": "1709088a-46a1-4b56-bd88-6039d9e6d123",
-                "resourcePath": "scripts\\scr_load_crystal_interceptor_frame\\scr_load_crystal_interceptor_frame.yy",
+                "resourcePath": "scripts\\scr_crystal_interceptor_graphic_offsets\\scr_crystal_interceptor_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1290,7 +1290,7 @@
             "Key": "78d8e449-86ac-4ab0-828c-417da3876583",
             "Value": {
                 "id": "16793bf0-13f0-4f8e-b3c0-f3ae17fecd85",
-                "resourcePath": "scripts\\scr_load_pirate_fighter_frame\\scr_load_pirate_fighter_frame.yy",
+                "resourcePath": "scripts\\scr_pirate_fighter_graphic_offsets\\scr_pirate_fighter_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1322,7 +1322,7 @@
             "Key": "7b7146ff-1177-45ba-8aa4-7d9ece338333",
             "Value": {
                 "id": "acfe9cc7-41bc-4425-8605-38284a77e106",
-                "resourcePath": "scripts\\scr_load_solar_interceptor_frame\\scr_load_solar_interceptor_frame.yy",
+                "resourcePath": "scripts\\scr_solar_interceptor_graphic_offsets\\scr_solar_interceptor_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1762,7 +1762,7 @@
             "Key": "9f0a0420-3741-4eca-841f-c126d8c098e9",
             "Value": {
                 "id": "1016beb5-e680-4344-b6e2-900080b0f0de",
-                "resourcePath": "scripts\\scr_load_imperial_interceptor_frame\\scr_load_imperial_interceptor_frame.yy",
+                "resourcePath": "scripts\\scr_imperial_interceptor_graphic_offsets\\scr_imperial_interceptor_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1778,7 +1778,7 @@
             "Key": "a18064dd-0d5a-4fbf-bcde-faf60704802b",
             "Value": {
                 "id": "655420c4-5c54-40b2-90d1-a3b50af42b49",
-                "resourcePath": "scripts\\scr_load_solar_fighter_frame\\scr_load_solar_fighter_frame.yy",
+                "resourcePath": "scripts\\scr_solar_fighter_graphic_offsets\\scr_solar_fighter_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1906,7 +1906,7 @@
             "Key": "a9a42ce5-06e6-4c7a-9c7d-0b28ffa2e214",
             "Value": {
                 "id": "28f9fe21-203e-41f2-ae5e-84ca6e9b5fb1",
-                "resourcePath": "scripts\\scr_load_pirate_frigate_frame\\scr_load_pirate_frigate_frame.yy",
+                "resourcePath": "scripts\\scr_pirate_frigate_graphic_offsets\\scr_pirate_frigate_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1954,7 +1954,7 @@
             "Key": "ac9ce10e-a138-4ff8-adae-44faed9fd98e",
             "Value": {
                 "id": "8dfe3995-404d-41a3-a8c6-bc41dff14b5a",
-                "resourcePath": "scripts\\scr_load_solar_frigate_frame\\scr_load_solar_frigate_frame.yy",
+                "resourcePath": "scripts\\scr_solar_frigate_graphic_offsets\\scr_solar_frigate_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2018,7 +2018,7 @@
             "Key": "b14636a3-42bc-4e91-b95f-7ec8cd1a7223",
             "Value": {
                 "id": "ec05eb25-ea33-4910-9775-ef36e2d232f4",
-                "resourcePath": "scripts\\scr_load_imperial_frigate_frame\\scr_load_imperial_frigate_frame.yy",
+                "resourcePath": "scripts\\scr_imperial_frigate_graphic_offsets\\scr_imperial_frigate_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2386,7 +2386,7 @@
             "Key": "d533c9c7-9a91-40d8-a68d-4d1760132698",
             "Value": {
                 "id": "daf48333-8baa-4e2c-b09a-a5d4a55fbd65",
-                "resourcePath": "scripts\\scr_load_crystal_fighter_frame\\scr_load_crystal_fighter_frame.yy",
+                "resourcePath": "scripts\\scr_crystal_fighter_graphic_offsets\\scr_crystal_fighter_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2570,7 +2570,7 @@
             "Key": "e880ef26-29cf-42cc-bb0e-5c78033884e9",
             "Value": {
                 "id": "872454f1-2f80-4bad-98a6-a6e1ca0e0d49",
-                "resourcePath": "scripts\\scr_load_imperial_fighter_frame\\scr_load_imperial_fighter_frame.yy",
+                "resourcePath": "scripts\\scr_imperial_fighter_graphic_offsets\\scr_imperial_fighter_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2602,7 +2602,7 @@
             "Key": "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
             "Value": {
                 "id": "dc3047da-cd56-46e7-9672-634f82021234",
-                "resourcePath": "scripts\\scr_load_iron_fighter_frame\\scr_load_iron_fighter_frame.yy",
+                "resourcePath": "scripts\\scr_iron_fighter_graphic_offsets\\scr_iron_fighter_graphic_offsets.yy",
                 "resourceType": "GMScript"
             }
         },
