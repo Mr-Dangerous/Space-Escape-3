@@ -1,6 +1,8 @@
 #region loadup scripts
 if (created = false){
 	created = true
+	
+	#region get the correct instance refrences
 	if (ship_team = team.left){
 		allied_fleet = card_game_ui_object.left_fleet
 		enemy_fleet = card_game_ui_object.right_fleet
@@ -17,23 +19,74 @@ if (created = false){
 		direction = 180
 		image_angle = 180
 	}
+	#endregion
 	
-	projectile_speed = basic_attack_array[1,0]
-	projectile_flight_time = basic_attack_array[1, 6]
+
 	basic_attack_array[0, 1] = ship_team
 	secondary_attack_array[0, 1] = ship_team
 #endregion
 #region script loading
+	//slap that JSON array in there
+	var _ship_map = card_game_ui_object.ship_maps[? name]
+    origin = _ship_map[? "Origin"]
+    class = _ship_map[? "Class"]
+    sub_class = _ship_map[? "Sub Class"]
+    resource_cost = _ship_map[? "Resource Cost"]
+    armor = _ship_map[? "Armor"]
+    shields = _ship_map[? "Shields"]
+    armor_resilency = _ship_map[? "Armor Resiliency"]
+    shield_power = _ship_map[? "Shield Power"]
+    max_speed = _ship_map[? "Max Speed"]
+    turn_speed = _ship_map[? "Turn Speed"]
+    acceleration_rate = _ship_map[? "Acceleration"]
+    fuel_cost = _ship_map[? "Fuel Cost"]
+    ship_mass = _ship_map[? "Ship Mass"]
+    basic_attack_number = _ship_map[? "Number of Basic Attacks"]
+    basic_attack_projectile_speed = _ship_map[? "Basic Attack Projectile Speed"]
+    basic_attack_projectile_duration = _ship_map[? "Basic Attack Projectile Duration"]
+    basic_attack_weapon_speed = _ship_map[? "Basic Attack Weapon Speed"]
+    basic_attack_weapon_damage = _ship_map[? "Basic Attack Weapon Damage"]
+    basic_attack_weapon_mass = _ship_map[? "Basic Attack Weapon Mass"]
+	basic_attack_range = basic_attack_projectile_speed*basic_attack_projectile_duration
+    basic_attack_projectile_sprite = s_bullet_original
+	energy = _ship_map[? "Energy Starting"]
+    max_energy = _ship_map[? "Energy to Cast"]
+    energy_per_second = _ship_map[? "Energy Generation"]
+    basic_ability_script = asset_get_index(_ship_map[? "Basic Ability Script"])
+		
 	var number_of_scripts = array_length_1d(loading_scripts)
 	for (var i = 0; i < number_of_scripts; i++){
 		if (loading_scripts[i] != 0){
 			script_execute(loading_scripts[i])
 		}
 	}
+	//Get the basic attacks working
+	basic_attack_array[0, 0] = basic_attack_number//number of basic attacks
+	basic_attack_array[0, 1] = ship_team
+	basic_attack_array[0, 2] = image_scale //seperate image scale of projectile
+	basic_attack_array[0, 3] = 5//gimbal_fire_angle
+	basic_attack_array[0, 4] = basic_attack_weapon_mass //basic weapon weapon mass
+	basic_attack_array[0, 5] = true//if the damage is directional in nature
+	//for each basic attack
+	for (var i = 0; i < array_height_2d(weapon_visual_offsets); i++){
+		
+		basic_attack_array[i, 0] = basic_attack_projectile_speed //basic speed
+		basic_attack_array[i, 1] = basic_attack_projectile_sprite //projectile resource
+		basic_attack_array[i, 2] = basic_attack_weapon_damage //damage
+		basic_attack_array[i, 3] = projectile.light //damage_type//DEPRECATED
+		basic_attack_array[i, 4] = weapon_visual_offsets[i, 0] //length from origin
+		basic_attack_array[i, 5] = weapon_visual_offsets[i, 1] //direction? from origin
+		basic_attack_array[i, 6] = basic_attack_projectile_duration //flight time in frames
+	}
+	
 	//post script loading
 	//NOTE:  imagescale needs to adjust.
 	image_xscale = image_scale
 	image_yscale = image_scale
+	
+
+	
+	//assign relavent values to things
 	max_armor = armor
 	max_shields = shields
 	scr_apply_origin_class_bonus()//Consideration - maybe somewhere else?
@@ -106,8 +159,11 @@ switch(state){
 	
 	case ship.battle:
 		//tick variables
-		if (energy_sub_counter < max_energy*energy_multiplier) energy_sub_counter++
-		energy = energy_sub_counter/energy_multiplier
+		if (energy_sub_counter < 60) energy_sub_counter++
+		if (energy_sub_counter >= 60){
+			energy_sub_counter = 0
+			energy += energy_per_second
+		}
 		if (energy >= max_energy){
 		
 			//will actually be a state
@@ -124,7 +180,7 @@ switch(state){
 			
 			var distance_to_target = point_distance(x, y, ship_target.x, ship_target.y)
 			var direction_to_target = point_direction(x, y, ship_target.x, ship_target.y)
-			var current_weapon_range = basic_attack_array[1, 6]*basic_attack_array[1, 0]
+			var current_weapon_range = basic_attack_range
 			var secondary_weapon_range = secondary_attack_array[1, 6]*secondary_attack_array[1, 0]
 			var gimbal_fire_angle = basic_attack_array[0,3]
 			var secondary_gimbal_fire_angle = secondary_attack_array[0, 3]
@@ -143,17 +199,16 @@ switch(state){
 			//primary attack
 			
 			var angle_to_target = abs(angle_difference(image_angle, direction_to_target))
-			fire_rate_counter++
-			if (fire_rate_counter >= fire_rate and angle_to_target < gimbal_fire_angle and distance_to_target <= current_weapon_range){
-				fire_rate_counter = 0
+			basic_attack_weapon_speed_counter++
+			if (basic_attack_weapon_speed_counter >= basic_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= current_weapon_range){
+				basic_attack_weapon_speed_counter = 0
 				fire_basic_attack(basic_attack_array)
 			}
 			if (secondary_fire_rate != -1){
-				secondary_fire_rate_counter++
-				if (secondary_fire_rate_counter >= secondary_fire_rate and angle_to_target < secondary_gimbal_fire_angle and distance_to_target <= secondary_weapon_range * 1.3){
-					secondary_fire_rate_counter = 0
-					fire_basic_attack(secondary_attack_array)
-
+				secondary_attack_weapon_speed_counter++
+				if (secondary_attack_weapon_speed_counter >= secondary_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= secondary_weapon_range){
+					secondary_attack_weapon_speed_counter = 0
+					fire_secondary_attack(secondary_attack_array)
 				}
 			}
 		}
@@ -266,6 +321,7 @@ switch(state){
 	break;
 	
 	case ship.firing_range://for testing purposes only.
+	/*
 	fire_rate_counter++
 	image_angle+=.5
 	direction=image_angle
@@ -292,6 +348,7 @@ switch(state){
 		}
 	}
 	if (keyboard_check_pressed(ord("Z"))) state = ship.cast_ability
+	*/
 	
 	break;
 	

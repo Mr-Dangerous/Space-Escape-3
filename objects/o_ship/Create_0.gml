@@ -2,7 +2,7 @@ visible = false
 
 #region Instances
 //this region contains references to all required instances
-fleet_object = instance_find(o_fleets, 0)//may be redundant
+name = "" //required to fetch the correct map
 card_game_ui_object = instance_find(o_card_game_ui, 0)
 enemy_fleet = 0
 allied_fleet = 0
@@ -11,7 +11,6 @@ battle_grid = 0
 battle_grid_positions = 0
 battle_map = instance_find(o_battle_map, 0)
 reference_factory = noone
-is_deactivated = false
 #endregion
 
 #region Energy Variables
@@ -19,6 +18,8 @@ energy_sub_counter = 0//counts it in ticks
 max_energy = 20 //energy to cast
 energy = 0
 energy_multiplier = 10
+energy_per_second = 1
+energy_per_second = 1
 #endregion
 
 
@@ -26,9 +27,9 @@ energy_multiplier = 10
 #region Shield Variables
 temporary_shields = 0
 temporary_shield_counter = 0
-shields = 1  //MAP VALUE
+shields = 1  
 max_shields = 1
-max_mass_shield_can_deflect = 5 //MAP VALUE SHIELD POWER
+shield_power = 5 
 shield_forward_strength = 80
 shield_left_strength = 60
 shield_right_strength = 60
@@ -43,10 +44,11 @@ reinforced_shields = false
 #region armor variables
 armor = 1 //MAP VALUE
 max_armor = 1
+armor_resilency = 1
 #endregion
 
 #region Loading variables - for scripts
-module_list = array_create(7, [noone])
+
 loading_scripts = array_create(7, [noone])
 created = false
 origin = ""
@@ -66,14 +68,10 @@ target_y = 0
 
 #region movement variables
 
-pilot_reflexes = 0
-combat_timing_counter = 0
 acceleration_rate = .1 //MAP VALUE
 max_speed = 1 //MAP VALUE
 turn_speed = .5 //MAP VALUE
-dodge = 10
-dodge_reset_counter = 0
-mass = 2 //SHOULD BE A MAP VALUE
+ship_mass = 2 //SHOULD BE A MAP VALUE
 #endregion
 
 #region targeting variables
@@ -83,12 +81,14 @@ priority_target = target_class.any
 #region attack variables
 secondary_attack_array = create_basic_attack_array()
 basic_attack_array = create_basic_attack_array()
-projectile_flight_time = 0 //MAP VALUE
-projectile_speed = 0 //MAP VALUE
-fire_rate = 40 //MAP VALUE
-fire_rate_counter = 0 //MAP  VALUE
-secondary_fire_rate = -1
-secondary_fire_rate_counter = 0
+basic_attack_projectile_duration = 0 //MAP VALUE
+basic_attack_projectile_speed = 0 //MAP VALUE
+basic_attack_weapon_speed = 40 //MAP VALUE
+basic_attack_weapon_speed_counter = 0 //MAP  VALUE
+secondary_attack_projectile_duration = 0 //MAP VALUE
+secondary_attack_projectile_speed = 0 //MAP VALUE
+secondary_attack_weapon_speed = 40 //MAP VALUE
+secondary_attack_weapon_speed_counter = 0 //MAP  VALUE
 #endregion
 
 #region exhaust variables
