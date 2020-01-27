@@ -151,8 +151,8 @@ if (argument0 = card_type.module){
 }
 
 var random_seed = irandom(99)
-var card_level = 0
+var card_level
 for (var i = 0; i < 5; i++){
-	if (level_array[i] < random_seed) card_level = i
+	if (level_array[i] < random_seed) card_level = i + 1
 }
-return 1//card_level
+return card_level//card_level

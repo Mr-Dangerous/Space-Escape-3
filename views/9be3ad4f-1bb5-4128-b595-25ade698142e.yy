@@ -10,7 +10,8 @@
         "5dcf87be-854e-4aab-8963-2c47005ccf13",
         "65c6d873-c231-4155-9c22-6cdc10c7eeda",
         "824f7328-ccbf-4dfb-80df-2a924ea95743",
-        "5b63311e-7739-4b4e-8dc2-f8b82b0b7672"
+        "5b63311e-7739-4b4e-8dc2-f8b82b0b7672",
+        "262753c6-499c-4887-9ffb-b2917e98e7ad"
     ],
     "filterType": "GMObject",
     "folderName": "Spells and effects",

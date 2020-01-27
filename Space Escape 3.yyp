@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "046263c0-6d80-4e91-9ea6-4a84e69f2f83",
-            "Value": {
-                "id": "15c8ed7a-519a-4635-9afd-865b3a2a6fd8",
-                "resourcePath": "objects\\o_thermal_lance_module_card\\o_thermal_lance_module_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "04afe17e-437c-46fe-ba73-e9a6a7347db4",
             "Value": {
                 "id": "0d4a6862-59c7-4356-893e-f5476fcf45c5",
@@ -71,27 +63,11 @@
             }
         },
         {
-            "Key": "055191af-d692-4225-905d-9620e3541224",
-            "Value": {
-                "id": "6f884d61-8fce-487e-bf35-8b0d912ac7b0",
-                "resourcePath": "objects\\o_iron_interceptor_frame_card\\o_iron_interceptor_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "06e83dc8-101d-4927-9263-0d2640a22345",
             "Value": {
                 "id": "6b015e2f-1189-40ec-a49a-0b016380b2ef",
                 "resourcePath": "scripts\\scr_choose_frame\\scr_choose_frame.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "072049b3-6924-4a86-8771-eac1d439f88e",
-            "Value": {
-                "id": "0906bf8f-d1e0-495a-bb3c-9603bf15802d",
-                "resourcePath": "objects\\o_solar_frigate_frame_card\\o_solar_frigate_frame_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -156,14 +132,6 @@
                 "id": "891fd40c-0c3b-411b-b3a9-f07492786f01",
                 "resourcePath": "sprites\\s_bullet_blue_orginal\\s_bullet_blue_orginal.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "0d8ae401-1cd0-425d-86ff-bc1cbee69046",
-            "Value": {
-                "id": "3c9dee35-d109-45f0-869b-642a098686be",
-                "resourcePath": "objects\\o_arrack_refractor_module_card\\o_arrack_refractor_module_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -303,14 +271,6 @@
             }
         },
         {
-            "Key": "1c341beb-ce69-402f-9dc1-4271704f306a",
-            "Value": {
-                "id": "31af5a05-f105-4477-ac16-548365ac6715",
-                "resourcePath": "objects\\o_pirate_frigate_frame_card\\o_pirate_frigate_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1c7235ca-d164-4095-9dd3-3ebbc74c7274",
             "Value": {
                 "id": "17b90210-5464-4c78-96a5-4ec106272668",
@@ -323,14 +283,6 @@
             "Value": {
                 "id": "89007240-1d27-4903-ba2d-8b16ddcf09a0",
                 "resourcePath": "objects\\o_missile_explosion\\o_missile_explosion.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "1d18febc-1a49-4993-bb2e-2955aff4403d",
-            "Value": {
-                "id": "6eb0df70-62e5-42c4-be94-d747a6273854",
-                "resourcePath": "objects\\o_serrated_plates_module_card\\o_serrated_plates_module_card.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -415,14 +367,6 @@
             }
         },
         {
-            "Key": "244ef7c2-820f-4f67-9151-b0a0ba3ddbf8",
-            "Value": {
-                "id": "85d1f531-83bb-4742-947f-a43277d76fa5",
-                "resourcePath": "objects\\o_emergency_shield_module_card\\o_emergency_shield_module_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2534abc5-0141-452e-9f90-ab037a0f734e",
             "Value": {
                 "id": "3306d4bc-4a54-4f55-a936-56a7d34c46c6",
@@ -444,14 +388,6 @@
                 "id": "cfc7c5f7-17a8-4384-a9e4-58ec1129eb87",
                 "resourcePath": "sprites\\s_factory_dock\\s_factory_dock.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "268f98e2-18ab-4717-b395-083c7a389cb2",
-            "Value": {
-                "id": "f0c44f48-4d58-49ac-abb2-3afa6ab39b11",
-                "resourcePath": "objects\\o_pirate_fighter_frame_card\\o_pirate_fighter_frame_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -524,14 +460,6 @@
                 "id": "a3487cf8-eab8-48ea-90ce-e53fa42a7e0f",
                 "resourcePath": "sprites\\s_alien_interceptor_original\\s_alien_interceptor_original.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2f23cc4d-9403-45c3-9773-fbd8bd0934ff",
-            "Value": {
-                "id": "7fa42d48-758b-4cd3-9644-d48957b03f45",
-                "resourcePath": "objects\\o_arrack_core_plant_module_card\\o_arrack_core_plant_module_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -735,14 +663,6 @@
             }
         },
         {
-            "Key": "4651757c-b464-40d1-83a6-6d8dfd50d287",
-            "Value": {
-                "id": "5dc551d2-f3f5-4c9d-88dd-4ad6713c6ed1",
-                "resourcePath": "objects\\o_armada_5_module_card\\o_armada_5_module_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "467ff235-7dc7-4612-9690-9c5bcee1caf7",
             "Value": {
                 "id": "274bfd1b-db09-48ea-878a-664f1c2c9494",
@@ -807,14 +727,6 @@
             }
         },
         {
-            "Key": "4d41e89c-07a3-415a-a41a-8dfcd7ee0179",
-            "Value": {
-                "id": "ede4acb6-1488-494c-bd1d-cde7c0ffd7d4",
-                "resourcePath": "objects\\o_crystal_fighter_frame_card\\o_crystal_fighter_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4d7de704-ede6-408c-8f8b-037c9988d245",
             "Value": {
                 "id": "d513e53c-ff48-413d-8004-20be840f7525",
@@ -860,14 +772,6 @@
                 "id": "5146622f-7651-49a3-9e96-37d50d6bff2f",
                 "resourcePath": "sprites\\s_button_cancel_original\\s_button_cancel_original.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "508f1bbe-bbc0-40c8-84ea-c93c6197dc3d",
-            "Value": {
-                "id": "76fc4180-62dd-4890-b507-8489aaf7f49a",
-                "resourcePath": "objects\\o_imperial_interceptor_frame_card\\o_imperial_interceptor_frame_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1343,14 +1247,6 @@
             }
         },
         {
-            "Key": "7ddfbb40-07c2-4bd0-be82-b00a201e07a6",
-            "Value": {
-                "id": "3523009b-c3a2-405d-a131-ed85a9d0f2d1",
-                "resourcePath": "objects\\o_iron_frigate_frame_card\\o_iron_frigate_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7e7a8e94-6d7c-40a7-b5dc-eaf8a3989370",
             "Value": {
                 "id": "6d22e913-4ea9-4416-98db-b8a505e76ab1",
@@ -1487,14 +1383,6 @@
             }
         },
         {
-            "Key": "88b6f324-bfdb-488c-af52-f1591a9176f3",
-            "Value": {
-                "id": "1d22be85-17c3-4ba1-a122-e52a55c60d1d",
-                "resourcePath": "objects\\o_crystal_frigate_frame_card\\o_crystal_frigate_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8c1e3074-4a94-4afe-bc04-557bf3a64007",
             "Value": {
                 "id": "277a29be-7a7f-45c6-9ded-62b44d53b992",
@@ -1524,14 +1412,6 @@
                 "id": "cba2cd65-6a34-4d5f-86d1-a52f44cae143",
                 "resourcePath": "sprites\\s_card_border_5\\s_card_border_5.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "8fadf395-e236-48f9-9140-06fb371e821c",
-            "Value": {
-                "id": "6ade98db-6afb-49b4-8f9c-bd8f66287c26",
-                "resourcePath": "objects\\o_enhar_targeting_module_module_card\\o_enhar_targeting_module_module_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1743,14 +1623,6 @@
             }
         },
         {
-            "Key": "9e887811-5fca-4cef-a991-849cb00603e1",
-            "Value": {
-                "id": "2490d8e9-3c92-46ae-a19f-8d56e5158f57",
-                "resourcePath": "objects\\o_pirate_interceptor_frame_card\\o_pirate_interceptor_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "9edd750f-2a96-44ff-81e5-e5a9387d63df",
             "Value": {
                 "id": "7fe19b41-de2f-4963-ab42-542835d99106",
@@ -1820,14 +1692,6 @@
                 "id": "81e56af9-f6c7-4a28-8bc1-ce5baaf4ec2c",
                 "resourcePath": "scripts\\scr_check_anvil_class_plates\\scr_check_anvil_class_plates.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "a625f644-fd84-407b-94b1-553070930b39",
-            "Value": {
-                "id": "fd3edc1f-c669-4935-8750-7420ab5ed39b",
-                "resourcePath": "objects\\o_elisar_emergency_shield_system_module_card\\o_elisar_emergency_shield_system_module_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1927,27 +1791,11 @@
             }
         },
         {
-            "Key": "aaa11cbb-3553-4093-83c2-d1ac385f6b86",
-            "Value": {
-                "id": "4dab55dd-7d15-4780-b067-e4c49a1b19a2",
-                "resourcePath": "objects\\o_anvil_class_plates_module_card\\o_anvil_class_plates_module_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "abe07c50-8dd1-47a2-b28c-f58cbe187c2f",
             "Value": {
                 "id": "806af635-ce72-4814-bfb8-c2555b7d1403",
                 "resourcePath": "scripts\\scr_load_serrated_plates\\scr_load_serrated_plates.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "ac9bead9-d5e5-4571-afc3-528c60ee7da4",
-            "Value": {
-                "id": "ba38c548-fa85-4a0c-845b-31927494b6d8",
-                "resourcePath": "views\\ac9bead9-d5e5-4571-afc3-528c60ee7da4.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1980,14 +1828,6 @@
                 "id": "1f8647e8-6d9c-4755-ba2a-0022b549ff49",
                 "resourcePath": "sprites\\s_explosion_multi_burst_original\\s_explosion_multi_burst_original.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ae55e442-3fff-4e2b-b429-60cd2935a968",
-            "Value": {
-                "id": "fca0b8a6-3d83-4793-9f2a-8433ae21112d",
-                "resourcePath": "views\\ae55e442-3fff-4e2b-b429-60cd2935a968.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -2071,14 +1911,6 @@
             }
         },
         {
-            "Key": "b799a5eb-3f45-4930-9686-1e25e31f296e",
-            "Value": {
-                "id": "20f96e05-f3cf-4d30-972a-ed2f82e4d90a",
-                "resourcePath": "objects\\o_wave_crasher_shield_module_card\\o_wave_crasher_shield_module_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "b802a1c7-9597-4c55-8799-27e77d00c193",
             "Value": {
                 "id": "aebb9293-eb42-46f5-be0f-d8539506423d",
@@ -2132,14 +1964,6 @@
                 "id": "a015136e-d24b-41d7-bc33-7d6b2c710705",
                 "resourcePath": "sprites\\s_blue_pulse_rocket_exhuast_orginal\\s_blue_pulse_rocket_exhuast_orginal.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "bcf27dac-5d7b-422d-b3ba-0ec8d6766fee",
-            "Value": {
-                "id": "8f4bd22e-fe5f-4da3-bd43-c657ef4c9f27",
-                "resourcePath": "views\\bcf27dac-5d7b-422d-b3ba-0ec8d6766fee.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -2335,14 +2159,6 @@
             }
         },
         {
-            "Key": "d29c0676-38a9-4ece-ad4b-d935e6c59683",
-            "Value": {
-                "id": "5b7e88fb-f9c9-4f35-9e2a-1164777f4c35",
-                "resourcePath": "objects\\o_imperial_fighter_frame_card\\o_imperial_fighter_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d2ce0eae-67c4-4622-9394-efa8f46975da",
             "Value": {
                 "id": "86c1695d-083e-40c8-a8c0-75b36edd8f82",
@@ -2364,22 +2180,6 @@
                 "id": "6d23cca7-b40f-4776-bf3c-e7c5ff4f0213",
                 "resourcePath": "sprites\\s_laser_red_test_body\\s_laser_red_test_body.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d493e029-d768-49bf-b778-8a66606c3e0c",
-            "Value": {
-                "id": "a1ce23cf-03a5-4da4-b6f3-abf9ec4e294a",
-                "resourcePath": "objects\\o_crystal_interceptor_frame_card\\o_crystal_interceptor_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d4aa1e0b-ef52-49e3-8dc4-bae4f59a01d3",
-            "Value": {
-                "id": "cb12c558-7139-49ec-8296-77d421fb4ee1",
-                "resourcePath": "objects\\o_iron_fighter_frame_card\\o_iron_fighter_frame_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2439,22 +2239,6 @@
             }
         },
         {
-            "Key": "dc53d66f-56a1-41e6-992c-2cbd42445ae6",
-            "Value": {
-                "id": "51740711-60c7-453d-998c-ae487eafe953",
-                "resourcePath": "objects\\o_solar_fighter_frame_card\\o_solar_fighter_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "df741509-47a1-4c97-b08a-590992a266c3",
-            "Value": {
-                "id": "1ef66b51-93a7-4473-9dcd-1c1d8c04df70",
-                "resourcePath": "objects\\o_imperial_frigate_frame_card\\o_imperial_frigate_frame_card.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "df94cc31-2e07-4c0b-8870-43c9b26f4147",
             "Value": {
                 "id": "c6864c69-87b1-4dd1-9629-0127a520776b",
@@ -2468,22 +2252,6 @@
                 "id": "0c5e1683-544b-4873-b944-eb40522e8191",
                 "resourcePath": "scripts\\scr_create_player_experience_levels\\scr_create_player_experience_levels.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e00fef57-f84a-4ece-90e7-e8aa9197a6c7",
-            "Value": {
-                "id": "a31b3c10-e0f0-40cb-a42d-51cfb43a5f4e",
-                "resourcePath": "views\\e00fef57-f84a-4ece-90e7-e8aa9197a6c7.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "e0aeda9a-5fbb-44e7-b20e-f7aabab50e59",
-            "Value": {
-                "id": "5016c56c-e5c9-4c52-8fb1-68f84836fa44",
-                "resourcePath": "objects\\o_solar_interceptor_frame_card\\o_solar_interceptor_frame_card.yy",
-                "resourceType": "GMObject"
             }
         },
         {

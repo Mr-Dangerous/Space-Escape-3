@@ -25,22 +25,22 @@ for (var i = 0; i < 3; i++){
 }
 
 
-factory_item[0, 0] = module.weapon//the type to compare agaisnt
+factory_item[0, 0] = "Weapon"
 factory_item[0, 1] = noone
 factory_item[0, 2] = false
-factory_item[1, 0] = module.shields
+factory_item[1, 0] = "Shields"
 factory_item[1, 1] = noone
 factory_item[1, 2] = false
-factory_item[2, 0] = module.armor
+factory_item[2, 0] = "Armor"
 factory_item[2, 1] = noone
 factory_item[2, 2] = false
-factory_item[3, 0] = module.targeting
+factory_item[3, 0] = "Targeting"
 factory_item[3, 1] = noone
 factory_item[3, 2] = false
-factory_item[4, 0] = module.ability
+factory_item[4, 0] = "Ability Amp"
 factory_item[4, 1] = noone
 factory_item[4, 2] = false
-factory_item[5, 0] = module.power_plant
+factory_item[5, 0] = "Power Plant"
 factory_item[5, 1] = noone
 factory_item[5, 2] = false
 
