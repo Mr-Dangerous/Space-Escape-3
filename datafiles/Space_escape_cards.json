@@ -14,13 +14,13 @@
     },
     {
       "Name": "Ballistic Lance",
-      "Module Type": "Primary Weapon Modifier",
+      "Module Type": "Weapon",
       "Origin": "Imperial",
       "Sub Class": "Breakthrough",
       "Level": 2,
-      "Sprite": "s_wave_crasher_shield",
+      "Sprite": "s_ballistic_lance",
       "Loading script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Description": "Primary Weapon Replacement",
       "Cards in Pool": 30
     },
     {
@@ -84,7 +84,7 @@
       "Origin": "Pirate",
       "Sub Class": "Breakthrough",
       "Level": 4,
-      "Sprite": "s_wave_crasher_shield",
+      "Sprite": "s_electric_plow",
       "Loading script": "scr_load_wave_crasher_shield",
       "Description": "",
       "Cards in Pool": 30
@@ -95,7 +95,7 @@
       "Origin": "Pirate",
       "Sub Class": "Breakthrough",
       "Level": 1,
-      "Sprite": "s_wave_crasher_shield",
+      "Sprite": "s_serrated_plates",
       "Loading script": "scr_load_wave_crasher_shield",
       "Description": "",
       "Cards in Pool": 30
@@ -113,13 +113,13 @@
     },
     {
       "Name": "Overload System",
-      "Module Type": "Secondary Weapon",
+      "Module Type": "Weapon",
       "Origin": "Imperial",
       "Sub Class": "Command",
       "Level": 3,
       "Sprite": "s_wave_crasher_shield",
       "Loading script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Description": "Secondary Weapon",
       "Cards in Pool": 30
     },
     {
@@ -135,13 +135,13 @@
     },
     {
       "Name": "Portal Missile System",
-      "Module Type": "Secondary Weapon",
+      "Module Type": "Weapon",
       "Origin": "Crystal",
       "Sub Class": "Corvette",
       "Level": 4,
       "Sprite": "s_wave_crasher_shield",
       "Loading script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Description": "Secondary Weapon",
       "Cards in Pool": 30
     },
     {
@@ -157,13 +157,13 @@
     },
     {
       "Name": "Outrigger hooks",
-      "Module Type": "Secondary Weapon",
+      "Module Type": "Weapon",
       "Origin": "Pirate",
       "Sub Class": "Corvette",
       "Level": 4,
       "Sprite": "s_wave_crasher_shield",
       "Loading script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Description": "Secondary Weapon",
       "Cards in Pool": 30
     },
     {
@@ -260,7 +260,7 @@
       "Origin": "Imperial",
       "Sub Class": "Shield",
       "Level": 1,
-      "Sprite": "s_wave_crasher_shield",
+      "Sprite": "s_anvil_class_plates",
       "Loading script": "scr_load_wave_crasher_shield",
       "Description": "",
       "Cards in Pool": 30
@@ -300,13 +300,13 @@
     },
     {
       "Name": "Kinetic Driver",
-      "Module Type": "Primary Weapon Modifier",
+      "Module Type": "Weapon",
       "Origin": "Crystal",
       "Sub Class": "Weapon Platform",
       "Level": 1,
       "Sprite": "s_wave_crasher_shield",
       "Loading script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Description": "Primary Weapon Replacement",
       "Cards in Pool": 30
     },
     {
@@ -333,13 +333,13 @@
     },
     {
       "Name": "Armada 5 Turret",
-      "Module Type": "Secondary Weapon",
+      "Module Type": "Weapon",
       "Origin": "Pirate",
       "Sub Class": "Weapon Platform",
       "Level": 2,
       "Sprite": "s_wave_crasher_shield",
       "Loading script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Description": "Secondary Weapon",
       "Cards in Pool": 30
     }
   ],
@@ -349,6 +349,7 @@
       "Origin": "Iron",
       "Class": "Interceptor",
       "Sub Class": "ECP",
+      "Resource Cost": 2,
       "Armor": 300,
       "Shields": 100,
       "Armor Resiliency": 0,
@@ -377,6 +378,7 @@
       "Origin": "Iron",
       "Class": "Fighter",
       "Sub Class": "Weapons Platform",
+      "Resource Cost": 4,
       "Armor": 800,
       "Shields": 250,
       "Armor Resiliency": 1,
@@ -405,6 +407,7 @@
       "Origin": "Iron",
       "Class": "Frigate",
       "Sub Class": "Corvette",
+      "Resource Cost": 8,
       "Armor": 2000,
       "Shields": 700,
       "Armor Resiliency": 3,
@@ -433,6 +436,7 @@
       "Origin": "Imperial",
       "Class": "Interceptor",
       "Sub Class": "Hunter",
+      "Resource Cost": 2,
       "Armor": 300,
       "Shields": 100,
       "Armor Resiliency": 0,
@@ -461,6 +465,7 @@
       "Origin": "Imperial",
       "Class": "Fighter",
       "Sub Class": "Weapons Platform",
+      "Resource Cost": 4,
       "Armor": 800,
       "Shields": 250,
       "Armor Resiliency": 1,
@@ -489,6 +494,7 @@
       "Origin": "Imperial",
       "Class": "Frigate",
       "Sub Class": "Command",
+      "Resource Cost": 8,
       "Armor": 2200,
       "Shields": 800,
       "Armor Resiliency": 3,
@@ -517,6 +523,7 @@
       "Origin": "Solar",
       "Class": "Interceptor",
       "Sub Class": "Hunter",
+      "Resource Cost": 2,
       "Armor": 300,
       "Shields": 100,
       "Armor Resiliency": 0,
@@ -545,6 +552,7 @@
       "Origin": "Solar",
       "Class": "Fighter",
       "Sub Class": "Shield",
+      "Resource Cost": 4,
       "Armor": 800,
       "Shields": 350,
       "Armor Resiliency": 1,
@@ -573,6 +581,7 @@
       "Origin": "Solar",
       "Class": "Frigate",
       "Sub Class": "Support",
+      "Resource Cost": 8,
       "Armor": 2000,
       "Shields": 700,
       "Armor Resiliency": 3,
@@ -601,6 +610,7 @@
       "Origin": "Crystal",
       "Class": "Interceptor",
       "Sub Class": "Ghost",
+      "Resource Cost": 2,
       "Armor": 300,
       "Shields": 50,
       "Armor Resiliency": 0,
@@ -629,6 +639,7 @@
       "Origin": "Crystal",
       "Class": "Fighter",
       "Sub Class": "Shield",
+      "Resource Cost": 4,
       "Armor": 800,
       "Shields": 350,
       "Armor Resiliency": 1,
@@ -657,6 +668,7 @@
       "Origin": "Crystal",
       "Class": "Frigate",
       "Sub Class": "Support",
+      "Resource Cost": 8,
       "Armor": 2000,
       "Shields": 700,
       "Armor Resiliency": 3,
@@ -685,6 +697,7 @@
       "Origin": "Pirate",
       "Class": "Interceptor",
       "Sub Class": "Breakthrough",
+      "Resource Cost": 2,
       "Armor": 300,
       "Shields": 100,
       "Armor Resiliency": 0,
@@ -713,6 +726,7 @@
       "Origin": "Pirate",
       "Class": "Fighter",
       "Sub Class": "Hunter",
+      "Resource Cost": 4,
       "Armor": 800,
       "Shields": 250,
       "Armor Resiliency": 1,
@@ -741,6 +755,7 @@
       "Origin": "Pirate",
       "Class": "Frigate",
       "Sub Class": "Corvette",
+      "Resource Cost": 8,
       "Armor": 2000,
       "Shields": 700,
       "Armor Resiliency": 3,
@@ -766,3 +781,4 @@
     }
   ]
 }
+

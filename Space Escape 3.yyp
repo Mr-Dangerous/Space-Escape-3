@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "14e377df-306b-4106-8ba2-a7fa79cb63d4",
+            "Value": {
+                "id": "96335dc5-be70-4eb8-97cd-cb5869438088",
+                "resourcePath": "sprites\\s_anvil_class_plates\\s_anvil_class_plates.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15be53b0-623c-476c-a13f-2f72f4660818",
             "Value": {
                 "id": "5cbd188d-1a78-4198-8adb-fd46a82d1135",
@@ -402,7 +410,7 @@
             "Key": "2936ff44-15d9-40a6-a914-1adb55784e83",
             "Value": {
                 "id": "01d5e971-5752-47d3-b0bc-1b8099823fc6",
-                "resourcePath": "sprites\\s_pirate_frigate_orginal\\s_pirate_frigate_orginal.yy",
+                "resourcePath": "sprites\\s_pirate_frigate_original\\s_pirate_frigate_original.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -827,6 +835,14 @@
             "Value": {
                 "id": "1d66d113-8d85-40b4-8174-0b6282884bac",
                 "resourcePath": "sprites\\s_card_placeholder\\s_card_placeholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56102606-b574-4c2b-b5b3-04bfb49cc8db",
+            "Value": {
+                "id": "e8d225c1-a8c6-4956-a454-81df24f17bf6",
+                "resourcePath": "sprites\\s_ballistic_lance\\s_ballistic_lance.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1271,6 +1287,14 @@
             }
         },
         {
+            "Key": "8050fd6a-acd7-4348-9b83-099ed619e2d3",
+            "Value": {
+                "id": "18590014-d64f-48d4-92b9-78d5ede4ccf2",
+                "resourcePath": "sprites\\s_serrated_plates\\s_serrated_plates.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "807d5c55-44bc-464e-9efd-710c4152160b",
             "Value": {
                 "id": "632778f6-87b8-460e-b98a-080f3e9673e3",
@@ -1524,6 +1548,14 @@
                 "id": "e016ad8a-3224-405f-b1af-f8b3d5902306",
                 "resourcePath": "objects\\o_propelled_weapon\\o_propelled_weapon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9809d3a7-192f-4863-a8f2-10ccc2f1195a",
+            "Value": {
+                "id": "1ddb8977-a5b5-48cf-9d48-931a02b4d3a6",
+                "resourcePath": "sprites\\s_electric_plow\\s_electric_plow.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

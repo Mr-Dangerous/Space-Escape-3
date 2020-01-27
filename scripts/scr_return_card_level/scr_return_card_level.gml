@@ -67,6 +67,12 @@ if (argument0 = card_type.frame){
 
 		break;
 		
+		case 10:
+			level_array[0] = 0//36%
+			level_array[1] = 36 // 37%
+			level_array[2] = 75 //25%
+		break;
+		
 	}
 }
 
@@ -146,13 +152,22 @@ if (argument0 = card_type.module){
 			level_array[3] = 71//25%
 			level_array[4] = 86 //14%
 		break;
+		case 10:
+			level_array[0] = 0//10%
+			level_array[1] = 10 // 18%
+			level_array[2] = 38 //33%
+			level_array[3] = 71//25%
+			level_array[4] = 86 //14%
+		break;
+		
 		
 	}
 }
 
 var random_seed = irandom(99)
-var card_level
+var card_level = 5//BUG  Somethings operating very strange here. To be honest, this whole function needs reworking.  Maybe into JSON?
 for (var i = 0; i < 5; i++){
 	if (level_array[i] < random_seed) card_level = i + 1
 }
+
 return card_level//card_level
