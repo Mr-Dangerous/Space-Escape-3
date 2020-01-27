@@ -31,11 +31,12 @@ _basic_weapon_string_array[1] = string("Number of Weapons: " + string(reference_
 
 var _secondary_weapon_string_array = array_create(1, 0)
 _secondary_weapon_string_array[0] = "Secondary Weapons"
-//_secondary_weapon_string_array[1] = string("Number of Weapons: " + string(reference_factory.secondary_attack_number))
-//_secondary_weapon_string_array[2] = string("Damage: " + string(reference_factory.secondary_attack_weapon_damage))
-//_secondary_weapon_string_array[3] = string("Projectile Mass: " + string(reference_factory.secondary_attack_weapon_mass))
-//_secondary_weapon_string_array[4] = string("Fire Rate: " + string(reference_factory.secondary_attack_weapon_speed/60) + " /sec")
-
+if (reference_factory.secondary_attack_exists){
+	_secondary_weapon_string_array[1] = string("Number of Weapons: " + string(reference_factory.secondary_attack_number)) + 
+	"\n" + string("Damage: " + string(reference_factory.secondary_attack_weapon_damage)) + 
+	"\n" + string("Projectile Mass: " + string(reference_factory.secondary_attack_weapon_mass)) + 
+	"\n" + string("Fire Rate: " + string(reference_factory.secondary_attack_weapon_speed/60) + " /sec")
+}
 
 var _energy_string_array = array_create(2, 0)
 _energy_string_array[0] = "Energy"

@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "6d6af69b-2a3c-44fd-8585-186a50660ad9",
+            "Value": {
+                "id": "ae1f6da0-fc2d-4974-93f7-80964a1a5ef0",
+                "resourcePath": "scripts\\scr_return_image_scale\\scr_return_image_scale.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6ed1cd66-813b-4cb1-9a84-8a26532e2420",
             "Value": {
                 "id": "9750eeb2-2c32-473c-99a5-69a5a92aa801",
@@ -1524,14 +1532,6 @@
                 "id": "8aa0be1b-2faf-4f4f-909d-ec3ffd1e344a",
                 "resourcePath": "sprites\\s_cyber_bomb_original\\s_cyber_bomb_original.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "960dd721-fae1-4eda-a771-00d84be30738",
-            "Value": {
-                "id": "0a750900-a046-4f34-84d9-8d01f7faf074",
-                "resourcePath": "scripts\\scr_load_elisar_emergency_shield\\scr_load_elisar_emergency_shield.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -2549,7 +2549,6 @@
         "e201ef17-e3e2-48db-9646-66299b3dca28",
         "04c9e2a6-b9b6-470b-b0e5-3fa06c2c9118",
         "db797097-37c2-40f5-9ede-0d7e06561c9b",
-        "960dd721-fae1-4eda-a771-00d84be30738",
         "09e4f926-7dc9-4722-b219-fd4b16e63cb4",
         "df94cc31-2e07-4c0b-8870-43c9b26f4147",
         "482bb2f9-0755-44f1-9656-672c76c61b30",
@@ -2619,7 +2618,8 @@
         "44f487dc-d072-4984-b15f-e1158d6ba52a",
         "d730cd8a-6009-406d-b8f5-a9845f7fb04b",
         "2a77c9ed-82af-43b8-a4a2-ecf2867ed4b8",
-        "0059d680-758b-41ef-8664-333aab205eae"
+        "0059d680-758b-41ef-8664-333aab205eae",
+        "6d6af69b-2a3c-44fd-8585-186a50660ad9"
     ],
     "tutorial": ""
 }

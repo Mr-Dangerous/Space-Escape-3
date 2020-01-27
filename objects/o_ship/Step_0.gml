@@ -26,11 +26,12 @@ if (created = false){
 #region script loading
 	var number_of_scripts = array_length_1d(loading_scripts)
 	for (var i = 0; i < number_of_scripts; i++){
-		if (loading_scripts[i] != noone){
+		if (loading_scripts[i] != 0){
 			script_execute(loading_scripts[i])
 		}
 	}
 	//post script loading
+	//NOTE:  imagescale needs to adjust.
 	image_xscale = image_scale
 	image_yscale = image_scale
 	max_armor = armor

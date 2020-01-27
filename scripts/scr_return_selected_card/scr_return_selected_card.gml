@@ -56,6 +56,7 @@ if (_card_type = card_type.module){
 		origin = string(_module_stats[? "Origin"])
 		resource_cost = _module_stats[? "Level"]
 		module_type = _module_stats[? "Module Type"]
+		loading_script = asset_get_index(_module_stats[? "Loading Script"])
 		var _sprite = asset_get_index(string(_module_stats[? "Sprite"]))
 		sprite_index = _sprite
 		card_book = _selected_card_book
@@ -76,6 +77,9 @@ if (_card_type = card_type.frame){
 		origin = string(_ship_stats[? "Origin"])
 		resource_cost = _ship_stats[? "Fuel Cost"]//this can be level later, for now, this works.
 		fuel_cost = _ship_stats[? "Fuel Cost"]
+		var _graphic_script = string(_ship_stats[? "Weapons and Exhaust"])
+		graphic_offset_script = asset_get_index(_graphic_script)//may need to change the name later
+		
 		var _sprite = asset_get_index(string(_ship_stats[? "Sprite"] + "_original"))
 		sprite_index = _sprite
 		card_book = _selected_card_book

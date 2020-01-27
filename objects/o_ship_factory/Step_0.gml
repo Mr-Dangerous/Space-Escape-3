@@ -169,7 +169,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and
 		//may be replaced with an object reference.... hurm
 		//get some work done here!
 		var _module_array = array_create(7, 0)
-		_module_array[0] = ship_frame_contained.loading_script
+		_module_array[0] = ship_frame_contained.graphic_offset_script
 		for (var i = 1; i < 7; i++){
 			if (factory_item[i-1, 1] != noone){
 				_module_array[i] = factory_item[i-1,1].loading_script

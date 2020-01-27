@@ -209,6 +209,20 @@
             "value": "2",
             "varName": "fuel_cost",
             "varType": 1
+        },
+        {
+            "id": "4dee36b0-d8df-4a26-8581-72f88ab75b18",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "graphic_offset_script",
+            "varType": 0
         }
     ],
     "solid": false,

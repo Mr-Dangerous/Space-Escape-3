@@ -4,6 +4,15 @@
 This module is effectively a light machine gun. It has a very fast fire rate
 and light damage.
 */
+//factory variables
+secondary_attack_exists = true
+secondary_attack_number = 2
+secondary_attack_projectile_speed = 5
+secondary_attack_projectile_duration = 50
+secondary_attack_weapon_speed = 10
+secondary_attack_weapon_damage = 5
+secondary_attack_weapon_mass = 1
+
 
 secondary_fire_rate_counter = 0
 secondary_fire_rate = 10
