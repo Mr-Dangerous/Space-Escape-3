@@ -1,4 +1,10 @@
-var _player_level = player_level
+//@param possible level
+var _player_level
+if (argument_count > 0){
+	_player_level = argument0
+} else {
+	_player_level = player_level
+}
 
 var _random_seed = irandom_range(1, 100)
 var _class = ""

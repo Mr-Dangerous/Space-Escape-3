@@ -37,7 +37,7 @@ if (_card_type = card_type.module){
 if (_card_type = card_type.frame){
 	//add every single ship frame exsisting to an array...
 	//script to choose frame type
-	var _ship_class = scr_choose_ship_class()
+	var _ship_class = scr_choose_ship_class(player_level)
 	var _selected_card_book = scr_choose_frame(_ship_class)
 }
 
