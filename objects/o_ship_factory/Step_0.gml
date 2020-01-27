@@ -181,6 +181,14 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and
 		deployed_ship.reference_factory = self
 		deployed_ship.ship_team = team.left
 		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost + _fuel_discount
+		deployed_ship.name = ship_frame_contained.name
+		deployed_ship.class = ship_frame_contained.class
+		deployed_ship.sprite_index = ship_frame_contained.sprite_index
+		deployed_ship.image_scale = ship_frame_contained.image_scale
+		//attack array stuff
+		
+		
+		
 		#region assign the origin and class counters.... this is not very good.
 		scr_assign_origin_class_counters(deployed_ship)
 		#endregion
