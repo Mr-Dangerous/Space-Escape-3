@@ -5,8 +5,6 @@ resolution_scale = _card_game_controller.resolution_scale
 
 ship_deployed = false
 create_ship = false
-create_deactivated_ship = false
-deactivated_ship_copy = noone
 factory_team = team.left
 new_ship = true
 hover = false
@@ -67,17 +65,22 @@ corvette_count = 0
 //Stats
 armor = 0
 shields = 0
-basic_attack_speed = 0 // divide by 60 for attacks per second
-basic_attack_number = 0 //quantity of attacks per attack
-basic_attack_damage = 0 
-basic_attack_mass = 0
-basic_attack_range = 0 //shortish range
+armor_resilency = 0
+shield_power = 0 //maximum mass the ship can deflect
 max_speed = 0
 turn_speed = 0
 acceleration_rate = 0
+basic_attack_number = 0 //quantity of attacks per attack
+basic_attack_projectile_speed = 0
+basic_attack_projectile_duration = 0
+basic_attack_weapon_speed = 0 // divide by 60 for attacks per second
+basic_attack_weapon_damage = 0 
+basic_attack_weapon_mass = 0
 energy_starting = 0
 energy_to_cast = 0 //
 energy_regeneration = 0
-origin = ""
-sub_class = ""
+sprite_to_load = 0
+graphic_offset_script = 0
+basic_ability_script = 0
+
 

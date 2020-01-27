@@ -10,25 +10,8 @@ var _selected_card_book
 if (_card_type = card_type.module){
 	var card_level = scr_return_card_level(card_type.module)
 
-	var _card_level_book
-	switch(card_level){
-		case 1:
-			_card_level_book = level_1_module_book
-		break;
-		case 2:
-			_card_level_book = level_2_module_book
-		break;
-		case 3:
-			_card_level_book = level_3_module_book
-		break;
-		/*case 4:
-			card_level_book = level_4_module_book
-		break;
-		case 5:
-			card_level_book = level_5_module_book
-		break;
-		*/
-	}
+	var _card_level_book = ds_list_find_index(complete_module_book, card_level)
+	
 	var _module_book_size = array_length_1d(_card_level_book)
 //create the list to insert the ship frame into to randomly select
 	var _remaining_modules = ds_list_create()
@@ -68,7 +51,7 @@ with (_selected_card_object){
 	class = string(_ship_stats[? "Class"])
 	sub_class = string(_ship_stats[? "Sub Class"])
 	origin = string(_ship_stats[? "Origin"])
-	var _sprite = asset_get_index(string(_ship_stats[? "sprite"] + "_original"))
+	var _sprite = asset_get_index(string(_ship_stats[? "Sprite"] + "_original"))
 	sprite_index = _sprite
 	card_book = _selected_card_book
 }

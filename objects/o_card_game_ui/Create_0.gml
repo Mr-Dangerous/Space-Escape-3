@@ -218,12 +218,19 @@ buffer_delete(_buffer)
 root_map = json_decode(_json_string)
 
 //take the map data and put it into individual ship maps
-var  _list_of_ships = root_map[? "Ships"]
+var _list_of_ships = root_map[? "Ships"]
 ship_maps = ds_map_create()
 for (var i =0; i < ds_list_size(_list_of_ships); i++){
 	var _ship_map = ds_list_find_value(_list_of_ships, i)
 	var _map_key = _ship_map[? "Name"]
 	ds_map_add(ship_maps, _map_key, _ship_map)
+}
+var _list_of_modules = root_map[? "Modules"]
+module_maps = ds_map_create()
+for (var i = 0; i <ds_list_size(_list_of_modules); i++){
+	var _module_map = ds_list_find_value(_list_of_modules, i)
+	var _map_key = _module_map[? "Name"]
+	ds_map_add(module_maps, _map_key, _module_map)
 }
 
 //ds_map_destroy(root_map)//CONSIDERATION:  DONT DESTROY IF YOU NEED TO ITERATE!
@@ -231,103 +238,45 @@ for (var i =0; i < ds_list_size(_list_of_ships); i++){
 
 #endregion
 
-
+level_1_module_book = ds_list_create()
+level_2_module_book = ds_list_create()
+level_3_module_book = ds_list_create()
+level_4_module_book = ds_list_create()
+level_5_module_book = ds_list_create()
 #region Card Books
-#region Level 1 Books
+for (var i = 0; i < ds_list_size(_list_of_modules); i++){
+	var _card_book_array = array_create(2, 0)
+	var _item_map = ds_list_find_index(_list_of_modules, i)
+	_card_book_array[0] = _item_map[? "Name"]
+	_card_book_array[1] = _item_map[? "Cards"]
+	var _card_level = _item_map[? "Level"]
+	var _selected_card_book
+	switch(_card_level){
+		case 1:
+			_selected_card_book = level_1_module_book
+		break;
+		case 2:
+			_selected_card_book = level_2_module_book
+		break;
+		case 3:
+			_selected_card_book = level_3_module_book
+		break;
+		case 4:
+			_selected_card_book = level_4_module_book
+		break;
+		case 5:
+			_selected_card_book = level_5_module_book
+		break;
+	}
+	ds_list_add(_selected_card_book, _card_book_array)
+}
+complete_module_book = ds_list_create()
+complete_module_book[| 1] = level_1_module_book
+complete_module_book[| 2] = level_2_module_book
+complete_module_book[| 3] =level_3_module_book
+complete_module_book[| 4] =level_4_module_book
+complete_module_book[| 5] =level_5_module_book
 
-level_1_weapon_system_1[1] = 30
-level_1_weapon_system_1[0] = o_armada_5_module_card
-
-level_1_shield_module_1[1] = 10
-level_1_shield_module_1[0] = o_arrack_refractor_module_card
-
-level_1_armor_upgrade_1[1] = 30
-level_1_armor_upgrade_1[0] = o_anvil_class_plates_module_card
-
-level_1_targeting_module_1[1] = 30
-level_1_targeting_module_1[0] = o_enhar_targeting_module_module_card
-
-level_1_power_module_1[1] = 30
-level_1_power_module_1[0] = o_arrack_core_plant_module_card
-
-thermal_lance_1[1] = 30
-thermal_lance_1[0] = o_thermal_lance_module_card
-
-emergency_shield_1[1] = 30
-emergency_shield_1[0] = o_emergency_shield_module_card
-
-serrated_plates_1[1] = 30
-serrated_plates_1[0] = o_serrated_plates_module_card
-
-wave_crasher_shield_3[1] = 30//NOTE:  temporarily here in level 1.  needs to be in level 3
-wave_crasher_shield_3[0] = o_wave_crasher_shield_module_card
-
-
-//refrences to all level 1 books
-level_1_module_book[0] = level_1_weapon_system_1
-level_1_module_book[1] = level_1_shield_module_1
-level_1_module_book[2] = level_1_armor_upgrade_1
-level_1_module_book[3] = level_1_targeting_module_1
-level_1_module_book[4] = emergency_shield_1
-level_1_module_book[5] = level_1_power_module_1
-level_1_module_book[6] = thermal_lance_1
-level_1_module_book[7] = serrated_plates_1
-level_1_module_book[8] = wave_crasher_shield_3//NOTE:  needs to move to level 3 book later
-#endregion
-
-#region Level 2 Books
-level_2_weapon_system_1[1] = 30
-level_2_weapon_system_1[0] = o_module_card_parent// o_duocannon_railgun_module_card
-
-level_2_shield_module_1[1] = 30
-level_2_shield_module_1[0] = o_module_card_parent// o_sun_shield_module_card
-
-level_2_armor_upgrade_1[1] = 30
-level_2_armor_upgrade_1[0] = o_module_card_parent// o_prism_skin_module_card
-
-level_2_targeting_module_1[1] = 30
-level_2_targeting_module_1[0] = o_module_card_parent// o_sniper_module_module_card
-
-level_2_ability_module_1[1] = 30
-level_2_ability_module_1[0] = o_module_card_parent// o_bombardment_cannon_module_card
-
-level_2_power_module_1[1] = 30
-level_2_power_module_1[0] = o_module_card_parent// o_hyperdrive_module_card
-
-level_2_module_book[0] = level_2_weapon_system_1
-level_2_module_book[1] = level_2_shield_module_1
-level_2_module_book[2] = level_2_armor_upgrade_1
-level_2_module_book[3] = level_2_targeting_module_1
-level_2_module_book[4] = level_2_ability_module_1
-level_2_module_book[5] = level_2_power_module_1
-#endregion
-
-#region Level 3 Books
-level_3_weapon_system_1[1] = 30
-level_3_weapon_system_1[0] = o_module_card_parent// o_thermal_javelin_module_card
-
-level_3_shield_module_1[1] = 30
-level_3_shield_module_1[0] = o_module_card_parent// o_enhar_dissipater_module_card
-
-level_3_armor_upgrade_1[1] = 30
-level_3_armor_upgrade_1[0] = o_module_card_parent// o_neosteel_plates_module_card
-
-level_3_targeting_module_1[1] = 30
-level_3_targeting_module_1[0] = o_module_card_parent// o_shipbreaker_ECM_module_card
-
-level_3_ability_module_1[1] = 30
-level_3_ability_module_1[0] = o_module_card_parent// o_electric_swing_module_card
-
-level_3_power_module_1[1] = 30
-level_3_power_module_1[0] = o_module_card_parent// o_post_fission_plant_module_card
-
-level_3_module_book[0] = level_3_weapon_system_1
-level_3_module_book[1] = level_3_shield_module_1
-level_3_module_book[2] = level_3_armor_upgrade_1
-level_3_module_book[3] = level_3_targeting_module_1
-level_3_module_book[4] = level_3_ability_module_1
-level_3_module_book[5] = level_3_power_module_1
-#endregion
 
 #region Ship Frames Book
 ship_frame_book = array_create(15, noone)

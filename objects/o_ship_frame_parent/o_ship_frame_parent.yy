@@ -155,20 +155,6 @@
             "varType": 5
         },
         {
-            "id": "9372cac3-d07c-45b2-bb2d-48f364f514d3",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "scr_load_iron_interceptor_frame",
-            "varName": "loading_script",
-            "varType": 5
-        },
-        {
             "id": "61aa25e9-5a66-4f33-b555-fa90e8db5b59",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
