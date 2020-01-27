@@ -858,7 +858,7 @@
             "Key": "565adde7-942d-4104-be41-b84a6bcc501f",
             "Value": {
                 "id": "b2d9f9d4-fc9c-4bc8-89b0-16905bc66bf1",
-                "resourcePath": "scripts\\scr_return_enemy_fleet\\scr_return_enemy_fleet.yy",
+                "resourcePath": "scripts\\scr_return_enemy_fleet_deprecated\\scr_return_enemy_fleet_deprecated.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2471,6 +2471,14 @@
             }
         },
         {
+            "Key": "f802f56b-df10-42db-86d2-31b93f95c7a7",
+            "Value": {
+                "id": "98fc63a3-174a-4682-8393-2b89794e9cbb",
+                "resourcePath": "scripts\\scr_return_enemy_fleet\\scr_return_enemy_fleet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f83ef7d8-19e1-4ebc-8b72-794245ac9af7",
             "Value": {
                 "id": "33c049e2-796d-42c7-b34b-d943eb27f5f2",
@@ -2586,6 +2594,7 @@
         "06e83dc8-101d-4927-9263-0d2640a22345",
         "169c8787-c7ce-45cc-9b6c-fd66570dd373",
         "da29e4e2-4882-44b8-937a-0d541c038b11",
+        "f802f56b-df10-42db-86d2-31b93f95c7a7",
         "dfc99b0c-6f1e-4e3d-aa12-efa48e4b7f3c",
         "58427b9d-cb13-45bd-ad3c-9b40f73fd8e9",
         "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",

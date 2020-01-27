@@ -1,8 +1,8 @@
 {
-    "id": "f802f56b-df10-42db-86d2-31b93f95c7a7",
+    "id": "565adde7-942d-4104-be41-b84a6bcc501f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_return_enemy_fleet",
+    "name": "scr_return_enemy_fleet_deprecated",
     "IsCompatibility": false,
     "IsDnD": false
 }
