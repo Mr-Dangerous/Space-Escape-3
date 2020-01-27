@@ -248,7 +248,7 @@ for (var i = 0; i < ds_list_size(_list_of_modules); i++){
 	var _card_book_array = array_create(2, 0)
 	var _item_map = ds_list_find_index(_list_of_modules, i)
 	_card_book_array[0] = _item_map[? "Name"]
-	_card_book_array[1] = _item_map[? "Cards"]
+	_card_book_array[1] = _item_map[? "Cards in Pool"]
 	var _card_level = _item_map[? "Level"]
 	var _selected_card_book
 	switch(_card_level){
@@ -276,6 +276,7 @@ complete_module_book[| 2] = level_2_module_book
 complete_module_book[| 3] =level_3_module_book
 complete_module_book[| 4] =level_4_module_book
 complete_module_book[| 5] =level_5_module_book
+//was here 1/26/20
 
 
 #region Ship Frames Book
