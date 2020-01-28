@@ -1,4 +1,15 @@
+
+
+
 if (created = false){
+	//set the image scale based on the energy spent
+	var _image_scale = .125*casters_energy_current
+	image_xscale = _image_scale
+	image_yscale = _image_scale
+	
+	
+	
+	
 	ds_list_add(ships_shocked, target_ship)
 	if (target_ship.temporary_shields > 0){
 		target_ship.temporary_shields -= overload_damage

@@ -111,6 +111,9 @@ ship_sold_amount = 0
 #region Basic Ability things
 hunter_strike_multiplier = 0
 precision_strike_attacks = 0
+rocket_count = 6
+missile_count = 4
+torpedo_count = 2
 #endregion
 
 #region state variables

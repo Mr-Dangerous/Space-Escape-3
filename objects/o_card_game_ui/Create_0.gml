@@ -307,6 +307,10 @@ iron_frigate_frame_book[0] = "Iron Frigate"
 iron_frigate_frame_book[1] = 10
 frigate_frame_book[0] = iron_frigate_frame_book
 
+discharge_frame_book[0] = "Discharge Frigate"
+discharge_frame_book[1] = 10
+frigate_frame_book[5] = discharge_frame_book
+
 
 crystal_interceptor_frame_book[0] = "Crystal Interceptor"
 crystal_interceptor_frame_book[1] = 30
@@ -336,6 +340,7 @@ fighter_frame_book[2] = pirate_fighter_frame_book
 pirate_frigate_frame_book[0] = "Pirate Frigate"
 pirate_frigate_frame_book[1] = 10
 frigate_frame_book[2] = pirate_frigate_frame_book
+
 
 
 imperial_interceptor_frame_book[0] = "Imperial Interceptor"

@@ -80,7 +80,7 @@ if (_card_type = card_type.frame){
 		var _graphic_script = string(_ship_stats[? "Weapons and Exhaust"])
 		graphic_offset_script = asset_get_index(_graphic_script)//may need to change the name later
 		
-		var _sprite = asset_get_index(string(_ship_stats[? "Sprite"] + "_original"))
+		var _sprite = asset_get_index(string(_ship_stats[? "Sprite"]))
 		sprite_index = _sprite
 		card_book = _selected_card_book
 	}

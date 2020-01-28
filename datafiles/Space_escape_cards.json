@@ -400,7 +400,7 @@
       "Energy Generation": 2,
       "Sprite": "s_iron_fighter",
       "Weapons and Exhaust": "scr_iron_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_precision_strike"
     },
     {
       "Name": "Iron Frigate",
@@ -429,7 +429,7 @@
       "Energy Generation": 2,
       "Sprite": "s_iron_frigate",
       "Weapons and Exhaust": "scr_iron_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_orbital_strike"
     },
     {
       "Name": "Imperial Interceptor",
@@ -487,7 +487,7 @@
       "Energy Generation": 2,
       "Sprite": "s_imperial_fighter",
       "Weapons and Exhaust": "scr_imperial_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_precision_strike"
     },
     {
       "Name": "Imperial Frigate",
@@ -545,7 +545,7 @@
       "Energy Generation": 1,
       "Sprite": "s_solar_interceptor",
       "Weapons and Exhaust": "scr_solar_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_hunter_strike"
     },
     {
       "Name": "Solar Fighter",
@@ -777,7 +777,36 @@
       "Energy Generation": 2,
       "Sprite": "s_pirate_frigate",
       "Weapons and Exhaust": "scr_pirate_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_orbital_strike"
+    },
+    {
+      "Name": "Discharge Frigate",
+      "Origin": "Iron",
+      "Class": "Frigate",
+      "Sub Class": "ECP",
+      "Resource Cost": 8,
+      "Armor": 1700,
+      "Shields": 800,
+      "Armor Resiliency": 3,
+      "Shield Power": 7,
+      "Max Speed": 1,
+      "Turn Speed": 1,
+      "Acceleration": 0.02,
+      "Fuel Cost": 8,
+      "Ship Mass": 10,
+      "Number of Basic Attacks": 2,
+      "Basic Attack Projectile Speed": 5,
+      "Basic Attack Projectile Duration": 150,
+      "Basic Attack Weapon Speed": 50,
+      "Basic Attack Weapon Damage": 30,
+      "Basic Attack Weapon Mass": 2,
+      "Basic Attack Range": 750,
+      "Energy Starting": 30,
+      "Energy to Cast": 60,
+      "Energy Generation": 2,
+      "Sprite": "s_iron_capital_ship",
+      "Weapons and Exhaust": "scr_iron_frigate_graphic_offsets",
+      "Basic Ability Script": "scr_EMP_overload"
     }
   ]
 }

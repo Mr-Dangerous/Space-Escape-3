@@ -146,7 +146,7 @@
             "Key": "0e3c8362-8952-45f7-b68b-e10eb5138db0",
             "Value": {
                 "id": "de22d568-6cfe-4c5f-821b-2277c7a0d051",
-                "resourcePath": "sprites\\s_alien_capital_ship_original\\s_alien_capital_ship_original.yy",
+                "resourcePath": "sprites\\s_alien_capital_ship\\s_alien_capital_ship.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -154,7 +154,7 @@
             "Key": "0ee5e6d1-6576-4081-ae44-bce576fb85ed",
             "Value": {
                 "id": "10b35792-fcc9-4468-a624-6bf68944d66c",
-                "resourcePath": "sprites\\s_solar_fighter_original\\s_solar_fighter_original.yy",
+                "resourcePath": "sprites\\s_solar_fighter\\s_solar_fighter.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -314,7 +314,7 @@
             "Key": "1e901dbf-fbb8-4149-8fcf-8848345c5f7d",
             "Value": {
                 "id": "f087bdc0-ee9e-4ce0-a58c-289c0a803d49",
-                "resourcePath": "sprites\\s_imperial_interceptor_original\\s_imperial_interceptor_original.yy",
+                "resourcePath": "sprites\\s_imperial_interceptor\\s_imperial_interceptor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -410,7 +410,7 @@
             "Key": "2936ff44-15d9-40a6-a914-1adb55784e83",
             "Value": {
                 "id": "01d5e971-5752-47d3-b0bc-1b8099823fc6",
-                "resourcePath": "sprites\\s_pirate_frigate_original\\s_pirate_frigate_original.yy",
+                "resourcePath": "sprites\\s_pirate_frigate\\s_pirate_frigate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -466,7 +466,7 @@
             "Key": "2e1908e9-393d-406d-8033-510997f2380b",
             "Value": {
                 "id": "a3487cf8-eab8-48ea-90ce-e53fa42a7e0f",
-                "resourcePath": "sprites\\s_alien_interceptor_original\\s_alien_interceptor_original.yy",
+                "resourcePath": "sprites\\s_alien_interceptor\\s_alien_interceptor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -530,7 +530,7 @@
             "Key": "371e278f-6e76-42d5-9a8a-d69e8e0e6115",
             "Value": {
                 "id": "27c6e51b-ae4d-4f76-a665-5be473ffc266",
-                "resourcePath": "sprites\\s_crystal_capital_ship_original\\s_crystal_capital_ship_original.yy",
+                "resourcePath": "sprites\\s_crystal_capital_ship\\s_crystal_capital_ship.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -634,7 +634,7 @@
             "Key": "3ffabf5e-a3c0-4e27-b081-d788beb5d8ee",
             "Value": {
                 "id": "72fe8a17-b9d8-41df-9459-874218d688fa",
-                "resourcePath": "sprites\\s_crystal_frigate_original\\s_crystal_frigate_original.yy",
+                "resourcePath": "sprites\\s_crystal_frigate\\s_crystal_frigate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1370,7 +1370,7 @@
             "Key": "8357a326-87aa-4a56-baae-0f7ff84358fd",
             "Value": {
                 "id": "554f915b-d59e-4b3b-b917-9bf74d84769e",
-                "resourcePath": "sprites\\s_imperial_frigate_original\\s_imperial_frigate_original.yy",
+                "resourcePath": "sprites\\s_imperial_frigate\\s_imperial_frigate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1394,7 +1394,7 @@
             "Key": "85db90be-541f-4024-8d0e-8e997f8b316f",
             "Value": {
                 "id": "694c7863-495b-4e45-9641-af1ee11e95a2",
-                "resourcePath": "sprites\\s_crystal_fighter_original\\s_crystal_fighter_original.yy",
+                "resourcePath": "sprites\\s_crystal_fighter\\s_crystal_fighter.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1434,7 +1434,7 @@
             "Key": "8c1e3074-4a94-4afe-bc04-557bf3a64007",
             "Value": {
                 "id": "277a29be-7a7f-45c6-9ded-62b44d53b992",
-                "resourcePath": "sprites\\s_imperial_fighter_original\\s_imperial_fighter_original.yy",
+                "resourcePath": "sprites\\s_imperial_fighter\\s_imperial_fighter.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1522,7 +1522,7 @@
             "Key": "951269e5-beb5-470f-8e7e-105ae24632d9",
             "Value": {
                 "id": "e089129c-743d-48e9-a988-d3228cedd42c",
-                "resourcePath": "sprites\\s_alien_fighter_original\\s_alien_fighter_original.yy",
+                "resourcePath": "sprites\\s_alien_fighter\\s_alien_fighter.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1530,7 +1530,7 @@
             "Key": "9523f9ae-d86e-4c8b-8cf6-b3bff9217bce",
             "Value": {
                 "id": "9de25678-1225-4ceb-9a37-15b296c192ab",
-                "resourcePath": "sprites\\s_solar_interceptor_original\\s_solar_interceptor_original.yy",
+                "resourcePath": "sprites\\s_solar_interceptor\\s_solar_interceptor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1802,7 +1802,7 @@
             "Key": "a92590c6-0e8e-4f09-84f3-d76cdff43d81",
             "Value": {
                 "id": "0212445f-1183-441d-8909-21df3cee1acd",
-                "resourcePath": "sprites\\s_imperial_capital_ship_original\\s_imperial_capital_ship_original.yy",
+                "resourcePath": "sprites\\s_imperial_capital_ship\\s_imperial_capital_ship.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1866,7 +1866,7 @@
             "Key": "ade13422-14d8-4351-8ce7-5221c1e565de",
             "Value": {
                 "id": "41f5e231-76f1-4da3-9674-cf71df7ea706",
-                "resourcePath": "sprites\\s_solar_frigate_original\\s_solar_frigate_original.yy",
+                "resourcePath": "sprites\\s_solar_frigate\\s_solar_frigate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1994,7 +1994,7 @@
             "Key": "bab8197d-d001-4dc8-baf7-796b113c4c36",
             "Value": {
                 "id": "4757e536-fbb9-4696-9fc5-584f97ef5531",
-                "resourcePath": "sprites\\s_pirate_interceptor_original\\s_pirate_interceptor_original.yy",
+                "resourcePath": "sprites\\s_pirate_interceptor\\s_pirate_interceptor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2090,7 +2090,7 @@
             "Key": "c770f95c-ffaa-488e-84aa-e7fc35ec545f",
             "Value": {
                 "id": "ba44e468-b1d8-4e0c-b252-6fe34208b78c",
-                "resourcePath": "sprites\\s_iron_frigate_original\\s_iron_frigate_original.yy",
+                "resourcePath": "sprites\\s_iron_frigate\\s_iron_frigate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2114,7 +2114,7 @@
             "Key": "c81e224a-cda4-4ec3-adfb-3cae2490ec49",
             "Value": {
                 "id": "b1ec1b89-f29e-44bf-96a5-6f2c13da12ce",
-                "resourcePath": "sprites\\s_iron_fighter_original\\s_iron_fighter_original.yy",
+                "resourcePath": "sprites\\s_iron_fighter\\s_iron_fighter.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2162,7 +2162,7 @@
             "Key": "cc972cbc-24c5-4702-9edd-c37589a576ae",
             "Value": {
                 "id": "0b7ba4b8-1078-46c2-b506-7293f9a808e5",
-                "resourcePath": "sprites\\s_pirate_fighter_original\\s_pirate_fighter_original.yy",
+                "resourcePath": "sprites\\s_pirate_fighter\\s_pirate_fighter.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2306,7 +2306,7 @@
             "Key": "e1057e2b-8411-4383-8b94-a609047335ed",
             "Value": {
                 "id": "30f6bfd5-dade-40db-850f-700ed793dd16",
-                "resourcePath": "sprites\\s_alien_frigate_original\\s_alien_frigate_original.yy",
+                "resourcePath": "sprites\\s_alien_frigate\\s_alien_frigate.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2362,7 +2362,7 @@
             "Key": "e5541126-e0cd-4e66-92dc-23c342db623e",
             "Value": {
                 "id": "e5e1429e-01af-47b6-a74c-bf99eaeedb68",
-                "resourcePath": "sprites\\s_crystal_interceptor_original\\s_crystal_interceptor_original.yy",
+                "resourcePath": "sprites\\s_crystal_interceptor\\s_crystal_interceptor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2402,7 +2402,7 @@
             "Key": "e95513a8-3351-49f9-9b33-c173e133d211",
             "Value": {
                 "id": "1aaff498-b0c0-49cb-9bab-2d0ad1400d57",
-                "resourcePath": "sprites\\s_iron_interceptor_original\\s_iron_interceptor_original.yy",
+                "resourcePath": "sprites\\s_iron_interceptor\\s_iron_interceptor.yy",
                 "resourceType": "GMSprite"
             }
         },
