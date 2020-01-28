@@ -79,6 +79,20 @@
             "value": "0",
             "varName": "damage",
             "varType": 0
+        },
+        {
+            "id": "63ae39e5-ce50-4637-9c8f-36f3ef6166d4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "critical_hit",
+            "varType": 3
         }
     ],
     "solid": false,

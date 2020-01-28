@@ -20,6 +20,6 @@ while (!no_valid_targets){
 }
 
 scr_fire_rocket(projectile.rocket)
-hunter_strike_multiplier = .25
-hunter_strike_counter = floor(energy_current/4) * 60
+hunter_strike_multiplier = 1
+hunter_strike_counter = floor(energy_current/3) * 60
 show_debug_message("Hunter Strike!")

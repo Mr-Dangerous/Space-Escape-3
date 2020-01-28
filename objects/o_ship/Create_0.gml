@@ -108,8 +108,9 @@ ship_sold = false
 ship_sold_amount = 0
 #endregion
 
-#region
+#region Basic Ability things
 hunter_strike_multiplier = 0
+precision_strike_attacks = 0
 #endregion
 
 #region state variables

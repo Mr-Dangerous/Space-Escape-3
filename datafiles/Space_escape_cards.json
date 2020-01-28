@@ -7,8 +7,8 @@
       "Origin": "Imperial",
       "Sub Class": "Breakthrough",
       "Level": 1,
-      "Sprite": "s_wave_crasher_shield",
-      "Loading Script": "scr_load_wave_crasher_shield",
+      "Sprite": "s_thermal_lance_icon",
+      "Loading Script": "scr_load_thermal_lance",
       "Description": "",
       "Cards in Pool": 30
     },
@@ -371,7 +371,7 @@
       "Energy Generation": 1,
       "Sprite": "s_iron_interceptor",
       "Weapons and Exhaust": "scr_iron_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_EMP_overload"
     },
     {
       "Name": "Iron Fighter",
@@ -452,13 +452,13 @@
       "Basic Attack Weapon Speed": 20,
       "Basic Attack Weapon Damage": 10,
       "Basic Attack Weapon Mass": 1,
-      "Basic Attack Range": "",
+      "Basic Attack Range": 100,
       "Energy Starting": 0,
       "Energy to Cast": 20,
       "Energy Generation": 1,
       "Sprite": "s_imperial_interceptor",
       "Weapons and Exhaust": "scr_imperial_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_hunter_strike"
     },
     {
       "Name": "Imperial Fighter",
@@ -748,7 +748,7 @@
       "Energy Generation": 2,
       "Sprite": "s_pirate_fighter",
       "Weapons and Exhaust": "scr_pirate_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_hunter_strike"
     },
     {
       "Name": "Pirate Frigate",
