@@ -1418,7 +1418,7 @@
             "Key": "8abeeea8-bbd5-4cc5-83e4-cfb5ab0b8542",
             "Value": {
                 "id": "e971e3e0-06a7-47e9-877c-887f4091aab5",
-                "resourcePath": "scripts\\scr_hunters_strike\\scr_hunters_strike.yy",
+                "resourcePath": "scripts\\scr_hunter_strike\\scr_hunter_strike.yy",
                 "resourceType": "GMScript"
             }
         },
