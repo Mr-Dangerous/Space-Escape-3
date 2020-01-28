@@ -107,6 +107,7 @@ if (ship_disabled_counter > 0){
 	state = ship.disabled
 }
 
+
 if (cloak){
 	if (cloak_timer > 0){
 		cloak_timer--
@@ -129,6 +130,13 @@ if (cloak){
 //determine exhaust scale multipler
 exhaust_scale_multiplier = 1
 if (speed = 0) exhaust_scale_multiplier = 0
+
+
+//determine some dynamically calculated variables
+energy_current = floor(max_energy/5)
+attack_speed_multiplier = 1 + hunter_strike_speed_multiplier
+
+
 #endregion
 
 
@@ -200,13 +208,13 @@ switch(state){
 			
 			var angle_to_target = abs(angle_difference(image_angle, direction_to_target))
 			basic_attack_weapon_speed_counter++
-			if (basic_attack_weapon_speed_counter >= basic_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= current_weapon_range){
+			if (basic_attack_weapon_speed_counter * attack_speed_multiplier >= basic_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= current_weapon_range){
 				basic_attack_weapon_speed_counter = 0
 				fire_basic_attack(basic_attack_array)
 			}
 			if (secondary_attack_weapon_speed_counter != -1){
 				secondary_attack_weapon_speed_counter++
-				if (secondary_attack_weapon_speed_counter >= secondary_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= secondary_weapon_range){
+				if (secondary_attack_weapon_speed_counter * attack_speed_multiplier >= secondary_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= secondary_weapon_range){
 					secondary_attack_weapon_speed_counter = 0
 					fire_secondary_attack(secondary_attack_array)
 				}
@@ -393,6 +401,12 @@ if (inhibitor_shield_counter = 0){
 			temporary_shields = 0
 		}
 	}
+}
+
+if (hunter_strike_counter > 0){
+	//reset attack speed
+	hunter_strike_counter--
+	hunter_strike_multiplier = 0
 }
 
 //spell checks

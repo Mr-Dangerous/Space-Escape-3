@@ -169,6 +169,20 @@
             "value": "noone",
             "varName": "origin_ship",
             "varType": 0
+        },
+        {
+            "id": "84a85fcd-ec3c-4400-a50c-750c94a1ea67",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "critical_hit",
+            "varType": 3
         }
     ],
     "solid": false,

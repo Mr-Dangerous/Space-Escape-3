@@ -8,6 +8,13 @@ var _basic_attack_team = _basic_attack_array[0, 1]
 var _basic_attack_image_scale = _basic_attack_array[0, 2]
 var _origin_ship = self
 
+//check for critical hit
+var _critical_hit = false
+var _d100 = irandom(99)
+if (_d100 < critical_hit_chance){
+	_critical_hit = true
+}
+
 var _i = 1
 repeat(_basic_attack_number){
 	var gun_offset_length = _basic_attack_array[_i, 4]//length
@@ -40,7 +47,13 @@ repeat(_basic_attack_number){
 		direction = _convergence_angle
 		speed = _basic_attack_array[_i, 0]
 		sprite_index = _basic_attack_array[_i, 1]
-		damage = _basic_attack_array[_i, 2]
+		var _damage = _basic_attack_array[_i, 2]
+		if (_critical_hit){
+			_damage *= other.critical_hit_multiplier
+		}
+		damage = _damage
+		critical_hit = _critical_hit//used primarily for displaying the text of the attacks
+		
 		team_attack_from = _basic_attack_team
 		damage_type = _basic_attack_array[_i, 3]
 		mass = _basic_attack_array[0, 4]

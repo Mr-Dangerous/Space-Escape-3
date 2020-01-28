@@ -131,6 +131,20 @@
             "value": "c_white",
             "varName": "text_color",
             "varType": 4
+        },
+        {
+            "id": "2685efa6-0585-4db0-8c49-882079754510",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bold",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -132,7 +132,7 @@ timer_offset[1] = round(100*resolution_scale)
 
 //generate the timer variables
 phase_timer = -1
-planning_phase_length = 10*60 //45 seconds * 60 FPS
+planning_phase_length = 30*60 //45 seconds * 60 FPS
 timer_counter = -1
 timer = 0
 game_phase = phase.planning

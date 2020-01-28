@@ -3,6 +3,7 @@
 ///@param damage
 ///@param weapon_weight
 ///@param directional_damage
+///@param crtical hit
 /*
 This instance must always be called by the damage source, such as a projectile or missile.
 
@@ -25,6 +26,7 @@ var targeted_ship = argument0
 var _damage = argument1
 var _projectile_mass = argument2
 var _directional_damage = argument3
+var _is_critical_hit = argument4
 
 
 var _temporary_shields = targeted_ship.temporary_shields
@@ -42,11 +44,11 @@ if (_shields > 0){
 	if (_projectile_mass > 0 and _projectile_mass < _max_mass_shield_can_deflect){
 		if (_temporary_shields > 0){
 			targeted_ship.temporary_shields -= ceil(_projectile_mass)
-			scr_display_damage(x, y, string(_projectile_mass), c_blue)
+			scr_display_damage(x, y, string(_projectile_mass), c_blue, critical_hit)
 			
 		} else {
 			targeted_ship.shields -= ceil(_projectile_mass)
-			scr_display_damage(x, y, string(_projectile_mass), c_blue)
+			scr_display_damage(x, y, string(_projectile_mass), c_blue, critical_hit)
 		}
 		if (targeted_ship.generate_shields <= _projectile_mass*2){
 			targeted_ship.generate_shields = _projectile_mass*2
@@ -82,7 +84,7 @@ if (_shields > 0){
 		}
 		if (_shot_deflected = true){
 			_damage = 0
-			scr_display_damage(x, y, "deflect", c_green)
+			scr_display_damage(x, y, "deflect", c_green, false)
 			//code to have the shot go flying maybe?
 		}
 		if (_shot_deflected = false){
@@ -114,7 +116,7 @@ _damage -= targeted_ship.armor_resilency
 if (_damage > 0){
 	
 	targeted_ship.armor -= ceil(_damage)
-	scr_display_damage(x, y, string(_damage), c_white)
+	scr_display_damage(x, y, string(_damage), c_white, critical_hit)
 }
 
 

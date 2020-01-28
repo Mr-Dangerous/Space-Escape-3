@@ -67,6 +67,7 @@ switch (game_phase){
 
 	break;
 	case phase.planning:
+	if (keyboard_check_pressed(ord("O"))) timer_counter = 10
 	if (timer_counter <= 0){
 		timer_counter = planning_phase_length
 	}

@@ -4,7 +4,7 @@ if (team_attack_from != other.ship_team){
 	if (ECP_bonus >= 1){
 		var _shield_damage = mass
 		if (other.temporary_shields > 0){
-			scr_display_damage(x, y, string(_shield_damage), c_blue)
+			scr_display_damage(x, y, string(_shield_damage), c_blue, critical_hit)
 			other.temporary_shields -= _shield_damage
 			_shield_damage = 0
 			if (other.temporary_shields < 0){
@@ -35,7 +35,7 @@ if (team_attack_from != other.ship_team){
 	
 	
 	//finally calculate it all!
-	scr_calculate_damage(other, damage, mass, directional_damage)
+	scr_calculate_damage(other, damage, mass, directional_damage, critical_hit)
 		
 	instance_destroy()
 }

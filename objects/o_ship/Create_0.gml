@@ -20,6 +20,7 @@ energy = 0
 energy_multiplier = 10
 energy_per_second = 1
 energy_per_second = 1
+energy_current = 0
 #endregion
 
 
@@ -89,6 +90,9 @@ secondary_attack_projectile_duration = 0 //MAP VALUE
 secondary_attack_projectile_speed = 0 //MAP VALUE
 secondary_attack_weapon_speed = 40 //MAP VALUE
 secondary_attack_weapon_speed_counter = -1 //MAP  VALUE
+critical_hit_chance = 24 //25%
+critical_hit_multiplier = 2
+attack_speed_multiplier = 1
 #endregion
 
 #region exhaust variables
@@ -102,6 +106,10 @@ exhaust_scale_multiplier = 1
 combat_explosion = false
 ship_sold = false
 ship_sold_amount = 0
+#endregion
+
+#region
+hunter_strike_multiplier = 0
 #endregion
 
 #region state variables
@@ -164,6 +172,8 @@ inhibitor_shield_counter = -1
 inhibitor_shields_granted = 0
 number_of_overload_bounces = 1
 overload_damage = 15
+hunter_strike_counter = -1
+hunter_strike_speed_multiplier = 0
 #endregion
 
 #region spell module variables

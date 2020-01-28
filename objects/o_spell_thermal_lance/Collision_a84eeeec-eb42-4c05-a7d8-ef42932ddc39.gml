@@ -11,7 +11,7 @@ if (visible){
 			if (other.thermal_lance_damage_counter = 0){
 				other.thermal_lance_damage_counter = 30
 				other.armor -= _damage
-				scr_display_damage(other.x, other.y, string(_damage), c_red)
+				scr_display_damage(other.x, other.y, string(_damage), c_red, false)
 			}
 		}
 	}
