@@ -226,10 +226,11 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 	
 
 	//inject variables here
-	if (instance_exists(deployed_ship)){
+if (instance_exists(deployed_ship)){
 		//may be replaced with an object reference.... hurm
+		//get some work done here!
 		var _module_array = array_create(7, 0)
-		_module_array[0] = ship_frame_contained.loading_script
+		_module_array[0] = ship_frame_contained.graphic_offset_script
 		for (var i = 1; i < 7; i++){
 			if (factory_item[i-1, 1] != noone){
 				_module_array[i] = factory_item[i-1,1].loading_script
@@ -240,7 +241,14 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 		deployed_ship.assigned_grid_y = assigned_grid_y
 		deployed_ship.reference_factory = self
 		deployed_ship.ship_team = team.right
-		deployed_ship.fuel_cost = ship_frame_contained.fuel_cost
+		deployed_ship.name = ship_frame_contained.name
+		deployed_ship.class = ship_frame_contained.class
+		deployed_ship.sprite_index = ship_frame_contained.sprite_index
+		deployed_ship.image_scale = ship_frame_contained.image_scale
+		//attack array stuff
+		
+		
+		
 		#region assign the origin and class counters.... this is not very good.
 		scr_assign_origin_class_counters(deployed_ship)
 		#endregion
@@ -252,8 +260,8 @@ instance_exists(ship_frame_contained) and !instance_exists(fielded_ship)){
 	}
 	//fill the grid container
 	var battle_map = instance_find(o_battle_map, 0)
-	var grid_container = battle_map.right_grid_container
-	var grid_position_map = battle_map.right_grid_positions
+	var grid_container = battle_map.left_grid_container
+	var grid_position_map = battle_map.left_grid_positions
 
 	
 	ds_grid_set(grid_container, assigned_grid_x, assigned_grid_y, deployed_ship)

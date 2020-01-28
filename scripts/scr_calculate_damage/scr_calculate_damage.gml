@@ -29,7 +29,7 @@ var _directional_damage = argument3
 
 var _temporary_shields = targeted_ship.temporary_shields
 var _shields = targeted_ship.shields
-var _max_mass_shield_can_deflect = targeted_ship.max_mass_shield_can_deflect
+var _max_mass_shield_can_deflect = targeted_ship.shield_power
 
 var _forward_shield_strength = targeted_ship.shield_forward_strength//default 100
 var _left_shield_strength = targeted_ship.shield_left_strength//default 60
@@ -110,7 +110,9 @@ if (_shields > 0){
 		}
 	}
 }
+_damage -= targeted_ship.armor_resilency
 if (_damage > 0){
+	
 	targeted_ship.armor -= ceil(_damage)
 	scr_display_damage(x, y, string(_damage), c_white)
 }

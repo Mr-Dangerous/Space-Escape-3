@@ -88,7 +88,7 @@ basic_attack_weapon_speed_counter = 0 //MAP  VALUE
 secondary_attack_projectile_duration = 0 //MAP VALUE
 secondary_attack_projectile_speed = 0 //MAP VALUE
 secondary_attack_weapon_speed = 40 //MAP VALUE
-secondary_attack_weapon_speed_counter = 0 //MAP  VALUE
+secondary_attack_weapon_speed_counter = -1 //MAP  VALUE
 #endregion
 
 #region exhaust variables

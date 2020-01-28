@@ -13,27 +13,40 @@ visible = true
 
 
 
-//Weapon visual offsets
+
 /*
 Weapon 1 offsets are the x and y offsets on the base image.
 Using the length offset and direction offset, a lengthdir_x and y
 function can generate bullets from the desired location.
 */
-var weapon_1_base_x_offset = 10 //orginal sprite
-var weapon_1_base_y_offset = -40 //orginal sprite
+var weapon_1_base_x_offset = 465//orginal sprite
+var weapon_1_base_y_offset = 252 //orginal sprite
 //length including adjusments for image scale
 var weapon_1_length_offset = point_distance(0, 0, (weapon_1_base_x_offset * image_scale), (weapon_1_base_y_offset * image_scale))
 //base direction offset
 var weapon_1_direction_offset = point_direction(0, 0, (weapon_1_base_x_offset * image_scale), (weapon_1_base_y_offset* image_scale))
 
-var weapon_2_base_x_offset = 10 //orginal sprite
-var weapon_2_base_y_offset = 40 //orginal sprite
+var weapon_2_base_x_offset = 465//orginal sprite
+var weapon_2_base_y_offset = -252//orginal sprite
 //length including adjusments for image scale
 var weapon_2_length_offset = point_distance(0, 0, (weapon_2_base_x_offset * image_scale), (weapon_2_base_y_offset * image_scale))
 //base direction offset
 var weapon_2_direction_offset = point_direction(0, 0, (weapon_2_base_x_offset * image_scale), (weapon_2_base_y_offset* image_scale))
 
+var weapon_3_base_x_offset = 65 //orginal sprite
+var weapon_3_base_y_offset = 540 //orginal sprite
+//length including adjusments for image scale
+var weapon_3_length_offset = point_distance(0, 0, (weapon_3_base_x_offset * image_scale), (weapon_3_base_y_offset * image_scale))
+//base direction offset
+var weapon_3_direction_offset = point_direction(0, 0, (weapon_3_base_x_offset * image_scale), (weapon_3_base_y_offset* image_scale))
 
+
+var weapon_4_base_x_offset = 65 //orginal sprite
+var weapon_4_base_y_offset = -540 //orginal sprite
+//length including adjusments for image scale
+var weapon_4_length_offset = point_distance(0, 0, (weapon_4_base_x_offset * image_scale), (weapon_4_base_y_offset * image_scale))
+//base direction offset
+var weapon_4_direction_offset = point_direction(0, 0, (weapon_4_base_x_offset * image_scale), (weapon_4_base_y_offset* image_scale))
 
 
 weapon_visual_offsets[0, 0] = weapon_1_length_offset
@@ -41,6 +54,12 @@ weapon_visual_offsets[0, 1] = weapon_1_direction_offset
 
 weapon_visual_offsets[1, 0] = weapon_2_length_offset
 weapon_visual_offsets[1, 1] = weapon_2_direction_offset
+
+weapon_visual_offsets[2, 0] = weapon_3_length_offset
+weapon_visual_offsets[2, 1] = weapon_3_direction_offset
+
+weapon_visual_offsets[3, 0] = weapon_4_length_offset
+weapon_visual_offsets[3, 1] = weapon_4_direction_offset
 
 
 #region exhausts

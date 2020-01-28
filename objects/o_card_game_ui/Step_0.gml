@@ -92,6 +92,8 @@ switch (game_phase){
 			var _ship = ds_list_find_value(_enemy_fleet, i)
 			if (instance_exists(_ship[2])){
 				_factory.ship_frame_contained = _ship[2]
+				_factory.assigned_grid_x = _ship[0]
+				_factory.assigned_grid_y = _ship[1]
 				var _module_list = _ship[3]
 				for (var j = 0; j < array_length_1d(_module_list); j++){
 					if (instance_exists(_module_list[j])){

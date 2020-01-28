@@ -52,7 +52,7 @@ if (created = false){
 	energy = _ship_map[? "Energy Starting"]
     max_energy = _ship_map[? "Energy to Cast"]
     energy_per_second = _ship_map[? "Energy Generation"]
-    basic_ability_script = asset_get_index(_ship_map[? "Basic Ability Script"])
+    basic_ability = asset_get_index(_ship_map[? "Basic Ability Script"])
 		
 	var number_of_scripts = array_length_1d(loading_scripts)
 	for (var i = 0; i < number_of_scripts; i++){
@@ -68,14 +68,14 @@ if (created = false){
 	basic_attack_array[0, 4] = basic_attack_weapon_mass //basic weapon weapon mass
 	basic_attack_array[0, 5] = true//if the damage is directional in nature
 	//for each basic attack
-	for (var i = 0; i < array_height_2d(weapon_visual_offsets); i++){
+	for (var i = 1; i < basic_attack_number+1; i++){
 		
 		basic_attack_array[i, 0] = basic_attack_projectile_speed //basic speed
 		basic_attack_array[i, 1] = basic_attack_projectile_sprite //projectile resource
 		basic_attack_array[i, 2] = basic_attack_weapon_damage //damage
 		basic_attack_array[i, 3] = projectile.light //damage_type//DEPRECATED
-		basic_attack_array[i, 4] = weapon_visual_offsets[i, 0] //length from origin
-		basic_attack_array[i, 5] = weapon_visual_offsets[i, 1] //direction? from origin
+		basic_attack_array[i, 4] = weapon_visual_offsets[i-1, 0] //length from origin
+		basic_attack_array[i, 5] = weapon_visual_offsets[i-1, 1] //direction? from origin
 		basic_attack_array[i, 6] = basic_attack_projectile_duration //flight time in frames
 	}
 	
@@ -159,8 +159,8 @@ switch(state){
 	
 	case ship.battle:
 		//tick variables
-		if (energy_sub_counter < 60) energy_sub_counter++
-		if (energy_sub_counter >= 60){
+		if (energy_sub_counter < 15) energy_sub_counter++
+		if (energy_sub_counter >= 15){
 			energy_sub_counter = 0
 			energy += energy_per_second
 		}
@@ -182,7 +182,7 @@ switch(state){
 			var direction_to_target = point_direction(x, y, ship_target.x, ship_target.y)
 			var current_weapon_range = basic_attack_range
 			var secondary_weapon_range = secondary_attack_array[1, 6]*secondary_attack_array[1, 0]
-			var gimbal_fire_angle = basic_attack_array[0,3]
+			var gimbal_fire_angle = 5//basic_attack_array[0,3]
 			var secondary_gimbal_fire_angle = secondary_attack_array[0, 3]
 			
 			turn_to_face_direction(direction_to_target)
@@ -204,7 +204,7 @@ switch(state){
 				basic_attack_weapon_speed_counter = 0
 				fire_basic_attack(basic_attack_array)
 			}
-			if (secondary_fire_rate != -1){
+			if (secondary_attack_weapon_speed_counter != -1){
 				secondary_attack_weapon_speed_counter++
 				if (secondary_attack_weapon_speed_counter >= secondary_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= secondary_weapon_range){
 					secondary_attack_weapon_speed_counter = 0

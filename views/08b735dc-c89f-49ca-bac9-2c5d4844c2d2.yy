@@ -4,7 +4,6 @@
     "mvc": "1.1",
     "name": "08b735dc-c89f-49ca-bac9-2c5d4844c2d2",
     "children": [
-        "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a",
         "0817f68c-6ba1-4384-bbee-294cd01c3174",
         "81b1ceab-0203-40ea-a852-8309de845019",
         "9115f6d8-ba02-4e92-8d81-cefb19e1965c",
@@ -20,7 +19,8 @@
         "c21a88ac-6048-48b4-80ab-f94ec6bc6488",
         "a9f2b291-4733-4c1a-9f5c-aefeabd6d760",
         "6023a1ea-bce5-4432-bd9e-3a016cd5f56f",
-        "c0e1275d-45e3-4a79-a7f9-621e48529590"
+        "c0e1275d-45e3-4a79-a7f9-621e48529590",
+        "bac0fab5-487c-4a14-a2ed-16f4a9b3dd1a"
     ],
     "filterType": "GMScript",
     "folderName": "Ai and movement scripts",
