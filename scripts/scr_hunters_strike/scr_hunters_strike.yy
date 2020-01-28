@@ -1,8 +1,8 @@
 {
-    "id": "ea32e0b1-5c89-4d36-bdcd-2b20745e8c40",
+    "id": "8abeeea8-bbd5-4cc5-83e4-cfb5ab0b8542",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_hunter_strike",
+    "name": "scr_hunters_strike",
     "IsCompatibility": false,
     "IsDnD": false
 }

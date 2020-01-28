@@ -20,4 +20,3 @@ while (!no_valid_targets){
 }
 
 scr_fire_rocket(projectile.rocket)
-

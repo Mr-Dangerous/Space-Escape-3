@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "8abeeea8-bbd5-4cc5-83e4-cfb5ab0b8542",
+            "Value": {
+                "id": "e971e3e0-06a7-47e9-877c-887f4091aab5",
+                "resourcePath": "scripts\\scr_hunters_strike\\scr_hunters_strike.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8c1e3074-4a94-4afe-bc04-557bf3a64007",
             "Value": {
                 "id": "277a29be-7a7f-45c6-9ded-62b44d53b992",
@@ -2391,14 +2399,6 @@
             }
         },
         {
-            "Key": "ea32e0b1-5c89-4d36-bdcd-2b20745e8c40",
-            "Value": {
-                "id": "df06ec01-9313-4980-919b-55be331db2b3",
-                "resourcePath": "scripts\\scr_hunter_strike\\scr_hunter_strike.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
             "Value": {
                 "id": "dc3047da-cd56-46e7-9672-634f82021234",
@@ -2622,8 +2622,8 @@
         "e40aa70e-63dc-493b-ab19-6476a68c6530",
         "189a0023-9ece-4086-bb62-13a25a468239",
         "5f77c537-8d4f-4333-99d4-6cb7bf41415b",
-        "ea32e0b1-5c89-4d36-bdcd-2b20745e8c40",
         "4e05162a-f86f-4045-8980-c9a6653644aa",
+        "8abeeea8-bbd5-4cc5-83e4-cfb5ab0b8542",
         "44f487dc-d072-4984-b15f-e1158d6ba52a",
         "d730cd8a-6009-406d-b8f5-a9845f7fb04b",
         "2a77c9ed-82af-43b8-a4a2-ecf2867ed4b8",
