@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "0d150c18-a856-4fb8-9a48-4b7de8a95dcd",
+            "Value": {
+                "id": "36b56e49-50e8-49b2-8f01-1957419d61f3",
+                "resourcePath": "sprites\\s_imperial_ship_5\\s_imperial_ship_5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
             "Value": {
                 "id": "df9ab552-e65d-4ea4-b03c-09c62b337187",
@@ -687,6 +695,14 @@
             }
         },
         {
+            "Key": "472c5113-4564-4bb1-a971-ce980370cbab",
+            "Value": {
+                "id": "c89d9d53-b356-4a74-aff4-9f84762dfcd3",
+                "resourcePath": "sprites\\s_pirate_ship_5\\s_pirate_ship_5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "48235861-0cc4-468a-95f1-e0754b14c696",
             "Value": {
                 "id": "0e36ec72-f727-494a-b222-dcdc4bea378a",
@@ -707,6 +723,14 @@
             "Value": {
                 "id": "88c4330c-6f69-4aef-a361-06297516ed61",
                 "resourcePath": "sprites\\s_sector_map\\s_sector_map.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4aa1c34f-c313-40af-9d26-fc96a02d33c0",
+            "Value": {
+                "id": "484e51e8-836f-4ae7-9e60-9f469a69f9d1",
+                "resourcePath": "sprites\\s_solar_ship_3\\s_solar_ship_3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -903,6 +927,14 @@
             }
         },
         {
+            "Key": "59b701fc-eee7-45d6-a12f-e452315730b4",
+            "Value": {
+                "id": "b4025b04-2c16-447d-ae60-35a105314058",
+                "resourcePath": "sprites\\s_crystal_ship_6\\s_crystal_ship_6.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59c26548-598e-4337-98f9-9d558edad3b8",
             "Value": {
                 "id": "1a830dee-9088-4a7d-99ab-a9c98b8c3bb3",
@@ -924,6 +956,14 @@
                 "id": "983b7929-7ae2-415c-b28c-99ceb63288ad",
                 "resourcePath": "views\\5b885fba-9b70-4f61-8089-ee8343c4fd16.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5beb4b3b-6bbb-45ea-a142-53bd0c77ccbe",
+            "Value": {
+                "id": "73b68bf2-c9f9-4ffd-8f48-8ae0fb940db1",
+                "resourcePath": "sprites\\s_crystal_ship_5\\s_crystal_ship_5.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1511,6 +1551,14 @@
             }
         },
         {
+            "Key": "944f1e6d-47b5-4466-9171-e27c53f760cd",
+            "Value": {
+                "id": "3260e473-6582-426d-8dd3-1980c015a163",
+                "resourcePath": "sprites\\s_alien_ship_4\\s_alien_ship_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "948a178f-617b-4976-b64e-2959d0d9e7f1",
             "Value": {
                 "id": "53706777-281d-4161-befa-24f47354e21d",
@@ -1620,6 +1668,14 @@
                 "id": "0efb6837-4f57-479c-b139-d4e80eb089ac",
                 "resourcePath": "views\\9be3ad4f-1bb5-4128-b595-25ade698142e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9d39c939-8a51-4c32-9ff8-20446d53008c",
+            "Value": {
+                "id": "a33c12c7-2c15-405e-a6ea-d0e32374670f",
+                "resourcePath": "sprites\\s_imperial_ship_2\\s_imperial_ship_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1879,6 +1935,14 @@
             }
         },
         {
+            "Key": "aec5089b-efd7-43c3-bb99-1e9197128fb7",
+            "Value": {
+                "id": "e12b395a-f13b-40db-b93b-ffaa6c29c125",
+                "resourcePath": "sprites\\s_iron_ship_5\\s_iron_ship_5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b000d720-2bd6-495c-bfea-84ce53e0c7ea",
             "Value": {
                 "id": "02d61e8b-f148-4dd8-86a2-c051799c7f83",
@@ -1908,6 +1972,14 @@
                 "id": "ec05eb25-ea33-4910-9775-ef36e2d232f4",
                 "resourcePath": "scripts\\scr_imperial_frigate_graphic_offsets\\scr_imperial_frigate_graphic_offsets.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b22da0db-4e84-49f7-98e0-f65b3ddea58b",
+            "Value": {
+                "id": "a6dd7f9f-16ba-435d-9b8d-4fb736e36148",
+                "resourcePath": "sprites\\s_iron_ship_4\\s_iron_ship_4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1972,6 +2044,14 @@
                 "id": "b59c03b6-801a-4f7c-80b8-5603843dba95",
                 "resourcePath": "sounds\\sound_epic_unease\\sound_epic_unease.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b9ab7f0e-0359-453d-be18-27945ecb5b57",
+            "Value": {
+                "id": "0fb8dc67-57fe-4dea-b6af-4e92c93a8e8f",
+                "resourcePath": "sprites\\s_solar_ship_4\\s_solar_ship_4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2287,6 +2367,14 @@
             }
         },
         {
+            "Key": "de0c4ee9-aa1e-47d6-8238-f6f174de79e2",
+            "Value": {
+                "id": "c2a21499-6c5a-4dbf-b249-3834432963b2",
+                "resourcePath": "sprites\\s_crystal_ship_4\\s_crystal_ship_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "df94cc31-2e07-4c0b-8870-43c9b26f4147",
             "Value": {
                 "id": "c6864c69-87b1-4dd1-9629-0127a520776b",
@@ -2439,10 +2527,26 @@
             }
         },
         {
+            "Key": "ef5d2d01-9fe8-4a3a-9b4a-dc540cea1d0f",
+            "Value": {
+                "id": "42d2b5b0-3788-41c8-88d8-f8a5f85928ee",
+                "resourcePath": "sprites\\s_pirate_ship_4\\s_pirate_ship_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f0eaced3-bc16-4741-94d8-dd8424c1861b",
             "Value": {
                 "id": "c693215b-27bc-4d2a-9909-694871454b69",
                 "resourcePath": "sprites\\s_grid_box_old\\s_grid_box_old.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f40d7543-d92a-462f-9968-c26920661e8b",
+            "Value": {
+                "id": "4f61b071-fb04-4041-b1af-5802f5c7155c",
+                "resourcePath": "sprites\\s_alien_ship_5\\s_alien_ship_5.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2527,6 +2631,14 @@
             }
         },
         {
+            "Key": "fb17b912-d1aa-4c3b-b42d-af025b01bc5c",
+            "Value": {
+                "id": "b4caf965-b461-4094-9f50-1f389addfb0e",
+                "resourcePath": "sprites\\s_pirate_ship_6\\s_pirate_ship_6.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fb7eeddc-fdca-414b-a994-7935545834a0",
             "Value": {
                 "id": "24d40cbd-137f-4899-8c36-20103acec69f",
@@ -2556,6 +2668,14 @@
                 "id": "f44cdda7-d9f4-484b-b28a-4686b8743e31",
                 "resourcePath": "views\\fe1251dd-4f36-4e3c-811b-061ad236842e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ff61596a-9806-419e-aed5-2fced853172d",
+            "Value": {
+                "id": "4ba1d092-1fa4-4c25-8b85-2552fce5da6d",
+                "resourcePath": "sprites\\s_alien_ship_6\\s_alien_ship_6.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
