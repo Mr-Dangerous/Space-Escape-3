@@ -268,8 +268,9 @@ switch(state){
 				var _ship_to_check = ds_list_find_value(_fleet_to_check, i)
 				if (instance_exists(_ship_to_check)){
 					var _distance_to_checked_ship = point_distance(x, y, _ship_to_check.x, _ship_to_check.y)
-					if (_distance_to_checked_ship > _distance_to_target){
+					if (_distance_to_checked_ship > _distance_to_target and ship_target.cloak = false){
 						ship_target = _ship_to_check
+						_distance_to_target = _distance_to_checked_ship
 			
 					}
 		
@@ -281,38 +282,45 @@ switch(state){
 	} 
 	//head towards the target, but sneakily
 	//needs to evnetually be a seek function
-	var _enemy_ship_facing = ship_target.image_angle
-	var _length_behind_enemy = 50
-	var _x = lengthdir_x(_length_behind_enemy, _enemy_ship_facing-180)
-	var _y = lengthdir_y(_length_behind_enemy, _enemy_ship_facing-180)
-	movement_target_x = _x
-	movement_target_y = _y
+	if (instance_exists(ship_target)){
+		var _enemy_ship_facing = ship_target.image_angle
+		var _length_behind_enemy = 100
+		var _x = ship_target.x + lengthdir_x(_length_behind_enemy, _enemy_ship_facing-180)
+		var _y = ship_target.y + lengthdir_y(_length_behind_enemy, _enemy_ship_facing-180)
+		movement_target_x = _x
+		movement_target_y = _y
 	
 	
-	//move that way
-	var _distance_to_movement_target = point_distance(x, y, movement_target_x, movement_target_y)
-	var _direction_to_movement_target = point_direction(x, y, movement_target_x, movement_target_y)
-	var _direction_to_ship_target = point_direction(x, y, ship_target.x, ship_target.y)
-	if (cloak_timer > 30 or _distance_to_movement_target > 30){
-		turn_to_face_direction(_direction_to_movement_target)
-		direction = image_angle
-		motion_add(direction, acceleration_rate)
-		limit_speed()
-	} else {
-		//open fire
-		if (cloak_timer > 30) cloak_timer = 30
-		turn_to_face_direction(_direction_to_ship_target)
-		if (abs(angle_difference(image_angle, _direction_to_ship_target) < 1)){
-			var _old_critical_hit_chance = critical_hit_chance
-			critical_hit_chance = 100
-			fire_basic_attack(basic_attack_array)
-			basic_attack_weapon_speed_counter = 0
-			if (secondary_attack_weapon_speed != -1){
+		//move that way
+		var _distance_to_movement_target = point_distance(x, y, movement_target_x, movement_target_y)
+		var _direction_to_movement_target = point_direction(x, y, movement_target_x, movement_target_y)
+		var _direction_to_ship_target = point_direction(x, y, ship_target.x, ship_target.y)
+		if (cloak_timer > 30 or _distance_to_movement_target > 100){
+			turn_to_face_direction(_direction_to_movement_target)
+			direction = image_angle
+			motion_add(direction, acceleration_rate)
+			limit_speed()
+		} else {
+			//open fire
+			if (cloak_timer > 30) cloak_timer = 30
+			speed = 0
+			limit_speed()
+			turn_to_face_direction(_direction_to_ship_target)
+			if (abs(angle_difference(image_angle, _direction_to_ship_target) < 1)){
+				var _old_critical_hit_chance = critical_hit_chance
+				critical_hit_chance = 100
 				fire_basic_attack(basic_attack_array)
-				secondary_attack_weapon_speed_counter = 0
+				basic_attack_weapon_speed_counter = 0
+				if (secondary_attack_weapon_speed != -1){
+					fire_basic_attack(basic_attack_array)
+					secondary_attack_weapon_speed_counter = 0
+				}
+				critical_hit_chance = _old_critical_hit_chance
+				state = ship.battle
+				cloak_timer = 0
+				energy_sub_counter = 0
+				energy = 0
 			}
-			critical_hit_chance = _old_critical_hit_chance
-			state = ship.battle
 		}
 	}
 		
