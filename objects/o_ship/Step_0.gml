@@ -268,7 +268,7 @@ switch(state){
 				var _ship_to_check = ds_list_find_value(_fleet_to_check, i)
 				if (instance_exists(_ship_to_check)){
 					var _distance_to_checked_ship = point_distance(x, y, _ship_to_check.x, _ship_to_check.y)
-					if (_distance_to_checked_ship > _distance_to_target and ship_target.cloak = false){
+					if (_distance_to_checked_ship > _distance_to_target and _ship_to_check.cloak = false){
 						ship_target = _ship_to_check
 						_distance_to_target = _distance_to_checked_ship
 			
