@@ -250,7 +250,7 @@
             "Key": "189a0023-9ece-4086-bb62-13a25a468239",
             "Value": {
                 "id": "90d48f6a-9c48-409f-9d49-94feaa6751d2",
-                "resourcePath": "scripts\\scr_deploy_drones\\scr_deploy_drones.yy",
+                "resourcePath": "scripts\\scr_deploy_repair_drone\\scr_deploy_repair_drone.yy",
                 "resourceType": "GMScript"
             }
         },

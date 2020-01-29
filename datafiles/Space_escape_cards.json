@@ -516,7 +516,7 @@
       "Basic Attack Weapon Damage": 40,
       "Basic Attack Weapon Mass": 3,
       "Basic Attack Range": 500,
-      "Energy Starting": 40,
+      "Energy Starting": 0,
       "Energy to Cast": 60,
       "Energy Generation": 1,
       "Sprite": "s_imperial_frigate",
@@ -611,7 +611,7 @@
       "Energy Generation": 1,
       "Sprite": "s_solar_frigate",
       "Weapons and Exhaust": "scr_solar_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield",
+      "Basic Ability Script": "scr_deploy_repair_drone",
       "Cards in Pool": 10
     },
     {
@@ -701,7 +701,7 @@
       "Energy Generation": 1,
       "Sprite": "s_crystal_frigate",
       "Weapons and Exhaust": "scr_crystal_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield",
+      "Basic Ability Script": "scr_deploy_repair_drone",
       "Cards in Pool": 10
     },
     {
@@ -731,7 +731,7 @@
       "Energy Generation": 1,
       "Sprite": "s_pirate_interceptor",
       "Weapons and Exhaust": "scr_pirate_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield",
+      "Basic Ability Script": "scr_hyper_boost",
       "Cards in Pool": 30
     },
     {

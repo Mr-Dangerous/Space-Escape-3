@@ -212,8 +212,8 @@ switch (game_phase){
 			}
 		}
 		//calculate daamge to player
-		for (var i = 0; i < ds_list_size(left_fleet); i++){
-			var _ship = ds_list_find_value(left_fleet, i)
+		for (var i = 0; i < ds_list_size(right_fleet); i++){
+			var _ship = ds_list_find_value(right_fleet, i)
 				if (instance_exists(_ship)){
 				switch(_ship.class){
 					case "Interceptor":
