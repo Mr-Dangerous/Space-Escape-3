@@ -497,7 +497,7 @@ if (inhibitor_shield_counter = 0){
 	}
 }
 
-if (hunter_strike_counter > 0){
+/*if (hunter_strike_counter > 0){
 	//reset attack speed
 	if (hunter_strike_counter = 1){
 		hunter_strike_multiplier = 0
@@ -505,7 +505,7 @@ if (hunter_strike_counter > 0){
 	}
 	hunter_strike_counter--
 	
-}
+}*/
 
 if (command_strike_bonus_counter > 0){
 	command_strike_bonus_counter--

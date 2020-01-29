@@ -114,10 +114,10 @@ if (new_ship){
 var _mouse_x = device_mouse_x_to_gui(0)
 var _mouse_y = device_mouse_y_to_gui(0)
 
-var _shop_x = _card_game_controller.shop_slot_ui_x_offset[0]
-var _shop_y = _card_game_controller.shop_slot_ui_y_offset
-var _shop_xx = _card_game_controller.shop_slot_ui_x_offset[4]
-var _shop_yy = _card_game_controller.shop_slot_ui_y_offset+110
+var _shop_x = card_game_ui_object.shop_slot_ui_x_offset[0]
+var _shop_y = card_game_ui_object.shop_slot_ui_y_offset
+var _shop_xx = card_game_ui_object.shop_slot_ui_x_offset[4]
+var _shop_yy = card_game_ui_object.shop_slot_ui_y_offset+110
 if (point_in_rectangle(_mouse_x, _mouse_y, _shop_x,_shop_y, _shop_xx, _shop_yy)) {
 	show_debug_message("sold!")
 	var _frame = reference_factory.ship_frame_contained
@@ -146,9 +146,9 @@ if (point_in_rectangle(_mouse_x, _mouse_y, _shop_x,_shop_y, _shop_xx, _shop_yy))
 	}
 	_frame.card_book[@1] += 1
 	instance_destroy(_frame)
-	_card_game_controller.resources += _resources_salvaged
-	var _sold_item = instance_create_layer(_card_game_controller.resource_x_offset[1],
-	_card_game_controller.resource_y_offset, "Above_Cards", o_sold_item)
+	card_game_ui_object.resources += _resources_salvaged
+	var _sold_item = instance_create_layer(card_game_ui_object.resource_x_offset[1],
+	card_game_ui_object.resource_y_offset, "Above_Cards", o_sold_item)
 	_sold_item.amount = _resources_salvaged
 	
 }
@@ -160,11 +160,11 @@ var _selected_factory = -1
 
 
 //check each factory to see if it was selected
-for (var i = 0; i < array_height_2d(_card_game_controller.factory_positions); i++){
-	var _x = _card_game_controller.factory_positions[i, 0]
-	var _y = _card_game_controller.factory_positions[i, 1]
-	var _xx = _x + 128*_card_game_controller.resolution_scale
-	var _yy = _y + 128*_card_game_controller.resolution_scale
+for (var i = 0; i < array_height_2d(card_game_ui_object.factory_positions); i++){
+	var _x = card_game_ui_object.factory_positions[i, 0]
+	var _y = card_game_ui_object.factory_positions[i, 1]
+	var _xx = _x + 128*card_game_ui_object.resolution_scale
+	var _yy = _y + 128*card_game_ui_object.resolution_scale
 	if (point_in_rectangle(_mouse_x, _mouse_y, _x, _y, _xx, _yy)){
 		_selected_factory = i
 
@@ -174,7 +174,7 @@ for (var i = 0; i < array_height_2d(_card_game_controller.factory_positions); i+
 
 if (_selected_factory != -1){
 //check to see if the selected factory has a ship frame in it
-	var _factory = _card_game_controller.ship_factories[_selected_factory]
+	var _factory = card_game_ui_object.ship_factories[_selected_factory]
 	var _ship_frame_in_selected_factory = _factory.ship_frame_contained
 	
 	if (!instance_exists(_ship_frame_in_selected_factory)){

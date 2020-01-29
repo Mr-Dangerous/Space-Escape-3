@@ -1,2 +1,2 @@
-var _sold_item = instance_create_layer(_card_game_controller.resource_x_offset[1],
-	_card_game_controller.resource_y_offset, "Above_Cards", o_sold_item)
+var _sold_item = instance_create_layer(card_game_ui_object.resource_x_offset[1],
+	card_game_ui_object.resource_y_offset, "Above_Cards", o_sold_item)

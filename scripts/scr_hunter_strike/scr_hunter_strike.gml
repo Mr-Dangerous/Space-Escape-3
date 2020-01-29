@@ -9,8 +9,12 @@ while (!no_valid_targets){
 		no_valid_targets = true
 	} else {
 		if (_nearby_ship.ship_team != ship_team){
-			cloak = false
-			cloak_timer = 0
+			if (cloak = true){
+				cloak = false
+				cloak_timer = 0
+				energy = 0
+				energy_sub_counter = 0
+			}
 			//maybe target that?
 		}
 	}
@@ -20,6 +24,9 @@ while (!no_valid_targets){
 }
 
 scr_fire_rocket(projectile.rocket)
-hunter_strike_multiplier = 1
-hunter_strike_counter = floor(energy_current/3) * 60
+hunter_strike_multiplier += .125*energy_current
+if (hunter_strike_multiplier > 4){
+	hunter_strike_multiplier = 4
+}
+//hunter_strike_counter = floor(energy_current/3) * 60
 show_debug_message("Hunter Strike!")

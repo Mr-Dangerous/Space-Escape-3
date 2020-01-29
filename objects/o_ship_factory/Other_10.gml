@@ -3,7 +3,7 @@
 if (instance_exists(ship_frame_contained)){
 	//get the map of the ship
 	var _ship_name = ship_frame_contained.name
-	var _ship_map = _card_game_controller.ship_maps[? _ship_name]
+	var _ship_map = card_game_ui_object.ship_maps[? _ship_name]
 	
 	armor = _ship_map[? "Armor"]
 	shields = _ship_map[? "Shields"]

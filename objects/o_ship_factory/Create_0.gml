@@ -1,7 +1,7 @@
 /// @description 
 
-_card_game_controller = instance_find(o_card_game_ui, 0)
-resolution_scale = _card_game_controller.resolution_scale
+card_game_ui_object = instance_find(o_card_game_ui, 0)
+resolution_scale = card_game_ui_object.resolution_scale
 
 ship_deployed = false
 create_ship = false

@@ -169,7 +169,7 @@ for (var i = 0; i < _factory_array_size; i++){
 
 		var _factory = instance_create_layer(100, 100, "Cards", o_ship_factory)
 		with (_factory){
-			card_game_controller = other
+			card_game_ui_object = other
 			factory_team = team.left
 			gui_x = _x
 			gui_y = _y
@@ -198,7 +198,7 @@ for (var i = 0; i < _factory_array_size; i++){
 		_y = enemy_factory_positions[i, 1]
 		var _enemy_factory = instance_create_layer(_x, _y, "Cards", o_ship_factory)
 		with (_enemy_factory){
-			card_game_controller = other
+			card_game_ui_object = other
 			factory_team = team.right
 		}
 		enemy_ship_factories[i] = _enemy_factory

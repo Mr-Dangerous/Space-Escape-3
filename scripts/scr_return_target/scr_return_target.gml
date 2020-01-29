@@ -6,6 +6,13 @@ if (ship_team = team.right){
 	_fleet_to_target = card_game_ui_object.left_fleet
 }
 
+//change target algos
+if (hunter_strike_multiplier > 0){
+	hunter_strike_multiplier = 0
+}
+
+
+
 var _enemy_target = noone
 if (_enemy_target = noone){
 	var _distance_to_target = 100000

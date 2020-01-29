@@ -153,9 +153,9 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and
 	//you don't want to deduct fuel for ships already fielded
 	
 	if (new_ship = true){
-		if (card_game_controller.current_fuel_spent + ship_frame_contained.fuel_cost + _fuel_discount <= card_game_controller.max_fuel){//COME BACK TO THIS
+		if (card_game_ui_object.current_fuel_spent + ship_frame_contained.fuel_cost + _fuel_discount <= card_game_ui_object.max_fuel){//COME BACK TO THIS
 			deployed_ship = instance_create_layer(40, 40, "Ships", o_ship)
-			card_game_controller.current_fuel_spent += ship_frame_contained.fuel_cost
+			card_game_ui_object.current_fuel_spent += ship_frame_contained.fuel_cost
 			new_ship = false
 		}
 	} else {
