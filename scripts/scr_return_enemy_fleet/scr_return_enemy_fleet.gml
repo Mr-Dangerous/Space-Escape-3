@@ -1,7 +1,7 @@
 //@param number_of_enemy_ships
 //@param modules_on_each_ship]
 
-var _fuel = argument0
+var _fuel = argument0 + 10
 var _modules_on_ship = argument1
 _modules_on_ship = 0
 var _enemy_fleet = ds_list_create()
