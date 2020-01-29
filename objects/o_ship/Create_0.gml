@@ -21,6 +21,7 @@ energy_multiplier = 10
 energy_per_second = 1
 energy_per_second = 1
 energy_current = 0
+energy_current_bonus = 0
 #endregion
 
 
@@ -189,6 +190,9 @@ hunter_strike_speed_multiplier = 0
 //spell module variables
 thermal_lance_damage_counter = 0
 emergency_shield_counter = 0
+hyper_amp_shields_drained = 0
+hyper_amp_counter = -1
+hyper_amp_bonus = 0
 #endregion
 
 #region armor module variables

@@ -12,7 +12,8 @@
         "482bb2f9-0755-44f1-9656-672c76c61b30",
         "f4e3d24c-35f8-4024-92e5-42af4e5f9d69",
         "abe07c50-8dd1-47a2-b28c-f58cbe187c2f",
-        "55e95e95-22df-406e-992a-e496f3e20e0f"
+        "55e95e95-22df-406e-992a-e496f3e20e0f",
+        "e3d24d7c-2af0-407d-8066-8318a607254a"
     ],
     "filterType": "GMScript",
     "folderName": "Level 1 Modules",

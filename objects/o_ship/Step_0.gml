@@ -134,7 +134,8 @@ if (speed = 0) exhaust_scale_multiplier = 0
 
 
 //determine some dynamically calculated variables
-energy_current = floor(max_energy/5)
+energy_current_bonus = 0 + hyper_amp_bonus
+energy_current = floor(max_energy/5) + energy_current_bonus
 attack_speed_multiplier = 1 + hunter_strike_multiplier
 weapon_damage_bonus = 0 + command_strike_bonus
 
@@ -214,17 +215,14 @@ switch(state){
 			}
 			if (secondary_attack_weapon_speed_counter != -1){
 				secondary_attack_weapon_speed_counter++
-				if (secondary_attack_weapon_speed_counter * attack_speed_multiplier >= secondary_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= secondary_weapon_range){
+				if (secondary_attack_weapon_speed_counter * attack_speed_multiplier >= secondary_attack_weapon_speed and angle_to_target < gimbal_fire_angle and distance_to_target <= current_weapon_range){
 					secondary_attack_weapon_speed_counter = 0
 					fire_secondary_attack(secondary_attack_array)
 				}
 			}
-			if (energy >= max_energy){
-		
-				//will actually be a state
-				state = ship.cast_ability
-			
-			}
+		}
+		if (energy >= max_energy){
+			state = ship.cast_ability
 		}
 			
 	break;
@@ -237,9 +235,11 @@ switch(state){
 	
 	
 	case ship.cast_ability:
-
-	script_execute(basic_ability)
+	show_debug_message(energy_current)
 	script_execute(ability_script)
+	show_debug_message(energy_current)
+	script_execute(basic_ability)
+	
 	
 	//some abilities will trigger a new state, if they don't, here's where it switches back.
 	if (state = ship.cast_ability){
@@ -527,4 +527,15 @@ if (inhibitor_shield_counter > 0){
 	}
 }
 if (wave_crasher_shield_damage_counter > 0) wave_crasher_shield_damage_counter--
+
+if (hyper_amp_counter > 0){
+	hyper_amp_counter--
+	if (hyper_amp_counter = 0){
+		shields += hyper_amp_shields_drained
+		show_debug_message("shields restored!")
+		show_debug_message(shields)
+		hyper_amp_bonus = 0
+		hyper_amp_counter--
+	}
+}
 #endregion

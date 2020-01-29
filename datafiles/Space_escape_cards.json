@@ -40,9 +40,9 @@
       "Origin": "Solar",
       "Sub Class": "ECP",
       "Level": 2,
-      "Sprite": "s_wave_crasher_shield",
-      "Loading Script": "scr_load_wave_crasher_shield",
-      "Description": "",
+      "Sprite": "s_hyper_amp_icon",
+      "Loading Script": "scr_load_hyper_amp",
+      "Description": "When the ship casts a spell, it loses 100% of it's remaining sheilds and gains +[1] current per [100] shields lost, to a maximum of [3/5/7] current.  Those shields return after 3 seconds.",
       "Cards in Pool": 30
     },
     {

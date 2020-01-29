@@ -719,6 +719,14 @@
             }
         },
         {
+            "Key": "4863cc6f-cb37-46cd-af0a-092d4c8087de",
+            "Value": {
+                "id": "d08bf0c4-fa68-4aa8-9d22-297e14022a00",
+                "resourcePath": "sprites\\s_hyper_amp_icon\\s_hyper_amp_icon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4974b9c7-e6dd-463e-8235-7dda7f78fb6b",
             "Value": {
                 "id": "88c4330c-6f69-4aef-a361-06297516ed61",
@@ -2431,6 +2439,14 @@
             }
         },
         {
+            "Key": "e3d24d7c-2af0-407d-8066-8318a607254a",
+            "Value": {
+                "id": "761ad3b9-0f26-46fd-9a4b-bb7f55044eaf",
+                "resourcePath": "scripts\\scr_load_hyper_amp\\scr_load_hyper_amp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e40aa70e-63dc-493b-ab19-6476a68c6530",
             "Value": {
                 "id": "b86b9767-ccd3-4e8e-9e14-a957fefff997",
@@ -2699,6 +2715,7 @@
         "f4e3d24c-35f8-4024-92e5-42af4e5f9d69",
         "abe07c50-8dd1-47a2-b28c-f58cbe187c2f",
         "55e95e95-22df-406e-992a-e496f3e20e0f",
+        "e3d24d7c-2af0-407d-8066-8318a607254a",
         "15be53b0-623c-476c-a13f-2f72f4660818",
         "5eb2afb3-a265-4407-b144-52d40a0f7452",
         "ea97041a-11b4-4126-b8e3-704fb0b2cf3d",
