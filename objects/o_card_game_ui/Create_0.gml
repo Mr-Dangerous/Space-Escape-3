@@ -277,106 +277,35 @@ complete_module_book[| 3] =level_3_module_book
 complete_module_book[| 4] =level_4_module_book
 complete_module_book[| 5] =level_5_module_book
 //was here 1/26/20
-
+#endregion
 
 #region Ship Frames Book
-ship_frame_book = array_create(15, noone)
-interceptor_frame_book = 0
-fighter_frame_book = 0
-frigate_frame_book = 0
-/*
-TODO
 
-At the current moment, there are TWO different systems being built.  The first system, involving the 
-ship_frame_book is the old system.  It will be phased out.
-
-When the new system is in place, the first two lines of each entry should be deleted.
-*/
+interceptor_frame_book = ds_list_create()
+fighter_frame_book = ds_list_create()
+frigate_frame_book = ds_list_create()
 
 
-iron_interceptor_frame_book[0] = "Iron Interceptor"
-iron_interceptor_frame_book[1] = 30
-interceptor_frame_book[0] = iron_interceptor_frame_book
-
-iron_fighter_frame_book[0] = "Iron Fighter"
-iron_fighter_frame_book[1] = 20
-fighter_frame_book[0] = iron_fighter_frame_book
-
-
-iron_frigate_frame_book[0] = "Iron Frigate"
-iron_frigate_frame_book[1] = 10
-frigate_frame_book[0] = iron_frigate_frame_book
-
-discharge_frame_book[0] = "Discharge Frigate"
-discharge_frame_book[1] = 10
-frigate_frame_book[5] = discharge_frame_book
-
-
-crystal_interceptor_frame_book[0] = "Crystal Interceptor"
-crystal_interceptor_frame_book[1] = 30
-interceptor_frame_book[1] = crystal_interceptor_frame_book
-
-
-crystal_fighter_frame_book[0] = "Crystal Fighter"
-crystal_fighter_frame_book[1] = 20
-fighter_frame_book[1] = crystal_fighter_frame_book
-
-
-crystal_frigate_frame_book[0] = "Crystal Frigate"
-crystal_frigate_frame_book[1] = 10
-frigate_frame_book[1] = crystal_frigate_frame_book
-
-
-pirate_interceptor_frame_book[0] = "Pirate Interceptor"
-pirate_interceptor_frame_book[1] = 30
-interceptor_frame_book[2] = pirate_interceptor_frame_book
-
-
-pirate_fighter_frame_book[0] = "Pirate Fighter"
-pirate_fighter_frame_book[1] = 20
-fighter_frame_book[2] = pirate_fighter_frame_book
-
-
-pirate_frigate_frame_book[0] = "Pirate Frigate"
-pirate_frigate_frame_book[1] = 10
-frigate_frame_book[2] = pirate_frigate_frame_book
-
-
-
-imperial_interceptor_frame_book[0] = "Imperial Interceptor"
-imperial_interceptor_frame_book[1] = 30
-interceptor_frame_book[3] = imperial_interceptor_frame_book
-
-
-imperial_fighter_frame_book[0] = "Imperial Fighter"
-imperial_fighter_frame_book[1] = 20
-fighter_frame_book[3] = imperial_fighter_frame_book
-
-
-imperial_frigate_frame_book[0] = "Imperial Frigate"
-imperial_frigate_frame_book[1] = 10
-frigate_frame_book[3] = imperial_frigate_frame_book
-
-
-solar_interceptor_frame_book[0] = "Solar Interceptor"
-solar_interceptor_frame_book[1] = 30
-interceptor_frame_book[4] = solar_interceptor_frame_book
-
-
-solar_fighter_frame_book[0] = "Solar Fighter"
-solar_fighter_frame_book[1] = 20
-fighter_frame_book[4] = solar_fighter_frame_book
-
-
-solar_frigate_frame_book[0] = "Solar Frigate"
-solar_frigate_frame_book[1] = 10
-frigate_frame_book[4] = solar_frigate_frame_book
-
-
-
-
-
-#endregion
+for (var i = 0; i < ds_list_size(_list_of_ships); i++){
+	var _card_book_array = array_create(2, 0)
+	var _item_map = ds_list_find_value(_list_of_ships, i)
+	_card_book_array[0] = _item_map[? "Name"]
+	_card_book_array[1] = _item_map[? "Cards in Pool"]
+	var _ship_class = _item_map[? "Class"]
+	var _selected_card_book
+	switch(_ship_class){
+		case "Interceptor":
+			_selected_card_book = interceptor_frame_book
+		break;
+		case "Fighter":
+			_selected_card_book = fighter_frame_book
+		break;
+		case "Frigate":
+			_selected_card_book = frigate_frame_book
+		break;
+	}
+	ds_list_add(_selected_card_book, _card_book_array)
+}
 
 
 #endregion

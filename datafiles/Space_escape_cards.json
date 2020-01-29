@@ -345,7 +345,7 @@
   ],
   "Ships": [
     {
-      "Name": "Iron Interceptor",
+      "Name": "Delta Skirmisher",
       "Origin": "Iron",
       "Class": "Interceptor",
       "Sub Class": "ECP",
@@ -371,10 +371,11 @@
       "Energy Generation": 1,
       "Sprite": "s_iron_interceptor",
       "Weapons and Exhaust": "scr_iron_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_EMP_overload"
+      "Basic Ability Script": "scr_EMP_overload",
+      "Cards in Pool": 30
     },
     {
-      "Name": "Iron Fighter",
+      "Name": "Warhawk Fighter",
       "Origin": "Iron",
       "Class": "Fighter",
       "Sub Class": "Weapons Platform",
@@ -397,13 +398,14 @@
       "Basic Attack Range": 500,
       "Energy Starting": 0,
       "Energy to Cast": 40,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_iron_fighter",
       "Weapons and Exhaust": "scr_iron_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_precision_strike"
+      "Basic Ability Script": "scr_precision_strike",
+      "Cards in Pool": 20
     },
     {
-      "Name": "Iron Frigate",
+      "Name": "Dual Rail Frigate",
       "Origin": "Iron",
       "Class": "Frigate",
       "Sub Class": "Corvette",
@@ -426,13 +428,14 @@
       "Basic Attack Range": 750,
       "Energy Starting": 0,
       "Energy to Cast": 60,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_iron_frigate",
       "Weapons and Exhaust": "scr_iron_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_orbital_strike"
+      "Basic Ability Script": "scr_orbital_strike",
+      "Cards in Pool": 10
     },
     {
-      "Name": "Imperial Interceptor",
+      "Name": "Retor Hunter",
       "Origin": "Imperial",
       "Class": "Interceptor",
       "Sub Class": "Hunter",
@@ -458,10 +461,11 @@
       "Energy Generation": 1,
       "Sprite": "s_imperial_interceptor",
       "Weapons and Exhaust": "scr_imperial_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_hunter_strike"
+      "Basic Ability Script": "scr_hunter_strike",
+      "Cards in Pool": 30
     },
     {
-      "Name": "Imperial Fighter",
+      "Name": "Imperial Corsair",
       "Origin": "Imperial",
       "Class": "Fighter",
       "Sub Class": "Weapons Platform",
@@ -484,13 +488,14 @@
       "Basic Attack Range": 500,
       "Energy Starting": 0,
       "Energy to Cast": 40,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_imperial_fighter",
       "Weapons and Exhaust": "scr_imperial_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_precision_strike"
+      "Basic Ability Script": "scr_precision_strike",
+      "Cards in Pool": 20
     },
     {
-      "Name": "Imperial Frigate",
+      "Name": "HRM Harald",
       "Origin": "Imperial",
       "Class": "Frigate",
       "Sub Class": "Command",
@@ -513,13 +518,14 @@
       "Basic Attack Range": 500,
       "Energy Starting": 0,
       "Energy to Cast": 60,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_imperial_frigate",
       "Weapons and Exhaust": "scr_imperial_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 10
     },
     {
-      "Name": "Solar Interceptor",
+      "Name": "Kitesail Skirmisher",
       "Origin": "Solar",
       "Class": "Interceptor",
       "Sub Class": "Hunter",
@@ -545,10 +551,11 @@
       "Energy Generation": 1,
       "Sprite": "s_solar_interceptor",
       "Weapons and Exhaust": "scr_solar_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_hunter_strike"
+      "Basic Ability Script": "scr_hunter_strike",
+      "Cards in Pool": 30
     },
     {
-      "Name": "Solar Fighter",
+      "Name": "Arc Shield Unit",
       "Origin": "Solar",
       "Class": "Fighter",
       "Sub Class": "Shield",
@@ -571,10 +578,11 @@
       "Basic Attack Range": 375,
       "Energy Starting": 0,
       "Energy to Cast": 40,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_solar_fighter",
       "Weapons and Exhaust": "scr_solar_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 20
     },
     {
       "Name": "Solar Frigate",
@@ -600,13 +608,14 @@
       "Basic Attack Range": 750,
       "Energy Starting": 0,
       "Energy to Cast": 60,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_solar_frigate",
       "Weapons and Exhaust": "scr_solar_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 10
     },
     {
-      "Name": "Crystal Interceptor",
+      "Name": "Prismite",
       "Origin": "Crystal",
       "Class": "Interceptor",
       "Sub Class": "Ghost",
@@ -632,10 +641,11 @@
       "Energy Generation": 1,
       "Sprite": "s_crystal_interceptor",
       "Weapons and Exhaust": "scr_crystal_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 30
     },
     {
-      "Name": "Crystal Fighter",
+      "Name": "Resonater Shard",
       "Origin": "Crystal",
       "Class": "Fighter",
       "Sub Class": "Shield",
@@ -658,13 +668,14 @@
       "Basic Attack Range": 250,
       "Energy Starting": 0,
       "Energy to Cast": 40,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_crystal_fighter",
       "Weapons and Exhaust": "scr_crystal_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 20
     },
     {
-      "Name": "Crystal Frigate",
+      "Name": "Lodestone Frame",
       "Origin": "Crystal",
       "Class": "Frigate",
       "Sub Class": "Support",
@@ -687,13 +698,14 @@
       "Basic Attack Range": 375,
       "Energy Starting": 0,
       "Energy to Cast": 60,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_crystal_frigate",
       "Weapons and Exhaust": "scr_crystal_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 10
     },
     {
-      "Name": "Pirate Interceptor",
+      "Name": "CRT skirmisher",
       "Origin": "Pirate",
       "Class": "Interceptor",
       "Sub Class": "Breakthrough",
@@ -719,10 +731,11 @@
       "Energy Generation": 1,
       "Sprite": "s_pirate_interceptor",
       "Weapons and Exhaust": "scr_pirate_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield"
+      "Basic Ability Script": "scr_inhibitor_shield",
+      "Cards in Pool": 30
     },
     {
-      "Name": "Pirate Fighter",
+      "Name": "CT Hunter",
       "Origin": "Pirate",
       "Class": "Fighter",
       "Sub Class": "Hunter",
@@ -745,13 +758,14 @@
       "Basic Attack Range": 500,
       "Energy Starting": 0,
       "Energy to Cast": 40,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_pirate_fighter",
       "Weapons and Exhaust": "scr_pirate_fighter_graphic_offsets",
-      "Basic Ability Script": "scr_hunter_strike"
+      "Basic Ability Script": "scr_hunter_strike",
+      "Cards in Pool": 20
     },
     {
-      "Name": "Pirate Frigate",
+      "Name": "Bombard frame",
       "Origin": "Pirate",
       "Class": "Frigate",
       "Sub Class": "Corvette",
@@ -774,10 +788,11 @@
       "Basic Attack Range": 750,
       "Energy Starting": 0,
       "Energy to Cast": 60,
-      "Energy Generation": 2,
+      "Energy Generation": 1,
       "Sprite": "s_pirate_frigate",
       "Weapons and Exhaust": "scr_pirate_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_orbital_strike"
+      "Basic Ability Script": "scr_orbital_strike",
+      "Cards in Pool": 10
     },
     {
       "Name": "Discharge Frigate",
@@ -806,7 +821,8 @@
       "Energy Generation": 2,
       "Sprite": "s_iron_capital_ship",
       "Weapons and Exhaust": "scr_iron_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_EMP_overload"
+      "Basic Ability Script": "scr_EMP_overload",
+      "Cards in Pool": 10
     }
   ]
 }
