@@ -136,6 +136,7 @@ if (speed = 0) exhaust_scale_multiplier = 0
 //determine some dynamically calculated variables
 energy_current = floor(max_energy/5)
 attack_speed_multiplier = 1 + hunter_strike_multiplier
+weapon_damage_bonus = 0 + command_strike_bonus
 
 
 #endregion
@@ -504,6 +505,14 @@ if (hunter_strike_counter > 0){
 	}
 	hunter_strike_counter--
 	
+}
+
+if (command_strike_bonus_counter > 0){
+	command_strike_bonus_counter--
+	if (command_strike_bonus_counter = 0){
+		command_strike_bonus = 0
+		command_strike_bonus_counter--
+	}
 }
 
 

@@ -516,12 +516,12 @@
       "Basic Attack Weapon Damage": 40,
       "Basic Attack Weapon Mass": 3,
       "Basic Attack Range": 500,
-      "Energy Starting": 0,
+      "Energy Starting": 40,
       "Energy to Cast": 60,
       "Energy Generation": 1,
       "Sprite": "s_imperial_frigate",
       "Weapons and Exhaust": "scr_imperial_frigate_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield",
+      "Basic Ability Script": "scr_command_strike",
       "Cards in Pool": 10
     },
     {

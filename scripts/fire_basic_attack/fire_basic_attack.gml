@@ -6,7 +6,7 @@ var _basic_attack_array = argument0
 var _basic_attack_number = _basic_attack_array[0, 0]
 var _basic_attack_team = _basic_attack_array[0, 1]
 var _basic_attack_image_scale = _basic_attack_array[0, 2]
-var _origin_ship = self
+
 
 //check for critical hit
 var _critical_hit = false
@@ -47,9 +47,10 @@ repeat(_basic_attack_number){
 		direction = _convergence_angle
 		speed = _basic_attack_array[_i, 0]
 		sprite_index = _basic_attack_array[_i, 1]
-		var _damage = _basic_attack_array[_i, 2]
+		var _damage = _basic_attack_array[_i, 2] + other.weapon_damage_bonus
 		if (_critical_hit){
 			_damage *= other.critical_hit_multiplier
+			//show_debug_message(string(string(other.name) + " scored a critical hit for " + string(_damage)))
 		}
 		damage = _damage
 		critical_hit = _critical_hit//used primarily for displaying the text of the attacks

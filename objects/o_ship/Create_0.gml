@@ -67,6 +67,7 @@ target_x = 0
 target_y = 0
 movement_target_x = 0
 movement_target_y = 0
+target_locked = false
 #endregion
 
 #region movement variables
@@ -116,6 +117,8 @@ precision_strike_attacks = 0
 rocket_count = 6
 missile_count = 4
 torpedo_count = 2
+command_strike_bonus = 0
+command_strike_bonus_counter = -1
 #endregion
 
 #region state variables
