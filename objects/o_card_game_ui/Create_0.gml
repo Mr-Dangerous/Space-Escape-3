@@ -2,6 +2,8 @@
 left_fleet = ds_list_create()//these fleet lists are updated in the precombat phase
 right_fleet = ds_list_create()
 game_speed = game_get_speed(gamespeed_microseconds)
+player_hp = 100
+enemy_hp = 100
 
 //shop slots
 for (var i = 0; i < 5; i++){

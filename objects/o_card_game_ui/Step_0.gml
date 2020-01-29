@@ -173,6 +173,8 @@ switch (game_phase){
 		phase_timer = -1
 	}
 	break;
+	//likely needs to be a phase overtime
+	
 	
 	case phase.post_combat:
 	//remaining ships calculate player damage
@@ -186,6 +188,54 @@ switch (game_phase){
 		with (o_projectile){
 			instance_destroy()
 		}
+		//calculate player hp and enemy hp
+		var _player_damage = 0
+		var _enemy_damage = 0
+		//calculate enemy damage first... caused why not
+		for (var i = 0; i < ds_list_size(left_fleet); i++){
+			var _ship = ds_list_find_value(left_fleet, i)
+				if (instance_exists(_ship)){
+				switch(_ship.class){
+					case "Interceptor":
+						_enemy_damage += 1
+					break;
+					
+					case "Fighter":
+						_enemy_damage += 2
+					break;
+					
+					case "Frigate":
+						_enemy_damage += 4
+					break;
+					
+				}
+			}
+		}
+		//calculate daamge to player
+		for (var i = 0; i < ds_list_size(left_fleet); i++){
+			var _ship = ds_list_find_value(left_fleet, i)
+				if (instance_exists(_ship)){
+				switch(_ship.class){
+					case "Interceptor":
+						_player_damage += 1
+					break;
+					
+					case "Fighter":
+						_player_damage += 2
+					break;
+					
+					case "Frigate":
+						_player_damage += 4
+					break;
+					
+				}
+			}
+		}
+		player_hp -= _player_damage
+		enemy_hp -= _enemy_damage
+		show_debug_message(string("Player HP: " + string(player_hp)))
+		show_debug_message(string("Enemy HP: " + string(enemy_hp)))
+		
 	}
 	if (phase_timer > 0){
 		phase_timer--
@@ -200,6 +250,7 @@ switch (game_phase){
 		timer_counter = -1
 		phase_timer = -1
 		scr_advance_turn()
+		
 	}
 	
 	ds_list_clear(left_fleet)
