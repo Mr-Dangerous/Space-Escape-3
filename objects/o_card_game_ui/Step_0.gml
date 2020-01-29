@@ -127,9 +127,20 @@ switch (game_phase){
 	//some condition to start
 	if (phase_timer = -1){
 		phase_timer = 60
+
 		with (o_ship_factory){
+			
 			if (instance_exists(fielded_ship)){
+				//this function may need to go into the ship factory
+				var _fleet_list
+				if (factory_team = team.left){
+					_fleet_list = other.left_fleet
+				}
+				if (factory_team = team.right){
+					_fleet_list = other.right_fleet
+				}
 				ship_deployed = true
+				ds_list_add(_fleet_list, fielded_ship)
 			}
 		}
 	}
@@ -190,6 +201,9 @@ switch (game_phase){
 		phase_timer = -1
 		scr_advance_turn()
 	}
+	
+	ds_list_clear(left_fleet)
+	ds_list_clear(right_fleet)
 		
 	break;
 }
@@ -200,7 +214,7 @@ var mouse_left_released = mouse_check_button_released(mb_left)
 
 if (mouse_left_released){
 	
-	//remove up to here
+
 	if (invest_button_pressed){
 		if (resources >= 4){
 			invest_button_pressed = false

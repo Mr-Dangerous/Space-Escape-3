@@ -1,3 +1,5 @@
 cloak = true
-cloak_timer = 120
-//state = ship.stalking
+cloak_timer = 60*energy_current
+state = ship.stalking
+ship_target = noone
+//might need this

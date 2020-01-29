@@ -62,6 +62,7 @@ enum ship{
 	disabled,
 	deactivated,//for information gathering purposes
 	channel_ability,
+	stalking,//state for ghost or cloaking
 	firing_range//for testing purposes only
 }
 

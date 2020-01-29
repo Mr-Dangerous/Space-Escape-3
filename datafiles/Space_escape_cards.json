@@ -641,7 +641,7 @@
       "Energy Generation": 1,
       "Sprite": "s_crystal_interceptor",
       "Weapons and Exhaust": "scr_crystal_interceptor_graphic_offsets",
-      "Basic Ability Script": "scr_inhibitor_shield",
+      "Basic Ability Script": "scr_tactical_cloak",
       "Cards in Pool": 30
     },
     {

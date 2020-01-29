@@ -1,5 +1,6 @@
 /// @description Create... EVERYTHING!
-
+left_fleet = ds_list_create()//these fleet lists are updated in the precombat phase
+right_fleet = ds_list_create()
 
 //shop slots
 for (var i = 0; i < 5; i++){

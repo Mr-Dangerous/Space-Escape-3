@@ -65,6 +65,8 @@ evade = false
 strafe = false
 target_x = 0
 target_y = 0
+movement_target_x = 0
+movement_target_y = 0
 #endregion
 
 #region movement variables
