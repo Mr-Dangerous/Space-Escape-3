@@ -6,16 +6,18 @@ if(!created){
 	explosion_image_scale = 0
 	switch(projectile_class){
 		case projectile.rocket:
-		
+			max_speed = 7
 	 
 		break;
 	
 		case projectile.missile:
 			explosion_image_scale = 72 / _sprite_width
+			max_speed = 6
 		break;
 	
 		case projectile.torpedo:
-			explosion_image_scale = 128 / _sprite_width
+			explosion_image_scale = 256 / _sprite_width
+			max_speed = 3
 		break;
 	}
 	created = true

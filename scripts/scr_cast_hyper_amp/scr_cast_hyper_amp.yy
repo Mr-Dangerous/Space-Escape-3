@@ -1,8 +1,8 @@
 {
-    "id": "e3d24d7c-2af0-407d-8066-8318a607254a",
+    "id": "125f87bc-e83a-4ac3-b973-8e5abc846bbf",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_load_hyper_amp",
+    "name": "scr_cast_hyper_amp",
     "IsCompatibility": false,
     "IsDnD": false
 }

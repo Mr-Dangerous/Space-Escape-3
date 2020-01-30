@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "125f87bc-e83a-4ac3-b973-8e5abc846bbf",
+            "Value": {
+                "id": "97addb28-55b7-4c11-908c-72bd9e94a410",
+                "resourcePath": "scripts\\scr_cast_hyper_amp\\scr_cast_hyper_amp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "135d6fe4-09b4-48d5-a4a1-72b1c439af53",
             "Value": {
                 "id": "59359a34-f8d4-4c69-be2a-d8fcd111e771",
@@ -2736,6 +2744,7 @@
         "135d6fe4-09b4-48d5-a4a1-72b1c439af53",
         "a4d223f1-df5c-489d-adb4-439c6bfd8c34",
         "ce09b7f2-eea0-4797-bf26-4d6c155d19da",
+        "125f87bc-e83a-4ac3-b973-8e5abc846bbf",
         "13e8bdfd-90e0-4216-ac0a-7cbcb33f8923",
         "0daa49fc-7eac-4f14-b76c-69ddfe1ab464",
         "5ef05e9b-d57e-411d-9171-afad16f7b5ee",

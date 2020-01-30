@@ -5,7 +5,7 @@ var _projectile_class = argument0
 var image_scale_multiplier = 1
 
 if(_projectile_class = projectile.missile) image_scale_multiplier = 1.2
-if(_projectile_class = projectile.torpedo) image_scale = 2
+if(_projectile_class = projectile.torpedo) image_scale_multiplier = 2
 
 
 
