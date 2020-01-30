@@ -166,8 +166,24 @@ switch (game_phase){
 		timer_counter--
 		timer = floor(timer_counter/60)
 	}
-	if (timer_counter = 0){
-		timer_counter--
+	var _one_team_has_won = true
+	var _two_team_has_won = true
+	for (var i = 0; i < ds_list_size(left_fleet); i++){
+		var _ship = ds_list_find_value(left_fleet, i)
+		if (instance_exists(_ship)){
+			_one_team_has_won = false
+			break;
+		}
+	}
+	for (var i = 0; i < ds_list_size(right_fleet); i++){
+		var _ship = ds_list_find_value(right_fleet, i)
+		if (instance_exists(_ship)){
+			_two_team_has_won = false
+			break;
+		}
+	}
+	if (timer_counter = 0 or _one_team_has_won = true or _two_team_has_won = true){
+		timer_counter = -1
 		game_phase = phase.post_combat
 		current_phase_text = "Post Combat"
 		phase_timer = -1

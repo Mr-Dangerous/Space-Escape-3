@@ -19,6 +19,11 @@ switch(state){
 		var _distance_to_target = distance_to_object(target_ship)
 		if (_distance_to_target < repair_radius){
 			state = repair_drone.attached
+			//small shield buff
+			target_ship.shields += repair_power*5
+			if (target_ship.shields > target_ship.max_shields){
+				target_ship.shields = target_ship.max_shields
+			}
 		}
 		var _p_dir = point_direction(x, y, target_ship.x, target_ship.y)
 		turn_to_face_direction(_p_dir)
@@ -53,7 +58,7 @@ switch(state){
 			repair_speed_counter = 0
 			if (target_ship.armor != target_ship.max_armor){
 				repair_power--
-				target_ship.armor += 5
+				target_ship.armor += 15
 				if (target_ship.armor > target_ship.max_armor){
 					target_ship.armor = target_ship.max_armor
 				}

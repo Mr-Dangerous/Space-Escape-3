@@ -27,6 +27,9 @@ if (timer_counter > 0){
 draw_text(_x, _y + 30, current_phase_text)
 draw_set_halign(fa_left)
 
+//player hp and enemy hp displays
+draw_text(_x, _y + 60, string (string("Player HP: ") + string(player_hp)))
+draw_text(_x, _y + 90, string (string("Enemy HP: ") + string(enemy_hp)))
 
 //draw the shop
 

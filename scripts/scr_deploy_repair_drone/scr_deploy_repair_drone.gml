@@ -39,7 +39,7 @@ for (var i = 0; i< _list_size; i++){
 if (instance_exists(_target_ship)){
 	var _repair_drone = instance_create_layer(x, y, "Ships", o_repair_drone)
 	with (_repair_drone){
-		repair_power = 30
+		repair_power = other.energy_current
 		image_angle = other.image_angle
 		direction = other.direction
 		target_ship = _target_ship
