@@ -37,7 +37,9 @@ if (team_attack_from != other.ship_team){
 	//finally calculate it all!
 	scr_calculate_damage(other, damage, mass, directional_damage, critical_hit)
 	if (instance_exists(origin_ship)){
-		origin_ship.energy_sub_counter += ceil(damage/10)
+		var _energy_gained = ceil(damage/5)
+		show_debug_message(_energy_gained)
+		origin_ship.energy_sub_counter += _energy_gained
 	}
 	instance_destroy()
 }

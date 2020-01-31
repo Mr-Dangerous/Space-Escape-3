@@ -9,7 +9,7 @@ for (var i = 0; i < ds_grid_width(display_strings); i++){
 		ds_grid_add(display_strings, i, j, string("Testing" + string (i+j)))
 	}
 }
-alarm[0] = 10
+alarm[0] = 2
 
 
 

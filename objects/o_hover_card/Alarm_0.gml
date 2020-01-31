@@ -5,7 +5,7 @@ with(reference_factory){
 var _shield_string_stat_array = array_create(2, 0)
 _shield_string_stat_array[0] = "Shields"//Header
 _shield_string_stat_array[1] = string("Units: " + string(reference_factory.shields) + 
-"\n" + string("Deflection Power: " + string(reference_factory.shield_power))) 
+"\n" + string("Deflection: " + string(reference_factory.shield_power))) 
 
 
 var _armor_string_stat_array = array_create(2, 0)
@@ -42,7 +42,7 @@ var _energy_string_array = array_create(2, 0)
 _energy_string_array[0] = "Energy"
 _energy_string_array[1] = string("Energy: " + string(reference_factory.energy_starting) + "/" + string(reference_factory.energy_to_cast) + 
 "\n" + string("Generation: " + string(reference_factory.energy_regeneration)) + 
-"\n" + "Ability Power:  100%")
+"\n" + "Energy Current: " + string(reference_factory.energy_to_cast/5))
 
 
 var _blank = array_create(2, "")

@@ -4,7 +4,7 @@ var _gui_y = gui_y
 
 draw_sprite_stretched(s_window_original, 0, gui_x, _gui_y, 384, 384)
 
-v_spacing = 85
+v_spacing = 95
 h_spacing =  120
 draw_set_halign(fa_left)
 
