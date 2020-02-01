@@ -5,7 +5,7 @@ sprites_to_display = ds_list_create()
 _image_angle = 0
 
 var sprite_prefix = "s_tox_dark_purple_"
-
+//var sprite_prefix = "illumArmy"
 for (var i = 1; i < 25; i++){
 	var _number = string(i)
 	if (i < 10){
