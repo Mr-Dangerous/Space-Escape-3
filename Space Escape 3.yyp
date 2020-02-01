@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "054cf89d-7f01-4904-9096-06d5d596eb37",
+            "Value": {
+                "id": "916dde90-eaf6-47ba-b65b-8d774bf44924",
+                "resourcePath": "sprites\\illumArmy01\\illumArmy01.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06e83dc8-101d-4927-9263-0d2640a22345",
             "Value": {
                 "id": "6b015e2f-1189-40ec-a49a-0b016380b2ef",
@@ -135,6 +143,22 @@
             }
         },
         {
+            "Key": "0c422fa1-2c4b-499d-8e46-9e16b6c1839e",
+            "Value": {
+                "id": "e80a214e-4bcb-4b1e-9bd5-7d98458c104d",
+                "resourcePath": "sprites\\illumArmy02\\illumArmy02.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0c76c45e-a4b5-49bd-a9b9-bfad73420ce5",
+            "Value": {
+                "id": "94d436f8-e98a-437b-938e-74e12c603188",
+                "resourcePath": "sprites\\illumArmy15\\illumArmy15.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c97c70b-cff9-47a6-8809-84747eb3095f",
             "Value": {
                 "id": "891fd40c-0c3b-411b-b3a9-f07492786f01",
@@ -148,6 +172,14 @@
                 "id": "36b56e49-50e8-49b2-8f01-1957419d61f3",
                 "resourcePath": "sprites\\s_imperial_ship_5\\s_imperial_ship_5.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0d64e4b3-86f0-4b62-923a-7985e23127c8",
+            "Value": {
+                "id": "c2a34aa9-1409-4070-8952-cf838d06dbd8",
+                "resourcePath": "views\\0d64e4b3-86f0-4b62-923a-7985e23127c8.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -171,6 +203,14 @@
             "Value": {
                 "id": "10b35792-fcc9-4468-a624-6bf68944d66c",
                 "resourcePath": "sprites\\s_solar_fighter\\s_solar_fighter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0fed6f75-5b1c-47a1-bdbb-a32e1b50ab21",
+            "Value": {
+                "id": "4af4a6f6-15f6-49f9-b68e-2073b2205a7f",
+                "resourcePath": "sprites\\illumArmy09\\illumArmy09.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -727,6 +767,14 @@
             }
         },
         {
+            "Key": "3ac431a7-739e-4762-9f52-c68ee01b085c",
+            "Value": {
+                "id": "5b13fcd6-a558-43d5-89dd-ba3b3b7dc01e",
+                "resourcePath": "sprites\\illumArmy24\\illumArmy24.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3b2d02f0-0456-417e-a0d0-929e418fc653",
             "Value": {
                 "id": "dc1bf7a9-fb4d-4032-aa5c-8f4391b19eee",
@@ -828,6 +876,14 @@
                 "id": "274bfd1b-db09-48ea-878a-664f1c2c9494",
                 "resourcePath": "datafiles_yy\\Space_escape_cards.json.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "4707cf46-b6cc-4d95-bfc3-ccc4fe94da42",
+            "Value": {
+                "id": "6b254509-bfa4-49fd-9cae-e1ed5f2ab20f",
+                "resourcePath": "sprites\\illumArmy06\\illumArmy06.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -943,11 +999,27 @@
             }
         },
         {
+            "Key": "4e0429a6-a379-4818-af5a-8fc525e188b0",
+            "Value": {
+                "id": "ac63d3dc-9ef2-4bfb-9473-3379fbf9206e",
+                "resourcePath": "sprites\\illumArmy08\\illumArmy08.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e05162a-f86f-4045-8980-c9a6653644aa",
             "Value": {
                 "id": "5c0042db-750c-4eb3-b7f1-9fe30c4d04e9",
                 "resourcePath": "scripts\\scr_fire_rocket\\scr_fire_rocket.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4f8eae89-67c1-4c34-9283-12d103b56056",
+            "Value": {
+                "id": "f42fbd48-f909-4c65-9f33-6e2ad8c9d8cb",
+                "resourcePath": "sprites\\illumArmy11\\illumArmy11.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -995,6 +1067,14 @@
             "Value": {
                 "id": "597f1fb9-5bce-4835-b4ee-d50eda6de5a2",
                 "resourcePath": "sprites\\s_meteor_4\\s_meteor_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "539bce81-c778-4af2-83a7-3982dc604b1c",
+            "Value": {
+                "id": "a977e529-0745-4598-886b-5784135dd0ba",
+                "resourcePath": "sprites\\illumArmy22\\illumArmy22.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1415,6 +1495,14 @@
             }
         },
         {
+            "Key": "72515b60-1b6c-4f73-b533-df23173413d7",
+            "Value": {
+                "id": "f459a377-eb6c-4267-b644-3f2d19cfcb0a",
+                "resourcePath": "sprites\\illumArmy05\\illumArmy05.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "73b1d068-f488-48b3-bef9-d8f7b79486cc",
             "Value": {
                 "id": "43c09ddc-8fa7-46ef-a170-63edac6f6ce3",
@@ -1476,6 +1564,14 @@
                 "id": "ad29efc6-e434-4d47-a7d3-474c518b0d15",
                 "resourcePath": "scripts\\scr_adjust_varriables_to_right\\scr_adjust_varriables_to_right.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7aa38c89-f9ae-4474-8b06-84e73a2735eb",
+            "Value": {
+                "id": "971a554f-78cc-4893-aa3d-4a014213cc83",
+                "resourcePath": "sprites\\illumArmy10\\illumArmy10.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1548,6 +1644,14 @@
                 "id": "362371ad-0b94-43a5-bc9a-3469054ccda0",
                 "resourcePath": "notes\\adding modules.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "7f78f6f6-18bb-45f2-a333-438f1049e9e8",
+            "Value": {
+                "id": "b95a0c29-9a28-4391-9ef3-ab683e70d3c3",
+                "resourcePath": "sprites\\illumArmy21\\illumArmy21.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1731,6 +1835,14 @@
             "Value": {
                 "id": "d22f701f-c722-4f08-b2e1-fd8b9ab7c50d",
                 "resourcePath": "sprites\\sprite75\\sprite75.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8e6812f9-26e6-4d0a-a769-673773c41619",
+            "Value": {
+                "id": "665604c3-ca63-41e9-80ba-b010521ca674",
+                "resourcePath": "sprites\\illumArmy20\\illumArmy20.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1935,6 +2047,14 @@
             }
         },
         {
+            "Key": "9ca6f0a6-8817-4835-9749-5a8c58831347",
+            "Value": {
+                "id": "e17d2f94-dd7d-47f3-9d9d-d0a8ce6bd784",
+                "resourcePath": "sprites\\illumArmy14\\illumArmy14.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9d39c939-8a51-4c32-9ff8-20446d53008c",
             "Value": {
                 "id": "a33c12c7-2c15-405e-a6ea-d0e32374670f",
@@ -2004,6 +2124,14 @@
                 "id": "1016beb5-e680-4344-b6e2-900080b0f0de",
                 "resourcePath": "scripts\\scr_imperial_interceptor_graphic_offsets\\scr_imperial_interceptor_graphic_offsets.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a0366aee-7d9f-44d5-a785-8b084454dd33",
+            "Value": {
+                "id": "f084e871-8e22-4099-b721-3a1c92875ed3",
+                "resourcePath": "sprites\\illumArmy04\\illumArmy04.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2131,6 +2259,14 @@
             "Value": {
                 "id": "5c06d893-35d8-4ea3-a23e-164c062e3b58",
                 "resourcePath": "sprites\\s_tox_red_12\\s_tox_red_12.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a85e13cb-f6a5-4ba5-b5d7-eca81f31f344",
+            "Value": {
+                "id": "174814a1-ece1-4bc2-b1a4-7ac8e9540d21",
+                "resourcePath": "sprites\\illumArmy07\\illumArmy07.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2343,6 +2479,14 @@
             }
         },
         {
+            "Key": "b62a080e-df27-4994-898c-296bfe392d69",
+            "Value": {
+                "id": "7af27863-53a8-419a-b5f7-4e22b539019d",
+                "resourcePath": "sprites\\illumArmy17\\illumArmy17.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b62d88bd-400b-4eb0-84d2-23591d6038b7",
             "Value": {
                 "id": "90742a42-4399-416c-ac52-c0268188e888",
@@ -2503,6 +2647,14 @@
             }
         },
         {
+            "Key": "c65a454f-c856-460c-87dd-cac17c27c005",
+            "Value": {
+                "id": "c2fc96cf-fa6a-455b-899a-09ae460683d6",
+                "resourcePath": "sprites\\illumArmy18\\illumArmy18.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c702c604-b7f2-42dc-9270-4b78681cc435",
             "Value": {
                 "id": "8dbadfe6-5c5f-492b-9694-79ff9d57fa31",
@@ -2543,6 +2695,14 @@
             }
         },
         {
+            "Key": "c82fe7da-c90a-4f42-9980-8a08534eae2c",
+            "Value": {
+                "id": "83752e36-6ffe-4980-9f3e-4f4339906692",
+                "resourcePath": "sprites\\illumArmy23\\illumArmy23.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c8ab6d2a-5384-4539-8c50-a47838e3725b",
             "Value": {
                 "id": "88e18446-93c8-463c-97b9-e677efe675f8",
@@ -2572,6 +2732,14 @@
                 "id": "6006124d-1673-4a40-8faf-563d03a83ead",
                 "resourcePath": "views\\ca7be2f2-522e-4465-b50e-d82d79dd8a6c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cb0fe81d-7f2b-4d5b-b1e5-2527d7166170",
+            "Value": {
+                "id": "d97566f9-0892-45f7-9f7c-ff4a9ec3d61a",
+                "resourcePath": "sprites\\illumArmy16\\illumArmy16.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2619,6 +2787,14 @@
             "Value": {
                 "id": "90b25cc0-d723-4045-baf0-0f4f36e7fd88",
                 "resourcePath": "sprites\\s_tox_red_10\\s_tox_red_10.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cdd4a915-a534-45d2-93af-e8e9a6ab8a25",
+            "Value": {
+                "id": "022dcc00-c881-41fe-ba91-36b195ca9903",
+                "resourcePath": "sprites\\illumArmy03\\illumArmy03.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2903,6 +3079,14 @@
             }
         },
         {
+            "Key": "e65cd521-1e8e-469d-93bd-f4a894a8a491",
+            "Value": {
+                "id": "443edd21-7117-4c41-af83-5565814f4ec5",
+                "resourcePath": "sprites\\illumArmy13\\illumArmy13.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e804d11b-e338-4c85-bf6a-b20309a9455e",
             "Value": {
                 "id": "fc48e0bf-fbc2-4b76-a976-3b954c3f93d4",
@@ -2975,6 +3159,14 @@
             }
         },
         {
+            "Key": "ed69b043-1b86-4336-b16f-70a5c0419e76",
+            "Value": {
+                "id": "f607390a-3232-4531-8600-dbd5178af4ce",
+                "resourcePath": "views\\ed69b043-1b86-4336-b16f-70a5c0419e76.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ed70b90b-a533-42e6-925b-bd4bb799c645",
             "Value": {
                 "id": "ee2e546b-2efe-492a-9cfd-8c3c9e2dd8dd",
@@ -2995,6 +3187,14 @@
             "Value": {
                 "id": "c693215b-27bc-4d2a-9909-694871454b69",
                 "resourcePath": "sprites\\s_grid_box_old\\s_grid_box_old.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f31b4263-850f-4471-8b3f-65c04374e184",
+            "Value": {
+                "id": "5e5c1cdf-421a-4878-9854-f9da0b3931cd",
+                "resourcePath": "sprites\\illumArmy12\\illumArmy12.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3027,6 +3227,14 @@
             "Value": {
                 "id": "2df641be-9371-4ee9-9bff-21bab7d5b9f1",
                 "resourcePath": "sprites\\s_shield\\s_shield.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f53a14da-3b05-42d8-8ba8-743f23809441",
+            "Value": {
+                "id": "f7b7a043-a7e8-49c3-94cd-3e7ca04f1d1f",
+                "resourcePath": "sprites\\illumArmy19\\illumArmy19.yy",
                 "resourceType": "GMSprite"
             }
         },
