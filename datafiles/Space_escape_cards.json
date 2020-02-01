@@ -370,7 +370,7 @@
       "Energy Starting": 0,
       "Energy to Cast": 20,
       "Energy Generation": 1,
-      "Sprite": "s_iron_interceptor",
+      "Sprite": "s_red_1",
       "Weapons and Exhaust": "scr_iron_interceptor_graphic_offsets",
       "Basic Ability Script": "scr_EMP_overload",
       "Cards in Pool": 30
@@ -432,7 +432,7 @@
       "Energy Starting": 20,
       "Energy to Cast": 60,
       "Energy Generation": 1,
-      "Sprite": "s_iron_frigate",
+      "Sprite": "s_blue_tox_18",
       "Weapons and Exhaust": "scr_iron_frigate_graphic_offsets",
       "Basic Ability Script": "scr_orbital_strike",
       "Cards in Pool": 10
@@ -463,7 +463,7 @@
       "Energy Starting": 10,
       "Energy to Cast": 20,
       "Energy Generation": 1,
-      "Sprite": "s_imperial_interceptor",
+      "Sprite": "s_blue_tox_1",
       "Weapons and Exhaust": "scr_imperial_interceptor_graphic_offsets",
       "Basic Ability Script": "scr_hunter_strike",
       "Cards in Pool": 30
@@ -556,7 +556,7 @@
       "Energy Starting": 10,
       "Energy to Cast": 20,
       "Energy Generation": 1,
-      "Sprite": "s_solar_interceptor",
+      "Sprite": "s_green_ill_666",
       "Weapons and Exhaust": "scr_solar_interceptor_graphic_offsets",
       "Basic Ability Script": "scr_hunter_strike",
       "Cards in Pool": 30

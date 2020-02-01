@@ -1,5 +1,10 @@
 draw_self()
 
+var _longest_dimension = sprite_get_width(sprite_index)
+
+if (_longest_dimension < sprite_get_height(sprite_index)){
+	_longest_dimension = sprite_get_height(sprite_index)
+}
 
 
 #region armor, shield, and energy bars
@@ -52,8 +57,11 @@ if (generate_shields > 0){
 	}
 	shield_alpha = generate_shields * .1
 	shield_alpha = clamp(shield_alpha, 0, 1)
-
-	draw_sprite_ext(_shield_sprite, 0, x, y, .15*sprite_height*image_scale, .15*sprite_height*image_scale, image_angle, shield_color, shield_alpha)
+	var shield_size = .12
+	if (class = "Frigate"){
+		shield_size = .075
+	}
+	draw_sprite_ext(_shield_sprite, 0, x, y, shield_size*sprite_width*image_scale, shield_size*sprite_width*image_scale, image_angle, shield_color, shield_alpha)
 	generate_shields-=.3
 	
 }
