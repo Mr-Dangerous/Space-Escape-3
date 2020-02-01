@@ -81,6 +81,24 @@ if (created = false){
 	
 	//post script loading
 	//NOTE:  imagescale needs to adjust.
+	var _sprite = asset_get_index(string(_ship_map[? "Sprite"]))
+	var _sprite_longest_dimension = sprite_get_width(_sprite)
+	if (sprite_get_height(_sprite) > _sprite_longest_dimension){
+		_sprite_longest_dimension = sprite_get_height(_sprite)
+	}
+	switch(class){
+		case "Interceptor":
+			image_scale = 64/_sprite_longest_dimension
+		break;
+		
+		case "Fighter":
+			image_scale = 96/_sprite_longest_dimension
+		break;
+		
+		case "Frigate":
+			image_scale = 186/_sprite_longest_dimension
+		break;
+	}
 	image_xscale = image_scale
 	image_yscale = image_scale
 	

@@ -184,7 +184,7 @@ and instance_exists(ship_frame_contained) and !instance_exists(fielded_ship) and
 		deployed_ship.name = ship_frame_contained.name
 		deployed_ship.class = ship_frame_contained.class
 		deployed_ship.sprite_index = ship_frame_contained.sprite_index
-		deployed_ship.image_scale = ship_frame_contained.image_scale
+		//deployed_ship.image_scale = ship_frame_contained.image_scale
 		//attack array stuff
 		
 		
